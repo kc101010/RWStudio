@@ -183,5 +183,31 @@ namespace RWS
             button1.BackColor = colorDialog1.Color;
             color.Text = HexConverter(colorDialog1.Color);
         }
+
+        private void instant_CheckedChanged(object sender, EventArgs e)
+        {
+            if (instant.Checked)
+            {
+                targetground.Checked = false;
+                targetground.Enabled = false;
+            }
+            else
+            {
+                targetground.Enabled = true;
+            }
+        }
+
+        private void targetground_CheckedChanged(object sender, EventArgs e)
+        {
+            if (targetground.Checked)
+            {
+               instant.Checked = false;
+               instant.Enabled = false;
+            }
+            else
+            {
+                instant.Enabled = true;
+            }
+        }
     }
 }

@@ -212,7 +212,6 @@
             this.bx.Size = new System.Drawing.Size(40, 20);
             this.bx.TabIndex = 26;
             this.bx.Text = "0.0";
-            this.bx.TextChanged += new System.EventHandler(this.bx_TextChanged);
             // 
             // label5
             // 
@@ -230,7 +229,7 @@
             this.by.Size = new System.Drawing.Size(40, 20);
             this.by.TabIndex = 28;
             this.by.Text = "0.0";
-            this.by.TextChanged += new System.EventHandler(this.bx_TextChanged);
+            this.by.TextChanged += new System.EventHandler(this.by_TextChanged);
             // 
             // label8
             // 

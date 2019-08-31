@@ -481,7 +481,7 @@
             " "});
             this.image.Location = new System.Drawing.Point(51, 289);
             this.image.Name = "image";
-            this.image.Size = new System.Drawing.Size(129, 21);
+            this.image.Size = new System.Drawing.Size(118, 21);
             this.image.TabIndex = 48;
             // 
             // label16
@@ -744,6 +744,7 @@
             this.instant.TabIndex = 42;
             this.instant.Text = "Hit target instantly";
             this.instant.UseVisualStyleBackColor = true;
+            this.instant.CheckedChanged += new System.EventHandler(this.instant_CheckedChanged);
             // 
             // friendlyFire
             // 
@@ -794,6 +795,7 @@
             this.targetground.TabIndex = 36;
             this.targetground.Text = "Target ground";
             this.targetground.UseVisualStyleBackColor = true;
+            this.targetground.CheckedChanged += new System.EventHandler(this.targetground_CheckedChanged);
             // 
             // ballistic
             // 
@@ -822,7 +824,6 @@
             // 
             // ballheigh
             // 
-            this.ballheigh.Enabled = false;
             this.ballheigh.Location = new System.Drawing.Point(45, 49);
             this.ballheigh.Name = "ballheigh";
             this.ballheigh.Size = new System.Drawing.Size(37, 20);
@@ -849,7 +850,6 @@
             // 
             // dmH
             // 
-            this.dmH.Enabled = false;
             this.dmH.Location = new System.Drawing.Point(104, 22);
             this.dmH.Name = "dmH";
             this.dmH.Size = new System.Drawing.Size(37, 20);

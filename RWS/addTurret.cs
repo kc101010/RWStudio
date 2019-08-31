@@ -231,13 +231,13 @@ namespace RWS
         private void size_TextChanged(object sender, EventArgs e)
         {
             if(size.Text != "")
-                bx.Enabled = by.Enabled = false;
+               by.Enabled = false;
             else
-                bx.Enabled = by.Enabled = true;
+                by.Enabled = true;
         }
-        private void bx_TextChanged(object sender, EventArgs e)
+        private void by_TextChanged(object sender, EventArgs e)
         {
-            if (bx.Text != "" || by.Text != "")
+            if (by.Text != "")
             {
                 size.Enabled = false;
             }
@@ -251,7 +251,6 @@ namespace RWS
         {
             if (laserdefenece.Checked)
             {
-                invisible.Checked = true;
                 canattack.Checked = false;
                 laserdefen.Enabled = true;
             }
