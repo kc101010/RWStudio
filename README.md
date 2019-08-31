@@ -1,4 +1,4 @@
 # RWStudio
-RustedWarfareStdio
+RustedWarfareStudio
 
 Work in progress
