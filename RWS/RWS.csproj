@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A8B0B74-C994-4EA1-B676-835B95F83988}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RWS</RootNamespace>
+    <AssemblyName>RWS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>experimental_unit_factory_front.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="addprojectile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addprojectile.Designer.cs">
+      <DependentUpon>addprojectile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addTurret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTurret.Designer.cs">
+      <DependentUpon>addTurret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUnit.Designer.cs">
+      <DependentUpon>addUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="builtFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="builtFrom.Designer.cs">
+      <DependentUpon>builtFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canBuild.Designer.cs">
+      <DependentUpon>canBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="preview.Designer.cs">
+      <DependentUpon>preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RWS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RWS.Designer.cs">
+      <DependentUpon>RWS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unitList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unitList.Designer.cs">
+      <DependentUpon>unitList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="openMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openMod.Designer.cs">
+      <DependentUpon>openMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editUnit.Designer.cs">
+      <DependentUpon>editUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newMod.Designer.cs">
+      <DependentUpon>newMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addprojectile.resx">
+      <DependentUpon>addprojectile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addTurret.resx">
+      <DependentUpon>addTurret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUnit.resx">
+      <DependentUpon>addUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="builtFrom.resx">
+      <DependentUpon>builtFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canBuild.resx">
+      <DependentUpon>canBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="preview.resx">
+      <DependentUpon>preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RWS.resx">
+      <DependentUpon>RWS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unitList.resx">
+      <DependentUpon>unitList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openMod.resx">
+      <DependentUpon>openMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editUnit.resx">
+      <DependentUpon>editUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newMod.resx">
+      <DependentUpon>newMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experimental_unit_factory_base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="experimental_unit_factory_front.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="IniFileParser">
+      <HintPath>.\IniFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="netstandard">
+      <HintPath>.\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
