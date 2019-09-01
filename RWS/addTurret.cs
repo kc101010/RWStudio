@@ -175,6 +175,7 @@ namespace RWS
                     {
                         string[] str;
                         str = s.Split(new char[] { '_', ']' });
+                        if (str[1] != editUnit.lastt)
                         tlist.Items.Add(str[1]);
                     }
                     if (s.Contains("[animation_") && s.Contains("]"))

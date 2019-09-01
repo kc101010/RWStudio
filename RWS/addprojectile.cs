@@ -18,7 +18,9 @@ namespace RWS
         public addprojectile()
         {
             InitializeComponent();
+            loadlist();
         }
+
 
         private void ballistic_CheckedChanged(object sender, EventArgs e)
         {
@@ -31,7 +33,14 @@ namespace RWS
                 groupBox4.Enabled = false;
             }
         }
-
+        private void loadlist()
+        {
+            string[] sss = Directory.GetFiles(editUnit.path, "*.png");
+            for (int i = 0; i < sss.Length; i++)
+            {
+                image.Items.Add(new DirectoryInfo(sss[i]).Name);
+            }
+        }
         private void addprojectile_Load(object sender, EventArgs e)
         {
             if (editUnit.lastprj != null)

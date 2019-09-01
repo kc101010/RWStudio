@@ -257,10 +257,12 @@ namespace RWS
         }
         private void load()
         {
-            string[] sss = Directory.GetFiles(path, "*.ini");
-            var parser = new FileIniDataParser();
-            IniData data = parser.ReadFile(sss[0]);
-            pictureBox1.BackgroundImage = new Bitmap(Path.Combine(path, data["graphics"]["image"]));
+            try
+            {
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                pictureBox1.BackgroundImage = new Bitmap(Path.Combine(path, data["graphics"]["image"]));
             hp.Value = Convert.ToInt32(data["core"]["maxHp"]);
             price.Value = Convert.ToInt32(data["core"]["price"]);
             mass.Value = Convert.ToInt32(data["core"]["mass"]);
@@ -357,6 +359,11 @@ namespace RWS
                 idleAnimstart.Value = Convert.ToInt32(data["graphics"]["animation_idle_start"]);
                 idleAnimEnd.Value = Convert.ToInt32(data["graphics"]["animation_idle_end"]);
                 idleAnimSpeed.Text = data["graphics"]["animation_moving_speed"];
+            }
+            }
+            catch
+            {
+                MessageBox.Show("Ало, Гитлер? \n-Это пизда");
             }
         }
         private void loadlist()
