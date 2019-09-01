@@ -75,7 +75,7 @@ namespace RWS
                 CheckPathExists = true,
 
                 DefaultExt = "png",
-                Filter = "png files (*.png)|*.png",
+                Filter = "png files (*.png)|*.png|wav files(*.wav)|*.wav|ogg files(*.ogg)|*.ogg",
                 FilterIndex = 2,
                 RestoreDirectory = true,
 

@@ -93,6 +93,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.turretimage = new System.Windows.Forms.ComboBox();
             this.shieldr = new System.Windows.Forms.TextBox();
@@ -192,6 +193,8 @@
             this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.landOnGround = new System.Windows.Forms.ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
             this.enableNano = new System.Windows.Forms.CheckBox();
             this.nonukelocked = new System.Windows.Forms.CheckBox();
             this.dl = new System.Windows.Forms.ComboBox();
@@ -236,9 +239,6 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.landOnGround = new System.Windows.Forms.ComboBox();
-            this.label53 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.footprint.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -252,6 +252,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sox)).BeginInit();
@@ -281,7 +282,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iox)).BeginInit();
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -789,6 +789,14 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label16
             // 
@@ -1567,6 +1575,22 @@
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.TabStop = false;
             // 
+            // landOnGround
+            // 
+            this.landOnGround.FormattingEnabled = true;
+            this.landOnGround.Items.AddRange(new object[] {
+            resources.GetString("landOnGround.Items"),
+            resources.GetString("landOnGround.Items1"),
+            resources.GetString("landOnGround.Items2"),
+            resources.GetString("landOnGround.Items3")});
+            resources.ApplyResources(this.landOnGround, "landOnGround");
+            this.landOnGround.Name = "landOnGround";
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.Name = "label53";
+            // 
             // enableNano
             // 
             resources.ApplyResources(this.enableNano, "enableNano");
@@ -1843,30 +1867,6 @@
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // landOnGround
-            // 
-            this.landOnGround.FormattingEnabled = true;
-            this.landOnGround.Items.AddRange(new object[] {
-            resources.GetString("landOnGround.Items"),
-            resources.GetString("landOnGround.Items1"),
-            resources.GetString("landOnGround.Items2"),
-            resources.GetString("landOnGround.Items3")});
-            resources.ApplyResources(this.landOnGround, "landOnGround");
-            this.landOnGround.Name = "landOnGround";
-            // 
-            // label53
-            // 
-            resources.ApplyResources(this.label53, "label53");
-            this.label53.Name = "label53";
-            // 
             // editUnit
             // 
             resources.ApplyResources(this, "$this");
@@ -1912,6 +1912,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sox)).EndInit();
@@ -1950,7 +1951,6 @@
             this.groupBox20.PerformLayout();
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
