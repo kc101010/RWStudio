@@ -28,6 +28,7 @@ namespace RWS
             {
                 listView1.Clear();
                 imageList1.Dispose();
+
                 string[] s = Directory.EnumerateDirectories(openMod.s).ToArray();
                 label2.Text = openMod.s;
                 for (int a = 0; a < s.Length; a++)
@@ -157,6 +158,19 @@ namespace RWS
                 ed.ShowDialog();
                 Close();
             }
+            catch
+            {
+                MessageBox.Show("Select unit");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Directory.Delete(listView1.SelectedItems[0].Tag.ToString(), true);
+                loadUnits();
+             }
             catch
             {
                 MessageBox.Show("Select unit");
