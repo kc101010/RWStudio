@@ -69,7 +69,7 @@ namespace RWS
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
                 InitialDirectory = @"C:\",
-                Title = "Browse PNG file",
+                Title = "Browse file",
 
                 CheckFileExists = true,
                 CheckPathExists = true,
