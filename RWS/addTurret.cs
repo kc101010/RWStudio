@@ -133,7 +133,7 @@ namespace RWS
             writeFromTextbox(maxrange, "limitingRange", data);
             writeFromTextbox(mirange, "limitingMinRange", data);
             writeFromTextbox(shootlight, "shoot_light", data);
-            writeFromTextbox(shootflame, "shoot_flame", data);
+            writeFromCombotbox(shootflame, "shoot_flame", data);
             writeFromTextbox(freeze, "onShoot_freezeBodyMovementFor", data);
             writeFromTextbox(laserdefen, "laserDefenceEnergyUse", data);
             data["turret_" + editUnit.lastt]["shouldResetTurret"] = resetturret.Checked.ToString();
@@ -191,6 +191,17 @@ namespace RWS
             {
                 image.Items.Add(new DirectoryInfo(sss2[i]).Name);
                 image1.Items.Add(new DirectoryInfo(sss2[i]).Name);
+            }
+          string[] sss3 = Directory.GetFiles(editUnit.path, "*.wav");
+            for (int i = 0; i < sss3.Length; i++)
+            {
+                shootsound.Items.Add(new DirectoryInfo(sss3[i]).Name);
+            }
+            sss3 = null;
+            sss3 = Directory.GetFiles(editUnit.path, "*.ogg");
+            for (int i = 0; i < sss3.Length; i++)
+            {
+                shootsound.Items.Add(new DirectoryInfo(sss3[i]).Name);
             }
         }
         private void button1_Click(object sender, EventArgs e)
