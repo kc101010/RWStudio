@@ -211,12 +211,6 @@ namespace RWS
             button1.BackColor = colorDialog1.Color;
             shootlight.Text = HexConverter(colorDialog1.Color);
         }
-
-        private void addTurret_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             editUnit.lastt = null;
@@ -258,7 +252,6 @@ namespace RWS
                 size.Enabled = true;
             }
         }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (laserdefenece.Checked)

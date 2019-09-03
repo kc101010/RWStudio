@@ -853,7 +853,6 @@
             this.MaximizeBox = false;
             this.Name = "addTurret";
             this.Text = "RWStudio: Turret";
-            this.Load += new System.EventHandler(this.addTurret_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
