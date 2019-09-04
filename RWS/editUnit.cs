@@ -14,6 +14,7 @@ namespace RWS
         public static string lastt;
         public static string lastprj;
         public static string namE;
+        public static string lastbf;
         public editUnit()
         {
             InitializeComponent();
@@ -22,12 +23,17 @@ namespace RWS
         }
         private void button34_Click(object sender, EventArgs e)
         {
-            string[] sss = Directory.GetFiles(path, "*.ini");
-            var parser = new FileIniDataParser();
-            IniData data = parser.ReadFile(sss[0]);
-            data[customs.Text][customp.Text] = customv.Text;
-            parser.WriteFile(sss[0], data);
-            customs.Text = customp.Text = customv.Text = string.Empty;
+            if (customp.Text != "" && customs.Text != "" && customv.Text != "")
+            {
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                data[customs.Text][customp.Text] = customv.Text;
+                parser.WriteFile(sss[0], data);
+                customs.Text = customp.Text = customv.Text = string.Empty;
+            }
+            else
+                MessageBox.Show("Hmmm...");
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -220,6 +226,10 @@ namespace RWS
             writeFromCheck(aiasb, "ai", "useAsBuilder", data);
 
             parser.WriteFile(sss[0], data);
+            unitList ul = new unitList();
+            Hide();
+            ul.ShowDialog();
+            Close();
         }
         private void writeFromTextbox(TextBox txt, string section, string param, IniData data)
         {
@@ -363,7 +373,7 @@ namespace RWS
             }
             catch
             {
-                MessageBox.Show("Ало, Гитлер? \n-Это пизда");
+                MessageBox.Show("Ало, Гитлер? \n-Это п*зда");
             }
         }
         private void loadlist()
@@ -390,8 +400,9 @@ namespace RWS
                     if (s.Contains("builtFrom_") && s.Contains("_name"))
                     {
                         string[] str;
-                        str = s.Split(':');
-                        bflist.Items.Add(str[1]);
+                        str = s.Split(new char[] { ':','_' });
+                        ListBox lst = new ListBox();
+                        bflist.Items.Add(str[1]+":"+str[3]);
                     }
                     if (s.Contains("[action_") && s.Contains("]"))
                     {
@@ -403,12 +414,6 @@ namespace RWS
                     {
                         string[] str;
                         str = s.Split(new char[] { '_', ']' });
-                        cblist.Items.Add(str[1]);
-                    }
-                    if (s.Contains("canBuild_") && s.Contains("_name"))
-                    {
-                        string[] str;
-                        str = s.Split(':');
                         cblist.Items.Add(str[1]);
                     }
                     if (s.Contains("[turret_") && s.Contains("]"))
@@ -537,6 +542,7 @@ namespace RWS
                 lastcb = cblist.SelectedItem.ToString();
                 canBuild cb = new canBuild();
                 cb.ShowDialog();
+                lastcb = null;
             }
             else
             {
@@ -573,8 +579,7 @@ namespace RWS
                 lastt = turretlist.SelectedItem.ToString();
                 addTurret at = new addTurret();
                 at.ShowDialog();
-                loadlist();
-                
+                lastt = null;               
             }
             else
             {
@@ -610,7 +615,7 @@ namespace RWS
                  lastprj = projectilelist.SelectedItem.ToString();
                 addprojectile at = new addprojectile();
                 at.ShowDialog();
-                loadlist();
+                lastprj = null;
             }
             else
             {
@@ -671,7 +676,24 @@ namespace RWS
 
         private void button16_Click(object sender, EventArgs e)
         {
+            builtFrom bf = new builtFrom();
+            bf.ShowDialog();
+            loadlist();
+        }
 
+        private void button15_Click(object sender, EventArgs e)
+        {
+            if (bflist.SelectedItem != null)
+            {
+                lastbf = bflist.SelectedItem.ToString();
+                builtFrom bf = new builtFrom();
+                bf.ShowDialog();
+                lastbf = null;
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
         }
     }
 }

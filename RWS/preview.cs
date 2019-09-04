@@ -57,5 +57,10 @@ namespace RWS
         {
             stop = true;
         }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("\r\n\rn\nrn\r\n\r\n\r\n\r\n\rn\n");
+        }
     }
 }

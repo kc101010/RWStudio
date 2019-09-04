@@ -149,19 +149,15 @@ namespace RWS
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-                f = listView1.SelectedItems[0].Tag.ToString();
-                editUnit ed = new editUnit();
-                Hide();
-                ed.ShowDialog();
-                Close();
-            }
-            catch
-            {
-                MessageBox.Show("Select unit");
-            }
+                if (listView1.SelectedItems[0].Tag.ToString() != null)
+                {
+                    f = listView1.SelectedItems[0].Tag.ToString();
+                    editUnit ed = new editUnit();
+                    Hide();
+                    ed.ShowDialog();
+                    Close();
+                    MessageBox.Show("Select unit");
+                }
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -282,6 +282,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iox)).BeginInit();
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
+           
             this.SuspendLayout();
             // 
             // groupBox1
@@ -1233,6 +1234,7 @@
             resources.ApplyResources(this.button15, "button15");
             this.button15.Name = "button15";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -1875,6 +1877,9 @@
             // 
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
+            // 
+            // splitContainer1
+            // 
             // 
             // editUnit
             // 
