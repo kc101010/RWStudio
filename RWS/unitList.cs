@@ -125,7 +125,8 @@ namespace RWS
                 }
                 if(s2 != "")
                 {
-                    MessageBox.Show(s2);
+                    
+                    MessageBox.Show(s2,"Ghmm...",MessageBoxButtons.OK);
                 }
             }
             catch(Exception ex)
@@ -162,14 +163,9 @@ namespace RWS
 
         private void button4_Click(object sender, EventArgs e)
         {
-            try
-            {
+            if (listView1.SelectedItems[0] != null) {
                 Directory.Delete(listView1.SelectedItems[0].Tag.ToString(), true);
                 loadUnits();
-             }
-            catch
-            {
-                MessageBox.Show("Select unit");
             }
         }
     }

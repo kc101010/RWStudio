@@ -18,15 +18,17 @@ namespace RWS
             InitializeComponent();
         }
         bool stop = false;
-        private Bitmap[] bmpa = new Bitmap[2];
+        List<Bitmap> bmpa = new List<Bitmap>();
         private void preview_Load(object sender, EventArgs e)
         {
             string picturepath = @"C:\RWStudio\png.png";
             Bitmap bmp = new Bitmap(picturepath);
-            int width = bmp.Width / 2;      
-            for (int i = 0; i<2; i++) {
+            int width = bmp.Width / 3;
+            pictureBox1.Width = width;
+            pictureBox1.Height = bmp.Height;
+            for (int i = 0; i<3; i++) {
                 Rectangle cropRect = new Rectangle(width*i, 0, width, bmp.Height);
-                bmpa[i]= cropImage(bmp, cropRect); ;
+                bmpa.Add(cropImage(bmp, cropRect));
             }
                    Thread tht = new Thread(anim);
                    tht.Start();
@@ -35,9 +37,12 @@ namespace RWS
         {
             while(!stop)
             {
-                for (int i2 = 0; i2 < 2; i2++)
+                for (int i2 = 0; i2 < 3; i2++)
                 {
-                    pictureBox1.BackgroundImage = bmpa[i2];
+                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                    Graphics g = Graphics.FromImage(bmpa[i2]);
+                    g.DrawEllipse(new Pen(Color.LimeGreen,2), pictureBox1.Width, pictureBox1.Height, bmpa[i2].Height, bmpa[i2].Height);
+                    pictureBox1.Image = bmpa[i2];
                     Thread.Sleep(100);
                 }
             /*    for (int i2 = 2; i2 > 0; i2--)
@@ -56,11 +61,6 @@ namespace RWS
         private void preview_FormClosed(object sender, FormClosedEventArgs e)
         {
             stop = true;
-        }
-
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("\r\n\rn\nrn\r\n\r\n\r\n\r\n\rn\n");
         }
     }
 }

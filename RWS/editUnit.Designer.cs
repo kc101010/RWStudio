@@ -117,6 +117,7 @@
             this.actionlist = new System.Windows.Forms.ListBox();
             this.gb = new System.Windows.Forms.GroupBox();
             this.gb22 = new System.Windows.Forms.GroupBox();
+            this.IdleAnimPingPong = new System.Windows.Forms.CheckBox();
             this.idleAnimSpeed = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.idleAnimEnd = new System.Windows.Forms.NumericUpDown();
@@ -130,6 +131,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.animlist = new System.Windows.Forms.ListBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.moveAnimzpingPong = new System.Windows.Forms.CheckBox();
             this.animspeed = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.animend = new System.Windows.Forms.NumericUpDown();
@@ -282,7 +284,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iox)).BeginInit();
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
-           
             this.SuspendLayout();
             // 
             // groupBox1
@@ -949,6 +950,7 @@
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // actionlist
             // 
@@ -969,6 +971,7 @@
             // 
             // gb22
             // 
+            this.gb22.Controls.Add(this.IdleAnimPingPong);
             this.gb22.Controls.Add(this.idleAnimSpeed);
             this.gb22.Controls.Add(this.label37);
             this.gb22.Controls.Add(this.idleAnimEnd);
@@ -978,6 +981,12 @@
             resources.ApplyResources(this.gb22, "gb22");
             this.gb22.Name = "gb22";
             this.gb22.TabStop = false;
+            // 
+            // IdleAnimPingPong
+            // 
+            resources.ApplyResources(this.IdleAnimPingPong, "IdleAnimPingPong");
+            this.IdleAnimPingPong.Name = "IdleAnimPingPong";
+            this.IdleAnimPingPong.UseVisualStyleBackColor = true;
             // 
             // idleAnimSpeed
             // 
@@ -1072,6 +1081,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.moveAnimzpingPong);
             this.groupBox5.Controls.Add(this.animspeed);
             this.groupBox5.Controls.Add(this.label33);
             this.groupBox5.Controls.Add(this.animend);
@@ -1081,6 +1091,12 @@
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
+            // 
+            // moveAnimzpingPong
+            // 
+            resources.ApplyResources(this.moveAnimzpingPong, "moveAnimzpingPong");
+            this.moveAnimzpingPong.Name = "moveAnimzpingPong";
+            this.moveAnimzpingPong.UseVisualStyleBackColor = true;
             // 
             // animspeed
             // 
@@ -1228,6 +1244,7 @@
             resources.ApplyResources(this.button14, "button14");
             this.button14.Name = "button14";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -1878,9 +1895,6 @@
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
             // 
-            // splitContainer1
-            // 
-            // 
             // editUnit
             // 
             resources.ApplyResources(this, "$this");
@@ -2181,5 +2195,7 @@
         private System.Windows.Forms.ComboBox landOnGround;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.CheckBox IdleAnimPingPong;
+        private System.Windows.Forms.CheckBox moveAnimzpingPong;
     }
 }

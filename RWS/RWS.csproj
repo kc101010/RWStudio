@@ -186,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="experimental_unit_factory_front.ico" />
+    <None Include="Resources\none.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

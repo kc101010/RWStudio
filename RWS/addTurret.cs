@@ -56,6 +56,7 @@ namespace RWS
                 mirange.Text = data["turret_" + editUnit.lastt]["limitingMinRange"];
                 shootlight.Text = data["turret_" + editUnit.lastt]["shoot_light"];
                 shootflame.Text = data["turret_" + editUnit.lastt]["shoot_flame"];
+                shootsound.Text = data["turret_" + editUnit.lastt]["shoot_sound"];
                 if (data["turret_" + editUnit.lastt]["shouldResetTurret"] !=null)
                 {
                     resetturret.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["shouldResetTurret"]);
@@ -134,6 +135,7 @@ namespace RWS
             writeFromTextbox(mirange, "limitingMinRange", data);
             writeFromTextbox(shootlight, "shoot_light", data);
             writeFromCombotbox(shootflame, "shoot_flame", data);
+            writeFromCombotbox(shootsound, "shoot_sound", data);
             writeFromTextbox(freeze, "onShoot_freezeBodyMovementFor", data);
             writeFromTextbox(laserdefen, "laserDefenceEnergyUse", data);
             data["turret_" + editUnit.lastt]["shouldResetTurret"] = resetturret.Checked.ToString();

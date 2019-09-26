@@ -189,15 +189,17 @@ namespace RWS
             writeFromNumeric(animstart, "graphics", "animation_moving_start", data);
             writeFromNumeric(animend, "graphics", "animation_moving_end", data);
             writeFromTextbox(animspeed, "graphics", "animation_moving_speed", data);
-           /*
-            * idle animation
-            */
+            writeFromCheck(moveAnimzpingPong, "graphics", "animation_moving_pingPong", data);
+            /*
+             * idle animation
+             */
             writeFromNumeric(idleAnimstart, "graphics", "animation_idle_start", data);
             writeFromNumeric(idleAnimEnd, "graphics", "animation_idle_end", data);
             writeFromTextbox(idleAnimSpeed, "graphics", "animation_idle_speed", data);
-           /*
-            * Attack
-            */
+            writeFromCheck(IdleAnimPingPong, "graphics", "animation_idle_pingPong", data);
+            /*
+             * Attack
+             */
             writeFromCheck(canattack, "attack", "canAttack", data);
             writeFromCheck(land, "attack", "canAttackLandUnits", data);
             writeFromCheck(air, "attack", "canAttackFlyingUnits", data);
@@ -362,13 +364,15 @@ namespace RWS
                 animstart.Value =Convert.ToInt32(data["graphics"]["animation_moving_start"]);
                 animend.Value =Convert.ToInt32(data["graphics"]["animation_moving_end"]);
                 animspeed.Text = data["graphics"]["animation_moving_speed"];
+                moveAnimzpingPong.Checked = Convert.ToBoolean(data["graphics"]["animation_moving_pingPong"]);
             }
             if(data["graphics"]["animation_idle_start"] != null)
             {
                 checkBox1.Checked = true;
                 idleAnimstart.Value = Convert.ToInt32(data["graphics"]["animation_idle_start"]);
                 idleAnimEnd.Value = Convert.ToInt32(data["graphics"]["animation_idle_end"]);
-                idleAnimSpeed.Text = data["graphics"]["animation_moving_speed"];
+                idleAnimSpeed.Text = data["graphics"]["animation_idle_speed"];
+                IdleAnimPingPong.Checked = Convert.ToBoolean(data["graphics"]["animation_idle_pingPong"]);
             }
             }
             catch
@@ -689,6 +693,24 @@ namespace RWS
                 builtFrom bf = new builtFrom();
                 bf.ShowDialog();
                 lastbf = null;
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (bflist.SelectedItem != null)
+            {
+                lastbf = null;
+                loadlist();
             }
             else
             {
