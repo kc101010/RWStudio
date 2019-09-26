@@ -10,6 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using IniParser;
 using IniParser.Model;
+using System.IO.Compression;
 
 namespace RWS
 {
@@ -118,20 +119,20 @@ namespace RWS
                 listView1.LargeImageList = imageList1;
                 for (int i = 0; i < s.Length; i++)
                 {
-                        ListViewItem listViewItem = new ListViewItem(new string[] { Path.GetFileName(s[i]) });
-                        listViewItem.ImageIndex = i;
-                        listViewItem.Tag = s[i];
-                        listView1.Items.Add(listViewItem);
+                    ListViewItem listViewItem = new ListViewItem(new string[] { Path.GetFileName(s[i]) });
+                    listViewItem.ImageIndex = i;
+                    listViewItem.Tag = s[i];
+                    listView1.Items.Add(listViewItem);
                 }
-                if(s2 != "")
+                if (s2 != "")
                 {
-                    
-                    MessageBox.Show(s2,"Ghmm...",MessageBoxButtons.OK);
+
+                    MessageBox.Show(s2, "Ghmm...", MessageBoxButtons.OK);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Units parse err:\n"+ ex);
+                MessageBox.Show("Units parse err:\n" + ex);
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -150,22 +151,32 @@ namespace RWS
         }
         private void button3_Click(object sender, EventArgs e)
         {
-                if (listView1.SelectedItems[0].Tag.ToString() != null)
-                {
-                    f = listView1.SelectedItems[0].Tag.ToString();
-                    editUnit ed = new editUnit();
-                    Hide();
-                    ed.ShowDialog();
-                    Close();
-                    MessageBox.Show("Select unit");
-                }
+            if (listView1.SelectedItems[0].Tag.ToString() != null)
+            {
+                f = listView1.SelectedItems[0].Tag.ToString();
+                editUnit ed = new editUnit();
+                Hide();
+                ed.ShowDialog();
+                Close();
+                MessageBox.Show("Select unit");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0] != null) {
+            if (listView1.SelectedItems[0] != null)
+            {
                 Directory.Delete(listView1.SelectedItems[0].Tag.ToString(), true);
                 loadUnits();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK) {
+                string filename = saveFileDialog1.FileName;
+                ZipFile.CreateFromDirectory(openMod.s, filename);
+                MessageBox.Show("Comressed!", "Success");
             }
         }
     }
