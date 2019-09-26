@@ -56,6 +56,7 @@
             this.Name = "preview";
             this.helpProvider1.SetShowHelp(this, true);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.preview_FormClosed);
+            this.Load += new System.EventHandler(this.preview_Load_1);
             this.Shown += new System.EventHandler(this.preview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

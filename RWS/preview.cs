@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RWS
@@ -61,6 +56,11 @@ namespace RWS
         private void preview_FormClosed(object sender, FormClosedEventArgs e)
         {
             stop = true;
+        }
+
+        private void preview_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -699,12 +699,6 @@ namespace RWS
                 MessageBox.Show("Select item first");
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button14_Click(object sender, EventArgs e)
         {
             if (bflist.SelectedItem != null)
@@ -716,6 +710,14 @@ namespace RWS
             {
                 MessageBox.Show("Select item first");
             }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

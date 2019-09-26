@@ -957,6 +957,7 @@
             this.actionlist.FormattingEnabled = true;
             resources.ApplyResources(this.actionlist, "actionlist");
             this.actionlist.Name = "actionlist";
+            this.toolTip1.SetToolTip(this.actionlist, resources.GetString("actionlist.ToolTip"));
             // 
             // gb
             // 
@@ -1072,12 +1073,14 @@
             resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // animlist
             // 
             this.animlist.FormattingEnabled = true;
             resources.ApplyResources(this.animlist, "animlist");
             this.animlist.Name = "animlist";
+            this.toolTip1.SetToolTip(this.animlist, resources.GetString("animlist.ToolTip"));
             // 
             // groupBox5
             // 
@@ -1191,6 +1194,7 @@
             this.turretlist.FormattingEnabled = true;
             resources.ApplyResources(this.turretlist, "turretlist");
             this.turretlist.Name = "turretlist";
+            this.toolTip1.SetToolTip(this.turretlist, resources.GetString("turretlist.ToolTip"));
             // 
             // groupBox9
             // 
@@ -1228,6 +1232,7 @@
             this.projectilelist.FormattingEnabled = true;
             resources.ApplyResources(this.projectilelist, "projectilelist");
             this.projectilelist.Name = "projectilelist";
+            this.toolTip1.SetToolTip(this.projectilelist, resources.GetString("projectilelist.ToolTip"));
             // 
             // groupBox10
             // 
@@ -1265,6 +1270,7 @@
             this.bflist.FormattingEnabled = true;
             resources.ApplyResources(this.bflist, "bflist");
             this.bflist.Name = "bflist";
+            this.toolTip1.SetToolTip(this.bflist, resources.GetString("bflist.ToolTip"));
             // 
             // groupBox11
             // 
@@ -1302,6 +1308,7 @@
             this.cblist.FormattingEnabled = true;
             resources.ApplyResources(this.cblist, "cblist");
             this.cblist.Name = "cblist";
+            this.toolTip1.SetToolTip(this.cblist, resources.GetString("cblist.ToolTip"));
             // 
             // groupBox12
             // 
@@ -1349,6 +1356,7 @@
             this.elist.FormattingEnabled = true;
             resources.ApplyResources(this.elist, "elist");
             this.elist.Name = "elist";
+            this.toolTip1.SetToolTip(this.elist, resources.GetString("elist.ToolTip"));
             // 
             // groupBox14
             // 
@@ -1383,6 +1391,7 @@
             this.llist.FormattingEnabled = true;
             resources.ApplyResources(this.llist, "llist");
             this.llist.Name = "llist";
+            this.toolTip1.SetToolTip(this.llist, resources.GetString("llist.ToolTip"));
             // 
             // groupBox15
             // 
@@ -1417,6 +1426,7 @@
             this.alist.FormattingEnabled = true;
             resources.ApplyResources(this.alist, "alist");
             this.alist.Name = "alist";
+            this.toolTip1.SetToolTip(this.alist, resources.GetString("alist.ToolTip"));
             // 
             // groupBox16
             // 
@@ -1451,6 +1461,7 @@
             this.armlist.FormattingEnabled = true;
             resources.ApplyResources(this.armlist, "armlist");
             this.armlist.Name = "armlist";
+            this.toolTip1.SetToolTip(this.armlist, resources.GetString("armlist.ToolTip"));
             // 
             // groupBox17
             // 
