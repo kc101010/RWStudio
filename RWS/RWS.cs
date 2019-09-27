@@ -36,10 +36,5 @@ namespace RWS
         {
             System.Diagnostics.Process.Start("https://discord.gg/rustedwarfare");
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

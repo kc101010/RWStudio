@@ -1002,6 +1002,7 @@
             // 
             resources.ApplyResources(this.idleAnimSpeed, "idleAnimSpeed");
             this.idleAnimSpeed.Name = "idleAnimSpeed";
+            this.toolTip1.SetToolTip(this.idleAnimSpeed, resources.GetString("idleAnimSpeed.ToolTip"));
             // 
             // label37
             // 
@@ -1114,6 +1115,7 @@
             // 
             resources.ApplyResources(this.animspeed, "animspeed");
             this.animspeed.Name = "animspeed";
+            this.toolTip1.SetToolTip(this.animspeed, resources.GetString("animspeed.ToolTip"));
             // 
             // label33
             // 
@@ -1884,18 +1886,21 @@
             resources.ApplyResources(this.canRepairUnits, "canRepairUnits");
             this.canRepairUnits.Name = "canRepairUnits";
             this.canRepairUnits.UseVisualStyleBackColor = true;
+            this.canRepairUnits.CheckedChanged += new System.EventHandler(this.canRepairUnits_CheckedChanged);
             // 
             // canRepairBuilds
             // 
             resources.ApplyResources(this.canRepairBuilds, "canRepairBuilds");
             this.canRepairBuilds.Name = "canRepairBuilds";
             this.canRepairBuilds.UseVisualStyleBackColor = true;
+            this.canRepairBuilds.CheckedChanged += new System.EventHandler(this.canRepairBuilds_CheckedChanged);
             // 
             // autoRepair
             // 
             resources.ApplyResources(this.autoRepair, "autoRepair");
             this.autoRepair.Name = "autoRepair";
             this.autoRepair.UseVisualStyleBackColor = true;
+            this.autoRepair.CheckedChanged += new System.EventHandler(this.autoRepair_CheckedChanged);
             // 
             // toolTip1
             // 

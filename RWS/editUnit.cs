@@ -759,5 +759,20 @@ namespace RWS
                 MessageBox.Show("Select item first");
             }
         }
+
+        private void canRepairBuilds_CheckedChanged(object sender, EventArgs e)
+        {
+            isbuilder.Checked = true;
+        }
+
+        private void canRepairUnits_CheckedChanged(object sender, EventArgs e)
+        {
+            isbuilder.Checked = true;
+        }
+
+        private void autoRepair_CheckedChanged(object sender, EventArgs e)
+        {
+            isbuilder.Checked = true;
+        }
     }
 }
