@@ -241,6 +241,8 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
+            this.ty = new System.Windows.Forms.Label();
+            this.tags = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.footprint.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1563,6 +1565,8 @@
             // 
             // groupBox18
             // 
+            this.groupBox18.Controls.Add(this.tags);
+            this.groupBox18.Controls.Add(this.ty);
             this.groupBox18.Controls.Add(this.landOnGround);
             this.groupBox18.Controls.Add(this.label53);
             this.groupBox18.Controls.Add(this.enableNano);
@@ -1913,6 +1917,16 @@
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
             // 
+            // ty
+            // 
+            resources.ApplyResources(this.ty, "ty");
+            this.ty.Name = "ty";
+            // 
+            // tags
+            // 
+            resources.ApplyResources(this.tags, "tags");
+            this.tags.Name = "tags";
+            // 
             // editUnit
             // 
             resources.ApplyResources(this, "$this");
@@ -2215,5 +2229,7 @@
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.CheckBox IdleAnimPingPong;
         private System.Windows.Forms.CheckBox moveAnimzpingPong;
+        private System.Windows.Forms.TextBox tags;
+        private System.Windows.Forms.Label ty;
     }
 }

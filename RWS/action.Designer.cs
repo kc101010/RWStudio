@@ -56,20 +56,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.sound = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -78,9 +67,20 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.gsound = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.sound = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -220,7 +220,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(318, 58);
+            this.checkBox1.Location = new System.Drawing.Point(313, 57);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(153, 17);
             this.checkBox1.TabIndex = 23;
@@ -321,7 +321,7 @@
             this.comboBox3.Size = new System.Drawing.Size(102, 21);
             this.comboBox3.TabIndex = 35;
             this.comboBox3.Tag = "isLocked";
-            this.comboBox3.Text = "True";
+            this.comboBox3.Text = "False";
             // 
             // label11
             // 
@@ -361,77 +361,6 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Help";
             // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.comboBox4.Location = new System.Drawing.Point(364, 182);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(130, 21);
-            this.comboBox4.TabIndex = 39;
-            this.comboBox4.Tag = "autoTrigger";
-            this.comboBox4.Text = "False";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(311, 185);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 13);
-            this.label13.TabIndex = 38;
-            this.label13.Text = "Auto run";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "created",
-            "completeAndActive",
-            "destroyed",
-            "killedAnyUnit",
-            "queueItemAdded",
-            "queueItemCancelled",
-            "teleported",
-            "transportingNewUnit",
-            "newWaypointGivenByPlayer",
-            "teamChanged"});
-            this.comboBox5.Location = new System.Drawing.Point(378, 215);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(140, 21);
-            this.comboBox5.TabIndex = 41;
-            this.comboBox5.Tag = "autoTriggerOnEvent";
-            this.comboBox5.Text = " ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(310, 218);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(62, 13);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "Auto run on";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(228, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(40, 20);
-            this.textBox4.TabIndex = 43;
-            this.textBox4.Tag = "price";
-            this.textBox4.Text = "0";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(160, 186);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(62, 13);
-            this.label15.TabIndex = 42;
-            this.label15.Tag = "";
-            this.label15.Text = "Build speed";
-            // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
@@ -444,17 +373,6 @@
             this.toolTip1.SetToolTip(this.checkBox2, "Stops unit moving while action is being applied. Useful for deploy like actions.");
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(313, 87);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(220, 17);
-            this.checkBox3.TabIndex = 45;
-            this.checkBox3.Tag = "whenBuilding_rotateTo_waitTillRotated";
-            this.checkBox3.Text = "Pause action queue till rotation is finished";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
             // comboBox6
             // 
             this.comboBox6.FormattingEnabled = true;
@@ -466,15 +384,6 @@
             this.comboBox6.Text = " ";
             this.toolTip1.SetToolTip(this.comboBox6, "Play a custom animation from an [animation] section when in active queue");
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(11, 341);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(120, 13);
-            this.label16.TabIndex = 46;
-            this.label16.Text = "Play anim when building";
-            // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(154, 368);
@@ -482,36 +391,8 @@
             this.textBox5.Size = new System.Drawing.Size(59, 20);
             this.textBox5.TabIndex = 49;
             this.textBox5.Tag = "whenBuilding_rotateTo";
-            this.textBox5.Text = "0.0";
+            this.textBox5.Text = "0";
             this.toolTip1.SetToolTip(this.textBox5, "Rotate unit body to this direction when action is in active queue");
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(11, 373);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(137, 13);
-            this.label17.TabIndex = 48;
-            this.label17.Tag = "";
-            this.label17.Text = "When building rotate unit to";
-            // 
-            // sound
-            // 
-            this.sound.FormattingEnabled = true;
-            this.sound.Location = new System.Drawing.Point(116, 307);
-            this.sound.Name = "sound";
-            this.sound.Size = new System.Drawing.Size(143, 21);
-            this.sound.TabIndex = 51;
-            this.sound.Tag = "playSoundToPlayerOnQueue";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(11, 310);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(99, 13);
-            this.label18.TabIndex = 50;
-            this.label18.Text = "Play sound on build";
             // 
             // label19
             // 
@@ -613,15 +494,6 @@
             this.label22.Text = "Play sound to all players";
             this.toolTip1.SetToolTip(this.label22, "Global sound to play to all players in game");
             // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(306, 318);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(65, 13);
-            this.label23.TabIndex = 60;
-            this.label23.Text = "Spawn units";
-            // 
             // textBox9
             // 
             this.textBox9.AutoCompleteCustomSource.AddRange(new string[] {
@@ -647,6 +519,134 @@
             this.comboBox7.Tag = "whenBuilding_playAnimation";
             this.comboBox7.Text = " ";
             this.toolTip1.SetToolTip(this.comboBox7, "Play a custom animation from an [animation] section when in active queue");
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.comboBox4.Location = new System.Drawing.Point(364, 182);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(130, 21);
+            this.comboBox4.TabIndex = 39;
+            this.comboBox4.Tag = "autoTrigger";
+            this.comboBox4.Text = "False";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(311, 185);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(47, 13);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Auto run";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "created",
+            "completeAndActive",
+            "destroyed",
+            "killedAnyUnit",
+            "queueItemAdded",
+            "queueItemCancelled",
+            "teleported",
+            "transportingNewUnit",
+            "newWaypointGivenByPlayer",
+            "teamChanged"});
+            this.comboBox5.Location = new System.Drawing.Point(378, 215);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(140, 21);
+            this.comboBox5.TabIndex = 41;
+            this.comboBox5.Tag = "autoTriggerOnEvent";
+            this.comboBox5.Text = " ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(310, 218);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(62, 13);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Auto run on";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(228, 183);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(40, 20);
+            this.textBox4.TabIndex = 43;
+            this.textBox4.Tag = "price";
+            this.textBox4.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(160, 186);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(62, 13);
+            this.label15.TabIndex = 42;
+            this.label15.Tag = "";
+            this.label15.Text = "Build speed";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(313, 87);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(220, 17);
+            this.checkBox3.TabIndex = 45;
+            this.checkBox3.Tag = "whenBuilding_rotateTo_waitTillRotated";
+            this.checkBox3.Text = "Pause action queue till rotation is finished";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(11, 341);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(120, 13);
+            this.label16.TabIndex = 46;
+            this.label16.Text = "Play anim when building";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(11, 373);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(137, 13);
+            this.label17.TabIndex = 48;
+            this.label17.Tag = "";
+            this.label17.Text = "When building rotate unit to";
+            // 
+            // sound
+            // 
+            this.sound.FormattingEnabled = true;
+            this.sound.Location = new System.Drawing.Point(116, 307);
+            this.sound.Name = "sound";
+            this.sound.Size = new System.Drawing.Size(143, 21);
+            this.sound.TabIndex = 51;
+            this.sound.Tag = "playSoundToPlayerOnQueue";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(11, 310);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(99, 13);
+            this.label18.TabIndex = 50;
+            this.label18.Text = "Play sound on build";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(306, 318);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(65, 13);
+            this.label23.TabIndex = 60;
+            this.label23.Text = "Spawn units";
             // 
             // label24
             // 

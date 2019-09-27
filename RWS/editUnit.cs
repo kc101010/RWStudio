@@ -115,9 +115,10 @@ namespace RWS
             data["core"]["class"] = "CustomUnitMetadata";
             writeFromTextbox(buildspeed, "core", "buildSpeed", data);
             writeFromNumeric(level, "core", "techLevel", data);
-           /*
-            * radius/footprint
-            */
+            writeFromTextbox(tags, "core", "tags", data);
+            /*
+             * radius/footprint
+             */
             writeFromTextbox(ft, "core", "footprint", data);
             writeFromTextbox(fc, "core", "constructionFootprint", data);
             writeFromNumeric(radius, "core", "radius", data);
@@ -359,7 +360,8 @@ namespace RWS
             targeth.Text = data["movement"]["targetHeight"];
             drift.Text = data["movement"]["targetHeightDrift"];
             landOnGround.Text = data["movement"]["landOnGround"];
-            if (data["graphics"]["animation_moving_start"]!=null)
+            tags.Text = data["core"]["tags"];
+                if (data["graphics"]["animation_moving_start"]!=null)
             {
                 moveanim.Checked = true;
                 animstart.Value =Convert.ToInt32(data["graphics"]["animation_moving_start"]);
