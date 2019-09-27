@@ -54,7 +54,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 78);
+            this.label1.Location = new System.Drawing.Point(20, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 0;
@@ -62,14 +62,14 @@
             // 
             // uname
             // 
-            this.uname.Location = new System.Drawing.Point(103, 75);
+            this.uname.Location = new System.Drawing.Point(103, 58);
             this.uname.Name = "uname";
             this.uname.Size = new System.Drawing.Size(181, 20);
             this.uname.TabIndex = 1;
             // 
             // pos
             // 
-            this.pos.Location = new System.Drawing.Point(103, 107);
+            this.pos.Location = new System.Drawing.Point(103, 90);
             this.pos.Name = "pos";
             this.pos.Size = new System.Drawing.Size(42, 20);
             this.pos.TabIndex = 3;
@@ -78,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 110);
+            this.label2.Location = new System.Drawing.Point(20, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 2;
@@ -87,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 169);
+            this.label3.Location = new System.Drawing.Point(20, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 4;
@@ -95,7 +95,7 @@
             // 
             // level
             // 
-            this.level.Location = new System.Drawing.Point(83, 166);
+            this.level.Location = new System.Drawing.Point(83, 149);
             this.level.Name = "level";
             this.level.Size = new System.Drawing.Size(42, 20);
             this.level.TabIndex = 5;
@@ -104,7 +104,7 @@
             // fn
             // 
             this.fn.AutoSize = true;
-            this.fn.Location = new System.Drawing.Point(23, 192);
+            this.fn.Location = new System.Drawing.Point(23, 175);
             this.fn.Name = "fn";
             this.fn.Size = new System.Drawing.Size(80, 17);
             this.fn.TabIndex = 6;
@@ -114,7 +114,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 137);
+            this.label4.Location = new System.Drawing.Point(20, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 7;
@@ -122,7 +122,7 @@
             // 
             // price
             // 
-            this.price.Location = new System.Drawing.Point(57, 134);
+            this.price.Location = new System.Drawing.Point(57, 117);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(88, 20);
             this.price.TabIndex = 10;
@@ -163,7 +163,7 @@
             this.vb.AutoSize = true;
             this.vb.Checked = true;
             this.vb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.vb.Location = new System.Drawing.Point(114, 192);
+            this.vb.Location = new System.Drawing.Point(114, 175);
             this.vb.Name = "vb";
             this.vb.Size = new System.Drawing.Size(56, 17);
             this.vb.TabIndex = 14;
@@ -172,7 +172,7 @@
             // 
             // lockedmess
             // 
-            this.lockedmess.Location = new System.Drawing.Point(114, 253);
+            this.lockedmess.Location = new System.Drawing.Point(114, 236);
             this.lockedmess.Multiline = true;
             this.lockedmess.Name = "lockedmess";
             this.lockedmess.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -182,7 +182,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 256);
+            this.label8.Location = new System.Drawing.Point(20, 239);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 13);
             this.label8.TabIndex = 16;
@@ -190,7 +190,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(126, 310);
+            this.button1.Location = new System.Drawing.Point(126, 293);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 24);
             this.button1.TabIndex = 18;
@@ -200,7 +200,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(218, 310);
+            this.button2.Location = new System.Drawing.Point(218, 293);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 24);
             this.button2.TabIndex = 19;
@@ -210,7 +210,7 @@
             // 
             // locked
             // 
-            this.locked.Location = new System.Drawing.Point(69, 220);
+            this.locked.Location = new System.Drawing.Point(69, 203);
             this.locked.Name = "locked";
             this.locked.Size = new System.Drawing.Size(101, 20);
             this.locked.TabIndex = 21;
@@ -218,7 +218,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 223);
+            this.label9.Location = new System.Drawing.Point(20, 206);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(43, 13);
             this.label9.TabIndex = 20;
@@ -228,7 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 346);
+            this.ClientSize = new System.Drawing.Size(320, 326);
             this.Controls.Add(this.locked);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);

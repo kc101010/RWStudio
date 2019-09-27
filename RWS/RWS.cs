@@ -39,8 +39,7 @@ namespace RWS
 
         private void button4_Click(object sender, EventArgs e)
         {
-            preview prw = new preview();
-            prw.ShowDialog();
+
         }
     }
 }

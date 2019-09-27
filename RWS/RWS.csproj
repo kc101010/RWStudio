@@ -57,6 +57,12 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="action.Designer.cs">
+      <DependentUpon>action.cs</DependentUpon>
+    </Compile>
     <Compile Include="addprojectile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="action.resx">
+      <DependentUpon>action.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addprojectile.resx">
       <DependentUpon>addprojectile.cs</DependentUpon>
     </EmbeddedResource>

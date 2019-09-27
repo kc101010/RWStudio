@@ -153,7 +153,6 @@ namespace RWS
                 Hide();
                 ed.ShowDialog();
                 Close();
-                MessageBox.Show("Select unit");
             }
         }
 

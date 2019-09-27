@@ -15,6 +15,7 @@ namespace RWS
         public static string lastprj;
         public static string namE;
         public static string lastbf;
+        public static string lastact;
         public editUnit()
         {
             InitializeComponent();
@@ -680,6 +681,7 @@ namespace RWS
 
         private void button16_Click(object sender, EventArgs e)
         {
+            lastbf = null;
             builtFrom bf = new builtFrom();
             bf.ShowDialog();
             loadlist();
@@ -713,11 +715,47 @@ namespace RWS
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
+            lastact = null;
+            action act = new action();
+            act.ShowDialog();
+            loadlist();
         }
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (actionlist.SelectedItem != null)
+            {
+                lastact = actionlist.SelectedItem.ToString();
+                action act = new action();
+                act.ShowDialog();
+                lastact = null;
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (actionlist.SelectedItem != null)
+            {
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                data.Sections.RemoveSection("action_" + actionlist.SelectedItem.ToString());
+                parser.WriteFile(sss[0], data);
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
         }
     }
 }

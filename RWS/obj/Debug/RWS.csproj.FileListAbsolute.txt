@@ -34,3 +34,4 @@ C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.exe
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.pdb
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.preview.resources
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.builtFrom.resources
+C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.action.resources
