@@ -81,6 +81,12 @@
     <Compile Include="addUnit.Designer.cs">
       <DependentUpon>addUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="legss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="legss.Designer.cs">
+      <DependentUpon>legss.cs</DependentUpon>
+    </Compile>
     <Compile Include="builtFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addUnit.resx">
       <DependentUpon>addUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="legss.resx">
+      <DependentUpon>legss.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="builtFrom.resx">
       <DependentUpon>builtFrom.cs</DependentUpon>

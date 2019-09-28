@@ -573,7 +573,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1581,7 +1581,7 @@
     <value>112, 91</value>
   </data>
   <data name="dSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
+    <value>60, 20</value>
   </data>
   <data name="dSpeed.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -1653,7 +1653,7 @@
     <value>75, 16</value>
   </data>
   <data name="moveSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>54, 20</value>
   </data>
   <data name="moveSpeed.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -2700,33 +2700,6 @@ to player
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
-  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 28</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 101</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3199,10 +3172,10 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 15</value>
+    <value>580, 625</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 177</value>
+    <value>302, 198</value>
   </data>
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3220,16 +3193,16 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 147</value>
+    <value>208, 159</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 23</value>
+    <value>86, 23</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3253,10 +3226,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 147</value>
+    <value>109, 159</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 23</value>
+    <value>87, 23</value>
   </data>
   <data name="button3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3280,10 +3253,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 147</value>
+    <value>9, 159</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 23</value>
+    <value>88, 23</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3304,10 +3277,10 @@ to player
     <value>2</value>
   </data>
   <data name="actionlist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>9, 19</value>
   </data>
   <data name="actionlist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 121</value>
+    <value>285, 134</value>
   </data>
   <data name="actionlist.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3409,7 +3382,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gb.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;IdleAnimPingPong.Name" xml:space="preserve">
     <value>IdleAnimPingPong</value>
@@ -3817,7 +3790,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 150</value>
+    <value>189, 150</value>
   </data>
   <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 23</value>
@@ -3844,7 +3817,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 150</value>
+    <value>98, 150</value>
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
@@ -3871,7 +3844,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 150</value>
+    <value>7, 150</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
@@ -3895,7 +3868,7 @@ to player
     <value>2</value>
   </data>
   <data name="animlist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>7, 19</value>
   </data>
   <data name="animlist.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 121</value>
@@ -4297,10 +4270,10 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 592</value>
+    <value>888, 215</value>
   </data>
   <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 155</value>
+    <value>293, 191</value>
   </data>
   <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4318,16 +4291,16 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>4</value>
   </data>
   <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 124</value>
+    <value>198, 159</value>
   </data>
   <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 23</value>
+    <value>85, 23</value>
   </data>
   <data name="button8.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4351,10 +4324,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 124</value>
+    <value>105, 159</value>
   </data>
   <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 23</value>
+    <value>84, 23</value>
   </data>
   <data name="button9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -4378,10 +4351,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 124</value>
+    <value>9, 159</value>
   </data>
   <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 23</value>
+    <value>87, 23</value>
   </data>
   <data name="button10.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4402,10 +4375,10 @@ to player
     <value>2</value>
   </data>
   <data name="turretlist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>9, 19</value>
   </data>
   <data name="turretlist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 95</value>
+    <value>274, 134</value>
   </data>
   <data name="turretlist.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4474,10 +4447,10 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 624</value>
+    <value>888, 15</value>
   </data>
   <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 199</value>
+    <value>288, 194</value>
   </data>
   <data name="groupBox9.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4501,10 +4474,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 170</value>
+    <value>201, 159</value>
   </data>
   <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 23</value>
+    <value>79, 23</value>
   </data>
   <data name="button11.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4528,7 +4501,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 170</value>
+    <value>103, 159</value>
   </data>
   <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -4555,10 +4528,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 170</value>
+    <value>8, 159</value>
   </data>
   <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 23</value>
+    <value>83, 23</value>
   </data>
   <data name="button13.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4579,10 +4552,10 @@ to player
     <value>2</value>
   </data>
   <data name="projectilelist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 19</value>
+    <value>6, 19</value>
   </data>
   <data name="projectilelist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 134</value>
+    <value>272, 134</value>
   </data>
   <data name="projectilelist.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4855,7 +4828,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 161</value>
+    <value>207, 158</value>
   </data>
   <data name="button17.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 23</value>
@@ -4882,7 +4855,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 161</value>
+    <value>108, 158</value>
   </data>
   <data name="button18.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 23</value>
@@ -4909,7 +4882,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 161</value>
+    <value>9, 158</value>
   </data>
   <data name="button19.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 23</value>
@@ -4933,7 +4906,7 @@ to player
     <value>2</value>
   </data>
   <data name="cblist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 18</value>
+    <value>9, 18</value>
   </data>
   <data name="cblist.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 134</value>
@@ -4955,24 +4928,6 @@ to player
   </data>
   <data name="&gt;&gt;cblist.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="aiasb.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="aiasb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="aiasb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
-  </data>
-  <data name="aiasb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 17</value>
-  </data>
-  <data name="aiasb.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="aiasb.Text" xml:space="preserve">
-    <value>Use as builder</value>
   </data>
   <data name="&gt;&gt;aiasb.Name" xml:space="preserve">
     <value>aiasb</value>
@@ -5009,6 +4964,36 @@ to player
   </data>
   <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
     <value>18</value>
+  </data>
+  <data name="aiasb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="aiasb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="aiasb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="aiasb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 17</value>
+  </data>
+  <data name="aiasb.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="aiasb.Text" xml:space="preserve">
+    <value>Use as builder</value>
+  </data>
+  <data name="&gt;&gt;aiasb.Name" xml:space="preserve">
+    <value>aiasb</value>
+  </data>
+  <data name="&gt;&gt;aiasb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aiasb.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;aiasb.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;button20.Name" xml:space="preserve">
     <value>button20</value>
@@ -5059,7 +5044,7 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 198</value>
+    <value>888, 412</value>
   </data>
   <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 197</value>
@@ -5080,16 +5065,16 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox13.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>8</value>
   </data>
   <data name="button20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 160</value>
+    <value>209, 160</value>
   </data>
   <data name="button20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 23</value>
+    <value>74, 23</value>
   </data>
   <data name="button20.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -5113,10 +5098,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 160</value>
+    <value>109, 160</value>
   </data>
   <data name="button21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
+    <value>74, 23</value>
   </data>
   <data name="button21.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -5140,10 +5125,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 160</value>
+    <value>9, 160</value>
   </data>
   <data name="button22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
+    <value>74, 23</value>
   </data>
   <data name="button22.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -5164,7 +5149,7 @@ to player
     <value>2</value>
   </data>
   <data name="elist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 18</value>
+    <value>9, 18</value>
   </data>
   <data name="elist.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 134</value>
@@ -5185,183 +5170,6 @@ to player
     <value>groupBox13</value>
   </data>
   <data name="&gt;&gt;elist.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button23.Name" xml:space="preserve">
-    <value>button23</value>
-  </data>
-  <data name="&gt;&gt;button23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button23.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button24.Name" xml:space="preserve">
-    <value>button24</value>
-  </data>
-  <data name="&gt;&gt;button24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button24.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;button24.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button25.Name" xml:space="preserve">
-    <value>button25</value>
-  </data>
-  <data name="&gt;&gt;button25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button25.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;llist.Name" xml:space="preserve">
-    <value>llist</value>
-  </data>
-  <data name="&gt;&gt;llist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;llist.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;llist.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 401</value>
-  </data>
-  <data name="groupBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 185</value>
-  </data>
-  <data name="groupBox14.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="groupBox14.Text" xml:space="preserve">
-    <value>Legs</value>
-  </data>
-  <data name="&gt;&gt;groupBox14.Name" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;groupBox14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox14.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox14.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="button23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 149</value>
-  </data>
-  <data name="button23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 23</value>
-  </data>
-  <data name="button23.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="button23.Text" xml:space="preserve">
-    <value>Delete leg</value>
-  </data>
-  <data name="&gt;&gt;button23.Name" xml:space="preserve">
-    <value>button23</value>
-  </data>
-  <data name="&gt;&gt;button23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button23.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 149</value>
-  </data>
-  <data name="button24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 23</value>
-  </data>
-  <data name="button24.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button24.Text" xml:space="preserve">
-    <value>Edit leg</value>
-  </data>
-  <data name="&gt;&gt;button24.Name" xml:space="preserve">
-    <value>button24</value>
-  </data>
-  <data name="&gt;&gt;button24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button24.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;button24.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 149</value>
-  </data>
-  <data name="button25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 23</value>
-  </data>
-  <data name="button25.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="button25.Text" xml:space="preserve">
-    <value>Add leg</value>
-  </data>
-  <data name="&gt;&gt;button25.Name" xml:space="preserve">
-    <value>button25</value>
-  </data>
-  <data name="&gt;&gt;button25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button25.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="llist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 19</value>
-  </data>
-  <data name="llist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 121</value>
-  </data>
-  <data name="llist.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="llist.ToolTip" xml:space="preserve">
-    <value>This is list =P</value>
-  </data>
-  <data name="&gt;&gt;llist.Name" xml:space="preserve">
-    <value>llist</value>
-  </data>
-  <data name="&gt;&gt;llist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;llist.Parent" xml:space="preserve">
-    <value>groupBox14</value>
-  </data>
-  <data name="&gt;&gt;llist.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;button26.Name" xml:space="preserve">
@@ -5416,7 +5224,7 @@ to player
     <value>1187, 420</value>
   </data>
   <data name="groupBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 208</value>
+    <value>293, 178</value>
   </data>
   <data name="groupBox15.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -5434,13 +5242,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox15.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="button26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 177</value>
+    <value>196, 146</value>
   </data>
   <data name="button26.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5467,7 +5275,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 177</value>
+    <value>100, 146</value>
   </data>
   <data name="button27.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5494,10 +5302,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 177</value>
+    <value>10, 146</value>
   </data>
   <data name="button28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 23</value>
+    <value>84, 23</value>
   </data>
   <data name="button28.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -5518,10 +5326,10 @@ to player
     <value>2</value>
   </data>
   <data name="alist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>10, 19</value>
   </data>
   <data name="alist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 147</value>
+    <value>272, 121</value>
   </data>
   <data name="alist.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -5599,7 +5407,7 @@ to player
     <value>13</value>
   </data>
   <data name="groupBox16.Text" xml:space="preserve">
-    <value>Arms</value>
+    <value>Legs</value>
   </data>
   <data name="&gt;&gt;groupBox16.Name" xml:space="preserve">
     <value>groupBox16</value>
@@ -5611,13 +5419,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox16.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="button29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 171</value>
+    <value>197, 171</value>
   </data>
   <data name="button29.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5626,7 +5434,7 @@ to player
     <value>10</value>
   </data>
   <data name="button29.Text" xml:space="preserve">
-    <value>Delete arm</value>
+    <value>Delete leg</value>
   </data>
   <data name="&gt;&gt;button29.Name" xml:space="preserve">
     <value>button29</value>
@@ -5644,7 +5452,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 171</value>
+    <value>103, 171</value>
   </data>
   <data name="button30.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5653,7 +5461,7 @@ to player
     <value>9</value>
   </data>
   <data name="button30.Text" xml:space="preserve">
-    <value>Edit arm</value>
+    <value>Edit leg</value>
   </data>
   <data name="&gt;&gt;button30.Name" xml:space="preserve">
     <value>button30</value>
@@ -5671,7 +5479,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 171</value>
+    <value>9, 171</value>
   </data>
   <data name="button31.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5680,7 +5488,7 @@ to player
     <value>8</value>
   </data>
   <data name="button31.Text" xml:space="preserve">
-    <value>Add arm</value>
+    <value>Add leg</value>
   </data>
   <data name="&gt;&gt;button31.Name" xml:space="preserve">
     <value>button31</value>
@@ -5695,7 +5503,7 @@ to player
     <value>2</value>
   </data>
   <data name="armlist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 18</value>
+    <value>9, 18</value>
   </data>
   <data name="armlist.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 147</value>
@@ -5718,131 +5526,11 @@ to player
   <data name="&gt;&gt;armlist.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;customv.Name" xml:space="preserve">
-    <value>customv</value>
-  </data>
-  <data name="&gt;&gt;customv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;customv.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;customv.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;customp.Name" xml:space="preserve">
-    <value>customp</value>
-  </data>
-  <data name="&gt;&gt;customp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;customp.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;customp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;customs.Name" xml:space="preserve">
-    <value>customs</value>
-  </data>
-  <data name="&gt;&gt;customs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;customs.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;customs.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label42.Name" xml:space="preserve">
-    <value>label42</value>
-  </data>
-  <data name="&gt;&gt;label42.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label42.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label41.Name" xml:space="preserve">
-    <value>label41</value>
-  </data>
-  <data name="&gt;&gt;label41.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button32.Name" xml:space="preserve">
-    <value>button32</value>
-  </data>
-  <data name="&gt;&gt;button32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button32.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;button32.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button34.Name" xml:space="preserve">
-    <value>button34</value>
-  </data>
-  <data name="&gt;&gt;button34.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button34.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;button34.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1187, 634</value>
-  </data>
-  <data name="groupBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 113</value>
-  </data>
-  <data name="groupBox17.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="groupBox17.Text" xml:space="preserve">
-    <value>Custom sections/parms</value>
-  </data>
-  <data name="&gt;&gt;groupBox17.Name" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;groupBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox17.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox17.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="customv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 49</value>
+    <value>55, 60</value>
   </data>
   <data name="customv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 20</value>
+    <value>107, 20</value>
   </data>
   <data name="customv.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -5860,7 +5548,7 @@ to player
     <value>0</value>
   </data>
   <data name="customp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 18</value>
+    <value>194, 25</value>
   </data>
   <data name="customp.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 20</value>
@@ -5887,7 +5575,7 @@ to player
     <value>graphics</value>
   </data>
   <data name="customs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 18</value>
+    <value>55, 25</value>
   </data>
   <data name="customs.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 20</value>
@@ -5914,7 +5602,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 21</value>
+    <value>133, 28</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -5944,7 +5632,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 52</value>
+    <value>15, 63</value>
   </data>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -5974,7 +5662,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
+    <value>6, 28</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -6001,7 +5689,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 79</value>
+    <value>102, 104</value>
   </data>
   <data name="button32.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -6028,7 +5716,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 79</value>
+    <value>194, 104</value>
   </data>
   <data name="button34.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -6051,11 +5739,35 @@ to player
   <data name="&gt;&gt;button34.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="groupBox17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1187, 604</value>
+  </data>
+  <data name="groupBox17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 140</value>
+  </data>
+  <data name="groupBox17.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="groupBox17.Text" xml:space="preserve">
+    <value>Custom sections/parms</value>
+  </data>
+  <data name="&gt;&gt;groupBox17.Name" xml:space="preserve">
+    <value>groupBox17</value>
+  </data>
+  <data name="&gt;&gt;groupBox17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox17.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox17.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="button33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1384, 773</value>
+    <value>1384, 775</value>
   </data>
   <data name="button33.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 41</value>
@@ -6076,13 +5788,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button33.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="button35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1284, 773</value>
+    <value>1284, 775</value>
   </data>
   <data name="button35.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 41</value>
@@ -6103,7 +5815,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button35.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="button36.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -6112,7 +5824,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1084, 773</value>
+    <value>1084, 775</value>
   </data>
   <data name="button36.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 41</value>
@@ -6136,13 +5848,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button36.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="button37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1184, 773</value>
+    <value>1184, 775</value>
   </data>
   <data name="button37.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 41</value>
@@ -6165,15 +5877,6 @@ to player
   <data name="&gt;&gt;button37.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tags.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 740</value>
-  </data>
-  <data name="tags.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 20</value>
-  </data>
-  <data name="tags.TabIndex" type="System.Int32, mscorlib">
-    <value>116</value>
-  </data>
   <data name="&gt;&gt;tags.Name" xml:space="preserve">
     <value>tags</value>
   </data>
@@ -6186,24 +5889,6 @@ to player
   <data name="&gt;&gt;tags.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ty.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ty.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 743</value>
-  </data>
-  <data name="ty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="ty.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <data name="ty.Text" xml:space="preserve">
-    <value>Tags</value>
-  </data>
   <data name="&gt;&gt;ty.Name" xml:space="preserve">
     <value>ty</value>
   </data>
@@ -6215,6 +5900,366 @@ to player
   </data>
   <data name="&gt;&gt;ty.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;landOnGround.Name" xml:space="preserve">
+    <value>landOnGround</value>
+  </data>
+  <data name="&gt;&gt;landOnGround.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;landOnGround.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;landOnGround.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label53.Name" xml:space="preserve">
+    <value>label53</value>
+  </data>
+  <data name="&gt;&gt;label53.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label53.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label53.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;enableNano.Name" xml:space="preserve">
+    <value>enableNano</value>
+  </data>
+  <data name="&gt;&gt;enableNano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enableNano.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;enableNano.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;nonukelocked.Name" xml:space="preserve">
+    <value>nonukelocked</value>
+  </data>
+  <data name="&gt;&gt;nonukelocked.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nonukelocked.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;nonukelocked.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dl.Name" xml:space="preserve">
+    <value>dl</value>
+  </data>
+  <data name="&gt;&gt;dl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dl.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;dl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label49.Name" xml:space="preserve">
+    <value>label49</value>
+  </data>
+  <data name="&gt;&gt;label49.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label49.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;doa.Name" xml:space="preserve">
+    <value>doa</value>
+  </data>
+  <data name="&gt;&gt;doa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;doa.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;doa.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.Name" xml:space="preserve">
+    <value>groupBox21</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label48.Name" xml:space="preserve">
+    <value>label48</value>
+  </data>
+  <data name="&gt;&gt;label48.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label48.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;def.Name" xml:space="preserve">
+    <value>def</value>
+  </data>
+  <data name="&gt;&gt;def.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;def.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;def.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label47.Name" xml:space="preserve">
+    <value>label47</value>
+  </data>
+  <data name="&gt;&gt;label47.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label47.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label47.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;selfRegenRate.Name" xml:space="preserve">
+    <value>selfRegenRate</value>
+  </data>
+  <data name="&gt;&gt;selfRegenRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selfRegenRate.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;selfRegenRate.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;ssaz.Name" xml:space="preserve">
+    <value>ssaz</value>
+  </data>
+  <data name="&gt;&gt;ssaz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ssaz.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;ssaz.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label46.Name" xml:space="preserve">
+    <value>label46</value>
+  </data>
+  <data name="&gt;&gt;label46.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label46.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;sit.Name" xml:space="preserve">
+    <value>sit</value>
+  </data>
+  <data name="&gt;&gt;sit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sit.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;sit.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;ioy.Name" xml:space="preserve">
+    <value>ioy</value>
+  </data>
+  <data name="&gt;&gt;ioy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ioy.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;ioy.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label44.Name" xml:space="preserve">
+    <value>label44</value>
+  </data>
+  <data name="&gt;&gt;label44.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;iox.Name" xml:space="preserve">
+    <value>iox</value>
+  </data>
+  <data name="&gt;&gt;iox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iox.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;iox.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;label45.Name" xml:space="preserve">
+    <value>label45</value>
+  </data>
+  <data name="&gt;&gt;label45.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label45.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;eod.Name" xml:space="preserve">
+    <value>eod</value>
+  </data>
+  <data name="&gt;&gt;eod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eod.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;eod.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;dieonconstruct.Name" xml:space="preserve">
+    <value>dieonconstruct</value>
+  </data>
+  <data name="&gt;&gt;dieonconstruct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dieonconstruct.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;dieonconstruct.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.Name" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;groupBox20.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeath.Name" xml:space="preserve">
+    <value>nukeOnDeath</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeath.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeath.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;dieonzeroenergy.Name" xml:space="preserve">
+    <value>dieonzeroenergy</value>
+  </data>
+  <data name="&gt;&gt;dieonzeroenergy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dieonzeroenergy.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;dieonzeroenergy.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;groupBox19.Name" xml:space="preserve">
+    <value>groupBox19</value>
+  </data>
+  <data name="&gt;&gt;groupBox19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox19.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;groupBox19.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.Name" xml:space="preserve">
+    <value>canRepairUnits</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.Name" xml:space="preserve">
+    <value>canRepairBuilds</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.Name" xml:space="preserve">
+    <value>autoRepair</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="groupBox18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 15</value>
+  </data>
+  <data name="groupBox18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 808</value>
+  </data>
+  <data name="groupBox18.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="groupBox18.Text" xml:space="preserve">
+    <value>Additional params</value>
+  </data>
+  <data name="&gt;&gt;groupBox18.Name" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;groupBox18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox18.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="landOnGround.Items" xml:space="preserve">
     <value> </value>
@@ -6432,6 +6477,54 @@ to player
   <data name="&gt;&gt;doa.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="&gt;&gt;dustef.Name" xml:space="preserve">
+    <value>dustef</value>
+  </data>
+  <data name="&gt;&gt;dustef.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dustef.Parent" xml:space="preserve">
+    <value>groupBox21</value>
+  </data>
+  <data name="&gt;&gt;dustef.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sef.Name" xml:space="preserve">
+    <value>sef</value>
+  </data>
+  <data name="&gt;&gt;sef.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sef.Parent" xml:space="preserve">
+    <value>groupBox21</value>
+  </data>
+  <data name="&gt;&gt;sef.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 589</value>
+  </data>
+  <data name="groupBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 50</value>
+  </data>
+  <data name="groupBox21.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="groupBox21.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.Name" xml:space="preserve">
+    <value>groupBox21</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;groupBox21.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="dustef.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -6491,30 +6584,6 @@ to player
   </data>
   <data name="&gt;&gt;sef.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="groupBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 589</value>
-  </data>
-  <data name="groupBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 50</value>
-  </data>
-  <data name="groupBox21.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="groupBox21.Text" xml:space="preserve">
-    <value>Effects</value>
-  </data>
-  <data name="&gt;&gt;groupBox21.Name" xml:space="preserve">
-    <value>groupBox21</value>
-  </data>
-  <data name="&gt;&gt;groupBox21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox21.Parent" xml:space="preserve">
-    <value>groupBox18</value>
-  </data>
-  <data name="&gt;&gt;groupBox21.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="label48.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6601,7 +6670,7 @@ to player
     <value>95, 80</value>
   </data>
   <data name="selfRegenRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
+    <value>57, 20</value>
   </data>
   <data name="selfRegenRate.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
@@ -6954,6 +7023,144 @@ to player
   <data name="&gt;&gt;groupBox20.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 27</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Damage</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nukeOnDeathDamage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 23</value>
+  </data>
+  <data name="nukeOnDeathDamage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="nukeOnDeathDamage.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="nukeOnDeathDamage.Text" xml:space="preserve">
+    <value>0.0</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathDamage.Name" xml:space="preserve">
+    <value>nukeOnDeathDamage</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathDamage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathDamage.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathDamage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 27</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="label43.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="&gt;&gt;label43.Name" xml:space="preserve">
+    <value>label43</value>
+  </data>
+  <data name="&gt;&gt;label43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label43.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="nukeOnDeathRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 22</value>
+  </data>
+  <data name="nukeOnDeathRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="nukeOnDeathRange.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="nukeOnDeathRange.Text" xml:space="preserve">
+    <value>0.0</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathRange.Name" xml:space="preserve">
+    <value>nukeOnDeathRange</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathRange.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;nukeOnDeathRange.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="noNuke.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="noNuke.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="noNuke.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 48</value>
+  </data>
+  <data name="noNuke.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 17</value>
+  </data>
+  <data name="noNuke.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="noNuke.Text" xml:space="preserve">
+    <value>Disable nuke on death when nukes disabled</value>
+  </data>
+  <data name="&gt;&gt;noNuke.Name" xml:space="preserve">
+    <value>noNuke</value>
+  </data>
+  <data name="&gt;&gt;noNuke.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noNuke.Parent" xml:space="preserve">
+    <value>groupBox20</value>
+  </data>
+  <data name="&gt;&gt;noNuke.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="nukeOnDeath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -7136,258 +7343,6 @@ to player
   </data>
   <data name="&gt;&gt;groupBox19.ZOrder" xml:space="preserve">
     <value>40</value>
-  </data>
-  <data name="canRepairUnits.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="canRepairUnits.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="canRepairUnits.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 55</value>
-  </data>
-  <data name="canRepairUnits.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 17</value>
-  </data>
-  <data name="canRepairUnits.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="canRepairUnits.Text" xml:space="preserve">
-    <value>Repair units</value>
-  </data>
-  <data name="&gt;&gt;canRepairUnits.Name" xml:space="preserve">
-    <value>canRepairUnits</value>
-  </data>
-  <data name="&gt;&gt;canRepairUnits.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;canRepairUnits.Parent" xml:space="preserve">
-    <value>groupBox18</value>
-  </data>
-  <data name="&gt;&gt;canRepairUnits.ZOrder" xml:space="preserve">
-    <value>41</value>
-  </data>
-  <data name="canRepairBuilds.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="canRepairBuilds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="canRepairBuilds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 55</value>
-  </data>
-  <data name="canRepairBuilds.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 17</value>
-  </data>
-  <data name="canRepairBuilds.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="canRepairBuilds.Text" xml:space="preserve">
-    <value>Repair builds</value>
-  </data>
-  <data name="&gt;&gt;canRepairBuilds.Name" xml:space="preserve">
-    <value>canRepairBuilds</value>
-  </data>
-  <data name="&gt;&gt;canRepairBuilds.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;canRepairBuilds.Parent" xml:space="preserve">
-    <value>groupBox18</value>
-  </data>
-  <data name="&gt;&gt;canRepairBuilds.ZOrder" xml:space="preserve">
-    <value>42</value>
-  </data>
-  <data name="autoRepair.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="autoRepair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="autoRepair.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 55</value>
-  </data>
-  <data name="autoRepair.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 17</value>
-  </data>
-  <data name="autoRepair.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="autoRepair.Text" xml:space="preserve">
-    <value>Auto repair</value>
-  </data>
-  <data name="&gt;&gt;autoRepair.Name" xml:space="preserve">
-    <value>autoRepair</value>
-  </data>
-  <data name="&gt;&gt;autoRepair.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;autoRepair.Parent" xml:space="preserve">
-    <value>groupBox18</value>
-  </data>
-  <data name="&gt;&gt;autoRepair.ZOrder" xml:space="preserve">
-    <value>43</value>
-  </data>
-  <data name="groupBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 15</value>
-  </data>
-  <data name="groupBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 808</value>
-  </data>
-  <data name="groupBox18.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="groupBox18.Text" xml:space="preserve">
-    <value>Additional params</value>
-  </data>
-  <data name="&gt;&gt;groupBox18.Name" xml:space="preserve">
-    <value>groupBox18</value>
-  </data>
-  <data name="&gt;&gt;groupBox18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox18.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox18.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 27</value>
-  </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
-  </data>
-  <data name="label30.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>Damage</value>
-  </data>
-  <data name="&gt;&gt;label30.Name" xml:space="preserve">
-    <value>label30</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>groupBox20</value>
-  </data>
-  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="nukeOnDeathDamage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 23</value>
-  </data>
-  <data name="nukeOnDeathDamage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="nukeOnDeathDamage.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
-  </data>
-  <data name="nukeOnDeathDamage.Text" xml:space="preserve">
-    <value>0.0</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathDamage.Name" xml:space="preserve">
-    <value>nukeOnDeathDamage</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathDamage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathDamage.Parent" xml:space="preserve">
-    <value>groupBox20</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathDamage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 27</value>
-  </data>
-  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
-  </data>
-  <data name="label43.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="label43.Text" xml:space="preserve">
-    <value>Range</value>
-  </data>
-  <data name="&gt;&gt;label43.Name" xml:space="preserve">
-    <value>label43</value>
-  </data>
-  <data name="&gt;&gt;label43.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label43.Parent" xml:space="preserve">
-    <value>groupBox20</value>
-  </data>
-  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="nukeOnDeathRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 22</value>
-  </data>
-  <data name="nukeOnDeathRange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="nukeOnDeathRange.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="nukeOnDeathRange.Text" xml:space="preserve">
-    <value>0.0</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathRange.Name" xml:space="preserve">
-    <value>nukeOnDeathRange</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathRange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathRange.Parent" xml:space="preserve">
-    <value>groupBox20</value>
-  </data>
-  <data name="&gt;&gt;nukeOnDeathRange.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="noNuke.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="noNuke.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="noNuke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 48</value>
-  </data>
-  <data name="noNuke.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 17</value>
-  </data>
-  <data name="noNuke.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="noNuke.Text" xml:space="preserve">
-    <value>Disable nuke on death when nukes disabled</value>
-  </data>
-  <data name="&gt;&gt;noNuke.Name" xml:space="preserve">
-    <value>noNuke</value>
-  </data>
-  <data name="&gt;&gt;noNuke.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;noNuke.Parent" xml:space="preserve">
-    <value>groupBox20</value>
-  </data>
-  <data name="&gt;&gt;noNuke.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7605,6 +7560,96 @@ to player
   <data name="&gt;&gt;nanoRange.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="canRepairUnits.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="canRepairUnits.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="canRepairUnits.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 55</value>
+  </data>
+  <data name="canRepairUnits.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="canRepairUnits.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="canRepairUnits.Text" xml:space="preserve">
+    <value>Repair units</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.Name" xml:space="preserve">
+    <value>canRepairUnits</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;canRepairUnits.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="canRepairBuilds.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="canRepairBuilds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="canRepairBuilds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 55</value>
+  </data>
+  <data name="canRepairBuilds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="canRepairBuilds.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="canRepairBuilds.Text" xml:space="preserve">
+    <value>Repair builds</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.Name" xml:space="preserve">
+    <value>canRepairBuilds</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;canRepairBuilds.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="autoRepair.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="autoRepair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="autoRepair.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 55</value>
+  </data>
+  <data name="autoRepair.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="autoRepair.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="autoRepair.Text" xml:space="preserve">
+    <value>Auto repair</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.Name" xml:space="preserve">
+    <value>autoRepair</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;autoRepair.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -7618,7 +7663,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>894, 770</value>
+    <value>888, 759</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 16</value>
@@ -7644,14 +7689,17 @@ to player
   <data name="label52.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label52.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
   <data name="label52.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>954, 770</value>
+    <value>948, 759</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 52</value>
+    <value>127, 60</value>
   </data>
   <data name="label52.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -7674,11 +7722,89 @@ written to .ini file</value>
   <data name="&gt;&gt;label52.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="ty.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ty.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 743</value>
+  </data>
+  <data name="ty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="ty.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="ty.Text" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="&gt;&gt;ty.Name" xml:space="preserve">
+    <value>ty</value>
+  </data>
+  <data name="&gt;&gt;ty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ty.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;ty.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tags.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 740</value>
+  </data>
+  <data name="tags.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 20</value>
+  </data>
+  <data name="tags.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;tags.Name" xml:space="preserve">
+    <value>tags</value>
+  </data>
+  <data name="&gt;&gt;tags.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tags.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;tags.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 101</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>102</value>
+    <value>27</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -8488,6 +8614,9 @@ written to .ini file</value>
         AAD////4AAAAAH/////wAAAA/////wAAAAB/////8AAAAP/////gAAAAf/////AAAAD/////////////
         ///wAAAA////////////////8AAAAA==
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

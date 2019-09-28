@@ -16,6 +16,7 @@ namespace RWS
         public static string namE;
         public static string lastbf;
         public static string lastact;
+        public static string lastleg;
         public editUnit()
         {
             InitializeComponent();
@@ -394,7 +395,6 @@ namespace RWS
             actionlist.Items.Clear();
             turretlist.Items.Clear();
             projectilelist.Items.Clear();
-            llist.Items.Clear();
             armlist.Items.Clear();
             alist.Items.Clear();
             elist.Items.Clear();
@@ -439,7 +439,7 @@ namespace RWS
                     {
                         string[] str;
                         str = s.Split(new char[] { '_', ']' });
-                        llist.Items.Add(str[1]);
+                        armlist.Items.Add(str[1]);
                     }
                     if (s.Contains("[arm_") && s.Contains("]"))
                     {
@@ -773,6 +773,47 @@ namespace RWS
         private void autoRepair_CheckedChanged(object sender, EventArgs e)
         {
             isbuilder.Checked = true;
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            lastleg = null;
+            legss act = new legss();
+            act.ShowDialog();
+            loadlist();
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            if (armlist.SelectedItem != null)
+            {
+                lastleg = armlist.SelectedItem.ToString();
+                legss act = new legss();
+                act.ShowDialog();
+                lastleg = null;
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            if (armlist.SelectedItem != null)
+            {
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                data.Sections.RemoveSection("leg_" + armlist.SelectedItem.ToString());
+                parser.WriteFile(sss[0], data);
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
         }
     }
 }
