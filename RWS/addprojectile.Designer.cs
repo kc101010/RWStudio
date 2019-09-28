@@ -451,7 +451,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(129, 341);
+            this.button2.Location = new System.Drawing.Point(139, 341);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(23, 22);
             this.button2.TabIndex = 69;
@@ -471,8 +471,9 @@
             // 
             this.lighColor.Location = new System.Drawing.Point(71, 342);
             this.lighColor.Name = "lighColor";
-            this.lighColor.Size = new System.Drawing.Size(52, 20);
+            this.lighColor.Size = new System.Drawing.Size(62, 20);
             this.lighColor.TabIndex = 48;
+            this.lighColor.Text = "#FFFFFFFF";
             // 
             // image
             // 
@@ -686,7 +687,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(104, 371);
+            this.button1.Location = new System.Drawing.Point(113, 370);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(23, 22);
             this.button1.TabIndex = 68;
@@ -697,8 +698,9 @@
             // 
             this.color.Location = new System.Drawing.Point(46, 372);
             this.color.Name = "color";
-            this.color.Size = new System.Drawing.Size(52, 20);
+            this.color.Size = new System.Drawing.Size(61, 20);
             this.color.TabIndex = 50;
+            this.color.Text = "#FFFFFFFF";
             // 
             // label18
             // 

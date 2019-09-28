@@ -81,6 +81,24 @@
     <Compile Include="addUnit.Designer.cs">
       <DependentUpon>addUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="attachments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attachments.Designer.cs">
+      <DependentUpon>attachments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canim.Designer.cs">
+      <DependentUpon>canim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="effects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="effects.Designer.cs">
+      <DependentUpon>effects.cs</DependentUpon>
+    </Compile>
     <Compile Include="legss.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +166,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addUnit.resx">
       <DependentUpon>addUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attachments.resx">
+      <DependentUpon>attachments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canim.resx">
+      <DependentUpon>canim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="effects.resx">
+      <DependentUpon>effects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="legss.resx">
       <DependentUpon>legss.cs</DependentUpon>

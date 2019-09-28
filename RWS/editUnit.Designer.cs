@@ -186,9 +186,10 @@
             this.button34 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.tags = new System.Windows.Forms.TextBox();
+            this.ty = new System.Windows.Forms.Label();
             this.landOnGround = new System.Windows.Forms.ComboBox();
             this.label53 = new System.Windows.Forms.Label();
             this.enableNano = new System.Windows.Forms.CheckBox();
@@ -235,8 +236,6 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.ty = new System.Windows.Forms.Label();
-            this.tags = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.footprint.SuspendLayout();
@@ -467,6 +466,11 @@
             0,
             -2147483648});
             this.frames.Name = "frames";
+            this.frames.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label17
             // 
@@ -1057,12 +1061,14 @@
             resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
             resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -1335,18 +1341,21 @@
             resources.ApplyResources(this.button20, "button20");
             this.button20.Name = "button20";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
             resources.ApplyResources(this.button21, "button21");
             this.button21.Name = "button21";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
             resources.ApplyResources(this.button22, "button22");
             this.button22.Name = "button22";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // elist
             // 
@@ -1376,12 +1385,14 @@
             resources.ApplyResources(this.button27, "button27");
             this.button27.Name = "button27";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
             resources.ApplyResources(this.button28, "button28");
             this.button28.Name = "button28";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // alist
             // 
@@ -1506,12 +1517,6 @@
             this.button35.UseVisualStyleBackColor = true;
             this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
-            // button36
-            // 
-            resources.ApplyResources(this.button36, "button36");
-            this.button36.Name = "button36";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
             // button37
             // 
             resources.ApplyResources(this.button37, "button37");
@@ -1571,6 +1576,16 @@
             resources.ApplyResources(this.groupBox18, "groupBox18");
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.TabStop = false;
+            // 
+            // tags
+            // 
+            resources.ApplyResources(this.tags, "tags");
+            this.tags.Name = "tags";
+            // 
+            // ty
+            // 
+            resources.ApplyResources(this.ty, "ty");
+            this.ty.Name = "ty";
             // 
             // landOnGround
             // 
@@ -1876,16 +1891,6 @@
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
             // 
-            // ty
-            // 
-            resources.ApplyResources(this.ty, "ty");
-            this.ty.Name = "ty";
-            // 
-            // tags
-            // 
-            resources.ApplyResources(this.tags, "tags");
-            this.tags.Name = "tags";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -1899,15 +1904,14 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label52);
-            this.Controls.Add(this.label51);
             this.Controls.Add(this.groupBox18);
+            this.Controls.Add(this.label51);
             this.Controls.Add(this.button37);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.button33);
             this.Controls.Add(this.groupBox17);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.groupBox13);
-            this.Controls.Add(this.button36);
             this.Controls.Add(this.groupBox16);
             this.Controls.Add(this.groupBox15);
             this.Controls.Add(this.groupBox11);
@@ -2123,7 +2127,6 @@
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
         private System.Windows.Forms.GroupBox footprint;
         private System.Windows.Forms.TextBox fc;
         private System.Windows.Forms.Button button37;

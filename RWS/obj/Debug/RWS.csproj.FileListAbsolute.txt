@@ -36,3 +36,6 @@ C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.preview.resources
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.builtFrom.resources
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.action.resources
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.legss.resources
+C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.attachments.resources
+C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.canim.resources
+C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.effects.resources

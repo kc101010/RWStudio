@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 using IniParser;
 using IniParser.Model;
@@ -17,6 +18,7 @@ namespace RWS
         public static string lastbf;
         public static string lastact;
         public static string lastleg;
+        public static string lastanim;
         public editUnit()
         {
             InitializeComponent();
@@ -534,6 +536,8 @@ namespace RWS
         {
             string[] sss = Directory.GetFiles(path, "*.ini");
             System.Diagnostics.Process.Start(sss[0]);
+            load();
+            loadlist();
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -724,7 +728,10 @@ namespace RWS
         }
         private void button5_Click(object sender, EventArgs e)
         {
-
+            lastanim = null;
+            canim cn = new canim();
+            cn.ShowDialog();
+            loadlist();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -745,12 +752,12 @@ namespace RWS
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (actionlist.SelectedItem != null)
+            if (alist.SelectedItem != null)
             {
                 string[] sss = Directory.GetFiles(path, "*.ini");
                 var parser = new FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
-                data.Sections.RemoveSection("action_" + actionlist.SelectedItem.ToString());
+                data.Sections.RemoveSection("attachment_" + alist.SelectedItem.ToString());
                 parser.WriteFile(sss[0], data);
                 loadlist();
             }
@@ -807,6 +814,102 @@ namespace RWS
                 var parser = new FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
                 data.Sections.RemoveSection("leg_" + armlist.SelectedItem.ToString());
+                parser.WriteFile(sss[0], data);
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (animlist.SelectedItem != null)
+            {
+                lastanim = animlist.SelectedItem.ToString();
+                canim act = new canim();
+                act.ShowDialog();
+                lastanim = null;
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (animlist.SelectedItem != null)
+            {
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                data.Sections.RemoveSection("animation_" + animlist.SelectedItem.ToString());
+                parser.WriteFile(sss[0], data);
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            attachments att = new attachments();
+            att.ShowDialog();
+            loadlist();
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if (alist.SelectedItem != null)
+            {
+                lastact = alist.SelectedItem.ToString();
+                attachments att = new attachments();
+                att.ShowDialog();
+                lastact = null;
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            effects eff = new effects();
+            eff.ShowDialog();
+            loadlist();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            if (alist.SelectedItem != null)
+            {
+                lastact = alist.SelectedItem.ToString();
+                effects att = new effects();
+                att.ShowDialog();
+                lastact = null;
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if (elist.SelectedItem != null)
+            {
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                data.Sections.RemoveSection("effect_" + elist.SelectedItem.ToString());
                 parser.WriteFile(sss[0], data);
                 loadlist();
             }
