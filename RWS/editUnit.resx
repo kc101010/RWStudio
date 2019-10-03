@@ -551,7 +551,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 15</value>
+    <value>12, 12</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>269, 808</value>
@@ -573,7 +573,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1367,6 +1367,10 @@
   <data name="dradius.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
+  <data name="dradius.ToolTip" xml:space="preserve">
+    <value>Display radius to player
+By default  display radius = radius</value>
+  </data>
   <data name="&gt;&gt;dradius.Name" xml:space="preserve">
     <value>dradius</value>
   </data>
@@ -1396,6 +1400,10 @@
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>Display radius</value>
+  </data>
+  <data name="label14.ToolTip" xml:space="preserve">
+    <value>Display radius to player
+By default  display radius = radius</value>
   </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
@@ -1892,6 +1900,9 @@
   <data name="label12.Text" xml:space="preserve">
     <value>Build speed</value>
   </data>
+  <data name="label12.ToolTip" xml:space="preserve">
+    <value>Unit build speed</value>
+  </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
@@ -1915,6 +1926,9 @@
   </data>
   <data name="buildspeed.Text" xml:space="preserve">
     <value>0.0</value>
+  </data>
+  <data name="buildspeed.ToolTip" xml:space="preserve">
+    <value>Unit build speed</value>
   </data>
   <data name="&gt;&gt;buildspeed.Name" xml:space="preserve">
     <value>buildspeed</value>
@@ -2700,6 +2714,33 @@ to player
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
+  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 101</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2707,7 +2748,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 711</value>
+    <value>14, 710</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 13</value>
@@ -2717,6 +2758,9 @@ to player
   </data>
   <data name="label16.Text" xml:space="preserve">
     <value>Turret image</value>
+  </data>
+  <data name="label16.ToolTip" xml:space="preserve">
+    <value>Image ofmain turret</value>
   </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
@@ -2728,13 +2772,13 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="turretimage.Items" xml:space="preserve">
     <value>NONE</value>
   </data>
   <data name="turretimage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 708</value>
+    <value>83, 707</value>
   </data>
   <data name="turretimage.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 21</value>
@@ -2744,6 +2788,9 @@ to player
   </data>
   <data name="turretimage.Text" xml:space="preserve">
     <value>NONE</value>
+  </data>
+  <data name="turretimage.ToolTip" xml:space="preserve">
+    <value>Image ofmain turret</value>
   </data>
   <data name="&gt;&gt;turretimage.Name" xml:space="preserve">
     <value>turretimage</value>
@@ -2755,10 +2802,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;turretimage.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="shieldr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 539</value>
+    <value>220, 522</value>
   </data>
   <data name="shieldr.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 20</value>
@@ -2779,7 +2826,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;shieldr.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>22</value>
   </data>
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2788,7 +2835,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 542</value>
+    <value>116, 525</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 13</value>
@@ -2809,10 +2856,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>24</value>
   </data>
   <data name="shield.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 540</value>
+    <value>55, 523</value>
   </data>
   <data name="shield.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 20</value>
@@ -2830,7 +2877,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;shield.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>26</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2839,7 +2886,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 542</value>
+    <value>13, 525</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 13</value>
@@ -2860,10 +2907,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>28</value>
   </data>
   <data name="energyr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 506</value>
+    <value>220, 495</value>
   </data>
   <data name="energyr.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 20</value>
@@ -2884,7 +2931,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;energyr.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>37</value>
   </data>
   <data name="label40.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2893,7 +2940,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 509</value>
+    <value>112, 498</value>
   </data>
   <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 13</value>
@@ -2914,10 +2961,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>35</value>
   </data>
   <data name="energy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 507</value>
+    <value>59, 496</value>
   </data>
   <data name="energy.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -2938,7 +2985,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;energy.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>31</value>
   </data>
   <data name="label39.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2947,7 +2994,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 509</value>
+    <value>13, 498</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -2968,10 +3015,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>30</value>
   </data>
   <data name="soy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 448</value>
+    <value>96, 442</value>
   </data>
   <data name="soy.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -2989,7 +3036,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;soy.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>36</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2998,7 +3045,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 450</value>
+    <value>12, 444</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -3019,10 +3066,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>40</value>
   </data>
   <data name="sox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 448</value>
+    <value>229, 442</value>
   </data>
   <data name="sox.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 20</value>
@@ -3040,7 +3087,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;sox.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>42</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3049,7 +3096,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 450</value>
+    <value>143, 444</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -3070,16 +3117,19 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>49</value>
   </data>
   <data name="tslots.Location" type="System.Drawing.Point, System.Drawing">
     <value>141, 26</value>
   </data>
   <data name="tslots.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>47, 20</value>
   </data>
   <data name="tslots.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
+  </data>
+  <data name="tslots.ToolTip" xml:space="preserve">
+    <value>Defaults to 1. Number of slots this unit uses up in a transport, experimentals are often set to 5.</value>
   </data>
   <data name="&gt;&gt;tslots.Name" xml:space="preserve">
     <value>tslots</value>
@@ -3091,7 +3141,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;tslots.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>48</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3111,6 +3161,9 @@ to player
   <data name="label19.Text" xml:space="preserve">
     <value>Transport slots needed</value>
   </data>
+  <data name="label19.ToolTip" xml:space="preserve">
+    <value>Defaults to 1. Number of slots this unit uses up in a transport, experimentals are often set to 5.</value>
+  </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
   </data>
@@ -3121,7 +3174,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>47</value>
   </data>
   <data name="&gt;&gt;button4.Name" xml:space="preserve">
     <value>button4</value>
@@ -3172,7 +3225,7 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 625</value>
+    <value>580, 622</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>302, 198</value>
@@ -3193,7 +3246,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3361,7 +3414,7 @@ to player
     <value>4</value>
   </data>
   <data name="gb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 162</value>
+    <value>580, 159</value>
   </data>
   <data name="gb.Size" type="System.Drawing.Size, System.Drawing">
     <value>302, 456</value>
@@ -3382,7 +3435,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gb.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;IdleAnimPingPong.Name" xml:space="preserve">
     <value>IdleAnimPingPong</value>
@@ -4270,10 +4323,10 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 220</value>
+    <value>888, 226</value>
   </data>
   <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 203</value>
+    <value>288, 192</value>
   </data>
   <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4291,16 +4344,16 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 172</value>
+    <value>196, 159</value>
   </data>
   <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 23</value>
+    <value>82, 23</value>
   </data>
   <data name="button8.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4324,7 +4377,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 172</value>
+    <value>103, 159</value>
   </data>
   <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 23</value>
@@ -4351,10 +4404,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 172</value>
+    <value>9, 159</value>
   </data>
   <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 23</value>
+    <value>85, 23</value>
   </data>
   <data name="button10.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4378,7 +4431,7 @@ to player
     <value>9, 19</value>
   </data>
   <data name="turretlist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 147</value>
+    <value>269, 134</value>
   </data>
   <data name="turretlist.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4447,7 +4500,7 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 15</value>
+    <value>888, 12</value>
   </data>
   <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>288, 194</value>
@@ -4468,7 +4521,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox9.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="button11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4587,18 +4640,6 @@ to player
   <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button15.Name" xml:space="preserve">
-    <value>button15</value>
-  </data>
-  <data name="&gt;&gt;button15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
-    <value>groupBox10</value>
-  </data>
-  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;button16.Name" xml:space="preserve">
     <value>button16</value>
   </data>
@@ -4609,7 +4650,7 @@ to player
     <value>groupBox10</value>
   </data>
   <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;bflist.Name" xml:space="preserve">
     <value>bflist</value>
@@ -4621,10 +4662,10 @@ to player
     <value>groupBox10</value>
   </data>
   <data name="&gt;&gt;bflist.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 15</value>
+    <value>580, 12</value>
   </data>
   <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>302, 141</value>
@@ -4645,13 +4686,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox10.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 106</value>
+    <value>66, 106</value>
   </data>
   <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 23</value>
@@ -4674,38 +4715,11 @@ to player
   <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 106</value>
-  </data>
-  <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="button15.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button15.Text" xml:space="preserve">
-    <value>Edit </value>
-  </data>
-  <data name="&gt;&gt;button15.Name" xml:space="preserve">
-    <value>button15</value>
-  </data>
-  <data name="&gt;&gt;button15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
-    <value>groupBox10</value>
-  </data>
-  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="button16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 106</value>
+    <value>149, 106</value>
   </data>
   <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 23</value>
@@ -4726,7 +4740,7 @@ to player
     <value>groupBox10</value>
   </data>
   <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="bflist.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
@@ -4750,7 +4764,7 @@ to player
     <value>groupBox10</value>
   </data>
   <data name="&gt;&gt;bflist.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;button17.Name" xml:space="preserve">
     <value>button17</value>
@@ -4801,7 +4815,7 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1187, 215</value>
+    <value>1187, 196</value>
   </data>
   <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 190</value>
@@ -4822,7 +4836,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="button17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4942,7 +4956,7 @@ to player
     <value>0</value>
   </data>
   <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 589</value>
+    <value>142, 600</value>
   </data>
   <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 50</value>
@@ -4963,7 +4977,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>21</value>
   </data>
   <data name="aiasb.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4995,11 +5009,83 @@ to player
   <data name="&gt;&gt;aiasb.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;button20.Name" xml:space="preserve">
+    <value>button20</value>
+  </data>
+  <data name="&gt;&gt;button20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button20.Parent" xml:space="preserve">
+    <value>groupBox13</value>
+  </data>
+  <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button21.Name" xml:space="preserve">
+    <value>button21</value>
+  </data>
+  <data name="&gt;&gt;button21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button21.Parent" xml:space="preserve">
+    <value>groupBox13</value>
+  </data>
+  <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button22.Name" xml:space="preserve">
+    <value>button22</value>
+  </data>
+  <data name="&gt;&gt;button22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button22.Parent" xml:space="preserve">
+    <value>groupBox13</value>
+  </data>
+  <data name="&gt;&gt;button22.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;elist.Name" xml:space="preserve">
+    <value>elist</value>
+  </data>
+  <data name="&gt;&gt;elist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;elist.Parent" xml:space="preserve">
+    <value>groupBox13</value>
+  </data>
+  <data name="&gt;&gt;elist.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>887, 428</value>
+  </data>
+  <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 190</value>
+  </data>
+  <data name="groupBox13.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="groupBox13.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="&gt;&gt;groupBox13.Name" xml:space="preserve">
+    <value>groupBox13</value>
+  </data>
+  <data name="&gt;&gt;groupBox13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox13.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="button20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 159</value>
+    <value>205, 158</value>
   </data>
   <data name="button20.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 23</value>
@@ -5026,7 +5112,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 159</value>
+    <value>107, 158</value>
   </data>
   <data name="button21.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 23</value>
@@ -5053,7 +5139,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 159</value>
+    <value>9, 158</value>
   </data>
   <data name="button22.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 23</value>
@@ -5080,7 +5166,7 @@ to player
     <value>10, 19</value>
   </data>
   <data name="elist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 134</value>
+    <value>269, 134</value>
   </data>
   <data name="elist.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -5099,30 +5185,6 @@ to player
   </data>
   <data name="&gt;&gt;elist.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="groupBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 431</value>
-  </data>
-  <data name="groupBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 194</value>
-  </data>
-  <data name="groupBox13.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="groupBox13.Text" xml:space="preserve">
-    <value>Effects</value>
-  </data>
-  <data name="&gt;&gt;groupBox13.Name" xml:space="preserve">
-    <value>groupBox13</value>
-  </data>
-  <data name="&gt;&gt;groupBox13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox13.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox13.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="&gt;&gt;button26.Name" xml:space="preserve">
     <value>button26</value>
@@ -5173,7 +5235,7 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>888, 631</value>
+    <value>887, 628</value>
   </data>
   <data name="groupBox15.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 192</value>
@@ -5194,7 +5256,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox15.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="button26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5350,10 +5412,10 @@ to player
     <value>3</value>
   </data>
   <data name="groupBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1187, 15</value>
+    <value>1187, 12</value>
   </data>
   <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 194</value>
+    <value>293, 178</value>
   </data>
   <data name="groupBox16.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -5371,13 +5433,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox16.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="button29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 158</value>
+    <value>198, 145</value>
   </data>
   <data name="button29.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5404,7 +5466,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 158</value>
+    <value>104, 145</value>
   </data>
   <data name="button30.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5431,7 +5493,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 158</value>
+    <value>10, 145</value>
   </data>
   <data name="button31.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -5458,7 +5520,7 @@ to player
     <value>9, 18</value>
   </data>
   <data name="armlist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 134</value>
+    <value>275, 121</value>
   </data>
   <data name="armlist.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -5575,7 +5637,7 @@ to player
     <value>7</value>
   </data>
   <data name="groupBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1187, 414</value>
+    <value>1187, 545</value>
   </data>
   <data name="groupBox17.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 123</value>
@@ -5596,7 +5658,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox17.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="customv.Location" type="System.Drawing.Point, System.Drawing">
     <value>55, 60</value>
@@ -5815,10 +5877,10 @@ to player
     <value>NoControl</value>
   </data>
   <data name="button33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1384, 775</value>
+    <value>1384, 772</value>
   </data>
   <data name="button33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 41</value>
+    <value>96, 41</value>
   </data>
   <data name="button33.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -5836,13 +5898,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button33.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="button35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1285, 775</value>
+    <value>1285, 772</value>
   </data>
   <data name="button35.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 41</value>
@@ -5863,13 +5925,13 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button35.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="button37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1186, 775</value>
+    <value>1186, 772</value>
   </data>
   <data name="button37.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 41</value>
@@ -5890,7 +5952,43 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button37.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;armour.Name" xml:space="preserve">
+    <value>armour</value>
+  </data>
+  <data name="&gt;&gt;armour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;armour.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;armour.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label54.Name" xml:space="preserve">
+    <value>label54</value>
+  </data>
+  <data name="&gt;&gt;label54.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label54.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label54.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.Name" xml:space="preserve">
+    <value>lock_body_rotation_with_main_turret</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;tags.Name" xml:space="preserve">
     <value>tags</value>
@@ -5902,7 +6000,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;tags.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;ty.Name" xml:space="preserve">
     <value>ty</value>
@@ -5914,7 +6012,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;ty.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;landOnGround.Name" xml:space="preserve">
     <value>landOnGround</value>
@@ -5926,7 +6024,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;landOnGround.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;label53.Name" xml:space="preserve">
     <value>label53</value>
@@ -5938,7 +6036,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label53.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;enableNano.Name" xml:space="preserve">
     <value>enableNano</value>
@@ -5950,7 +6048,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;enableNano.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;nonukelocked.Name" xml:space="preserve">
     <value>nonukelocked</value>
@@ -5962,7 +6060,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;nonukelocked.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;dl.Name" xml:space="preserve">
     <value>dl</value>
@@ -5974,7 +6072,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;dl.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label49.Name" xml:space="preserve">
     <value>label49</value>
@@ -5986,7 +6084,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;doa.Name" xml:space="preserve">
     <value>doa</value>
@@ -5998,7 +6096,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;doa.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;groupBox21.Name" xml:space="preserve">
     <value>groupBox21</value>
@@ -6010,7 +6108,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;groupBox21.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;label48.Name" xml:space="preserve">
     <value>label48</value>
@@ -6022,7 +6120,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;def.Name" xml:space="preserve">
     <value>def</value>
@@ -6034,7 +6132,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;def.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;label47.Name" xml:space="preserve">
     <value>label47</value>
@@ -6046,7 +6144,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label47.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;selfRegenRate.Name" xml:space="preserve">
     <value>selfRegenRate</value>
@@ -6058,7 +6156,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;selfRegenRate.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;ssaz.Name" xml:space="preserve">
     <value>ssaz</value>
@@ -6070,7 +6168,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;ssaz.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;label46.Name" xml:space="preserve">
     <value>label46</value>
@@ -6082,7 +6180,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;sit.Name" xml:space="preserve">
     <value>sit</value>
@@ -6094,7 +6192,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;sit.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>23</value>
   </data>
   <data name="&gt;&gt;ioy.Name" xml:space="preserve">
     <value>ioy</value>
@@ -6106,7 +6204,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;ioy.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>25</value>
   </data>
   <data name="&gt;&gt;label44.Name" xml:space="preserve">
     <value>label44</value>
@@ -6118,7 +6216,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>27</value>
   </data>
   <data name="&gt;&gt;iox.Name" xml:space="preserve">
     <value>iox</value>
@@ -6130,7 +6228,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;iox.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>29</value>
   </data>
   <data name="&gt;&gt;label45.Name" xml:space="preserve">
     <value>label45</value>
@@ -6142,7 +6240,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>32</value>
   </data>
   <data name="&gt;&gt;eod.Name" xml:space="preserve">
     <value>eod</value>
@@ -6154,7 +6252,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;eod.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>33</value>
   </data>
   <data name="&gt;&gt;dieonconstruct.Name" xml:space="preserve">
     <value>dieonconstruct</value>
@@ -6166,7 +6264,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;dieonconstruct.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>34</value>
   </data>
   <data name="&gt;&gt;groupBox20.Name" xml:space="preserve">
     <value>groupBox20</value>
@@ -6178,7 +6276,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;groupBox20.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>38</value>
   </data>
   <data name="&gt;&gt;nukeOnDeath.Name" xml:space="preserve">
     <value>nukeOnDeath</value>
@@ -6190,7 +6288,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;nukeOnDeath.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>39</value>
   </data>
   <data name="&gt;&gt;dieonzeroenergy.Name" xml:space="preserve">
     <value>dieonzeroenergy</value>
@@ -6202,7 +6300,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;dieonzeroenergy.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>41</value>
   </data>
   <data name="&gt;&gt;groupBox19.Name" xml:space="preserve">
     <value>groupBox19</value>
@@ -6214,7 +6312,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;groupBox19.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>43</value>
   </data>
   <data name="&gt;&gt;canRepairUnits.Name" xml:space="preserve">
     <value>canRepairUnits</value>
@@ -6226,7 +6324,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;canRepairUnits.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>44</value>
   </data>
   <data name="&gt;&gt;canRepairBuilds.Name" xml:space="preserve">
     <value>canRepairBuilds</value>
@@ -6238,7 +6336,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;canRepairBuilds.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>45</value>
   </data>
   <data name="&gt;&gt;autoRepair.Name" xml:space="preserve">
     <value>autoRepair</value>
@@ -6250,10 +6348,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;autoRepair.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>46</value>
   </data>
   <data name="groupBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 15</value>
+    <value>287, 12</value>
   </data>
   <data name="groupBox18.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 808</value>
@@ -6274,16 +6372,100 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox18.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="armour.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 573</value>
+  </data>
+  <data name="armour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 20</value>
+  </data>
+  <data name="armour.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="&gt;&gt;armour.Name" xml:space="preserve">
+    <value>armour</value>
+  </data>
+  <data name="&gt;&gt;armour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;armour.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;armour.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label54.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label54.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label54.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 575</value>
+  </data>
+  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="label54.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="label54.Text" xml:space="preserve">
+    <value>Armour</value>
+  </data>
+  <data name="&gt;&gt;label54.Name" xml:space="preserve">
+    <value>label54</value>
+  </data>
+  <data name="&gt;&gt;label54.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label54.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;label54.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="lock_body_rotation_with_main_turret.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lock_body_rotation_with_main_turret.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lock_body_rotation_with_main_turret.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 734</value>
+  </data>
+  <data name="lock_body_rotation_with_main_turret.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 17</value>
+  </data>
+  <data name="lock_body_rotation_with_main_turret.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="lock_body_rotation_with_main_turret.Text" xml:space="preserve">
+    <value>Lock body rotation with main turret</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.Name" xml:space="preserve">
+    <value>lock_body_rotation_with_main_turret</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.Parent" xml:space="preserve">
+    <value>groupBox18</value>
+  </data>
+  <data name="&gt;&gt;lock_body_rotation_with_main_turret.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="tags.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 740</value>
+    <value>52, 757</value>
   </data>
   <data name="tags.Size" type="System.Drawing.Size, System.Drawing">
     <value>212, 20</value>
   </data>
   <data name="tags.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
+  </data>
+  <data name="tags.ToolTip" xml:space="preserve">
+    <value>List of comma separated strings. Used to classify units, create special actions and balances.</value>
   </data>
   <data name="&gt;&gt;tags.Name" xml:space="preserve">
     <value>tags</value>
@@ -6295,7 +6477,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;tags.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="ty.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6304,7 +6486,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="ty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 743</value>
+    <value>15, 760</value>
   </data>
   <data name="ty.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
@@ -6314,6 +6496,9 @@ to player
   </data>
   <data name="ty.Text" xml:space="preserve">
     <value>Tags</value>
+  </data>
+  <data name="ty.ToolTip" xml:space="preserve">
+    <value>List of comma separated strings. Used to classify units, create special actions and balances.</value>
   </data>
   <data name="&gt;&gt;ty.Name" xml:space="preserve">
     <value>ty</value>
@@ -6325,7 +6510,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;ty.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="landOnGround.Items" xml:space="preserve">
     <value> </value>
@@ -6340,7 +6525,7 @@ to player
     <value>onlyIdle</value>
   </data>
   <data name="landOnGround.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 676</value>
+    <value>100, 680</value>
   </data>
   <data name="landOnGround.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 21</value>
@@ -6350,6 +6535,15 @@ to player
   </data>
   <data name="landOnGround.Text" xml:space="preserve">
     <value> </value>
+  </data>
+  <data name="landOnGround.ToolTip" xml:space="preserve">
+    <value>if land on ground == True
+Flying unit will landed while not moving
+(like dropship)
+
+if land on ground == onlyIdle
+Flying unit will landed while not moving and not attacking
+(like bomber)</value>
   </data>
   <data name="&gt;&gt;landOnGround.Name" xml:space="preserve">
     <value>landOnGround</value>
@@ -6361,7 +6555,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;landOnGround.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="label53.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6370,7 +6564,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 681</value>
+    <value>14, 685</value>
   </data>
   <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -6380,6 +6574,15 @@ to player
   </data>
   <data name="label53.Text" xml:space="preserve">
     <value>Land on ground</value>
+  </data>
+  <data name="label53.ToolTip" xml:space="preserve">
+    <value>if land on ground == True
+Flying unit will landed while not moving
+(like dropship)
+
+if land on ground == onlyIdle
+Flying unit will landed while not moving and not attacking
+(like bomber)</value>
   </data>
   <data name="&gt;&gt;label53.Name" xml:space="preserve">
     <value>label53</value>
@@ -6391,7 +6594,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label53.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="enableNano.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6400,7 +6603,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="enableNano.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 107</value>
+    <value>18, 101</value>
   </data>
   <data name="enableNano.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 17</value>
@@ -6410,6 +6613,9 @@ to player
   </data>
   <data name="enableNano.Text" xml:space="preserve">
     <value>Enable nano</value>
+  </data>
+  <data name="enableNano.ToolTip" xml:space="preserve">
+    <value>Enables nano turret</value>
   </data>
   <data name="&gt;&gt;enableNano.Name" xml:space="preserve">
     <value>enableNano</value>
@@ -6421,7 +6627,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;enableNano.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="nonukelocked.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6430,7 +6636,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="nonukelocked.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 324</value>
+    <value>14, 318</value>
   </data>
   <data name="nonukelocked.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 17</value>
@@ -6451,7 +6657,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;nonukelocked.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="dl.Items" xml:space="preserve">
     <value> </value>
@@ -6460,7 +6666,7 @@ to player
     <value>experimentals</value>
   </data>
   <data name="dl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 645</value>
+    <value>76, 655</value>
   </data>
   <data name="dl.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 21</value>
@@ -6481,7 +6687,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;dl.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="label49.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6490,7 +6696,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 648</value>
+    <value>13, 658</value>
   </data>
   <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 13</value>
@@ -6511,7 +6717,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="doa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6520,7 +6726,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="doa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 395</value>
+    <value>15, 389</value>
   </data>
   <data name="doa.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 17</value>
@@ -6541,7 +6747,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;doa.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;dustef.Name" xml:space="preserve">
     <value>dustef</value>
@@ -6568,7 +6774,7 @@ to player
     <value>1</value>
   </data>
   <data name="groupBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 589</value>
+    <value>13, 600</value>
   </data>
   <data name="groupBox21.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 50</value>
@@ -6589,7 +6795,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;groupBox21.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="dustef.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6658,7 +6864,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 374</value>
+    <value>130, 368</value>
   </data>
   <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 13</value>
@@ -6679,10 +6885,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="def.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 370</value>
+    <value>216, 364</value>
   </data>
   <data name="def.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 20</value>
@@ -6700,7 +6906,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;def.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="label47.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6709,7 +6915,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 83</value>
+    <value>15, 77</value>
   </data>
   <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 13</value>
@@ -6730,10 +6936,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label47.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="selfRegenRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 80</value>
+    <value>95, 74</value>
   </data>
   <data name="selfRegenRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 20</value>
@@ -6754,7 +6960,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;selfRegenRate.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="ssaz.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6763,7 +6969,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="ssaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 566</value>
+    <value>17, 549</value>
   </data>
   <data name="ssaz.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 17</value>
@@ -6784,7 +6990,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;ssaz.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>19</value>
   </data>
   <data name="label46.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6793,7 +6999,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label46.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 479</value>
+    <value>12, 470</value>
   </data>
   <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -6814,10 +7020,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>20</value>
   </data>
   <data name="sit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 476</value>
+    <value>97, 467</value>
   </data>
   <data name="sit.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -6838,10 +7044,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;sit.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>23</value>
   </data>
   <data name="ioy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 420</value>
+    <value>97, 414</value>
   </data>
   <data name="ioy.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -6859,7 +7065,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;ioy.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>25</value>
   </data>
   <data name="label44.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6868,7 +7074,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 422</value>
+    <value>13, 416</value>
   </data>
   <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 13</value>
@@ -6889,10 +7095,10 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>27</value>
   </data>
   <data name="iox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 420</value>
+    <value>230, 414</value>
   </data>
   <data name="iox.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>
@@ -6910,7 +7116,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;iox.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>29</value>
   </data>
   <data name="label45.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6919,7 +7125,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 422</value>
+    <value>152, 416</value>
   </data>
   <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 13</value>
@@ -6940,7 +7146,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>32</value>
   </data>
   <data name="eod.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6949,7 +7155,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="eod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 372</value>
+    <value>15, 366</value>
   </data>
   <data name="eod.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 17</value>
@@ -6970,7 +7176,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;eod.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>33</value>
   </data>
   <data name="dieonconstruct.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6979,7 +7185,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="dieonconstruct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 347</value>
+    <value>163, 341</value>
   </data>
   <data name="dieonconstruct.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 17</value>
@@ -7000,7 +7206,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;dieonconstruct.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>34</value>
   </data>
   <data name="&gt;&gt;label30.Name" xml:space="preserve">
     <value>label30</value>
@@ -7066,7 +7272,7 @@ to player
     <value>False</value>
   </data>
   <data name="groupBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 247</value>
+    <value>15, 241</value>
   </data>
   <data name="groupBox20.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 73</value>
@@ -7087,7 +7293,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;groupBox20.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>38</value>
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7234,7 +7440,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="nukeOnDeath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 230</value>
+    <value>17, 224</value>
   </data>
   <data name="nukeOnDeath.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 17</value>
@@ -7255,7 +7461,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;nukeOnDeath.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>39</value>
   </data>
   <data name="dieonzeroenergy.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7264,7 +7470,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="dieonzeroenergy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 347</value>
+    <value>15, 341</value>
   </data>
   <data name="dieonzeroenergy.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 17</value>
@@ -7285,7 +7491,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;dieonzeroenergy.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>41</value>
   </data>
   <data name="&gt;&gt;label34.Name" xml:space="preserve">
     <value>label34</value>
@@ -7387,7 +7593,7 @@ to player
     <value>False</value>
   </data>
   <data name="groupBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 126</value>
+    <value>15, 120</value>
   </data>
   <data name="groupBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>260, 97</value>
@@ -7408,7 +7614,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;groupBox19.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>43</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7633,7 +7839,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="canRepairUnits.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 55</value>
+    <value>194, 53</value>
   </data>
   <data name="canRepairUnits.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 17</value>
@@ -7654,7 +7860,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;canRepairUnits.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>44</value>
   </data>
   <data name="canRepairBuilds.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7663,7 +7869,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="canRepairBuilds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 55</value>
+    <value>101, 53</value>
   </data>
   <data name="canRepairBuilds.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 17</value>
@@ -7684,7 +7890,7 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;canRepairBuilds.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>45</value>
   </data>
   <data name="autoRepair.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7693,7 +7899,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="autoRepair.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 55</value>
+    <value>18, 53</value>
   </data>
   <data name="autoRepair.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 17</value>
@@ -7714,14 +7920,11 @@ to player
     <value>groupBox18</value>
   </data>
   <data name="&gt;&gt;autoRepair.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>46</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="label51.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label51.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold, Italic</value>
   </data>
@@ -7729,7 +7932,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1211, 550</value>
+    <value>1207, 682</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
@@ -7750,10 +7953,7 @@ to player
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label51.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label52.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>3</value>
   </data>
   <data name="label52.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11pt, style=Bold</value>
@@ -7762,7 +7962,7 @@ to player
     <value>NoControl</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1291, 551</value>
+    <value>1287, 683</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 72</value>
@@ -7786,34 +7986,184 @@ written to .ini file</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label52.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button15.Name" xml:space="preserve">
+    <value>button15</value>
+  </data>
+  <data name="&gt;&gt;button15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;button23.Name" xml:space="preserve">
+    <value>button23</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="&gt;&gt;button23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button23.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button24.Name" xml:space="preserve">
+    <value>button24</value>
+  </data>
+  <data name="&gt;&gt;button24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button24.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;button24.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
+    <value>listBox1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1187, 392</value>
+  </data>
+  <data name="groupBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 147</value>
+  </data>
+  <data name="groupBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="groupBox14.Text" xml:space="preserve">
+    <value>Arms</value>
+  </data>
+  <data name="&gt;&gt;groupBox14.Name" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;groupBox14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 28</value>
+  <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 119</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 101</value>
+  <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 23</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="button15.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="button15.Text" xml:space="preserve">
+    <value>Delete arm</value>
+  </data>
+  <data name="&gt;&gt;button15.Name" xml:space="preserve">
+    <value>button15</value>
+  </data>
+  <data name="&gt;&gt;button15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="button23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 119</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="button23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 23</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>35</value>
+  <data name="button23.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="button23.Text" xml:space="preserve">
+    <value>Edit arm</value>
+  </data>
+  <data name="&gt;&gt;button23.Name" xml:space="preserve">
+    <value>button23</value>
+  </data>
+  <data name="&gt;&gt;button23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button23.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 119</value>
+  </data>
+  <data name="button24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 23</value>
+  </data>
+  <data name="button24.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button24.Text" xml:space="preserve">
+    <value>Add arm</value>
+  </data>
+  <data name="&gt;&gt;button24.Name" xml:space="preserve">
+    <value>button24</value>
+  </data>
+  <data name="&gt;&gt;button24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button24.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;button24.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 18</value>
+  </data>
+  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 95</value>
+  </data>
+  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="listBox1.ToolTip" xml:space="preserve">
+    <value>This is list =P</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
+    <value>listBox1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+    <value>groupBox14</value>
+  </data>
+  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -7822,10 +8172,16 @@ written to .ini file</value>
     <value>27</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>96, 96</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1488, 828</value>
+    <value>1490, 825</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -8630,8 +8986,8 @@ written to .ini file</value>
         ///wAAAA////////////////8AAAAA==
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1506, 864</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

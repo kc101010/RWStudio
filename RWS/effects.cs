@@ -69,7 +69,7 @@ namespace RWS
                 }
                 for (int i = 0; i < ch.Count; i++)
                 {
-                    if (ch[i].Tag != null)
+                    if (ch[i].Tag != null && data["effect_" + editUnit.lastact][ch[i].Tag.ToString()] != null)
                         ch[i].Checked = Convert.ToBoolean(data["effect_" + editUnit.lastact][ch[i].Tag.ToString()]);
                 }
                 namee.Text = editUnit.lastact;

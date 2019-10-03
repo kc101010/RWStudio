@@ -39,7 +39,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(97, 171);
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Location = new System.Drawing.Point(97, 154);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 23);
             this.button1.TabIndex = 1;
@@ -49,7 +51,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(123, 225);
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.Location = new System.Drawing.Point(123, 196);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 23);
             this.button2.TabIndex = 2;
@@ -59,19 +63,22 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(138, 279);
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.Location = new System.Drawing.Point(138, 238);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Help";
+            this.button3.Text = "Close";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::RWS.Properties.Resources.experimental_unit_factory_base;
-            this.pictureBox1.Location = new System.Drawing.Point(123, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(125, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 115);
             this.pictureBox1.TabIndex = 0;
@@ -80,24 +87,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(135, 130);
+            this.label1.Location = new System.Drawing.Point(143, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 26);
+            this.label1.Size = new System.Drawing.Size(69, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Version: alpha\r\n   pre release";
+            this.label1.Text = "Version: beta";
             // 
             // RWS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 332);
+            this.ClientSize = new System.Drawing.Size(350, 277);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "RWS";

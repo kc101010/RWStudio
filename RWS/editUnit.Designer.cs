@@ -93,6 +93,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.turretimage = new System.Windows.Forms.ComboBox();
             this.shieldr = new System.Windows.Forms.TextBox();
@@ -150,7 +151,6 @@
             this.projectilelist = new System.Windows.Forms.ListBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.bflist = new System.Windows.Forms.ListBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -188,6 +188,9 @@
             this.button35 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.armour = new System.Windows.Forms.NumericUpDown();
+            this.label54 = new System.Windows.Forms.Label();
+            this.lock_body_rotation_with_main_turret = new System.Windows.Forms.CheckBox();
             this.tags = new System.Windows.Forms.TextBox();
             this.ty = new System.Windows.Forms.Label();
             this.landOnGround = new System.Windows.Forms.ComboBox();
@@ -236,7 +239,11 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.footprint.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -250,6 +257,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sox)).BeginInit();
@@ -273,12 +281,13 @@
             this.groupBox16.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.groupBox18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.armour)).BeginInit();
             this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ioy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iox)).BeginInit();
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox14.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -504,11 +513,13 @@
             0,
             -2147483648});
             this.dradius.Name = "dradius";
+            this.toolTip1.SetToolTip(this.dradius, resources.GetString("dradius.ToolTip"));
             // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
+            this.toolTip1.SetToolTip(this.label14, resources.GetString("label14.ToolTip"));
             // 
             // groupBox6
             // 
@@ -600,11 +611,13 @@
             // 
             resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
+            this.toolTip1.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
             // 
             // buildspeed
             // 
             resources.ApplyResources(this.buildspeed, "buildspeed");
             this.buildspeed.Name = "buildspeed";
+            this.toolTip1.SetToolTip(this.buildspeed, resources.GetString("buildspeed.ToolTip"));
             // 
             // level
             // 
@@ -797,10 +810,19 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
+            this.toolTip1.SetToolTip(this.label16, resources.GetString("label16.ToolTip"));
             // 
             // turretimage
             // 
@@ -809,6 +831,7 @@
             resources.GetString("turretimage.Items")});
             resources.ApplyResources(this.turretimage, "turretimage");
             this.turretimage.Name = "turretimage";
+            this.toolTip1.SetToolTip(this.turretimage, resources.GetString("turretimage.ToolTip"));
             // 
             // shieldr
             // 
@@ -914,11 +937,13 @@
             0,
             -2147483648});
             this.tslots.Name = "tslots";
+            this.toolTip1.SetToolTip(this.tslots, resources.GetString("tslots.ToolTip"));
             // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
+            this.toolTip1.SetToolTip(this.label19, resources.GetString("label19.ToolTip"));
             // 
             // groupBox4
             // 
@@ -1240,7 +1265,6 @@
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button14);
-            this.groupBox10.Controls.Add(this.button15);
             this.groupBox10.Controls.Add(this.button16);
             this.groupBox10.Controls.Add(this.bflist);
             resources.ApplyResources(this.groupBox10, "groupBox10");
@@ -1253,13 +1277,6 @@
             this.button14.Name = "button14";
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button15
-            // 
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -1526,6 +1543,9 @@
             // 
             // groupBox18
             // 
+            this.groupBox18.Controls.Add(this.armour);
+            this.groupBox18.Controls.Add(this.label54);
+            this.groupBox18.Controls.Add(this.lock_body_rotation_with_main_turret);
             this.groupBox18.Controls.Add(this.tags);
             this.groupBox18.Controls.Add(this.ty);
             this.groupBox18.Controls.Add(this.landOnGround);
@@ -1577,15 +1597,43 @@
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.TabStop = false;
             // 
+            // armour
+            // 
+            resources.ApplyResources(this.armour, "armour");
+            this.armour.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.armour.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.armour.Name = "armour";
+            // 
+            // label54
+            // 
+            resources.ApplyResources(this.label54, "label54");
+            this.label54.Name = "label54";
+            // 
+            // lock_body_rotation_with_main_turret
+            // 
+            resources.ApplyResources(this.lock_body_rotation_with_main_turret, "lock_body_rotation_with_main_turret");
+            this.lock_body_rotation_with_main_turret.Name = "lock_body_rotation_with_main_turret";
+            this.lock_body_rotation_with_main_turret.UseVisualStyleBackColor = true;
+            // 
             // tags
             // 
             resources.ApplyResources(this.tags, "tags");
             this.tags.Name = "tags";
+            this.toolTip1.SetToolTip(this.tags, resources.GetString("tags.ToolTip"));
             // 
             // ty
             // 
             resources.ApplyResources(this.ty, "ty");
             this.ty.Name = "ty";
+            this.toolTip1.SetToolTip(this.ty, resources.GetString("ty.ToolTip"));
             // 
             // landOnGround
             // 
@@ -1597,16 +1645,19 @@
             resources.GetString("landOnGround.Items3")});
             resources.ApplyResources(this.landOnGround, "landOnGround");
             this.landOnGround.Name = "landOnGround";
+            this.toolTip1.SetToolTip(this.landOnGround, resources.GetString("landOnGround.ToolTip"));
             // 
             // label53
             // 
             resources.ApplyResources(this.label53, "label53");
             this.label53.Name = "label53";
+            this.toolTip1.SetToolTip(this.label53, resources.GetString("label53.ToolTip"));
             // 
             // enableNano
             // 
             resources.ApplyResources(this.enableNano, "enableNano");
             this.enableNano.Name = "enableNano";
+            this.toolTip1.SetToolTip(this.enableNano, resources.GetString("enableNano.ToolTip"));
             this.enableNano.UseVisualStyleBackColor = true;
             this.enableNano.CheckedChanged += new System.EventHandler(this.enableNano_CheckedChanged);
             // 
@@ -1891,18 +1942,46 @@
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
             // 
-            // pictureBox1
+            // groupBox14
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.groupBox14.Controls.Add(this.button15);
+            this.groupBox14.Controls.Add(this.button23);
+            this.groupBox14.Controls.Add(this.button24);
+            this.groupBox14.Controls.Add(this.listBox1);
+            resources.ApplyResources(this.groupBox14, "groupBox14");
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.TabStop = false;
+            // 
+            // button15
+            // 
+            resources.ApplyResources(this.button15, "button15");
+            this.button15.Name = "button15";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            resources.ApplyResources(this.button24, "button24");
+            this.button24.Name = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.listBox1, "listBox1");
+            this.listBox1.Name = "listBox1";
+            this.toolTip1.SetToolTip(this.listBox1, resources.GetString("listBox1.ToolTip"));
             // 
             // editUnit
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.groupBox14);
             this.Controls.Add(this.label52);
             this.Controls.Add(this.groupBox18);
             this.Controls.Add(this.label51);
@@ -1920,9 +1999,8 @@
             this.Controls.Add(this.gb);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.MaximizeBox = false;
             this.Name = "editUnit";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.editUnit_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1942,6 +2020,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sox)).EndInit();
@@ -1971,6 +2050,7 @@
             this.groupBox17.PerformLayout();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.armour)).EndInit();
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ioy)).EndInit();
@@ -1979,9 +2059,8 @@
             this.groupBox20.PerformLayout();
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox14.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2082,7 +2161,6 @@
         private System.Windows.Forms.ListBox projectilelist;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.ListBox bflist;
         private System.Windows.Forms.GroupBox groupBox11;
@@ -2194,5 +2272,13 @@
         private System.Windows.Forms.CheckBox moveAnimzpingPong;
         private System.Windows.Forms.TextBox tags;
         private System.Windows.Forms.Label ty;
+        private System.Windows.Forms.NumericUpDown armour;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.CheckBox lock_body_rotation_with_main_turret;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

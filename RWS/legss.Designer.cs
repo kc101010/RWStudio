@@ -81,7 +81,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(229, 9);
+            this.label7.Location = new System.Drawing.Point(220, 9);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(13, 20);
             this.label7.TabIndex = 19;
@@ -92,7 +92,7 @@
             this.leg.AutoSize = true;
             this.leg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.leg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.leg.Location = new System.Drawing.Point(160, 9);
+            this.leg.Location = new System.Drawing.Point(151, 9);
             this.leg.Name = "leg";
             this.leg.Size = new System.Drawing.Size(43, 20);
             this.leg.TabIndex = 17;
@@ -101,7 +101,7 @@
             // namee
             // 
             this.namee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.namee.Location = new System.Drawing.Point(199, 7);
+            this.namee.Location = new System.Drawing.Point(190, 7);
             this.namee.Name = "namee";
             this.namee.Size = new System.Drawing.Size(31, 26);
             this.namee.TabIndex = 20;

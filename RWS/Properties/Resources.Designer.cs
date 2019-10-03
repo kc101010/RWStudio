@@ -73,9 +73,9 @@ namespace RWS.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap none {
+        internal static System.Drawing.Bitmap Снимок {
             get {
-                object obj = ResourceManager.GetObject("none", resourceCulture);
+                object obj = ResourceManager.GetObject("Снимок", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

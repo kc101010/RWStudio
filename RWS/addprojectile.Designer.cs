@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addprojectile));
             this.label7 = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.TextBox();
+            this.namee = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.life = new System.Windows.Forms.TextBox();
@@ -41,27 +42,21 @@
             this.teleportSource = new System.Windows.Forms.CheckBox();
             this.nnn = new System.Windows.Forms.Label();
             this.spawnUnit = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.areadamage = new System.Windows.Forms.TextBox();
             this.ddamage = new System.Windows.Forms.TextBox();
             this.aeraDamage = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.areaRadius = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lightingEffect = new System.Windows.Forms.CheckBox();
             this.lasereffect = new System.Windows.Forms.CheckBox();
             this.lighsize = new System.Windows.Forms.TextBox();
             this.hitsound = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.createEffect = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.explodeonshieldeff = new System.Windows.Forms.TextBox();
-            this.drawType = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.explodeeff = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.explodeEffect = new System.Windows.Forms.Label();
             this.lighColor = new System.Windows.Forms.TextBox();
@@ -80,7 +75,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.speed = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tags = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.revalFogonExplode = new System.Windows.Forms.CheckBox();
@@ -99,7 +93,6 @@
             this.fwaepon = new System.Windows.Forms.CheckBox();
             this.targetground = new System.Windows.Forms.CheckBox();
             this.ballistic = new System.Windows.Forms.CheckBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.ballheigh = new System.Windows.Forms.TextBox();
             this.delaymove_height = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -107,10 +100,16 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.e2 = new System.Windows.Forms.ComboBox();
+            this.e3 = new System.Windows.Forms.ComboBox();
+            this.e1 = new System.Windows.Forms.ComboBox();
+            this.bflist = new System.Windows.Forms.ListBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // label7
@@ -118,27 +117,27 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(356, 17);
+            this.label7.Location = new System.Drawing.Point(367, 17);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(13, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "]";
             // 
-            // name
+            // namee
             // 
-            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.name.Location = new System.Drawing.Point(287, 15);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(67, 26);
-            this.name.TabIndex = 18;
+            this.namee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.namee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.namee.Location = new System.Drawing.Point(298, 15);
+            this.namee.Name = "namee";
+            this.namee.Size = new System.Drawing.Size(67, 26);
+            this.namee.TabIndex = 18;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(207, 18);
+            this.label6.Location = new System.Drawing.Point(218, 18);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 20);
             this.label6.TabIndex = 17;
@@ -147,32 +146,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Location = new System.Drawing.Point(11, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 20;
             this.label1.Text = "Life time";
+            this.toolTip1.SetToolTip(this.label1, "How long till this projectile gets removed if it hasn\'t hit a target, 300 might b" +
+        "e a good starting point, change depending on speed and range");
             // 
             // life
             // 
-            this.life.Location = new System.Drawing.Point(55, 19);
+            this.life.Location = new System.Drawing.Point(61, 52);
             this.life.Name = "life";
             this.life.Size = new System.Drawing.Size(37, 20);
             this.life.TabIndex = 21;
+            this.life.Tag = "life";
             this.life.Text = "0";
+            this.toolTip1.SetToolTip(this.life, "How long till this projectile gets removed if it hasn\'t hit a target, 300 might b" +
+        "e a good starting point, change depending on speed and range");
             // 
             // defpower
             // 
-            this.defpower.Location = new System.Drawing.Point(96, 45);
+            this.defpower.Location = new System.Drawing.Point(227, 52);
             this.defpower.Name = "defpower";
             this.defpower.Size = new System.Drawing.Size(37, 20);
             this.defpower.TabIndex = 23;
-            this.defpower.Text = "0.0";
+            this.defpower.Tag = "deflectionPower";
+            this.defpower.Text = "1";
+            this.toolTip1.SetToolTip(this.defpower, "Defaults to 1. Energy needed for laser defence to deflect. -1 to disable deflecti" +
+        "on (only disable for special weapons like flames)");
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 48);
+            this.label2.Location = new System.Drawing.Point(134, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 13);
             this.label2.TabIndex = 22;
@@ -181,243 +188,187 @@
             // explodeOnEndOflife
             // 
             this.explodeOnEndOflife.AutoSize = true;
-            this.explodeOnEndOflife.Location = new System.Drawing.Point(9, 97);
+            this.explodeOnEndOflife.Location = new System.Drawing.Point(11, 81);
             this.explodeOnEndOflife.Name = "explodeOnEndOflife";
             this.explodeOnEndOflife.Size = new System.Drawing.Size(128, 17);
             this.explodeOnEndOflife.TabIndex = 24;
+            this.explodeOnEndOflife.Tag = "explodeOnEndOfLife";
             this.explodeOnEndOflife.Text = "Explode on end of life";
+            this.toolTip1.SetToolTip(this.explodeOnEndOflife, "Default to false. True to explode at end of life with all side effects and area d" +
+        "amage instead of disappearing");
             this.explodeOnEndOflife.UseVisualStyleBackColor = true;
             // 
             // retarget
             // 
             this.retarget.AutoSize = true;
-            this.retarget.Location = new System.Drawing.Point(6, 293);
+            this.retarget.Location = new System.Drawing.Point(308, 323);
             this.retarget.Name = "retarget";
             this.retarget.Size = new System.Drawing.Size(263, 17);
             this.retarget.TabIndex = 25;
+            this.retarget.Tag = "autoTargetingOnDeadTarget";
             this.retarget.Text = "Retarget to nearby unit if target dies while in transit";
             this.retarget.UseVisualStyleBackColor = true;
             // 
             // teleportSource
             // 
             this.teleportSource.AutoSize = true;
-            this.teleportSource.Location = new System.Drawing.Point(6, 316);
+            this.teleportSource.Location = new System.Drawing.Point(308, 346);
             this.teleportSource.Name = "teleportSource";
             this.teleportSource.Size = new System.Drawing.Size(241, 17);
             this.teleportSource.TabIndex = 26;
+            this.teleportSource.Tag = "teleportSource";
             this.teleportSource.Text = "Teleport this unit to projectile explode location";
             this.teleportSource.UseVisualStyleBackColor = true;
             // 
             // nnn
             // 
             this.nnn.AutoSize = true;
-            this.nnn.Location = new System.Drawing.Point(3, 345);
+            this.nnn.Location = new System.Drawing.Point(304, 449);
             this.nnn.Name = "nnn";
             this.nnn.Size = new System.Drawing.Size(157, 13);
             this.nnn.TabIndex = 27;
             this.nnn.Text = "Spawn units to explode location";
+            this.toolTip1.SetToolTip(this.nnn, "eg: heavyTank, tank*5, hoverTank");
             // 
             // spawnUnit
             // 
-            this.spawnUnit.Location = new System.Drawing.Point(166, 342);
+            this.spawnUnit.Location = new System.Drawing.Point(467, 448);
             this.spawnUnit.Name = "spawnUnit";
-            this.spawnUnit.Size = new System.Drawing.Size(94, 20);
+            this.spawnUnit.Size = new System.Drawing.Size(119, 20);
             this.spawnUnit.TabIndex = 28;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.areadamage);
-            this.groupBox1.Controls.Add(this.ddamage);
-            this.groupBox1.Controls.Add(this.aeraDamage);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(9, 120);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(147, 79);
-            this.groupBox1.TabIndex = 29;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Damage";
+            this.spawnUnit.Tag = "spawnUnit";
+            this.toolTip1.SetToolTip(this.spawnUnit, "eg: heavyTank, tank*5, hoverTank");
             // 
             // areadamage
             // 
-            this.areadamage.Location = new System.Drawing.Point(82, 48);
+            this.areadamage.Location = new System.Drawing.Point(224, 133);
             this.areadamage.Name = "areadamage";
-            this.areadamage.Size = new System.Drawing.Size(46, 20);
+            this.areadamage.Size = new System.Drawing.Size(40, 20);
             this.areadamage.TabIndex = 33;
+            this.areadamage.Tag = "areaDamage";
             this.areadamage.Text = "0";
+            this.toolTip1.SetToolTip(this.areadamage, "directDamage or areaDamage is required");
             // 
             // ddamage
             // 
-            this.ddamage.Location = new System.Drawing.Point(88, 22);
+            this.ddamage.Location = new System.Drawing.Point(230, 107);
             this.ddamage.Name = "ddamage";
             this.ddamage.Size = new System.Drawing.Size(40, 20);
             this.ddamage.TabIndex = 31;
+            this.ddamage.Tag = "directDamage";
             this.ddamage.Text = "0";
+            this.toolTip1.SetToolTip(this.ddamage, "Damage to target unit on hit. Does not work with targetGround:true as we don\'t ha" +
+        "ve a unit target");
             // 
             // aeraDamage
             // 
             this.aeraDamage.AutoSize = true;
-            this.aeraDamage.Location = new System.Drawing.Point(6, 51);
+            this.aeraDamage.Location = new System.Drawing.Point(148, 136);
             this.aeraDamage.Name = "aeraDamage";
             this.aeraDamage.Size = new System.Drawing.Size(70, 13);
             this.aeraDamage.TabIndex = 32;
             this.aeraDamage.Text = "Area damage";
+            this.toolTip1.SetToolTip(this.aeraDamage, "directDamage or areaDamage is required");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 25);
+            this.label3.Location = new System.Drawing.Point(148, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 30;
             this.label3.Text = "Direct damage";
+            this.toolTip1.SetToolTip(this.label3, "Damage to target unit on hit. Does not work with targetGround:true as we don\'t ha" +
+        "ve a unit target");
             // 
             // areaRadius
             // 
-            this.areaRadius.Location = new System.Drawing.Point(219, 19);
+            this.areaRadius.Location = new System.Drawing.Point(214, 159);
             this.areaRadius.Name = "areaRadius";
             this.areaRadius.Size = new System.Drawing.Size(37, 20);
             this.areaRadius.TabIndex = 31;
+            this.areaRadius.Tag = "areaRadius";
             this.areaRadius.Text = "0.0";
+            this.toolTip1.SetToolTip(this.areaRadius, "How wide areaDamage effects. Note this drops off (unless areaDamageNoFalloff is u" +
+        "sed)");
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(153, 22);
+            this.label4.Location = new System.Drawing.Point(148, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 30;
             this.label4.Text = "Area radius";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lightingEffect);
-            this.groupBox2.Controls.Add(this.lasereffect);
-            this.groupBox2.Controls.Add(this.lighsize);
-            this.groupBox2.Controls.Add(this.hitsound);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.createEffect);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.explodeonshieldeff);
-            this.groupBox2.Controls.Add(this.drawType);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.explodeeff);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.explodeEffect);
-            this.groupBox2.Controls.Add(this.lighColor);
-            this.groupBox2.Controls.Add(this.image);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.shielddefection);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.invisible);
-            this.groupBox2.Controls.Add(this.sdm);
-            this.groupBox2.Controls.Add(this.acceleration);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.bdm);
-            this.groupBox2.Controls.Add(this.targetspwwd);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.groupBox1);
-            this.groupBox2.Controls.Add(this.speed);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.areaRadius);
-            this.groupBox2.Controls.Add(this.explodeOnEndOflife);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.defpower);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.life);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 47);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(263, 525);
-            this.groupBox2.TabIndex = 32;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Basic";
-            // 
             // lightingEffect
             // 
             this.lightingEffect.AutoSize = true;
-            this.lightingEffect.Location = new System.Drawing.Point(10, 418);
+            this.lightingEffect.Location = new System.Drawing.Point(201, 216);
             this.lightingEffect.Name = "lightingEffect";
             this.lightingEffect.Size = new System.Drawing.Size(93, 17);
             this.lightingEffect.TabIndex = 79;
+            this.lightingEffect.Tag = "lightingEffect";
             this.lightingEffect.Text = "Lighting effect";
+            this.toolTip1.SetToolTip(this.lightingEffect, "Draw as lighting works best with instant:true");
             this.lightingEffect.UseVisualStyleBackColor = true;
             // 
             // lasereffect
             // 
             this.lasereffect.AutoSize = true;
-            this.lasereffect.Location = new System.Drawing.Point(10, 394);
+            this.lasereffect.Location = new System.Drawing.Point(201, 192);
             this.lasereffect.Name = "lasereffect";
             this.lasereffect.Size = new System.Drawing.Size(82, 17);
             this.lasereffect.TabIndex = 78;
+            this.lasereffect.Tag = "laserEffect";
             this.lasereffect.Text = "Laser effect";
+            this.toolTip1.SetToolTip(this.lasereffect, "Draw as laser works best with instant:true");
             this.lasereffect.UseVisualStyleBackColor = true;
             // 
             // lighsize
             // 
-            this.lighsize.Location = new System.Drawing.Point(67, 368);
+            this.lighsize.Location = new System.Drawing.Point(366, 398);
             this.lighsize.Name = "lighsize";
-            this.lighsize.Size = new System.Drawing.Size(53, 20);
+            this.lighsize.Size = new System.Drawing.Size(36, 20);
             this.lighsize.TabIndex = 80;
+            this.lighsize.Tag = "lightSize";
+            this.lighsize.Text = "0.0";
             // 
             // hitsound
             // 
             this.hitsound.AutoSize = true;
             this.hitsound.Checked = true;
             this.hitsound.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.hitsound.Location = new System.Drawing.Point(183, 127);
+            this.hitsound.Location = new System.Drawing.Point(457, 108);
             this.hitsound.Name = "hitsound";
             this.hitsound.Size = new System.Drawing.Size(71, 17);
             this.hitsound.TabIndex = 75;
+            this.hitsound.Tag = "hitSound";
             this.hitsound.Text = "Hit sound";
             this.hitsound.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(7, 371);
+            this.label21.Location = new System.Drawing.Point(306, 401);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(51, 13);
             this.label21.TabIndex = 79;
             this.label21.Text = "Light size";
             // 
-            // createEffect
-            // 
-            this.createEffect.Location = new System.Drawing.Point(88, 439);
-            this.createEffect.Name = "createEffect";
-            this.createEffect.Size = new System.Drawing.Size(130, 20);
-            this.createEffect.TabIndex = 77;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(7, 346);
+            this.label17.Location = new System.Drawing.Point(306, 426);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(56, 13);
             this.label17.TabIndex = 47;
             this.label17.Text = "Light color";
             // 
-            // explodeonshieldeff
-            // 
-            this.explodeonshieldeff.Location = new System.Drawing.Point(133, 489);
-            this.explodeonshieldeff.Name = "explodeonshieldeff";
-            this.explodeonshieldeff.Size = new System.Drawing.Size(121, 20);
-            this.explodeonshieldeff.TabIndex = 74;
-            // 
-            // drawType
-            // 
-            this.drawType.Location = new System.Drawing.Point(71, 317);
-            this.drawType.Name = "drawType";
-            this.drawType.Size = new System.Drawing.Size(57, 20);
-            this.drawType.TabIndex = 46;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(7, 442);
+            this.label20.Location = new System.Drawing.Point(11, 345);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(68, 13);
             this.label20.TabIndex = 76;
@@ -426,7 +377,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(7, 492);
+            this.label19.Location = new System.Drawing.Point(11, 397);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(120, 13);
             this.label19.TabIndex = 73;
@@ -435,23 +386,19 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(7, 320);
+            this.label15.Location = new System.Drawing.Point(11, 295);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(55, 13);
             this.label15.TabIndex = 45;
+            this.label15.Tag = "";
             this.label15.Text = "Draw type";
-            // 
-            // explodeeff
-            // 
-            this.explodeeff.Location = new System.Drawing.Point(88, 463);
-            this.explodeeff.Name = "explodeeff";
-            this.explodeeff.Size = new System.Drawing.Size(130, 20);
-            this.explodeeff.TabIndex = 72;
+            this.toolTip1.SetToolTip(this.label15, "Built-in image to use. 0:projectiles.png 1:projectiles_large.png 2:projectiles2.p" +
+        "ng");
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(139, 341);
+            this.button2.Location = new System.Drawing.Point(438, 421);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(23, 22);
             this.button2.TabIndex = 69;
@@ -461,7 +408,7 @@
             // explodeEffect
             // 
             this.explodeEffect.AutoSize = true;
-            this.explodeEffect.Location = new System.Drawing.Point(7, 467);
+            this.explodeEffect.Location = new System.Drawing.Point(11, 371);
             this.explodeEffect.Name = "explodeEffect";
             this.explodeEffect.Size = new System.Drawing.Size(75, 13);
             this.explodeEffect.TabIndex = 71;
@@ -469,10 +416,11 @@
             // 
             // lighColor
             // 
-            this.lighColor.Location = new System.Drawing.Point(71, 342);
+            this.lighColor.Location = new System.Drawing.Point(370, 422);
             this.lighColor.Name = "lighColor";
             this.lighColor.Size = new System.Drawing.Size(62, 20);
             this.lighColor.TabIndex = 48;
+            this.lighColor.Tag = "lightColor";
             this.lighColor.Text = "#FFFFFFFF";
             // 
             // image
@@ -480,15 +428,16 @@
             this.image.FormattingEnabled = true;
             this.image.Items.AddRange(new object[] {
             " "});
-            this.image.Location = new System.Drawing.Point(51, 289);
+            this.image.Location = new System.Drawing.Point(53, 316);
             this.image.Name = "image";
             this.image.Size = new System.Drawing.Size(118, 21);
             this.image.TabIndex = 48;
+            this.image.Tag = "image";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 292);
+            this.label16.Location = new System.Drawing.Point(11, 319);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(36, 13);
             this.label16.TabIndex = 47;
@@ -496,60 +445,69 @@
             // 
             // shielddefection
             // 
-            this.shielddefection.Location = new System.Drawing.Point(183, 258);
+            this.shielddefection.Location = new System.Drawing.Point(146, 236);
             this.shielddefection.Name = "shielddefection";
             this.shielddefection.Size = new System.Drawing.Size(37, 20);
             this.shielddefection.TabIndex = 44;
+            this.shielddefection.Tag = "shieldDefectionMultiplier";
             this.shielddefection.Text = "1";
+            this.toolTip1.SetToolTip(this.shielddefection, "eg: 0 to ignore shields and directly damage hull");
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(49, 261);
+            this.label13.Location = new System.Drawing.Point(11, 239);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(126, 13);
             this.label13.TabIndex = 43;
             this.label13.Text = "Shield defection multiplier";
+            this.toolTip1.SetToolTip(this.label13, "eg: 0 to ignore shields and directly damage hull");
             // 
             // invisible
             // 
             this.invisible.AutoSize = true;
-            this.invisible.Location = new System.Drawing.Point(183, 97);
+            this.invisible.Location = new System.Drawing.Point(457, 85);
             this.invisible.Name = "invisible";
             this.invisible.Size = new System.Drawing.Size(64, 17);
             this.invisible.TabIndex = 44;
+            this.invisible.Tag = "invisible";
             this.invisible.Text = "Invisible";
             this.invisible.UseVisualStyleBackColor = true;
             // 
             // sdm
             // 
-            this.sdm.Location = new System.Drawing.Point(183, 232);
+            this.sdm.Location = new System.Drawing.Point(137, 212);
             this.sdm.Name = "sdm";
             this.sdm.Size = new System.Drawing.Size(37, 20);
             this.sdm.TabIndex = 42;
+            this.sdm.Tag = "shieldDamageMultiplier";
             this.sdm.Text = "1";
+            this.toolTip1.SetToolTip(this.sdm, "eg: 0 to do no damage to shields and 2 to do double damage");
             // 
             // acceleration
             // 
-            this.acceleration.Location = new System.Drawing.Point(219, 70);
+            this.acceleration.Location = new System.Drawing.Point(83, 155);
             this.acceleration.Name = "acceleration";
             this.acceleration.Size = new System.Drawing.Size(37, 20);
             this.acceleration.TabIndex = 37;
+            this.acceleration.Tag = "targetSpeedAcceleration";
             this.acceleration.Text = "0.0";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(49, 235);
+            this.label12.Location = new System.Drawing.Point(11, 215);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(120, 13);
             this.label12.TabIndex = 41;
+            this.label12.Tag = "";
             this.label12.Text = "Shield damage multiplier";
+            this.toolTip1.SetToolTip(this.label12, "eg: 0 to do no damage to shields and 2 to do double damage");
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(153, 74);
+            this.label9.Location = new System.Drawing.Point(11, 158);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(66, 13);
             this.label9.TabIndex = 36;
@@ -557,33 +515,37 @@
             // 
             // bdm
             // 
-            this.bdm.Location = new System.Drawing.Point(183, 206);
+            this.bdm.Location = new System.Drawing.Point(146, 188);
             this.bdm.Name = "bdm";
             this.bdm.Size = new System.Drawing.Size(37, 20);
             this.bdm.TabIndex = 39;
+            this.bdm.Tag = "buildingDamageMultiplier";
             this.bdm.Text = "1";
             // 
             // targetspwwd
             // 
-            this.targetspwwd.Location = new System.Drawing.Point(82, 71);
+            this.targetspwwd.Location = new System.Drawing.Point(87, 131);
             this.targetspwwd.Name = "targetspwwd";
             this.targetspwwd.Size = new System.Drawing.Size(37, 20);
             this.targetspwwd.TabIndex = 35;
+            this.targetspwwd.Tag = "targetSpeed";
             this.targetspwwd.Text = "0.0";
+            this.toolTip1.SetToolTip(this.targetspwwd, "Accelerate to this speed");
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 75);
+            this.label8.Location = new System.Drawing.Point(11, 134);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 13);
             this.label8.TabIndex = 34;
             this.label8.Text = "Target speed";
+            this.toolTip1.SetToolTip(this.label8, "Accelerate to this speed");
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(49, 209);
+            this.label11.Location = new System.Drawing.Point(11, 191);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(128, 13);
             this.label11.TabIndex = 38;
@@ -591,64 +553,34 @@
             // 
             // speed
             // 
-            this.speed.Location = new System.Drawing.Point(219, 45);
+            this.speed.Location = new System.Drawing.Point(56, 106);
             this.speed.Name = "speed";
             this.speed.Size = new System.Drawing.Size(37, 20);
             this.speed.TabIndex = 33;
+            this.speed.Tag = "speed";
             this.speed.Text = "0.0";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(153, 48);
+            this.label5.Location = new System.Drawing.Point(11, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 32;
             this.label5.Text = "Speed";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.tags);
-            this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.revalFogonExplode);
-            this.groupBox3.Controls.Add(this.visibleinfog);
-            this.groupBox3.Controls.Add(this.nukeWeapon);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.color);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.gravity);
-            this.groupBox3.Controls.Add(this.disableLeadTargeting);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.instant);
-            this.groupBox3.Controls.Add(this.friendlyFire);
-            this.groupBox3.Controls.Add(this.hituwater);
-            this.groupBox3.Controls.Add(this.airandground);
-            this.groupBox3.Controls.Add(this.fwaepon);
-            this.groupBox3.Controls.Add(this.targetground);
-            this.groupBox3.Controls.Add(this.ballistic);
-            this.groupBox3.Controls.Add(this.spawnUnit);
-            this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Controls.Add(this.retarget);
-            this.groupBox3.Controls.Add(this.nnn);
-            this.groupBox3.Controls.Add(this.teleportSource);
-            this.groupBox3.Location = new System.Drawing.Point(287, 47);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(284, 480);
-            this.groupBox3.TabIndex = 33;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Additional";
-            // 
             // tags
             // 
-            this.tags.Location = new System.Drawing.Point(43, 448);
+            this.tags.Location = new System.Drawing.Point(343, 493);
             this.tags.Name = "tags";
             this.tags.Size = new System.Drawing.Size(190, 20);
             this.tags.TabIndex = 82;
+            this.tags.Tag = "tags";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 453);
+            this.label22.Location = new System.Drawing.Point(306, 498);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(31, 13);
             this.label22.TabIndex = 81;
@@ -657,37 +589,41 @@
             // revalFogonExplode
             // 
             this.revalFogonExplode.AutoSize = true;
-            this.revalFogonExplode.Location = new System.Drawing.Point(6, 424);
+            this.revalFogonExplode.Location = new System.Drawing.Point(308, 369);
             this.revalFogonExplode.Name = "revalFogonExplode";
             this.revalFogonExplode.Size = new System.Drawing.Size(176, 17);
             this.revalFogonExplode.TabIndex = 78;
+            this.revalFogonExplode.Tag = "shouldRevealFog";
             this.revalFogonExplode.Text = "Reveal fog to player on explode";
             this.revalFogonExplode.UseVisualStyleBackColor = true;
             // 
             // visibleinfog
             // 
             this.visibleinfog.AutoSize = true;
-            this.visibleinfog.Location = new System.Drawing.Point(154, 22);
+            this.visibleinfog.Location = new System.Drawing.Point(457, 55);
             this.visibleinfog.Name = "visibleinfog";
             this.visibleinfog.Size = new System.Drawing.Size(85, 17);
             this.visibleinfog.TabIndex = 70;
+            this.visibleinfog.Tag = "alwaysVisibleInFog";
             this.visibleinfog.Text = "Visible in fog";
             this.visibleinfog.UseVisualStyleBackColor = true;
             // 
             // nukeWeapon
             // 
             this.nukeWeapon.AutoSize = true;
-            this.nukeWeapon.Location = new System.Drawing.Point(6, 401);
+            this.nukeWeapon.Location = new System.Drawing.Point(307, 108);
             this.nukeWeapon.Name = "nukeWeapon";
             this.nukeWeapon.Size = new System.Drawing.Size(93, 17);
             this.nukeWeapon.TabIndex = 69;
+            this.nukeWeapon.Tag = "nukeWeapon";
             this.nukeWeapon.Text = "Nuke weapon";
+            this.toolTip1.SetToolTip(this.nukeWeapon, "Shows on mini-map when fired. Some other side effects as well.");
             this.nukeWeapon.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(113, 370);
+            this.button1.Location = new System.Drawing.Point(160, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(23, 22);
             this.button1.TabIndex = 68;
@@ -696,42 +632,47 @@
             // 
             // color
             // 
-            this.color.Location = new System.Drawing.Point(46, 372);
+            this.color.Location = new System.Drawing.Point(93, 265);
             this.color.Name = "color";
             this.color.Size = new System.Drawing.Size(61, 20);
             this.color.TabIndex = 50;
+            this.color.Tag = "color";
             this.color.Text = "#FFFFFFFF";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 375);
+            this.label18.Location = new System.Drawing.Point(11, 268);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(31, 13);
+            this.label18.Size = new System.Drawing.Size(76, 13);
             this.label18.TabIndex = 49;
-            this.label18.Text = "Color";
+            this.label18.Text = "Projectile color";
             // 
             // gravity
             // 
-            this.gravity.Location = new System.Drawing.Point(52, 266);
+            this.gravity.Location = new System.Drawing.Point(355, 467);
             this.gravity.Name = "gravity";
             this.gravity.Size = new System.Drawing.Size(37, 20);
             this.gravity.TabIndex = 43;
+            this.gravity.Tag = "gravity";
             // 
             // disableLeadTargeting
             // 
             this.disableLeadTargeting.AutoSize = true;
-            this.disableLeadTargeting.Location = new System.Drawing.Point(7, 240);
+            this.disableLeadTargeting.Location = new System.Drawing.Point(309, 300);
             this.disableLeadTargeting.Name = "disableLeadTargeting";
             this.disableLeadTargeting.Size = new System.Drawing.Size(205, 17);
             this.disableLeadTargeting.TabIndex = 43;
+            this.disableLeadTargeting.Tag = "disableLeadTargeting";
             this.disableLeadTargeting.Text = "Disable the lead targeting calculations";
+            this.toolTip1.SetToolTip(this.disableLeadTargeting, "Disable the lead targeting calculations when aiming at a moving target. Defaults " +
+        "false.");
             this.disableLeadTargeting.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 269);
+            this.label14.Location = new System.Drawing.Point(306, 470);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(40, 13);
             this.label14.TabIndex = 42;
@@ -740,10 +681,11 @@
             // instant
             // 
             this.instant.AutoSize = true;
-            this.instant.Location = new System.Drawing.Point(7, 217);
+            this.instant.Location = new System.Drawing.Point(309, 277);
             this.instant.Name = "instant";
             this.instant.Size = new System.Drawing.Size(110, 17);
             this.instant.TabIndex = 42;
+            this.instant.Tag = "instant";
             this.instant.Text = "Hit target instantly";
             this.instant.UseVisualStyleBackColor = true;
             this.instant.CheckedChanged += new System.EventHandler(this.instant_CheckedChanged);
@@ -751,50 +693,56 @@
             // friendlyFire
             // 
             this.friendlyFire.AutoSize = true;
-            this.friendlyFire.Location = new System.Drawing.Point(7, 194);
+            this.friendlyFire.Location = new System.Drawing.Point(309, 254);
             this.friendlyFire.Name = "friendlyFire";
             this.friendlyFire.Size = new System.Drawing.Size(160, 17);
             this.friendlyFire.TabIndex = 41;
+            this.friendlyFire.Tag = "friendlyFire";
             this.friendlyFire.Text = "Can damage own team units";
             this.friendlyFire.UseVisualStyleBackColor = true;
             // 
             // hituwater
             // 
             this.hituwater.AutoSize = true;
-            this.hituwater.Location = new System.Drawing.Point(7, 148);
+            this.hituwater.Location = new System.Drawing.Point(309, 208);
             this.hituwater.Name = "hituwater";
             this.hituwater.Size = new System.Drawing.Size(118, 17);
             this.hituwater.TabIndex = 40;
+            this.hituwater.Tag = "areaHitUnderwaterAlways";
             this.hituwater.Text = "Area hit underwater";
             this.hituwater.UseVisualStyleBackColor = true;
             // 
             // airandground
             // 
             this.airandground.AutoSize = true;
-            this.airandground.Location = new System.Drawing.Point(7, 171);
+            this.airandground.Location = new System.Drawing.Point(309, 231);
             this.airandground.Name = "airandground";
             this.airandground.Size = new System.Drawing.Size(195, 17);
             this.airandground.TabIndex = 39;
+            this.airandground.Tag = "areaHitAirAndLandAtSameTime";
             this.airandground.Text = "Area hit air and ground at same time";
             this.airandground.UseVisualStyleBackColor = true;
             // 
             // fwaepon
             // 
             this.fwaepon.AutoSize = true;
-            this.fwaepon.Location = new System.Drawing.Point(154, 44);
+            this.fwaepon.Location = new System.Drawing.Point(307, 85);
             this.fwaepon.Name = "fwaepon";
             this.fwaepon.Size = new System.Drawing.Size(95, 17);
             this.fwaepon.TabIndex = 38;
+            this.fwaepon.Tag = "flameWeapon";
             this.fwaepon.Text = "Flame weapon";
+            this.toolTip1.SetToolTip(this.fwaepon, "Generates small flames on hit (only cosmetic)");
             this.fwaepon.UseVisualStyleBackColor = true;
             // 
             // targetground
             // 
             this.targetground.AutoSize = true;
-            this.targetground.Location = new System.Drawing.Point(6, 22);
+            this.targetground.Location = new System.Drawing.Point(309, 55);
             this.targetground.Name = "targetground";
             this.targetground.Size = new System.Drawing.Size(93, 17);
             this.targetground.TabIndex = 36;
+            this.targetground.Tag = "targetGround";
             this.targetground.Text = "Target ground";
             this.targetground.UseVisualStyleBackColor = true;
             this.targetground.CheckedChanged += new System.EventHandler(this.targetground_CheckedChanged);
@@ -802,65 +750,54 @@
             // ballistic
             // 
             this.ballistic.AutoSize = true;
-            this.ballistic.Location = new System.Drawing.Point(6, 44);
+            this.ballistic.Location = new System.Drawing.Point(307, 141);
             this.ballistic.Name = "ballistic";
             this.ballistic.Size = new System.Drawing.Size(61, 17);
             this.ballistic.TabIndex = 35;
+            this.ballistic.Tag = "ballistic";
             this.ballistic.Text = "Ballistic";
             this.ballistic.UseVisualStyleBackColor = true;
             this.ballistic.CheckedChanged += new System.EventHandler(this.ballistic_CheckedChanged);
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.ballheigh);
-            this.groupBox4.Controls.Add(this.delaymove_height);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.dmH);
-            this.groupBox4.Enabled = false;
-            this.groupBox4.Location = new System.Drawing.Point(6, 67);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(154, 77);
-            this.groupBox4.TabIndex = 34;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Ballistic";
-            // 
             // ballheigh
             // 
-            this.ballheigh.Location = new System.Drawing.Point(45, 49);
+            this.ballheigh.Location = new System.Drawing.Point(379, 157);
             this.ballheigh.Name = "ballheigh";
             this.ballheigh.Size = new System.Drawing.Size(37, 20);
             this.ballheigh.TabIndex = 41;
+            this.ballheigh.Tag = "ballistic_height";
             this.ballheigh.Text = "0.0";
             // 
             // delaymove_height
             // 
             this.delaymove_height.AutoSize = true;
-            this.delaymove_height.Location = new System.Drawing.Point(6, 25);
+            this.delaymove_height.Location = new System.Drawing.Point(304, 183);
             this.delaymove_height.Name = "delaymove_height";
-            this.delaymove_height.Size = new System.Drawing.Size(95, 13);
+            this.delaymove_height.Size = new System.Drawing.Size(129, 13);
             this.delaymove_height.TabIndex = 38;
-            this.delaymove_height.Text = "Delay move height";
+            this.delaymove_height.Text = "Balistic delay-move height";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 52);
+            this.label10.Location = new System.Drawing.Point(304, 160);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.Size = new System.Drawing.Size(69, 13);
             this.label10.TabIndex = 40;
-            this.label10.Text = "Heigh";
+            this.label10.Text = "Balistic heigh";
             // 
             // dmH
             // 
-            this.dmH.Location = new System.Drawing.Point(104, 22);
+            this.dmH.Location = new System.Drawing.Point(439, 180);
             this.dmH.Name = "dmH";
             this.dmH.Size = new System.Drawing.Size(37, 20);
             this.dmH.TabIndex = 39;
+            this.dmH.Tag = "ballistic_delaymove_height";
             this.dmH.Text = "0.0";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(471, 541);
+            this.button4.Location = new System.Drawing.Point(491, 523);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(95, 24);
             this.button4.TabIndex = 79;
@@ -870,7 +807,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(373, 541);
+            this.button5.Location = new System.Drawing.Point(393, 523);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(86, 24);
             this.button5.TabIndex = 78;
@@ -878,32 +815,192 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 10000;
+            this.toolTip1.InitialDelay = 500;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ReshowDelay = 100;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Help";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2"});
+            this.comboBox1.Location = new System.Drawing.Point(72, 291);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(96, 21);
+            this.comboBox1.TabIndex = 83;
+            this.comboBox1.Tag = "drawType";
+            this.toolTip1.SetToolTip(this.comboBox1, "Built-in image to use. 0:projectiles.png 1:projectiles_large.png 2:projectiles2.p" +
+        "ng");
+            // 
+            // e2
+            // 
+            this.e2.FormattingEnabled = true;
+            this.e2.Location = new System.Drawing.Point(89, 368);
+            this.e2.Name = "e2";
+            this.e2.Size = new System.Drawing.Size(96, 21);
+            this.e2.TabIndex = 84;
+            this.e2.Tag = "explodeEffect";
+            this.toolTip1.SetToolTip(this.e2, "Built-in image to use. 0:projectiles.png 1:projectiles_large.png 2:projectiles2.p" +
+        "ng");
+            // 
+            // e3
+            // 
+            this.e3.FormattingEnabled = true;
+            this.e3.Location = new System.Drawing.Point(135, 394);
+            this.e3.Name = "e3";
+            this.e3.Size = new System.Drawing.Size(96, 21);
+            this.e3.TabIndex = 85;
+            this.e3.Tag = "explodeEffectOnShield";
+            this.toolTip1.SetToolTip(this.e3, "Built-in image to use. 0:projectiles.png 1:projectiles_large.png 2:projectiles2.p" +
+        "ng");
+            // 
+            // e1
+            // 
+            this.e1.FormattingEnabled = true;
+            this.e1.Location = new System.Drawing.Point(83, 342);
+            this.e1.Name = "e1";
+            this.e1.Size = new System.Drawing.Size(96, 21);
+            this.e1.TabIndex = 86;
+            this.e1.Tag = "effectOnCreate";
+            this.toolTip1.SetToolTip(this.e1, "Built-in image to use. 0:projectiles.png 1:projectiles_large.png 2:projectiles2.p" +
+        "ng");
+            // 
+            // bflist
+            // 
+            this.bflist.FormattingEnabled = true;
+            this.bflist.Location = new System.Drawing.Point(6, 19);
+            this.bflist.Name = "bflist";
+            this.bflist.Size = new System.Drawing.Size(239, 69);
+            this.bflist.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.bflist, "This is list =P");
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.button14);
+            this.groupBox10.Controls.Add(this.button16);
+            this.groupBox10.Controls.Add(this.bflist);
+            this.groupBox10.Location = new System.Drawing.Point(11, 421);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(259, 126);
+            this.groupBox10.TabIndex = 87;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Mutator";
+            // 
+            // button14
+            // 
+            this.button14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button14.Location = new System.Drawing.Point(85, 94);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(77, 23);
+            this.button14.TabIndex = 10;
+            this.button14.Text = "Delete";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button16
+            // 
+            this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button16.Location = new System.Drawing.Point(168, 94);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(77, 23);
+            this.button16.TabIndex = 8;
+            this.button16.Text = "Add ";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // addprojectile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 577);
+            this.ClientSize = new System.Drawing.Size(598, 559);
+            this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.e1);
+            this.Controls.Add(this.e3);
+            this.Controls.Add(this.e2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ballheigh);
+            this.Controls.Add(this.areadamage);
+            this.Controls.Add(this.delaymove_height);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.tags);
+            this.Controls.Add(this.dmH);
+            this.Controls.Add(this.ddamage);
+            this.Controls.Add(this.lightingEffect);
+            this.Controls.Add(this.aeraDamage);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
+            this.Controls.Add(this.revalFogonExplode);
+            this.Controls.Add(this.lasereffect);
+            this.Controls.Add(this.visibleinfog);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.nukeWeapon);
+            this.Controls.Add(this.lighsize);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.color);
+            this.Controls.Add(this.hitsound);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.gravity);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.disableLeadTargeting);
+            this.Controls.Add(this.namee);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.instant);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.friendlyFire);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.hituwater);
+            this.Controls.Add(this.airandground);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.fwaepon);
+            this.Controls.Add(this.targetground);
+            this.Controls.Add(this.ballistic);
+            this.Controls.Add(this.life);
+            this.Controls.Add(this.spawnUnit);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.retarget);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.nnn);
+            this.Controls.Add(this.defpower);
+            this.Controls.Add(this.teleportSource);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.explodeOnEndOflife);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.areaRadius);
+            this.Controls.Add(this.explodeEffect);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lighColor);
+            this.Controls.Add(this.speed);
+            this.Controls.Add(this.image);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.shielddefection);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.targetspwwd);
+            this.Controls.Add(this.invisible);
+            this.Controls.Add(this.bdm);
+            this.Controls.Add(this.sdm);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.acceleration);
+            this.Controls.Add(this.label12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "addprojectile";
             this.Text = "RWStudio: Projectile";
             this.Load += new System.EventHandler(this.addprojectile_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -912,7 +1009,6 @@
         #endregion
 
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox life;
@@ -923,14 +1019,12 @@
         private System.Windows.Forms.CheckBox teleportSource;
         private System.Windows.Forms.Label nnn;
         private System.Windows.Forms.TextBox spawnUnit;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox areadamage;
         private System.Windows.Forms.TextBox ddamage;
         private System.Windows.Forms.Label aeraDamage;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox areaRadius;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox shielddefection;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox sdm;
@@ -943,7 +1037,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox speed;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox invisible;
         private System.Windows.Forms.TextBox gravity;
         private System.Windows.Forms.CheckBox disableLeadTargeting;
@@ -955,7 +1048,6 @@
         private System.Windows.Forms.CheckBox fwaepon;
         private System.Windows.Forms.CheckBox targetground;
         private System.Windows.Forms.CheckBox ballistic;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox ballheigh;
         private System.Windows.Forms.Label delaymove_height;
         private System.Windows.Forms.Label label10;
@@ -964,7 +1056,6 @@
         private System.Windows.Forms.ComboBox image;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox drawType;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox color;
         private System.Windows.Forms.Label label18;
@@ -973,15 +1064,12 @@
         private System.Windows.Forms.CheckBox nukeWeapon;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox explodeeff;
         private System.Windows.Forms.Label explodeEffect;
         private System.Windows.Forms.CheckBox visibleinfog;
-        private System.Windows.Forms.TextBox explodeonshieldeff;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.CheckBox lightingEffect;
         private System.Windows.Forms.CheckBox lasereffect;
         private System.Windows.Forms.CheckBox hitsound;
-        private System.Windows.Forms.TextBox createEffect;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox tags;
         private System.Windows.Forms.Label label22;
@@ -989,5 +1077,15 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.CheckBox revalFogonExplode;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox e2;
+        private System.Windows.Forms.ComboBox e3;
+        private System.Windows.Forms.ComboBox e1;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.ListBox bflist;
+        public System.Windows.Forms.TextBox namee;
     }
 }

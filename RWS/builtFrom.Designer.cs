@@ -147,9 +147,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(189, 205);
+            this.button4.Location = new System.Drawing.Point(189, 208);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 24);
+            this.button4.Size = new System.Drawing.Size(74, 23);
             this.button4.TabIndex = 79;
             this.button4.Text = "Apply";
             this.button4.UseVisualStyleBackColor = true;
@@ -157,9 +157,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(127, 205);
+            this.button5.Location = new System.Drawing.Point(109, 208);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 24);
+            this.button5.Size = new System.Drawing.Size(74, 23);
             this.button5.TabIndex = 78;
             this.button5.Text = "Cancel";
             this.button5.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(256, 237);
+            this.ClientSize = new System.Drawing.Size(275, 243);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.lockedmess);

@@ -19,6 +19,8 @@ namespace RWS
         public static string lastact;
         public static string lastleg;
         public static string lastanim;
+        private bool autoscroll;
+
         public editUnit()
         {
             InitializeComponent();
@@ -119,6 +121,7 @@ namespace RWS
             writeFromTextbox(buildspeed, "core", "buildSpeed", data);
             writeFromNumeric(level, "core", "techLevel", data);
             writeFromTextbox(tags, "core", "tags", data);
+            writeFromCheck(lock_body_rotation_with_main_turret, "core", "lock_body_rotation_with_main_turret", data);
             /*
              * radius/footprint
              */
@@ -147,6 +150,7 @@ namespace RWS
             writeFromNumeric(shield, "core", "maxShield", data);
             writeFromTextbox(shieldr, "core", "shieldRegen", data);
             writeFromCheck(ssaz, "core", "startShieldAtZero", data);
+            writeFromNumeric(armour, "core", "armour", data);
             /*
             * energy
             */
@@ -268,6 +272,7 @@ namespace RWS
         }
         private void editUnit_Load(object sender, EventArgs e)
         {
+
             load();
             loadimages();
             loadlist();
@@ -372,18 +377,20 @@ namespace RWS
                 animspeed.Text = data["graphics"]["animation_moving_speed"];
                 moveAnimzpingPong.Checked = Convert.ToBoolean(data["graphics"]["animation_moving_pingPong"]);
             }
-            if(data["graphics"]["animation_idle_start"] != null)
-            {
-                checkBox1.Checked = true;
-                idleAnimstart.Value = Convert.ToInt32(data["graphics"]["animation_idle_start"]);
-                idleAnimEnd.Value = Convert.ToInt32(data["graphics"]["animation_idle_end"]);
-                idleAnimSpeed.Text = data["graphics"]["animation_idle_speed"];
-                IdleAnimPingPong.Checked = Convert.ToBoolean(data["graphics"]["animation_idle_pingPong"]);
+                if (data["graphics"]["animation_idle_start"] != null)
+                {
+                    checkBox1.Checked = true;
+                    idleAnimstart.Value = Convert.ToInt32(data["graphics"]["animation_idle_start"]);
+                    idleAnimEnd.Value = Convert.ToInt32(data["graphics"]["animation_idle_end"]);
+                    idleAnimSpeed.Text = data["graphics"]["animation_idle_speed"];
+                    IdleAnimPingPong.Checked = Convert.ToBoolean(data["graphics"]["animation_idle_pingPong"]);
+                }
+                armour.Value = Convert.ToInt32(data["core"]["armour"]);
+                lock_body_rotation_with_main_turret.Checked = Convert.ToBoolean(data["core"]["lock_body_rotation_with_main_turret"]);
             }
-            }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("Ало, Гитлер? \n-Это п*зда");
+                MessageBox.Show("Ало, Гитлер? \n-Это п*зда" + e);
             }
         }
         private void loadlist()
@@ -711,7 +718,15 @@ namespace RWS
         {
             if (bflist.SelectedItem != null)
             {
-                lastbf = null;
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_name"] = null;
+                data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_pos"] = null;
+               data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_forceNano"] = null;
+               data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_isLocked"] = null;
+                data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_isLockedMessage"] = null;
+                parser.WriteFile(sss[0],data);
                 loadlist();
             }
             else
@@ -888,9 +903,9 @@ namespace RWS
 
         private void button21_Click(object sender, EventArgs e)
         {
-            if (alist.SelectedItem != null)
+            if (elist.SelectedItem != null)
             {
-                lastact = alist.SelectedItem.ToString();
+                lastact = elist.SelectedItem.ToString();
                 effects att = new effects();
                 att.ShowDialog();
                 lastact = null;

@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using IniParser;
 using IniParser.Model;
 using System.IO.Compression;
+using System.Diagnostics;
 
 namespace RWS
 {
@@ -168,10 +169,17 @@ namespace RWS
         private void button5_Click(object sender, EventArgs e)
         {
             if (saveFileDialog1.ShowDialog() == DialogResult.OK) {
+                UseWaitCursor = true;
                 string filename = saveFileDialog1.FileName;
                 ZipFile.CreateFromDirectory(openMod.s, filename);
                 MessageBox.Show("Comressed!", "Success");
+                UseWaitCursor = false;
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Process.Start(openMod.s);
         }
     }
 }
