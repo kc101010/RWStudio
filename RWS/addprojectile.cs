@@ -57,7 +57,7 @@ namespace RWS
                         e2.Items.Add(str[1]);
                         e3.Items.Add(str[1]);
                     }
-                    if (s.Contains("mutator") && s.Contains("_ifUnitWithTags") && s.Contains("_ifUnitWithoutTags"))
+                    if (s.Contains("mutator") && (s.Contains("_ifUnitWithTags") || s.Contains("_ifUnitWithoutTags")) && !bflist.Items.Contains(s.Split(new char[] { 'r', '_' })[1]))
                     {
                         bflist.Items.Add(s.Split(new char[] { 'r', '_' })[1]);
                     }
@@ -218,10 +218,11 @@ namespace RWS
                 string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
                 var parser = new FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
-                data["projectile_" + namee.Text]["mutator" + bflist.SelectedItem.ToString() + "_ifUnitWithTags"] = null;
-                data["projectile_" + namee.Text]["mutator" + bflist.SelectedItem.ToString() + "_ifUnitWithoutTags"] = null;
-                data["projectile_" + namee.Text]["mutator" + bflist.SelectedItem.ToString() + "_directDamageMultiplier"] = null;
-                data["projectile_" + namee.Text]["mutator" + bflist.SelectedItem.ToString() + "_areaDamageMultiplier"] = null;
+                data.Sections.GetSectionData("projectile_" + namee.Text).Keys.RemoveKey("mutator" + bflist.SelectedItem.ToString() + "_ifUnitWithTags");
+                data.Sections.GetSectionData("projectile_" + namee.Text).Keys.RemoveKey("mutator" + bflist.SelectedItem.ToString() + "_ifUnitWithoutTags");
+                data.Sections.GetSectionData("projectile_" + namee.Text).Keys.RemoveKey("mutator" + bflist.SelectedItem.ToString() + "_directDamageMultiplier");
+                data.Sections.GetSectionData("projectile_" + namee.Text).Keys.RemoveKey("mutator" + bflist.SelectedItem.ToString() + "_areaDamageMultiplier");
+                parser.WriteFile(sss[0], data);
                 loadlist();
             }
             else

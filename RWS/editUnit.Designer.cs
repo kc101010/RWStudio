@@ -93,7 +93,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.turretimage = new System.Windows.Forms.ComboBox();
             this.shieldr = new System.Windows.Forms.TextBox();
@@ -237,13 +236,14 @@
             this.canRepairBuilds = new System.Windows.Forms.CheckBox();
             this.autoRepair = new System.Windows.Forms.CheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.button15 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.footprint.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -257,7 +257,6 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sox)).BeginInit();
@@ -288,6 +287,7 @@
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -810,14 +810,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
@@ -982,6 +974,7 @@
             resources.ApplyResources(this.actionlist, "actionlist");
             this.actionlist.Name = "actionlist";
             this.toolTip1.SetToolTip(this.actionlist, resources.GetString("actionlist.ToolTip"));
+            this.actionlist.DoubleClick += new System.EventHandler(this.button3_Click);
             // 
             // gb
             // 
@@ -1108,6 +1101,7 @@
             resources.ApplyResources(this.animlist, "animlist");
             this.animlist.Name = "animlist";
             this.toolTip1.SetToolTip(this.animlist, resources.GetString("animlist.ToolTip"));
+            this.animlist.DoubleClick += new System.EventHandler(this.button6_Click);
             // 
             // groupBox5
             // 
@@ -1223,6 +1217,7 @@
             resources.ApplyResources(this.turretlist, "turretlist");
             this.turretlist.Name = "turretlist";
             this.toolTip1.SetToolTip(this.turretlist, resources.GetString("turretlist.ToolTip"));
+            this.turretlist.DoubleClick += new System.EventHandler(this.button9_Click);
             // 
             // groupBox9
             // 
@@ -1261,6 +1256,7 @@
             resources.ApplyResources(this.projectilelist, "projectilelist");
             this.projectilelist.Name = "projectilelist";
             this.toolTip1.SetToolTip(this.projectilelist, resources.GetString("projectilelist.ToolTip"));
+            this.projectilelist.DoubleClick += new System.EventHandler(this.button12_Click);
             // 
             // groupBox10
             // 
@@ -1329,6 +1325,7 @@
             resources.ApplyResources(this.cblist, "cblist");
             this.cblist.Name = "cblist";
             this.toolTip1.SetToolTip(this.cblist, resources.GetString("cblist.ToolTip"));
+            this.cblist.DoubleClick += new System.EventHandler(this.button18_Click);
             // 
             // groupBox12
             // 
@@ -1380,6 +1377,7 @@
             resources.ApplyResources(this.elist, "elist");
             this.elist.Name = "elist";
             this.toolTip1.SetToolTip(this.elist, resources.GetString("elist.ToolTip"));
+            this.elist.DoubleClick += new System.EventHandler(this.button21_Click);
             // 
             // groupBox15
             // 
@@ -1417,6 +1415,7 @@
             resources.ApplyResources(this.alist, "alist");
             this.alist.Name = "alist";
             this.toolTip1.SetToolTip(this.alist, resources.GetString("alist.ToolTip"));
+            this.alist.DoubleClick += new System.EventHandler(this.button27_Click);
             // 
             // groupBox16
             // 
@@ -1455,6 +1454,7 @@
             resources.ApplyResources(this.armlist, "armlist");
             this.armlist.Name = "armlist";
             this.toolTip1.SetToolTip(this.armlist, resources.GetString("armlist.ToolTip"));
+            this.armlist.DoubleClick += new System.EventHandler(this.button30_Click);
             // 
             // groupBox17
             // 
@@ -1931,6 +1931,14 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Help";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.listBox1, "listBox1");
+            this.listBox1.Name = "listBox1";
+            this.toolTip1.SetToolTip(this.listBox1, resources.GetString("listBox1.ToolTip"));
+            this.listBox1.DoubleClick += new System.EventHandler(this.button23_Click);
+            // 
             // label51
             // 
             resources.ApplyResources(this.label51, "label51");
@@ -1957,25 +1965,29 @@
             resources.ApplyResources(this.button15, "button15");
             this.button15.Name = "button15";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // button23
             // 
             resources.ApplyResources(this.button23, "button23");
             this.button23.Name = "button23";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
             resources.ApplyResources(this.button24, "button24");
             this.button24.Name = "button24";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
-            // listBox1
+            // pictureBox1
             // 
-            this.listBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.listBox1, "listBox1");
-            this.listBox1.Name = "listBox1";
-            this.toolTip1.SetToolTip(this.listBox1, resources.GetString("listBox1.ToolTip"));
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // editUnit
             // 
@@ -2020,7 +2032,6 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sox)).EndInit();
@@ -2060,6 +2071,7 @@
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
             this.groupBox14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

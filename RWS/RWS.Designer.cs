@@ -41,9 +41,9 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Location = new System.Drawing.Point(97, 154);
+            this.button1.Location = new System.Drawing.Point(85, 156);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 23);
+            this.button1.Size = new System.Drawing.Size(180, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Create new mod";
             this.button1.UseVisualStyleBackColor = true;
@@ -53,9 +53,9 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Location = new System.Drawing.Point(123, 196);
+            this.button2.Location = new System.Drawing.Point(116, 217);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 23);
+            this.button2.Size = new System.Drawing.Size(119, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Open mod";
             this.button2.UseVisualStyleBackColor = true;
@@ -65,7 +65,7 @@
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.Location = new System.Drawing.Point(138, 238);
+            this.button3.Location = new System.Drawing.Point(138, 272);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
@@ -99,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 277);
+            this.ClientSize = new System.Drawing.Size(350, 323);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

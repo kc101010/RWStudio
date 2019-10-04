@@ -94,6 +94,12 @@
     <Compile Include="addUnit.Designer.cs">
       <DependentUpon>addUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="arms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arms.Designer.cs">
+      <DependentUpon>arms.cs</DependentUpon>
+    </Compile>
     <Compile Include="attachments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addUnit.resx">
       <DependentUpon>addUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arms.resx">
+      <DependentUpon>arms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="attachments.resx">
       <DependentUpon>attachments.cs</DependentUpon>

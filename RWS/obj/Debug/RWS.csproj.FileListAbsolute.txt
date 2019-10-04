@@ -45,3 +45,4 @@ C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.TrustInfo.xml
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.exe.manifest
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.application
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.mutator.resources
+C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.arms.resources

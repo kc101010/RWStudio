@@ -408,6 +408,7 @@ namespace RWS
             alist.Items.Clear();
             elist.Items.Clear();
             animlist.Items.Clear();
+            listBox1.Items.Clear();
             foreach (string s in strings)
             {
                 if (s.Contains("#")) ;
@@ -454,7 +455,7 @@ namespace RWS
                     {
                         string[] str;
                         str = s.Split(new char[] { '_', ']' });
-                        armlist.Items.Add(str[1]);
+                        listBox1.Items.Add(str[1]);
                     }
                     if (s.Contains("[attachment_") && s.Contains("]"))
                     {
@@ -721,11 +722,11 @@ namespace RWS
                 string[] sss = Directory.GetFiles(path, "*.ini");
                 var parser = new FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
-                data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_name"] = null;
-                data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_pos"] = null;
-               data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_forceNano"] = null;
-               data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_isLocked"] = null;
-                data["core"]["builtFrom_" + bflist.SelectedItem.ToString() + "_isLockedMessage"] = null;
+                data.Sections.GetSectionData("core").Keys.RemoveKey("builtFrom_" + bflist.SelectedItem.ToString().Split(':')[0] + "_name");
+                data.Sections.GetSectionData("core").Keys.RemoveKey("builtFrom_" + bflist.SelectedItem.ToString().Split(':')[0] + "_pos");
+                data.Sections.GetSectionData("core").Keys.RemoveKey("builtFrom_" + bflist.SelectedItem.ToString().Split(':')[0] + "_forceNano");
+                data.Sections.GetSectionData("core").Keys.RemoveKey("builtFrom_" + bflist.SelectedItem.ToString().Split(':')[0] + "_isLocked");
+                data.Sections.GetSectionData("core").Keys.RemoveKey("builtFrom_" + bflist.SelectedItem.ToString().Split(':')[0] + "_isLockedMessage");
                 parser.WriteFile(sss[0],data);
                 loadlist();
             }
@@ -925,6 +926,47 @@ namespace RWS
                 var parser = new FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
                 data.Sections.RemoveSection("effect_" + elist.SelectedItem.ToString());
+                parser.WriteFile(sss[0], data);
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            lastleg = null;
+            arms act = new arms();
+            act.ShowDialog();
+            loadlist();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem != null)
+            {
+                lastleg = listBox1.SelectedItem.ToString();
+                arms act = new arms();
+                act.ShowDialog();
+                lastleg = null;
+                loadlist();
+            }
+            else
+            {
+                MessageBox.Show("Select item first");
+            }
+        }
+
+        private void button15_Click_1(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem != null)
+            {
+                string[] sss = Directory.GetFiles(path, "*.ini");
+                var parser = new FileIniDataParser();
+                IniData data = parser.ReadFile(sss[0]);
+                data.Sections.RemoveSection("arm_" + listBox1.SelectedItem.ToString());
                 parser.WriteFile(sss[0], data);
                 loadlist();
             }
