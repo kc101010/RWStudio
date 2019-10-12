@@ -45,3 +45,4 @@ C:\Users\Admin\source\repos\RWStudio\RWS\obj\Release\RWS.application
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Release\RWS.csproj.CopyComplete
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Release\RWS.exe
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Release\RWS.pdb
+C:\Users\Admin\source\repos\RWStudio\RWS\obj\Release\RWS.csprojAssemblyReference.cache

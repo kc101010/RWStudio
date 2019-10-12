@@ -30,23 +30,72 @@ namespace RWS
                 label2.Text = openMod.s;
                 for (int a = 0; a < s.Length; a++)
                 {
-                    var parser = new FileIniDataParser();
-                    string[] sss = Directory.GetFiles(s[a], "*.ini");
-                    if (sss.Length == 1)
+                    if (s[a].Contains("music")) ;
+                    else
                     {
-                        IniData data = parser.ReadFile(sss[0]);
-                        if (data["graphics"]["image"] != null)
+                        var parser = new FileIniDataParser();
+                        string[] sss = Directory.GetFiles(s[a], "*.ini");
+                        if (sss.Length == 1)
                         {
-                            if (File.Exists(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty))))
+                            IniData data = parser.ReadFile(sss[0]);
+                            if (data["graphics"]["image"] != null)
                             {
-                                Bitmap tmp = new Bitmap(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty)));
-                                Bitmap bmp = new Bitmap(tmp);
-                                imageList1.Images.Add(bmp);
-                                tmp.Dispose();
+                                if (File.Exists(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty))))
+                                {
+                                    Bitmap tmp = new Bitmap(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty)));
+                                    Bitmap bmp = new Bitmap(tmp);
+                                    imageList1.Images.Add(bmp);
+                                    tmp.Dispose();
+                                }
+                                else
+                                {
+                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + "\n";
+                                    Bitmap bmp = new Bitmap(78, 78);
+                                    using (Graphics gr = Graphics.FromImage(bmp))
+                                    {
+                                        gr.Clear(Color.Gray);
+                                    }
+                                    imageList1.Images.Add(bmp);
+                                }
                             }
                             else
                             {
-                                s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + "\n";
+                                s2 = s2 + "Err: I cant see image param in [graphics] section\n";
+                                Bitmap fuck = new Bitmap(78, 78);
+                                using (Graphics gr = Graphics.FromImage(fuck))
+                                {
+                                    gr.Clear(Color.Gray);
+                                }
+                                imageList1.Images.Add(fuck);
+                            }
+                        }
+                        else if (sss.Length > 1)
+                        {
+                            s2 = s2 + "Warn: I found " + sss.Length.ToString() + " ini files in folder " + s[a] + ", loading: " + sss[0] + "\n";
+                            IniData data = parser.ReadFile(sss[0]);
+                            if (data["graphics"]["image"] != null)
+                            {
+                                if (File.Exists(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty))))
+                                {
+                                    Bitmap tmp = new Bitmap(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty)));
+                                    Bitmap bmp = new Bitmap(tmp);
+                                    imageList1.Images.Add(bmp);
+                                    tmp.Dispose();
+                                }
+                                else
+                                {
+                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + "\n";
+                                    Bitmap bmp = new Bitmap(78, 78);
+                                    using (Graphics gr = Graphics.FromImage(bmp))
+                                    {
+                                        gr.Clear(Color.Gray);
+                                    }
+                                    imageList1.Images.Add(bmp);
+                                }
+                            }
+                            else
+                            {
+                                s2 = s2 + "Err: I cant see image param in [graphics]\n";
                                 Bitmap bmp = new Bitmap(78, 78);
                                 using (Graphics gr = Graphics.FromImage(bmp))
                                 {
@@ -55,45 +104,10 @@ namespace RWS
                                 imageList1.Images.Add(bmp);
                             }
                         }
-                        else
+                        else if (sss.Length < 1)
                         {
-                            s2 = s2 + "Err: I cant see image param in [graphics] section\n";
-                            Bitmap fuck = new Bitmap(78, 78);
-                            using (Graphics gr = Graphics.FromImage(fuck))
-                            {
-                                gr.Clear(Color.Gray);
-                            }
-                            imageList1.Images.Add(fuck);
-                        }
-                    }
-                    else if (sss.Length > 1)
-                    {
-                        s2 = s2 + "Warn: I found " + sss.Length.ToString() + " ini files in folder " + s[a] + ", loading: " + sss[0] + "\n";
-                        IniData data = parser.ReadFile(sss[0]);
-                        if (data["graphics"]["image"] != null)
-                        {
-                            if (File.Exists(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty))))
-                            {
-                                Bitmap tmp = new Bitmap(Path.Combine(s[a], data["graphics"]["image"].Replace(" ", string.Empty)));
-                                Bitmap bmp = new Bitmap(tmp);
-                                imageList1.Images.Add(bmp);
-                                tmp.Dispose();
-                            }
-                            else
-                            {
-                                s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + "\n";
-                                Bitmap bmp = new Bitmap(78, 78);
-                                using (Graphics gr = Graphics.FromImage(bmp))
-                                {
-                                    gr.Clear(Color.Gray);
-                                }
-                                imageList1.Images.Add(bmp);
-                            }
-                        }
-                        else
-                        {
-                            s2 = s2 + "Err: I cant see image param in [graphics]\n";
-                            Bitmap bmp = new Bitmap(78, 78);
+                            s2 = s2 + "Err: I cant find ini file in folder " + s[a] + "\n";
+                            Bitmap bmp = new Bitmap(64, 64);
                             using (Graphics gr = Graphics.FromImage(bmp))
                             {
                                 gr.Clear(Color.Gray);
@@ -101,29 +115,23 @@ namespace RWS
                             imageList1.Images.Add(bmp);
                         }
                     }
-                    else if (sss.Length < 1)
+                    listView1.LargeImageList = imageList1;
+                    listView1.Clear();
+                    for (int i = 0; i < s.Length; i++)
                     {
-                        s2 = s2 + "Err: I cant find ini file in folder " + s[a] + "\n";
-                        Bitmap bmp = new Bitmap(64, 64);
-                        using (Graphics gr = Graphics.FromImage(bmp))
+                        if (!s[i].Contains("music"))
                         {
-                            gr.Clear(Color.Gray);
+                            ListViewItem listViewItem = new ListViewItem(new string[] { Path.GetFileName(s[i]) });
+                            listViewItem.ImageIndex = i;
+                            listViewItem.Tag = s[i];
+                            listView1.Items.Add(listViewItem);
                         }
-                        imageList1.Images.Add(bmp);
                     }
-                }
-                listView1.LargeImageList = imageList1;
-                for (int i = 0; i < s.Length; i++)
-                {
-                    ListViewItem listViewItem = new ListViewItem(new string[] { Path.GetFileName(s[i]) });
-                    listViewItem.ImageIndex = i;
-                    listViewItem.Tag = s[i];
-                    listView1.Items.Add(listViewItem);
-                }
-                if (s2 != "")
-                {
+                    if (s2 != "")
+                    {
 
-                    MessageBox.Show(s2, "Ghmm...", MessageBoxButtons.OK);
+                        MessageBox.Show(s2, "Ghmm...", MessageBoxButtons.OK);
+                    }
                 }
             }
             catch (Exception ex)
@@ -180,6 +188,11 @@ namespace RWS
         private void button6_Click(object sender, EventArgs e)
         {
             Process.Start(openMod.s);
+        }
+
+        private void unitList_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -197,6 +197,18 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>IMG</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>249</value>
+  </data>
   <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 25</value>
   </data>
@@ -217,18 +229,6 @@
   </data>
   <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>IMG</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>249</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

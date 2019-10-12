@@ -263,6 +263,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="experimental_unit_factory_front.ico" />
+    <None Include="Resources\Button-512.png" />
     <None Include="Resources\Снимок.PNG" />
     <None Include="Resources\none.png" />
   </ItemGroup>

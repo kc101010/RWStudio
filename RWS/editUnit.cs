@@ -19,7 +19,6 @@ namespace RWS
         public static string lastact;
         public static string lastleg;
         public static string lastanim;
-        private bool autoscroll;
 
         public editUnit()
         {
@@ -85,7 +84,7 @@ namespace RWS
 
                 CheckFileExists = true,
                 CheckPathExists = true,
-
+                Multiselect = true,
                 DefaultExt = "png",
                 Filter = "png files (*.png)|*.png|wav files(*.wav)|*.wav|ogg files(*.ogg)|*.ogg",
                 FilterIndex = 2,
@@ -96,8 +95,11 @@ namespace RWS
             };
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                picture_path = openFileDialog1.FileName;
-                File.Copy(picture_path, Path.Combine(path, new DirectoryInfo(picture_path).Name.Replace(" ", string.Empty)));
+                foreach (string pp in openFileDialog1.FileNames)
+                {
+                    picture_path = pp;
+                    File.Copy(picture_path, Path.Combine(path, new DirectoryInfo(picture_path).Name.Replace(" ", "_")));
+                }
             }
             loadimages();
         }
@@ -121,7 +123,7 @@ namespace RWS
             writeFromTextbox(buildspeed, "core", "buildSpeed", data);
             writeFromNumeric(level, "core", "techLevel", data);
             writeFromTextbox(tags, "core", "tags", data);
-            writeFromCheck(lock_body_rotation_with_main_turret, "core", "lock_body_rotation_with_main_turret", data);
+            writeFromCheck(lock_body_rotation_with_main_turret, "graphics", "lock_body_rotation_with_main_turret", data);
             /*
              * radius/footprint
              */
@@ -386,7 +388,7 @@ namespace RWS
                     IdleAnimPingPong.Checked = Convert.ToBoolean(data["graphics"]["animation_idle_pingPong"]);
                 }
                 armour.Value = Convert.ToInt32(data["core"]["armour"]);
-                lock_body_rotation_with_main_turret.Checked = Convert.ToBoolean(data["core"]["lock_body_rotation_with_main_turret"]);
+                lock_body_rotation_with_main_turret.Checked = Convert.ToBoolean(data["graphics"]["lock_body_rotation_with_main_turret"]);
             }
             catch(Exception e)
             {

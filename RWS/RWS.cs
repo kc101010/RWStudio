@@ -6,6 +6,7 @@ namespace RWS
 {
     public partial class RWS : Form
     {
+       // public static string strin;
         public RWS()
         {
             InitializeComponent();
@@ -29,7 +30,9 @@ namespace RWS
         private void button1_Click(object sender, EventArgs e)
         {
             newMod newMod = new newMod();
+            Hide();
             newMod.ShowDialog();
+            Close();
         }
 
         private void button3_Click(object sender, EventArgs e)

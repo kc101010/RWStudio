@@ -53,7 +53,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Location = new System.Drawing.Point(116, 217);
+            this.button2.Location = new System.Drawing.Point(116, 214);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 23);
             this.button2.TabIndex = 2;
