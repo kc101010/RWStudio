@@ -49,7 +49,7 @@ namespace RWS
                                 }
                                 else
                                 {
-                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + "\n";
+                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
                                     Bitmap bmp = new Bitmap(78, 78);
                                     using (Graphics gr = Graphics.FromImage(bmp))
                                     {
@@ -60,7 +60,7 @@ namespace RWS
                             }
                             else
                             {
-                                s2 = s2 + "Err: I cant see image param in [graphics] section\n";
+                                s2 = s2 + "Err: I cant see image param in [graphics] section" + Environment.NewLine + Environment.NewLine;
                                 Bitmap fuck = new Bitmap(78, 78);
                                 using (Graphics gr = Graphics.FromImage(fuck))
                                 {
@@ -71,7 +71,7 @@ namespace RWS
                         }
                         else if (sss.Length > 1)
                         {
-                            s2 = s2 + "Warn: I found " + sss.Length.ToString() + " ini files in folder " + s[a] + ", loading: " + sss[0] + "\n";
+                            s2 = s2 + "Warn: I found " + sss.Length.ToString() + " ini files in folder " + s[a] + ", loading: " + sss[0] + Environment.NewLine + Environment.NewLine;
                             IniData data = parser.ReadFile(sss[0]);
                             if (data["graphics"]["image"] != null)
                             {
@@ -84,7 +84,7 @@ namespace RWS
                                 }
                                 else
                                 {
-                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + "\n";
+                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
                                     Bitmap bmp = new Bitmap(78, 78);
                                     using (Graphics gr = Graphics.FromImage(bmp))
                                     {
@@ -95,7 +95,7 @@ namespace RWS
                             }
                             else
                             {
-                                s2 = s2 + "Err: I cant see image param in [graphics]\n";
+                                s2 = s2 + "Err: I cant see image param in [graphics]" + Environment.NewLine + Environment.NewLine;
                                 Bitmap bmp = new Bitmap(78, 78);
                                 using (Graphics gr = Graphics.FromImage(bmp))
                                 {
@@ -106,7 +106,7 @@ namespace RWS
                         }
                         else if (sss.Length < 1)
                         {
-                            s2 = s2 + "Err: I cant find ini file in folder " + s[a] + "\n";
+                            s2 = s2 + "Err: I cant find ini file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
                             Bitmap bmp = new Bitmap(64, 64);
                             using (Graphics gr = Graphics.FromImage(bmp))
                             {

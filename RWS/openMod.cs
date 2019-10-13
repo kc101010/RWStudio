@@ -1,7 +1,6 @@
 ﻿using IniParser;
 using IniParser.Model;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -29,37 +28,53 @@ namespace RWS
                 string[] s = Directory.EnumerateDirectories(@"C:\RWStudio").ToArray();
                 for (int a = 0; a < s.Length; a++)
                 {
-                    var parser = new FileIniDataParser();
+
                     string[] sss = Directory.GetFiles(s[a], "mod-info.txt");
-                    IniData data = parser.ReadFile(sss[0]);
-                    if (data["mod"]["thumbnail"] != null)
+                    if (sss.Length < 1)
                     {
-                        if (File.Exists(Path.Combine(s[a], data["mod"]["thumbnail"].Replace(" ", string.Empty))))
-                        {
-                            Bitmap tmp = new Bitmap(Path.Combine(s[a], data["mod"]["thumbnail"].Replace(" ", string.Empty)));
-                            Bitmap bmp = new Bitmap(tmp);
-                            imageList1.Images.Add(bmp);
-                            tmp.Dispose();
-                        }
-                        else
-                        {
-                            s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + "\n";
-                            Bitmap bmp = new Bitmap(78, 78);
-                            using (Graphics gr = Graphics.FromImage(bmp))
-                            {
-                                gr.Clear(Color.Gray);
-                            }
-                            imageList1.Images.Add(bmp);
-                        }
-                    }else
-                    {
-                        s2 = s2 + "Err: I cant see image param in [mod] section\n";
-                        Bitmap fuck = new Bitmap(78, 78);
-                        using (Graphics gr = Graphics.FromImage(fuck))
+                        s2 = s2 + "Err: I cant find unit mod-info file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
+                        Bitmap bmp = new Bitmap(78, 78);
+                        using (Graphics gr = Graphics.FromImage(bmp))
                         {
                             gr.Clear(Color.Gray);
                         }
-                        imageList1.Images.Add(fuck);
+                        imageList1.Images.Add(bmp);
+                    }
+                    else
+                    {
+                        var parser = new FileIniDataParser();
+                        IniData data = parser.ReadFile(sss[0]);
+
+                        if (data["mod"]["thumbnail"] != null)
+                        {
+                            if (File.Exists(Path.Combine(s[a], data["mod"]["thumbnail"].Replace(" ", string.Empty))))
+                            {
+                                Bitmap tmp = new Bitmap(Path.Combine(s[a], data["mod"]["thumbnail"].Replace(" ", string.Empty)));
+                                Bitmap bmp = new Bitmap(tmp);
+                                imageList1.Images.Add(bmp);
+                                tmp.Dispose();
+                            }
+                            else
+                            {
+                                s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
+                                Bitmap bmp = new Bitmap(78, 78);
+                                using (Graphics gr = Graphics.FromImage(bmp))
+                                {
+                                    gr.Clear(Color.Gray);
+                                }
+                                imageList1.Images.Add(bmp);
+                            }
+                        }
+                        else
+                        {
+                            s2 = s2 + "Err: I cant see image param in [mod] section" + Environment.NewLine + Environment.NewLine;
+                            Bitmap fuck = new Bitmap(78, 78);
+                            using (Graphics gr = Graphics.FromImage(fuck))
+                            {
+                                gr.Clear(Color.Gray);
+                            }
+                            imageList1.Images.Add(fuck);
+                        }
                     }
                 }
                 listView1.LargeImageList = imageList1;
@@ -78,7 +93,7 @@ namespace RWS
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Units parse err:\n" + ex);
+                MessageBox.Show("Mods parse err:" + Environment.NewLine + Environment.NewLine + ex.Message + Environment.NewLine + Environment.NewLine + ex.Data);
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -105,12 +120,15 @@ namespace RWS
         {
             try
             {
-                var parser = new FileIniDataParser();
-                IniData data = parser.ReadFile(listView1.SelectedItems[0].Tag.ToString() + "\\mod-info.txt");
-                label1.Text = "Name: " + data["mod"]["title"];
-                label2.Text = "Description:" + data["mod"]["description"].Replace("\\n",Environment.NewLine);
+                if (listView1.SelectedItems[0].Tag != null)
+                {
+                    var parser = new FileIniDataParser();
+                    IniData data = parser.ReadFile(listView1.SelectedItems[0].Tag.ToString() + "\\mod-info.txt");
+                    label1.Text = "Name: " + data["mod"]["title"];
+                    label2.Text = "Description:" + data["mod"]["description"].Replace("\\n", Environment.NewLine);
+                }
             }
-            catch { }
+            catch { label2.Text = label1.Text = "Err: $%#@*"; }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -136,6 +154,7 @@ namespace RWS
 
         private void button5_Click(object sender, EventArgs e)
         {
+            s = null;
             newMod f2 = new newMod();
             Hide();
             f2.ShowDialog();

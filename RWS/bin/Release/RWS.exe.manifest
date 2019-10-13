@@ -48,14 +48,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RWS.exe" size="1388544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RWS.exe" size="1389568">
       <assemblyIdentity name="RWS" version="0.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>t90P+oZ2nDyNQvzC7veZ835lFhCT8VNv4216Jp2Vodg=</dsig:DigestValue>
+        <dsig:DigestValue>KOHSzword61phxc+qDqN+XIg0Ag0+6mlAVoragAMFA0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

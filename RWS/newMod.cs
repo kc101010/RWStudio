@@ -37,6 +37,7 @@ namespace RWS
                 data["mod"]["tags"] = textBox3.Text;
                 if (File.Exists(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_') + "\\thumbnail.png"))
                     data["mod"]["thumbnail"] = "thumbnail.png";
+                parser.WriteFile(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt"), data);
                 openMod f2 = new openMod();
                 Hide();
                 f2.ShowDialog();
@@ -57,12 +58,13 @@ namespace RWS
                 if (checkBox1.Checked)
                 {
                     writeFromCheck(checkBox2, "music", "whenUsingUnitsFromThisMod_playExclusively", data);
-                    writeFromCheck(checkBox2, "music", "addToNormalPlaylist", data);
+                    writeFromCheck(checkBox3, "music", "addToNormalPlaylist", data);
                 }
                 parser.WriteFile(Path.Combine(openMod.s, "mod-info.txt"),data);
                 openMod f2 = new openMod();
                 Hide();
                 f2.ShowDialog();
+                openMod.s = null;
                 Close();
             }
         }
