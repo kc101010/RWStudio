@@ -161,7 +161,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "unitList";
-            this.Load += new System.EventHandler(this.unitList_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

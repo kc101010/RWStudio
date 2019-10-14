@@ -183,7 +183,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(44, 20);
             this.textBox3.TabIndex = 76;
-            this.textBox3.Tag = "attach_y:";
+            this.textBox3.Tag = "attach_y";
             this.textBox3.Text = "0.0";
             this.toolTip1.SetToolTip(this.textBox3, "Sets the leg\'s attach point on the Y axis.");
             // 
@@ -193,7 +193,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(44, 20);
             this.textBox4.TabIndex = 75;
-            this.textBox4.Tag = "attach_x:";
+            this.textBox4.Tag = "attach_x";
             this.textBox4.Text = "0.0";
             this.toolTip1.SetToolTip(this.textBox4, "Sets the leg\'s attach point on the X axis.");
             // 
@@ -461,11 +461,11 @@
             this.comboBox2.Items.AddRange(new object[] {
             "True",
             "False"});
-            this.comboBox2.Location = new System.Drawing.Point(265, 233);
+            this.comboBox2.Location = new System.Drawing.Point(271, 233);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(95, 21);
             this.comboBox2.TabIndex = 97;
-            this.comboBox2.Tag = "hiden";
+            this.comboBox2.Tag = "hidden";
             this.comboBox2.Text = "False";
             // 
             // label15
@@ -473,10 +473,10 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(224, 236);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 13);
+            this.label15.Size = new System.Drawing.Size(41, 13);
             this.label15.TabIndex = 96;
             this.label15.Tag = "   ";
-            this.label15.Text = "Hiden";
+            this.label15.Text = "Hidden";
             // 
             // icon
             // 

@@ -63,29 +63,9 @@ namespace RWS.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Button_512 {
-            get {
-                object obj = ResourceManager.GetObject("Button-512", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap experimental_unit_factory_base {
             get {
                 object obj = ResourceManager.GetObject("experimental_unit_factory_base", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Снимок {
-            get {
-                object obj = ResourceManager.GetObject("Снимок", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

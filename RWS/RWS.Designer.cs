@@ -111,6 +111,7 @@
             this.Name = "RWS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RWStudio";
+            this.Load += new System.EventHandler(this.RWS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

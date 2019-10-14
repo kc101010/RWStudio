@@ -92,6 +92,10 @@ namespace RWS
                     if (txt[i].Tag.ToString() != "")
                         data["effect_" + namee.Text][txt[i].Tag.ToString()] = txt[i].Text;
                 }
+                else if (data["effect_" + namee.Text][txt[i].Tag.ToString()] != null)
+                {
+                    data["effect_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                }
             }
             for (int i = 0; i < cb.Count; i++)
             {
@@ -99,6 +103,10 @@ namespace RWS
                 {
                     if (cb[i].Tag.ToString() != "")
                         data["effect_" + namee.Text][cb[i].Tag.ToString()] = cb[i].Text;
+                }
+                else if (data["effect_" + namee.Text][cb[i].Tag.ToString()] != null)
+                {
+                    data["effect_" + namee.Text].RemoveKey(cb[i].Tag.ToString());
                 }
             }
             for (int i = 0; i < ch.Count; i++)

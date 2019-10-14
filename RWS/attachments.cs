@@ -39,6 +39,10 @@ namespace RWS
                     if (txt[i].Tag.ToString() != "")
                         data["attachment_" + namee.Text][txt[i].Tag.ToString()] = txt[i].Text;
                 }
+                else if (data["attachment_" + namee.Text][txt[i].Tag.ToString()] != null)
+                {
+                    data["attachment_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                }
             }
             for (int i = 0; i < cb.Count; i++)
             {
@@ -47,11 +51,19 @@ namespace RWS
                     if (cb[i].Tag.ToString() != "")
                         data["attachment_" + namee.Text][cb[i].Tag.ToString()] = cb[i].Text;
                 }
+                else if (data["attachment_" + namee.Text][cb[i].Tag.ToString()] != null)
+                {
+                    data["attachment_" + namee.Text].RemoveKey(cb[i].Tag.ToString());
+                }
             }
             for (int i = 0; i < ch.Count; i++)
             {
                 if (ch[i].Tag.ToString() != "")
                     data["attachment_" + namee.Text][ch[i].Tag.ToString()] = ch[i].Checked.ToString();
+                else if (data["attachment_" + namee.Text][ch[i].Tag.ToString()] != null)
+                {
+                    data["attachment_" + namee.Text].RemoveKey(ch[i].Tag.ToString());
+                }
             }
             parser.WriteFile(sss[0], data);
             Close();

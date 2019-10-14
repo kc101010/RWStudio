@@ -250,12 +250,32 @@ namespace RWS
             {
                 data[section][param] = txt.Text;
             }
+            else if (data[section][param] != null)
+            {
+                data[section].RemoveKey(param);
+            }
         }
         private void writeFromCombotbox(ComboBox txt, string section, string param, IniData data)
         {
             if (txt.Text != null && txt.Text != "" && txt.Text != " " && txt.Enabled)
             {
                 data[section][param] = txt.Text;
+            }
+            else if (data[section][param] != null)
+            {
+                data[section].RemoveKey(param);
+            }
+        }
+
+        private void writeFromCheck(CheckBox txt, string section, string param, IniData data)
+        {
+            if (txt.Enabled)
+            {
+                data[section][param] = txt.Checked.ToString();
+            }
+            else if (data[section][param] != null)
+            {
+                data[section].RemoveKey(param);
             }
         }
         private void writeFromNumeric(NumericUpDown txt, string section, string param, IniData data)
@@ -264,12 +284,9 @@ namespace RWS
             {
                 data[section][param] = txt.Value.ToString();
             }
-        }
-        private void writeFromCheck(CheckBox txt, string section, string param, IniData data)
-        {
-            if (txt.Enabled)
+            else if (data[section][param] != null)
             {
-                data[section][param] = txt.Checked.ToString();
+                data[section].RemoveKey(param);
             }
         }
         private void editUnit_Load(object sender, EventArgs e)
@@ -547,6 +564,7 @@ namespace RWS
             string[] sss = Directory.GetFiles(path, "*.ini");
             System.Diagnostics.Process.Start(sss[0]);
             load();
+            loadimages();
             loadlist();
         }
 

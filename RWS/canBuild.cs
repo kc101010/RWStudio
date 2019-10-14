@@ -69,9 +69,13 @@ namespace RWS
         }
         private void writeFromTextbox(TextBox txt, string section, string param, IniData data)
         {
-            if (txt.Text != null && txt.Text != "0" && txt.Text != "" && txt.Text != " " && txt.Enabled)
+            if (txt.Text != null && txt.Text != "" && txt.Text != " " && txt.Enabled)
             {
                 data[section][param] = txt.Text;
+            }
+            else if (data[section][param] != null)
+            {
+                data[section].RemoveKey(param);
             }
         }
         private void writeFromNumeric(NumericUpDown txt, string section, string param, IniData data)
@@ -80,12 +84,20 @@ namespace RWS
             {
                 data[section][param] = txt.Value.ToString();
             }
+            else if (data[section][param] != null)
+            {
+                data[section].RemoveKey(param);
+            }
         }
         private void writeFromCheck(CheckBox txt, string section, string param, IniData data)
         {
             if (txt.Enabled)
             {
                 data[section][param] = txt.Checked.ToString();
+            }
+            else if (data[section][param] != null)
+            {
+                data[section].RemoveKey(param);
             }
         }
     }

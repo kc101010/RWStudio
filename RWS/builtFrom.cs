@@ -56,12 +56,20 @@ namespace RWS
             {
                 data["core"][param] = txt.Text;
             }
+            else if (data["core"][param] != null)
+            {
+                data["core"].RemoveKey(param);
+            }
         }
         private void writeFromCombotbox(ComboBox txt, string param, IniData data)
         {
             if (txt.Text != null && txt.Text != "" && txt.Text != " " && txt.Enabled)
             {
                 data["core"][param] = txt.Text;
+            }
+            else if (data["core"][param] != null)
+            {
+                data["core"].RemoveKey(param);
             }
         }
     }

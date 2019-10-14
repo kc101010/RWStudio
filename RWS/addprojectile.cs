@@ -109,28 +109,45 @@ namespace RWS
             List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
             List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
             string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
-            var parser = new IniParser.FileIniDataParser();
+            var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             for (int i = 0; i < txt.Count; i++)
             {
-                if (txt[i].Text != "" && txt[i].Text != " " && txt[i].Enabled)
+                if (txt[i].Text != "" && txt[i].Text != " " && txt[i].Enabled && txt[1].Tag != null)
                 {
                     if (txt[i].Tag.ToString() != "")
                         data["projectile_" + namee.Text][txt[i].Tag.ToString()] = txt[i].Text.Replace(Environment.NewLine, "\\n");
                 }
+                else if (data["projectile_" + namee.Text][txt[i].Tag.ToString()] != null)
+                {
+                    data["projectile_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                }
             }
             for (int i = 0; i < cb.Count; i++)
             {
-                if (cb[i].Text != "" && cb[i].Text != " " && cb[i].Enabled)
+                if (cb[i].Text != "" && cb[i].Text != " " && cb[i].Enabled && txt[1].Tag != null)
                 {
                     if (cb[i].Tag.ToString() != "")
                         data["projectile_" + namee.Text][cb[i].Tag.ToString()] = cb[i].Text;
                 }
+                else if (data["projectile_" + namee.Text][cb[i].Tag.ToString()] != null)
+                {
+                    data["projectile_" + namee.Text].RemoveKey(cb[i].Tag.ToString());
+                }
             }
             for (int i = 0; i < ch.Count; i++)
             {
-                if (ch[i].Tag.ToString() != "")
-                    data["projectile_"  + namee.Text][ch[i].Tag.ToString()] = ch[i].Checked.ToString();
+                if (ch[i].Tag != null)
+                {
+                    if (ch[i].Tag.ToString() != "")
+                    {
+                        data["projectile_" + namee.Text][ch[i].Tag.ToString()] = ch[i].Checked.ToString();
+                    }
+                    else if (data["projectile_" + namee.Text][ch[i].Tag.ToString()] != null)
+                    {
+                        data["projectile_" + namee.Text].RemoveKey(ch[i].Tag.ToString());
+                    }
+                }
             }
             parser.WriteFile(sss[0], data);
             editUnit.lastprj = null;

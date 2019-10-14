@@ -79,11 +79,17 @@ namespace RWS
             IniData data = parser.ReadFile(sss[0]);
             data["animation_" + namee.Text].RemoveAllKeys();
             for (int i = 0; i < txt.Count; i++)
-            {
-                if (txt[i].Text != "" && txt[i].Text != " " && txt[i].Enabled)
+            {   if (txt[i].Tag != null && txt[i].Tag.ToString() != "")
                 {
-                    if (txt[i].Tag != null && txt[i].Tag.ToString() != "" )
+                    if (txt[i].Text != "" && txt[i].Text != " " && txt[i].Enabled)
+                    {
+
                         data["animation_" + namee.Text][txt[i].Tag.ToString()] = txt[i].Text;
+                    }
+                    else if (data["animation_" + namee.Text][txt[i].Tag.ToString()] != null)
+                    {
+                        data["animation_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                    }
                 }
             }
             for (int i = 0; i < cb.Count; i++)
@@ -92,6 +98,10 @@ namespace RWS
                 {
                     if (cb[i].Tag.ToString() != "")
                         data["animation_" + namee.Text][cb[i].Tag.ToString()] = cb[i].Text;
+                }
+                else if (data["animation_" + namee.Text][cb[i].Tag.ToString()] != null)
+                {
+                    data["animation_" + namee.Text].RemoveKey(cb[i].Tag.ToString());
                 }
             }
             for (int i = 0; i < ch.Count; i++)

@@ -7,6 +7,7 @@ using IniParser;
 using IniParser.Model;
 using System.IO.Compression;
 using System.Diagnostics;
+using System.Threading;
 
 namespace RWS
 {
@@ -125,6 +126,10 @@ namespace RWS
                             listViewItem.ImageIndex = i;
                             listViewItem.Tag = s[i];
                             listView1.Items.Add(listViewItem);
+                            if (!File.Exists(s[i] + "\\.nomedia"))
+                            {
+                                File.Create(s[i] + "\\.nomedia").Close();
+                            }
                         }
                     }
                     if (s2 != "")
@@ -177,22 +182,27 @@ namespace RWS
         private void button5_Click(object sender, EventArgs e)
         {
             if (saveFileDialog1.ShowDialog() == DialogResult.OK) {
-                UseWaitCursor = true;
-                string filename = saveFileDialog1.FileName;
-                ZipFile.CreateFromDirectory(openMod.s, filename);
-                MessageBox.Show("Comressed!", "Success");
-                UseWaitCursor = false;
+                try
+                {
+                    pleaseWait pw = new pleaseWait();
+                    pw.Show();
+                    Hide();
+                    Application.DoEvents();
+                    ZipFile.CreateFromDirectory(openMod.s, saveFileDialog1.FileName);
+                    pw.Close();
+                    Show();
+                    MessageBox.Show("Comressed!", "Success");
+                }
+                catch(Exception EX)
+                {
+                    MessageBox.Show("Compression error: "+Environment.NewLine + EX, "Oh...");
+                }
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             Process.Start(openMod.s);
-        }
-
-        private void unitList_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

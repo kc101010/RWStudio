@@ -6,7 +6,6 @@ namespace RWS
 {
     public partial class RWS : Form
     {
-       // public static string strin;
         public RWS()
         {
             InitializeComponent();
@@ -17,6 +16,10 @@ namespace RWS
             if (!Directory.Exists(@"C:\RWStudio"))
             {
                 Directory.CreateDirectory(@"C:\RWStudio");
+            }
+            if (!File.Exists(@"C:\RWStudio\.nomedia"))
+            {
+                File.Create(@"C:\RWStudio\.nomedia").Close();
             }
         }
         private void button2_Click(object sender, EventArgs e)
@@ -38,6 +41,11 @@ namespace RWS
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void RWS_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

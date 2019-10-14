@@ -221,12 +221,20 @@ namespace RWS
             {
                 data["turret_" + editUnit.lastt][param] = txt.Text;
             }
+            else if (data["turret_" + editUnit.lastt][param] != null)
+            {
+                data["turret_" + editUnit.lastt].RemoveKey(param);
+            }
         }
         private void writeFromCombotbox(ComboBox txt, string param, IniData data)
         {
             if (txt.Text != null && txt.Text != "" && txt.Text != " " && txt.Enabled)
             {
                 data["turret_" + editUnit.lastt][param] = txt.Text;
+            }
+            else if (data["turret_" + editUnit.lastt][param] != null)
+            {
+                data["turret_" + editUnit.lastt].RemoveKey(param);
             }
         }
         private void size_TextChanged(object sender, EventArgs e)

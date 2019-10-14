@@ -84,6 +84,10 @@ namespace RWS
                     listViewItem.ImageIndex = i;
                     listViewItem.Tag = s[i];
                     listView1.Items.Add(listViewItem);
+                    if (!File.Exists(s[i] + "\\.nomedia"))
+                    {
+                        File.Create(s[i] + "\\.nomedia").Close();
+                    }
                 }
                 if (s2 != "")
                 {

@@ -71,6 +71,10 @@ namespace RWS
                     if (txt[i].Tag.ToString() != "")
                         data["leg_" + namee.Text][txt[i].Tag.ToString()] = txt[i].Text.Replace(Environment.NewLine, "\\n");
                 }
+                else if (data["leg_" + namee.Text][txt[i].Tag.ToString()] != null)
+                {
+                    data["leg_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                }
             }
             for (int i = 0; i < cb.Count; i++)
             {
@@ -79,12 +83,16 @@ namespace RWS
                     if (cb[i].Tag.ToString() != "")
                         data["leg_" + namee.Text][cb[i].Tag.ToString()] = cb[i].Text;
                 }
+                else if (data["leg_" + namee.Text][txt[i].Tag.ToString()] != null)
+                {
+                    data["leg_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                }
             }
             for (int i = 0; i < ch.Count; i++)
             {
                 if (!ch[i].Enabled) ;
 
-                if (ch[i].Tag.ToString() != "")
+                else if (ch[i].Tag.ToString() != "")
                     data["leg_" + namee.Text][ch[i].Tag.ToString()] = ch[i].Checked.ToString();
             }
             parser.WriteFile(sss[0], data);

@@ -40,13 +40,15 @@
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <Prefer32Bit>false</Prefer32Bit>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -66,8 +68,9 @@
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="action.cs">
@@ -141,6 +144,12 @@
     </Compile>
     <Compile Include="mutator.Designer.cs">
       <DependentUpon>mutator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pleaseWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pleaseWait.Designer.cs">
+      <DependentUpon>pleaseWait.cs</DependentUpon>
     </Compile>
     <Compile Include="preview.cs">
       <SubType>Form</SubType>
@@ -216,6 +225,9 @@
     <EmbeddedResource Include="mutator.resx">
       <DependentUpon>mutator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pleaseWait.resx">
+      <DependentUpon>pleaseWait.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="preview.resx">
       <DependentUpon>preview.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,10 +256,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config">
+    <None Include="Properties\app.manifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -263,9 +274,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="experimental_unit_factory_front.ico" />
-    <None Include="Resources\Button-512.png" />
-    <None Include="Resources\Снимок.PNG" />
-    <None Include="Resources\none.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -295,7 +303,6 @@
     <Reference Include="System.Data.SqlXml" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms" />
@@ -378,46 +385,6 @@
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="System.Globalization.Extensions">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>Assembly</FileType>
-    </PublishFile>
-    <PublishFile Include="System.IO.Compression">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>Assembly</FileType>
-    </PublishFile>
-    <PublishFile Include="System.Net.Http">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>Assembly</FileType>
-    </PublishFile>
-    <PublishFile Include="System.Net.Http.Rtc.dll">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="System.Net.Sockets">
       <Visible>False</Visible>
       <Group>
       </Group>

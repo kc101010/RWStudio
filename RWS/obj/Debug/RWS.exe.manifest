@@ -4,7 +4,7 @@
   <description asmv2:iconFile="experimental_unit_factory_front.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="RWS" version="0.0.0.1" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="RWS" version="0.0.1.1" language="neutral" processorArchitecture="msil" />
     <commandLine file="RWS.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -48,14 +48,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RWS.exe" size="1420288">
-      <assemblyIdentity name="RWS" version="0.0.0.1" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RWS.exe" size="1359360">
+      <assemblyIdentity name="RWS" version="0.0.1.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NYIM3qnZGrGmKfANaS6H6Bi8c7zWngpO6uUKlBR7IqM=</dsig:DigestValue>
+        <dsig:DigestValue>S74l3BlxE7xlO/VH8l/XeMQL5UQCPl5CBGb8czGVxk8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.IO.Compression.dll" size="110784">
+      <assemblyIdentity name="System.IO.Compression" version="4.2.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dvysz4QxO/ePUjs7yBmMLQQNq9wEpdyGO0bIr3rBCog=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Net.Http.dll" size="198464">
+      <assemblyIdentity name="System.Net.Http" version="4.2.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hkaiamSSiGa76HRvMyOh9EbFoowQtrgd+b9KCDNrjAI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Net.Sockets.dll" size="23224">
+      <assemblyIdentity name="System.Net.Sockets" version="4.2.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pLS7i5vkeGAPSOQ66FcebBI/gTCSMGfxD8klRtCQD7Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -68,13 +104,13 @@
       <dsig:DigestValue>xA54O4g3bG31yjZObUSWKD7O+GqMOJ9lqrefEfJdaQ4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RWS.exe.config" size="4301">
+  <file name="RWS.exe.config" size="4161">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>fHo/2TXKkwYqjKzKwiz3akqWOdb/LAiN5zl5ZqOu5oA=</dsig:DigestValue>
+      <dsig:DigestValue>RgD5L5t7iKg9wEDwv17R3HP1yHtAAbpNwDv7hyXIRgs=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

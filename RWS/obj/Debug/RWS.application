@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="RWS.exe.manifest" size="5740">
+    <dependentAssembly dependencyType="install" codebase="RWS.exe.manifest" size="7806">
       <assemblyIdentity name="RWS.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n9l1saQAcobDDMYX67IuKJ6JYinswMBzdNpT7N2X/eQ=</dsig:DigestValue>
+        <dsig:DigestValue>8xZByeqt34a73fXF3voSYzfTF/IMeLQFW6VoVkMK3Xc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
