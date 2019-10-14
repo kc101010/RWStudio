@@ -46,4 +46,3 @@ C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.application
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.csproj.CopyComplete
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.exe
 C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.pdb
-C:\Users\Admin\source\repos\RWStudio\RWS\obj\Debug\RWS.csprojAssemblyReference.cache
