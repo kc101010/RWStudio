@@ -102,7 +102,7 @@ namespace RWS
         {
             Close();
         }
-
+         
         private void button4_Click(object sender, EventArgs e)
         {
             List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
@@ -113,14 +113,17 @@ namespace RWS
             IniData data = parser.ReadFile(sss[0]);
             for (int i = 0; i < txt.Count; i++)
             {
-                if (txt[i].Text != "" && txt[i].Text != " " && txt[i].Enabled && txt[1].Tag != null)
+                if (txt[i].Text != "" && txt[i].Text != " " && txt[i].Enabled && txt[i].Tag != null)
                 {
                     if (txt[i].Tag.ToString() != "")
                         data["projectile_" + namee.Text][txt[i].Tag.ToString()] = txt[i].Text.Replace(Environment.NewLine, "\\n");
                 }
-                else if (data["projectile_" + namee.Text][txt[i].Tag.ToString()] != null)
+                else if (txt[i].Tag != null)
                 {
-                    data["projectile_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                    if (data["projectile_" + namee.Text][txt[i].Tag.ToString()] != null)
+                    {
+                        data["projectile_" + namee.Text].RemoveKey(txt[i].Tag.ToString());
+                    }
                 }
             }
             for (int i = 0; i < cb.Count; i++)

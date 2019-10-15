@@ -160,7 +160,7 @@ namespace RWS
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0].Tag.ToString() != null)
+            if (listView1.SelectedItems[0] != null)
             {
                 f = listView1.SelectedItems[0].Tag.ToString();
                 editUnit ed = new editUnit();

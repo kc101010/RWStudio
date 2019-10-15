@@ -132,7 +132,7 @@ namespace RWS
                     label2.Text = "Description:" + data["mod"]["description"].Replace("\\n", Environment.NewLine);
                 }
             }
-            catch { label2.Text = label1.Text = "Err: $%#@*"; }
+            catch { label2.Text = label1.Text = "Err: $%#@^&*"; }
         }
 
         private void button4_Click(object sender, EventArgs e)
