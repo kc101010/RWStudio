@@ -995,5 +995,15 @@ namespace RWS
                 MessageBox.Show("Select item first");
             }
         }
+
+        private void hp_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mass_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
