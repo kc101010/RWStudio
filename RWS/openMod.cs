@@ -137,11 +137,18 @@ namespace RWS
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0] != null)
+            //Edit by kc101010; Try-Catch prevents app from crashing when user tries to delete a mod when they haven't selected anything
+            try
             {
                 Directory.Delete(listView1.SelectedItems[0].Tag.ToString(), true);
                 LoadMods();
             }
+            catch (Exception)
+            {
+                //Displays this message instead of the entire error message
+                MessageBox.Show("A mod has not been selected, please select a mod to delete");
+            }
+          
         }
 
         private void button3_Click(object sender, EventArgs e)
