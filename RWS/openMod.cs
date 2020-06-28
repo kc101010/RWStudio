@@ -146,7 +146,7 @@ namespace RWS
             catch (Exception)
             {
                 //Displays this message instead of the entire error message
-                MessageBox.Show("A mod has not been selected, please select a mod to delete");
+                MessageBox.Show("A mod has not been selected, please select a mod to delete","Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
           
         }
