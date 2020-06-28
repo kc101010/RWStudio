@@ -102,13 +102,19 @@ namespace RWS
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0] != null)
+            //Edit by kc101010; Try-catch handles error when there is no user selection while trying to open a mod directory
+            try
             {
                 s = listView1.SelectedItems[0].Tag.ToString();
                 unitList f2 = new unitList();
                 Hide();
                 f2.ShowDialog();
                 Close();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("A mod has not been selected, please select a mod to open", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -153,13 +159,18 @@ namespace RWS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0] != null)
+            //Edit by kc101010; Implemented try-catch in similar way to Line 140
+            try
             {
                 s = listView1.SelectedItems[0].Tag.ToString();
                 newMod f2 = new newMod();
                 Hide();
                 f2.ShowDialog();
                 Close();
+            }
+            catch (Exception) 
+            {
+                MessageBox.Show("A mod has not been selected, please select a mod to edit", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

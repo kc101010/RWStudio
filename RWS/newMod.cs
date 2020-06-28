@@ -17,8 +17,11 @@ namespace RWS
         private bool newM = true;
         private void button1_Click(object sender, EventArgs e)
         {
+           
+
             if (newM)
             {
+                /*  ##  Commented out to easily revert back ##
                 if (Directory.Exists(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_')))
                 {
                     MessageBox.Show("You cant create mods with same names!", "You cant...");
@@ -29,19 +32,43 @@ namespace RWS
                 {
                     Directory.CreateDirectory(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'));
                     File.Create(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt")).Close();
+                }*/
+
+                //Edit by kc101010 - Cleaned code up, implemented try-catch in case of errors with directories, also implemented new error messages
+                try
+                {
+
+                    if (Directory.Exists(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_')))
+                    {
+                        MessageBox.Show("Mod already exists; Mod name cannot be blank", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        if (File.Exists(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt")))
+                            File.Create(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt")).Close();
+                    }
+                    else //This else statement prevents messages from appearing as if the mod was being created and prevents user from losing other mod details
+                    {
+                        Directory.CreateDirectory(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'));
+                        File.Create(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt")).Close();
+
+                        var parser = new FileIniDataParser();
+                        IniData data = parser.ReadFile(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt"));
+                        data["mod"]["title"] = textBox1.Text;
+                        data["mod"]["description"] = textBox2.Text.Replace(Environment.NewLine, "\\n");
+                        data["mod"]["tags"] = textBox3.Text;
+                        if (File.Exists(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_') + "\\thumbnail.png"))
+                            data["mod"]["thumbnail"] = "thumbnail.png";
+                        parser.WriteFile(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt"), data);
+                        openMod f2 = new openMod();
+                        Hide();
+                        f2.ShowDialog();
+                        Close();
+                    }
                 }
-                var parser = new FileIniDataParser();
-                IniData data = parser.ReadFile(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt"));
-                data["mod"]["title"] = textBox1.Text;
-                data["mod"]["description"] = textBox2.Text.Replace(Environment.NewLine, "\\n");
-                data["mod"]["tags"] = textBox3.Text;
-                if (File.Exists(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_') + "\\thumbnail.png"))
-                    data["mod"]["thumbnail"] = "thumbnail.png";
-                parser.WriteFile(Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "mod-info.txt"), data);
-                openMod f2 = new openMod();
-                Hide();
-                f2.ShowDialog();
-                Close();
+                catch (Exception dirError)
+                {
+                    MessageBox.Show("Error: " + dirError.ToString(), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
+                }
+                
             }
             else
             {
@@ -73,7 +100,7 @@ namespace RWS
         {
             openMod f2 = new openMod();
             Hide();
-            f2.ShowDialog();
+           f2.ShowDialog();
             Close();
         }
 
