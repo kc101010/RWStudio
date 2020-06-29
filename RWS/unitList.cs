@@ -160,22 +160,33 @@ namespace RWS
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0] != null)
+            //Edit by kc101010 - bugfix prevents app from crashing when User tries to edit a unit without selecting one
+            try
             {
                 f = listView1.SelectedItems[0].Tag.ToString();
                 editUnit ed = new editUnit();
                 Hide();
                 ed.ShowDialog();
                 Close();
+            } catch (Exception) 
+            {
+                MessageBox.Show("A unit has not been selected, please select a unit to edit", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems[0] != null)
+            //Edit by kc101010 - bugfix for user trying to delete a unit without selecting one 
+            try
             {
                 Directory.Delete(listView1.SelectedItems[0].Tag.ToString(), true);
                 loadUnits();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("A unit has not been selected, please select a unit to delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
 
