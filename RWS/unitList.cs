@@ -13,7 +13,7 @@ namespace RWS
 {
     public partial class unitList : Form
     {
-        public static string f;
+       public static string inipath; 
         public unitList()
         {
             InitializeComponent();
@@ -135,13 +135,13 @@ namespace RWS
                     if (s2 != "")
                     {
 
-                        MessageBox.Show(s2, "Ghmm...", MessageBoxButtons.OK);
+                        MessageBox.Show(s2, "Ghmm...", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Units parse err:\n" + ex);
+                MessageBox.Show("Units parse err:\n" + ex,"Erorr",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -163,7 +163,7 @@ namespace RWS
             //Edit by kc101010 - bugfix prevents app from crashing when User tries to edit a unit without selecting one
             try
             {
-                f = listView1.SelectedItems[0].Tag.ToString();
+                inipath = listView1.SelectedItems[0].Tag.ToString();
                 editUnit ed = new editUnit();
                 Hide();
                 ed.ShowDialog();
@@ -202,18 +202,23 @@ namespace RWS
                     ZipFile.CreateFromDirectory(openMod.s, saveFileDialog1.FileName);
                     pw.Close();
                     Show();
-                    MessageBox.Show("Comressed!", "Success");
+                    MessageBox.Show("Comressed!", "Success",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                 }
                 catch(Exception EX)
                 {
-                    MessageBox.Show("Compression error: "+Environment.NewLine + EX, "Oh...");
+                    MessageBox.Show("Compression error: "+Environment.NewLine + EX, "Oh...",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Process.Start(openMod.s);
+            Process.Start(openMod.s);//s is Mod path
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

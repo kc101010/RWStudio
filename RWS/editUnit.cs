@@ -23,7 +23,7 @@ namespace RWS
         public editUnit()
         {
             InitializeComponent();
-            path = unitList.f;
+            path = unitList.inipath;
             namE = name.Text;
         }
         private void button34_Click(object sender, EventArgs e)
@@ -75,7 +75,6 @@ namespace RWS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             string picture_path;
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {

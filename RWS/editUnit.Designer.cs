@@ -575,7 +575,7 @@
             this.groupBox6.Controls.Add(this.fghjkl);
             this.groupBox6.Controls.Add(this.rthj);
             this.groupBox6.Controls.Add(this.label26);
-            this.groupBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox6.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;

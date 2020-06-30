@@ -4632,7 +4632,7 @@ to player
     <value>15</value>
   </data>
   <data name="button37.Text" xml:space="preserve">
-    <value>Open in default text editor</value>
+    <value>Open in text editor</value>
   </data>
   <data name="&gt;&gt;button37.Name" xml:space="preserve">
     <value>button37</value>
@@ -6078,7 +6078,7 @@ Flying unit will landed while not moving and not attacking
     <value>NoControl</value>
   </data>
   <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1207, 682</value>
+    <value>1217, 682</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
@@ -6108,7 +6108,7 @@ Flying unit will landed while not moving and not attacking
     <value>NoControl</value>
   </data>
   <data name="label52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1274, 680</value>
+    <value>1287, 682</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 86</value>
