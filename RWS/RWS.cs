@@ -43,7 +43,7 @@ namespace RWS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
         private void F_MouseDown(object sender, MouseEventArgs e)
         {
@@ -63,7 +63,6 @@ namespace RWS
             {
                 Point p = PointToScreen(e.Location);
                 Location = new Point(p.X - this.startPoint.X, p.Y - this.startPoint.Y);
-
             }
 
         }

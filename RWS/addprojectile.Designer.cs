@@ -1182,7 +1182,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.acceleration);
             this.Controls.Add(this.label12);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "addprojectile";
