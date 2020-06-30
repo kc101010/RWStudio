@@ -292,6 +292,7 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label36);
             this.groupBox1.Controls.Add(this.drift);
             this.groupBox1.Controls.Add(this.label35);
@@ -328,8 +329,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.ForeColor = System.Drawing.Color.Silver;
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -342,6 +342,7 @@
             // drift
             // 
             this.drift.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.drift.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.drift, "drift");
             this.drift.Name = "drift";
             // 
@@ -355,6 +356,8 @@
             // targeth
             // 
             this.targeth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.targeth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.targeth.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.targeth, "targeth");
             this.targeth.Name = "targeth";
             this.toolTip1.SetToolTip(this.targeth, resources.GetString("targeth.ToolTip"));
@@ -367,12 +370,15 @@
             this.footprint.Controls.Add(this.fc);
             this.footprint.Controls.Add(this.label10);
             resources.ApplyResources(this.footprint, "footprint");
+            this.footprint.ForeColor = System.Drawing.Color.Silver;
             this.footprint.Name = "footprint";
             this.footprint.TabStop = false;
             // 
             // ft
             // 
             this.ft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.ft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ft.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.ft, "ft");
             this.ft.Name = "ft";
             // 
@@ -385,6 +391,8 @@
             // fc
             // 
             this.fc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.fc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fc.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.fc, "fc");
             this.fc.Name = "fc";
             // 
@@ -404,7 +412,7 @@
             this.groupBox3.Controls.Add(this.multit);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.arange);
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox3.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
@@ -453,6 +461,7 @@
             // arange
             // 
             this.arange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.arange.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.arange, "arange");
             this.arange.Maximum = new decimal(new int[] {
             10000000,
@@ -469,11 +478,12 @@
             // shadowimage
             // 
             this.shadowimage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            resources.ApplyResources(this.shadowimage, "shadowimage");
+            this.shadowimage.ForeColor = System.Drawing.Color.Silver;
             this.shadowimage.FormattingEnabled = true;
             this.shadowimage.Items.AddRange(new object[] {
             resources.GetString("shadowimage.Items"),
             resources.GetString("shadowimage.Items1")});
-            resources.ApplyResources(this.shadowimage, "shadowimage");
             this.shadowimage.Name = "shadowimage";
             // 
             // label18
@@ -485,6 +495,8 @@
             // frames
             // 
             this.frames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.frames.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.frames.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.frames, "frames");
             this.frames.Maximum = new decimal(new int[] {
             10000000,
@@ -512,10 +524,11 @@
             // deadimage
             // 
             this.deadimage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            resources.ApplyResources(this.deadimage, "deadimage");
+            this.deadimage.ForeColor = System.Drawing.Color.Silver;
             this.deadimage.FormattingEnabled = true;
             this.deadimage.Items.AddRange(new object[] {
             resources.GetString("deadimage.Items")});
-            resources.ApplyResources(this.deadimage, "deadimage");
             this.deadimage.Name = "deadimage";
             // 
             // label15
@@ -527,6 +540,7 @@
             // dradius
             // 
             this.dradius.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.dradius.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.dradius, "dradius");
             this.dradius.Maximum = new decimal(new int[] {
             10000000,
@@ -569,30 +583,40 @@
             // tas
             // 
             this.tas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.tas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tas.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.tas, "tas");
             this.tas.Name = "tas";
             // 
             // dSpeed
             // 
             this.dSpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.dSpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dSpeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.dSpeed, "dSpeed");
             this.dSpeed.Name = "dSpeed";
             // 
             // accSpeed
             // 
             this.accSpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.accSpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.accSpeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.accSpeed, "accSpeed");
             this.accSpeed.Name = "accSpeed";
             // 
             // turnSpeed
             // 
             this.turnSpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.turnSpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.turnSpeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.turnSpeed, "turnSpeed");
             this.turnSpeed.Name = "turnSpeed";
             // 
             // moveSpeed
             // 
             this.moveSpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.moveSpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.moveSpeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.moveSpeed, "moveSpeed");
             this.moveSpeed.Name = "moveSpeed";
             // 
@@ -600,6 +624,7 @@
             // 
             resources.ApplyResources(this.lllll, "lllll");
             this.lllll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.lllll.ForeColor = System.Drawing.Color.Silver;
             this.lllll.Name = "lllll";
             // 
             // labelll
@@ -629,6 +654,7 @@
             // radius
             // 
             this.radius.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.radius.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.radius, "radius");
             this.radius.Maximum = new decimal(new int[] {
             10000000,
@@ -658,6 +684,8 @@
             // buildspeed
             // 
             this.buildspeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.buildspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.buildspeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.buildspeed, "buildspeed");
             this.buildspeed.Name = "buildspeed";
             this.toolTip1.SetToolTip(this.buildspeed, resources.GetString("buildspeed.ToolTip"));
@@ -665,6 +693,7 @@
             // level
             // 
             this.level.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.level.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.level, "level");
             this.level.Maximum = new decimal(new int[] {
             10000000,
@@ -692,6 +721,7 @@
             // price
             // 
             this.price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.price.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.price, "price");
             this.price.Maximum = new decimal(new int[] {
             10000000,
@@ -715,7 +745,7 @@
             this.groupBox2.Controls.Add(this.movement);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.isexperimental);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox2.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
@@ -746,7 +776,7 @@
             // 
             this.movement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             resources.ApplyResources(this.movement, "movement");
-            this.movement.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.movement.ForeColor = System.Drawing.Color.Silver;
             this.movement.FormattingEnabled = true;
             this.movement.Items.AddRange(new object[] {
             resources.GetString("movement.Items"),
@@ -778,12 +808,14 @@
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.label7.ForeColor = System.Drawing.Color.Silver;
             this.label7.Name = "label7";
             this.toolTip1.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
             // 
             // mass
             // 
             this.mass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.mass.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.mass, "mass");
             this.mass.Maximum = new decimal(new int[] {
             10000000,
@@ -797,18 +829,19 @@
             -2147483648});
             this.mass.Name = "mass";
             this.toolTip1.SetToolTip(this.mass, resources.GetString("mass.ToolTip"));
-            this.mass.ValueChanged += new System.EventHandler(this.mass_ValueChanged);
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.label6.ForeColor = System.Drawing.Color.Silver;
             this.label6.Name = "label6";
             this.toolTip1.SetToolTip(this.label6, resources.GetString("label6.ToolTip"));
             // 
             // hp
             // 
             this.hp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.hp.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.hp, "hp");
             this.hp.Maximum = new decimal(new int[] {
             10000000,
@@ -822,18 +855,19 @@
             -2147483648});
             this.hp.Name = "hp";
             this.toolTip1.SetToolTip(this.hp, resources.GetString("hp.ToolTip"));
-            this.hp.ValueChanged += new System.EventHandler(this.hp_ValueChanged);
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
             this.label4.Name = "label4";
             this.toolTip1.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
             // 
             // descript
             // 
             this.descript.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.descript.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.descript.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.descript, "descript");
             this.descript.Name = "descript";
@@ -849,6 +883,7 @@
             // name
             // 
             this.name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.name, "name");
             this.name.Name = "name";
@@ -869,8 +904,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button1.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -899,16 +936,19 @@
             // turretimage
             // 
             this.turretimage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            resources.ApplyResources(this.turretimage, "turretimage");
+            this.turretimage.ForeColor = System.Drawing.Color.Silver;
             this.turretimage.FormattingEnabled = true;
             this.turretimage.Items.AddRange(new object[] {
             resources.GetString("turretimage.Items")});
-            resources.ApplyResources(this.turretimage, "turretimage");
             this.turretimage.Name = "turretimage";
             this.toolTip1.SetToolTip(this.turretimage, resources.GetString("turretimage.ToolTip"));
             // 
             // shieldr
             // 
             this.shieldr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.shieldr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.shieldr.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.shieldr, "shieldr");
             this.shieldr.Name = "shieldr";
             // 
@@ -921,6 +961,7 @@
             // shield
             // 
             this.shield.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.shield.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.shield, "shield");
             this.shield.Maximum = new decimal(new int[] {
             10000000,
@@ -943,6 +984,8 @@
             // energyr
             // 
             this.energyr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.energyr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.energyr.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.energyr, "energyr");
             this.energyr.Name = "energyr";
             // 
@@ -955,6 +998,8 @@
             // energy
             // 
             this.energy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.energy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.energy.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.energy, "energy");
             this.energy.Name = "energy";
             // 
@@ -967,6 +1012,8 @@
             // soy
             // 
             this.soy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.soy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.soy.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.soy, "soy");
             this.soy.Maximum = new decimal(new int[] {
             10000000,
@@ -989,6 +1036,8 @@
             // sox
             // 
             this.sox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.sox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sox.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.sox, "sox");
             this.sox.Maximum = new decimal(new int[] {
             10000000,
@@ -1011,6 +1060,7 @@
             // tslots
             // 
             this.tslots.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.tslots.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.tslots, "tslots");
             this.tslots.Maximum = new decimal(new int[] {
             10000000,
@@ -1039,31 +1089,37 @@
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.actionlist);
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox4.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button4.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button4, "button4");
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button3.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button3, "button3");
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button2.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -1071,6 +1127,8 @@
             // actionlist
             // 
             this.actionlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.actionlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.actionlist.ForeColor = System.Drawing.Color.Silver;
             this.actionlist.FormattingEnabled = true;
             resources.ApplyResources(this.actionlist, "actionlist");
             this.actionlist.Name = "actionlist";
@@ -1085,6 +1143,7 @@
             this.gb.Controls.Add(this.groupBox7);
             this.gb.Controls.Add(this.groupBox5);
             this.gb.Controls.Add(this.moveanim);
+            this.gb.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.gb, "gb");
             this.gb.Name = "gb";
             this.gb.TabStop = false;
@@ -1100,7 +1159,7 @@
             this.gb22.Controls.Add(this.idleAnimstart);
             this.gb22.Controls.Add(this.label50);
             resources.ApplyResources(this.gb22, "gb22");
-            this.gb22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gb22.ForeColor = System.Drawing.Color.Silver;
             this.gb22.Name = "gb22";
             this.gb22.TabStop = false;
             // 
@@ -1114,6 +1173,8 @@
             // idleAnimSpeed
             // 
             this.idleAnimSpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.idleAnimSpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idleAnimSpeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.idleAnimSpeed, "idleAnimSpeed");
             this.idleAnimSpeed.Name = "idleAnimSpeed";
             this.toolTip1.SetToolTip(this.idleAnimSpeed, resources.GetString("idleAnimSpeed.ToolTip"));
@@ -1127,6 +1188,7 @@
             // idleAnimEnd
             // 
             this.idleAnimEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.idleAnimEnd.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.idleAnimEnd, "idleAnimEnd");
             this.idleAnimEnd.Maximum = new decimal(new int[] {
             10000000,
@@ -1149,6 +1211,7 @@
             // idleAnimstart
             // 
             this.idleAnimstart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.idleAnimstart.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.idleAnimstart, "idleAnimstart");
             this.idleAnimstart.Maximum = new decimal(new int[] {
             10000000,
@@ -1172,6 +1235,7 @@
             // 
             resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.checkBox1.ForeColor = System.Drawing.Color.Silver;
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
@@ -1183,31 +1247,37 @@
             this.groupBox7.Controls.Add(this.button6);
             this.groupBox7.Controls.Add(this.button5);
             this.groupBox7.Controls.Add(this.animlist);
-            this.groupBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox7.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button7.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button7, "button7");
+            this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button6.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button6, "button6");
+            this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button5.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button5, "button5");
+            this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -1215,6 +1285,8 @@
             // animlist
             // 
             this.animlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.animlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.animlist.ForeColor = System.Drawing.Color.Silver;
             this.animlist.FormattingEnabled = true;
             resources.ApplyResources(this.animlist, "animlist");
             this.animlist.Name = "animlist";
@@ -1232,7 +1304,7 @@
             this.groupBox5.Controls.Add(this.animstart);
             this.groupBox5.Controls.Add(this.label31);
             resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox5.ForeColor = System.Drawing.Color.Silver;
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
@@ -1246,6 +1318,8 @@
             // animspeed
             // 
             this.animspeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.animspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.animspeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.animspeed, "animspeed");
             this.animspeed.Name = "animspeed";
             this.toolTip1.SetToolTip(this.animspeed, resources.GetString("animspeed.ToolTip"));
@@ -1259,6 +1333,7 @@
             // animend
             // 
             this.animend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.animend.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.animend, "animend");
             this.animend.Maximum = new decimal(new int[] {
             10000000,
@@ -1281,6 +1356,7 @@
             // animstart
             // 
             this.animstart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.animstart.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.animstart, "animstart");
             this.animstart.Maximum = new decimal(new int[] {
             10000000,
@@ -1315,31 +1391,37 @@
             this.groupBox8.Controls.Add(this.button9);
             this.groupBox8.Controls.Add(this.button10);
             this.groupBox8.Controls.Add(this.turretlist);
-            this.groupBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox8.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button8.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button8, "button8");
+            this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button9.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button9, "button9");
+            this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Name = "button9";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button10.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button10, "button10");
+            this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Name = "button10";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -1347,6 +1429,8 @@
             // turretlist
             // 
             this.turretlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.turretlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.turretlist.ForeColor = System.Drawing.Color.Silver;
             this.turretlist.FormattingEnabled = true;
             resources.ApplyResources(this.turretlist, "turretlist");
             this.turretlist.Name = "turretlist";
@@ -1360,31 +1444,37 @@
             this.groupBox9.Controls.Add(this.button12);
             this.groupBox9.Controls.Add(this.button13);
             this.groupBox9.Controls.Add(this.projectilelist);
-            this.groupBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox9.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
             // 
             // button11
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button11.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button11, "button11");
+            this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Name = "button11";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button12.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button12, "button12");
+            this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Name = "button12";
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button13.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button13, "button13");
+            this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Name = "button13";
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
@@ -1392,6 +1482,8 @@
             // projectilelist
             // 
             this.projectilelist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.projectilelist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.projectilelist.ForeColor = System.Drawing.Color.Silver;
             this.projectilelist.FormattingEnabled = true;
             resources.ApplyResources(this.projectilelist, "projectilelist");
             this.projectilelist.Name = "projectilelist";
@@ -1404,23 +1496,27 @@
             this.groupBox10.Controls.Add(this.button14);
             this.groupBox10.Controls.Add(this.button16);
             this.groupBox10.Controls.Add(this.bflist);
-            this.groupBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox10.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.TabStop = false;
             // 
             // button14
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button14.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button14, "button14");
+            this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Name = "button14";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button16
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button16.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button16, "button16");
+            this.button16.ForeColor = System.Drawing.Color.White;
             this.button16.Name = "button16";
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.button16_Click);
@@ -1428,7 +1524,8 @@
             // bflist
             // 
             this.bflist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.bflist.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bflist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bflist.ForeColor = System.Drawing.Color.Silver;
             this.bflist.FormattingEnabled = true;
             resources.ApplyResources(this.bflist, "bflist");
             this.bflist.Name = "bflist";
@@ -1441,31 +1538,37 @@
             this.groupBox11.Controls.Add(this.button18);
             this.groupBox11.Controls.Add(this.button19);
             this.groupBox11.Controls.Add(this.cblist);
-            this.groupBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox11.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
             // 
             // button17
             // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button17.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button17, "button17");
+            this.button17.ForeColor = System.Drawing.Color.White;
             this.button17.Name = "button17";
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button18.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button18, "button18");
+            this.button18.ForeColor = System.Drawing.Color.White;
             this.button18.Name = "button18";
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button19.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button19, "button19");
+            this.button19.ForeColor = System.Drawing.Color.White;
             this.button19.Name = "button19";
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
@@ -1473,6 +1576,8 @@
             // cblist
             // 
             this.cblist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.cblist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cblist.ForeColor = System.Drawing.Color.Silver;
             this.cblist.FormattingEnabled = true;
             resources.ApplyResources(this.cblist, "cblist");
             this.cblist.Name = "cblist";
@@ -1483,7 +1588,7 @@
             // 
             this.groupBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.groupBox12.Controls.Add(this.aiasb);
-            this.groupBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox12.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
@@ -1502,31 +1607,37 @@
             this.groupBox13.Controls.Add(this.button21);
             this.groupBox13.Controls.Add(this.button22);
             this.groupBox13.Controls.Add(this.elist);
-            this.groupBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox13.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox13, "groupBox13");
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.TabStop = false;
             // 
             // button20
             // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button20.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button20, "button20");
+            this.button20.ForeColor = System.Drawing.Color.White;
             this.button20.Name = "button20";
             this.button20.UseVisualStyleBackColor = false;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button21.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button21, "button21");
+            this.button21.ForeColor = System.Drawing.Color.White;
             this.button21.Name = "button21";
             this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button22.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button22, "button22");
+            this.button22.ForeColor = System.Drawing.Color.White;
             this.button22.Name = "button22";
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
@@ -1534,6 +1645,8 @@
             // elist
             // 
             this.elist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.elist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.elist.ForeColor = System.Drawing.Color.Silver;
             this.elist.FormattingEnabled = true;
             resources.ApplyResources(this.elist, "elist");
             this.elist.Name = "elist";
@@ -1547,30 +1660,36 @@
             this.groupBox15.Controls.Add(this.button27);
             this.groupBox15.Controls.Add(this.button28);
             this.groupBox15.Controls.Add(this.alist);
-            this.groupBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox15.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox15, "groupBox15");
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.TabStop = false;
             // 
             // button26
             // 
-            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button26.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button26, "button26");
+            this.button26.ForeColor = System.Drawing.Color.White;
             this.button26.Name = "button26";
             this.button26.UseVisualStyleBackColor = false;
             // 
             // button27
             // 
-            this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button27.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button27, "button27");
+            this.button27.ForeColor = System.Drawing.Color.White;
             this.button27.Name = "button27";
             this.button27.UseVisualStyleBackColor = false;
             this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
-            this.button28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button28.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button28, "button28");
+            this.button28.ForeColor = System.Drawing.Color.White;
             this.button28.Name = "button28";
             this.button28.UseVisualStyleBackColor = false;
             this.button28.Click += new System.EventHandler(this.button28_Click);
@@ -1578,6 +1697,8 @@
             // alist
             // 
             this.alist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.alist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alist.ForeColor = System.Drawing.Color.Silver;
             this.alist.FormattingEnabled = true;
             resources.ApplyResources(this.alist, "alist");
             this.alist.Name = "alist";
@@ -1591,31 +1712,37 @@
             this.groupBox16.Controls.Add(this.button30);
             this.groupBox16.Controls.Add(this.button31);
             this.groupBox16.Controls.Add(this.armlist);
-            this.groupBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox16.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox16, "groupBox16");
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.TabStop = false;
             // 
             // button29
             // 
-            this.button29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button29.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button29, "button29");
+            this.button29.ForeColor = System.Drawing.Color.White;
             this.button29.Name = "button29";
             this.button29.UseVisualStyleBackColor = false;
             this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button30
             // 
-            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button30.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button30, "button30");
+            this.button30.ForeColor = System.Drawing.Color.White;
             this.button30.Name = "button30";
             this.button30.UseVisualStyleBackColor = false;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
-            this.button31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button31.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button31, "button31");
+            this.button31.ForeColor = System.Drawing.Color.White;
             this.button31.Name = "button31";
             this.button31.UseVisualStyleBackColor = false;
             this.button31.Click += new System.EventHandler(this.button31_Click);
@@ -1623,6 +1750,8 @@
             // armlist
             // 
             this.armlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.armlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.armlist.ForeColor = System.Drawing.Color.Silver;
             this.armlist.FormattingEnabled = true;
             resources.ApplyResources(this.armlist, "armlist");
             this.armlist.Name = "armlist";
@@ -1640,7 +1769,7 @@
             this.groupBox17.Controls.Add(this.label23);
             this.groupBox17.Controls.Add(this.button32);
             this.groupBox17.Controls.Add(this.button34);
-            this.groupBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox17.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox17, "groupBox17");
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.TabStop = false;
@@ -1648,12 +1777,14 @@
             // customv
             // 
             this.customv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.customv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.customv, "customv");
             this.customv.Name = "customv";
             // 
             // customp
             // 
             this.customp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.customp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.customp, "customp");
             this.customp.Name = "customp";
             // 
@@ -1665,6 +1796,7 @@
             this.customs.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.customs.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.customs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.customs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.customs, "customs");
             this.customs.Name = "customs";
             this.customs.Tag = "";
@@ -1689,40 +1821,50 @@
             // 
             // button32
             // 
-            this.button32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button32.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button32, "button32");
+            this.button32.ForeColor = System.Drawing.Color.White;
             this.button32.Name = "button32";
             this.button32.UseVisualStyleBackColor = false;
             this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button34
             // 
-            this.button34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button34.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button34, "button34");
+            this.button34.ForeColor = System.Drawing.Color.White;
             this.button34.Name = "button34";
             this.button34.UseVisualStyleBackColor = false;
             this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button33
             // 
-            this.button33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button33.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button33, "button33");
+            this.button33.ForeColor = System.Drawing.Color.White;
             this.button33.Name = "button33";
             this.button33.UseVisualStyleBackColor = false;
             this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // button35
             // 
-            this.button35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button35.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button35, "button35");
+            this.button35.ForeColor = System.Drawing.Color.White;
             this.button35.Name = "button35";
             this.button35.UseVisualStyleBackColor = false;
             this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button37
             // 
-            this.button37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button37.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button37, "button37");
+            this.button37.ForeColor = System.Drawing.Color.White;
             this.button37.Name = "button37";
             this.button37.UseVisualStyleBackColor = false;
             this.button37.Click += new System.EventHandler(this.button37_Click);
@@ -1781,13 +1923,14 @@
             this.groupBox18.Controls.Add(this.tslots);
             this.groupBox18.Controls.Add(this.label24);
             resources.ApplyResources(this.groupBox18, "groupBox18");
-            this.groupBox18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox18.ForeColor = System.Drawing.Color.Silver;
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.TabStop = false;
             // 
             // armour
             // 
             this.armour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.armour.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.armour, "armour");
             this.armour.Maximum = new decimal(new int[] {
             10000000,
@@ -1817,6 +1960,8 @@
             // tags
             // 
             this.tags.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.tags.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tags.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.tags, "tags");
             this.tags.Name = "tags";
             this.toolTip1.SetToolTip(this.tags, resources.GetString("tags.ToolTip"));
@@ -1831,13 +1976,14 @@
             // landOnGround
             // 
             this.landOnGround.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            resources.ApplyResources(this.landOnGround, "landOnGround");
+            this.landOnGround.ForeColor = System.Drawing.Color.Silver;
             this.landOnGround.FormattingEnabled = true;
             this.landOnGround.Items.AddRange(new object[] {
             resources.GetString("landOnGround.Items"),
             resources.GetString("landOnGround.Items1"),
             resources.GetString("landOnGround.Items2"),
             resources.GetString("landOnGround.Items3")});
-            resources.ApplyResources(this.landOnGround, "landOnGround");
             this.landOnGround.Name = "landOnGround";
             this.toolTip1.SetToolTip(this.landOnGround, resources.GetString("landOnGround.ToolTip"));
             // 
@@ -1867,11 +2013,12 @@
             // dl
             // 
             this.dl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            resources.ApplyResources(this.dl, "dl");
+            this.dl.ForeColor = System.Drawing.Color.Silver;
             this.dl.FormattingEnabled = true;
             this.dl.Items.AddRange(new object[] {
             resources.GetString("dl.Items"),
             resources.GetString("dl.Items1")});
-            resources.ApplyResources(this.dl, "dl");
             this.dl.Name = "dl";
             // 
             // label49
@@ -1892,7 +2039,7 @@
             this.groupBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.groupBox21.Controls.Add(this.dustef);
             this.groupBox21.Controls.Add(this.sef);
-            this.groupBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox21.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox21, "groupBox21");
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.TabStop = false;
@@ -1920,6 +2067,7 @@
             // def
             // 
             this.def.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.def.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.def, "def");
             this.def.Name = "def";
             // 
@@ -1932,6 +2080,8 @@
             // selfRegenRate
             // 
             this.selfRegenRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.selfRegenRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.selfRegenRate.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.selfRegenRate, "selfRegenRate");
             this.selfRegenRate.Name = "selfRegenRate";
             // 
@@ -1951,12 +2101,16 @@
             // sit
             // 
             this.sit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.sit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sit.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.sit, "sit");
             this.sit.Name = "sit";
             // 
             // ioy
             // 
             this.ioy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.ioy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ioy.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.ioy, "ioy");
             this.ioy.Maximum = new decimal(new int[] {
             10000000,
@@ -1979,6 +2133,8 @@
             // iox
             // 
             this.iox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.iox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.iox.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.iox, "iox");
             this.iox.Maximum = new decimal(new int[] {
             10000000,
@@ -2023,7 +2179,7 @@
             this.groupBox20.Controls.Add(this.nukeOnDeathRange);
             this.groupBox20.Controls.Add(this.noNuke);
             resources.ApplyResources(this.groupBox20, "groupBox20");
-            this.groupBox20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox20.ForeColor = System.Drawing.Color.Silver;
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.TabStop = false;
             // 
@@ -2036,6 +2192,8 @@
             // nukeOnDeathDamage
             // 
             this.nukeOnDeathDamage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.nukeOnDeathDamage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nukeOnDeathDamage.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.nukeOnDeathDamage, "nukeOnDeathDamage");
             this.nukeOnDeathDamage.Name = "nukeOnDeathDamage";
             // 
@@ -2048,6 +2206,8 @@
             // nukeOnDeathRange
             // 
             this.nukeOnDeathRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.nukeOnDeathRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nukeOnDeathRange.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.nukeOnDeathRange, "nukeOnDeathRange");
             this.nukeOnDeathRange.Name = "nukeOnDeathRange";
             // 
@@ -2085,7 +2245,7 @@
             this.groupBox19.Controls.Add(this.label27);
             this.groupBox19.Controls.Add(this.nanoRange);
             resources.ApplyResources(this.groupBox19, "groupBox19");
-            this.groupBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox19.ForeColor = System.Drawing.Color.Silver;
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.TabStop = false;
             // 
@@ -2098,6 +2258,8 @@
             // nanobs
             // 
             this.nanobs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.nanobs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nanobs.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.nanobs, "nanobs");
             this.nanobs.Name = "nanobs";
             // 
@@ -2110,6 +2272,8 @@
             // nanoFactorySpeed
             // 
             this.nanoFactorySpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.nanoFactorySpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nanoFactorySpeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.nanoFactorySpeed, "nanoFactorySpeed");
             this.nanoFactorySpeed.Name = "nanoFactorySpeed";
             // 
@@ -2122,6 +2286,8 @@
             // nanoRepairSpeed
             // 
             this.nanoRepairSpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.nanoRepairSpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nanoRepairSpeed.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.nanoRepairSpeed, "nanoRepairSpeed");
             this.nanoRepairSpeed.Name = "nanoRepairSpeed";
             // 
@@ -2134,6 +2300,8 @@
             // nanoRange
             // 
             this.nanoRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.nanoRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nanoRange.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.nanoRange, "nanoRange");
             this.nanoRange.Name = "nanoRange";
             // 
@@ -2174,6 +2342,8 @@
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.ForeColor = System.Drawing.Color.Silver;
             this.listBox1.FormattingEnabled = true;
             resources.ApplyResources(this.listBox1, "listBox1");
             this.listBox1.Name = "listBox1";
@@ -2200,31 +2370,37 @@
             this.groupBox14.Controls.Add(this.button23);
             this.groupBox14.Controls.Add(this.button24);
             this.groupBox14.Controls.Add(this.listBox1);
-            this.groupBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox14.ForeColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.groupBox14, "groupBox14");
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.TabStop = false;
             // 
             // button15
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button15.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button15, "button15");
+            this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.Name = "button15";
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // button23
             // 
-            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button23.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button23, "button23");
+            this.button23.ForeColor = System.Drawing.Color.White;
             this.button23.Name = "button23";
             this.button23.UseVisualStyleBackColor = false;
             this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button24.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button24, "button24");
+            this.button24.ForeColor = System.Drawing.Color.White;
             this.button24.Name = "button24";
             this.button24.UseVisualStyleBackColor = false;
             this.button24.Click += new System.EventHandler(this.button24_Click);
@@ -2252,9 +2428,8 @@
             this.Controls.Add(this.gb);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "editUnit";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.editUnit_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

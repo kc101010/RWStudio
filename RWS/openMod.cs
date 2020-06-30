@@ -182,21 +182,6 @@ namespace RWS
             f2.ShowDialog();
             Close();
         }
-
-        private void openMod_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

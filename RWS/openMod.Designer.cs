@@ -98,7 +98,6 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Mod list";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button2
             // 
@@ -233,7 +232,6 @@
             this.button6.TabIndex = 12;
             this.button6.Text = "Load .rwmod";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // openMod
             // 
@@ -255,7 +253,6 @@
             this.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.Name = "openMod";
             this.Text = "RWStudio: Open mod";
-            this.Load += new System.EventHandler(this.openMod_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
