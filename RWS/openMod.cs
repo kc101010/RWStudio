@@ -11,7 +11,7 @@ namespace RWS
 
     public partial class openMod : Form
     {
-        public static string s;
+        public static string modPath;
         public openMod()
         {
             InitializeComponent();
@@ -19,20 +19,20 @@ namespace RWS
         }
         private void LoadMods()
         {
-            string s2 = "";
+            string errorHolder = "";
             try
             {
-                listView1.Clear();
+                modList.Clear();
                 imageList1.Dispose();
 
-                string[] s = Directory.EnumerateDirectories(@"C:\RWStudio").ToArray();
-                for (int a = 0; a < s.Length; a++)
+                string[] dirList = Directory.EnumerateDirectories(@"C:\RWStudio").ToArray();
+                for (int a = 0; a < dirList.Length; a++)
                 {
 
-                    string[] sss = Directory.GetFiles(s[a], "mod-info.txt");
+                    string[] sss = Directory.GetFiles(dirList[a], "mod-info.txt");
                     if (sss.Length < 1)
                     {
-                        s2 = s2 + "Err: I cant find unit mod-info file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
+                        errorHolder = errorHolder + "Err: I cant find unit mod-info file in folder " + dirList[a] + Environment.NewLine + Environment.NewLine;
                         Bitmap bmp = new Bitmap(78, 78);
                         using (Graphics gr = Graphics.FromImage(bmp))
                         {
@@ -47,16 +47,16 @@ namespace RWS
 
                         if (data["mod"]["thumbnail"] != null)
                         {
-                            if (File.Exists(Path.Combine(s[a], data["mod"]["thumbnail"].Replace(" ", string.Empty))))
+                            if (File.Exists(Path.Combine(dirList[a], data["mod"]["thumbnail"].Replace(" ", string.Empty))))
                             {
-                                Bitmap tmp = new Bitmap(Path.Combine(s[a], data["mod"]["thumbnail"].Replace(" ", string.Empty)));
+                                Bitmap tmp = new Bitmap(Path.Combine(dirList[a], data["mod"]["thumbnail"].Replace(" ", string.Empty)));
                                 Bitmap bmp = new Bitmap(tmp);
                                 imageList1.Images.Add(bmp);
                                 tmp.Dispose();
                             }
                             else
                             {
-                                s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
+                                errorHolder = errorHolder + "Err: I cant find unit image file in folder " + dirList[a] + Environment.NewLine + Environment.NewLine;
                                 Bitmap bmp = new Bitmap(78, 78);
                                 using (Graphics gr = Graphics.FromImage(bmp))
                                 {
@@ -67,7 +67,7 @@ namespace RWS
                         }
                         else
                         {
-                            s2 = s2 + "Err: I cant see image param in [mod] section" + Environment.NewLine + Environment.NewLine;
+                            errorHolder = errorHolder + "Err: I cant see image param in [mod] section" + Environment.NewLine + Environment.NewLine;
                             Bitmap fuck = new Bitmap(78, 78);
                             using (Graphics gr = Graphics.FromImage(fuck))
                             {
@@ -77,22 +77,22 @@ namespace RWS
                         }
                     }
                 }
-                listView1.LargeImageList = imageList1;
-                for (int i = 0; i < s.Length; i++)
+                modList.LargeImageList = imageList1;
+                for (int i = 0; i < dirList.Length; i++)
                 {
-                    ListViewItem listViewItem = new ListViewItem(new string[] { Path.GetFileName(s[i]) });
+                    ListViewItem listViewItem = new ListViewItem(new string[] { Path.GetFileName(dirList[i]) });
                     listViewItem.ImageIndex = i;
-                    listViewItem.Tag = s[i];
-                    listView1.Items.Add(listViewItem);
-                    if (!File.Exists(s[i] + "\\.nomedia"))
+                    listViewItem.Tag = dirList[i];
+                    modList.Items.Add(listViewItem);
+                    if (!File.Exists(dirList[i] + "\\.nomedia"))
                     {
-                        File.Create(s[i] + "\\.nomedia").Close();
+                        File.Create(dirList[i] + "\\.nomedia").Close();
                     }
                 }
-                if (s2 != "")
+                if (errorHolder != "")
                 {
 
-                    MessageBox.Show(s2, "Ghmm...", MessageBoxButtons.OK);
+                    MessageBox.Show(errorHolder, "Ghmm...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             catch (Exception ex)
@@ -105,7 +105,7 @@ namespace RWS
             //Edit by kc101010; Try-catch handles error when there is no user selection while trying to open a mod directory
             try
             {
-                s = listView1.SelectedItems[0].Tag.ToString();
+                modPath = modList.SelectedItems[0].Tag.ToString();
                 unitList f2 = new unitList();
                 Hide();
                 f2.ShowDialog();
@@ -130,10 +130,10 @@ namespace RWS
         {
             try
             {
-                if (listView1.SelectedItems[0].Tag != null)
+                if (modList.SelectedItems[0].Tag != null)
                 {
                     var parser = new FileIniDataParser();
-                    IniData data = parser.ReadFile(listView1.SelectedItems[0].Tag.ToString() + "\\mod-info.txt");
+                    IniData data = parser.ReadFile(modList.SelectedItems[0].Tag.ToString() + "\\mod-info.txt");
                     label1.Text = "Name: " + data["mod"]["title"];
                     label2.Text = "Description:" + data["mod"]["description"].Replace("\\n", Environment.NewLine);
                 }
@@ -146,7 +146,7 @@ namespace RWS
             //Edit by kc101010; Try-Catch prevents app from crashing when user tries to delete a mod when they haven't selected anything
             try
             {
-                Directory.Delete(listView1.SelectedItems[0].Tag.ToString(), true);
+                Directory.Delete(modList.SelectedItems[0].Tag.ToString(), true);
                 LoadMods();
             }
             catch (Exception)
@@ -162,7 +162,7 @@ namespace RWS
             //Edit by kc101010; Implemented try-catch in similar way to Line 140
             try
             {
-                s = listView1.SelectedItems[0].Tag.ToString();
+                modPath = modList.SelectedItems[0].Tag.ToString();
                 newMod f2 = new newMod();
                 Hide();
                 f2.ShowDialog();
@@ -176,7 +176,7 @@ namespace RWS
 
         private void button5_Click(object sender, EventArgs e)
         {
-            s = null;
+            modPath = null;
             newMod f2 = new newMod();
             Hide();
             f2.ShowDialog();

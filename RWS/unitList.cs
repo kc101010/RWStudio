@@ -21,14 +21,14 @@ namespace RWS
         }
         private void loadUnits()
         {
-            string s2 = "";
+            string errorHolder = "";
             try
             {
                 listView1.Clear();
                 imageList1.Dispose();
 
-                string[] s = Directory.EnumerateDirectories(openMod.s).ToArray();
-                label2.Text = openMod.s;
+                string[] s = Directory.EnumerateDirectories(openMod.modPath).ToArray();
+                label2.Text = openMod.modPath;
                 for (int a = 0; a < s.Length; a++)
                 {
                     if (s[a].Contains("music")) ;
@@ -50,7 +50,7 @@ namespace RWS
                                 }
                                 else
                                 {
-                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
+                                    errorHolder = errorHolder + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
                                     Bitmap bmp = new Bitmap(78, 78);
                                     using (Graphics gr = Graphics.FromImage(bmp))
                                     {
@@ -61,7 +61,7 @@ namespace RWS
                             }
                             else
                             {
-                                s2 = s2 + "Err: I cant see image param in [graphics] section" + Environment.NewLine + Environment.NewLine;
+                                errorHolder = errorHolder + "Err: I cant see image param in [graphics] section" + Environment.NewLine + Environment.NewLine;
                                 Bitmap fuck = new Bitmap(78, 78);
                                 using (Graphics gr = Graphics.FromImage(fuck))
                                 {
@@ -72,7 +72,7 @@ namespace RWS
                         }
                         else if (sss.Length > 1)
                         {
-                            s2 = s2 + "Warn: I found " + sss.Length.ToString() + " ini files in folder " + s[a] + ", loading: " + sss[0] + Environment.NewLine + Environment.NewLine;
+                            errorHolder = errorHolder + "Warn: I found " + sss.Length.ToString() + " ini files in folder " + s[a] + ", loading: " + sss[0] + Environment.NewLine + Environment.NewLine;
                             IniData data = parser.ReadFile(sss[0]);
                             if (data["graphics"]["image"] != null)
                             {
@@ -85,7 +85,7 @@ namespace RWS
                                 }
                                 else
                                 {
-                                    s2 = s2 + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
+                                    errorHolder = errorHolder + "Err: I cant find unit image file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
                                     Bitmap bmp = new Bitmap(78, 78);
                                     using (Graphics gr = Graphics.FromImage(bmp))
                                     {
@@ -96,7 +96,7 @@ namespace RWS
                             }
                             else
                             {
-                                s2 = s2 + "Err: I cant see image param in [graphics]" + Environment.NewLine + Environment.NewLine;
+                                errorHolder = errorHolder + "Err: I cant see image param in [graphics]" + Environment.NewLine + Environment.NewLine;
                                 Bitmap bmp = new Bitmap(78, 78);
                                 using (Graphics gr = Graphics.FromImage(bmp))
                                 {
@@ -107,7 +107,7 @@ namespace RWS
                         }
                         else if (sss.Length < 1)
                         {
-                            s2 = s2 + "Err: I cant find ini file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
+                            errorHolder = errorHolder + "Err: I cant find ini file in folder " + s[a] + Environment.NewLine + Environment.NewLine;
                             Bitmap bmp = new Bitmap(64, 64);
                             using (Graphics gr = Graphics.FromImage(bmp))
                             {
@@ -132,10 +132,10 @@ namespace RWS
                             }
                         }
                     }
-                    if (s2 != "")
+                    if (errorHolder != "")
                     {
 
-                        MessageBox.Show(s2, "Ghmm...", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                        MessageBox.Show(errorHolder, "Ghmm...", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                     }
                 }
             }
@@ -199,7 +199,7 @@ namespace RWS
                     pw.Show();
                     Hide();
                     Application.DoEvents();
-                    ZipFile.CreateFromDirectory(openMod.s, saveFileDialog1.FileName);
+                    ZipFile.CreateFromDirectory(openMod.modPath, saveFileDialog1.FileName);
                     pw.Close();
                     Show();
                     MessageBox.Show("Comressed!", "Success",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
@@ -213,7 +213,7 @@ namespace RWS
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Process.Start(openMod.s);//s is Mod path
+            Process.Start(openMod.modPath);//s is Mod path
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

@@ -25,19 +25,19 @@ namespace RWS
             {
                 if (picture_path != null)
                 {
-                    if (textBox2.Text.Length > 0 && !File.Exists(Path.Combine(openMod.s, textBox2.Text.Replace(" ", "_"), new DirectoryInfo(picture_path).Name)) && !File.Exists(Path.Combine(openMod.s, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini")))
+                    if (textBox2.Text.Length > 0 && !File.Exists(Path.Combine(openMod.modPath, textBox2.Text.Replace(" ", "_"), new DirectoryInfo(picture_path).Name)) && !File.Exists(Path.Combine(openMod.modPath, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini")))
                     {                      
-                        Directory.CreateDirectory(Path.Combine(openMod.s, textBox2.Text.Replace(" ", "_")));
-                        File.Copy(picture_path, Path.Combine(openMod.s, textBox2.Text.Replace(" ", "_"), new DirectoryInfo(picture_path).Name.Replace(" ", "_")));
+                        Directory.CreateDirectory(Path.Combine(openMod.modPath, textBox2.Text.Replace(" ", "_")));
+                        File.Copy(picture_path, Path.Combine(openMod.modPath, textBox2.Text.Replace(" ", "_"), new DirectoryInfo(picture_path).Name.Replace(" ", "_")));
 
-                        File.Create(Path.Combine(openMod.s, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini")).Close();
+                        File.Create(Path.Combine(openMod.modPath, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini")).Close();
                         var parser = new FileIniDataParser();
-                        IniData data = parser.ReadFile(Path.Combine(openMod.s, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini"));
+                        IniData data = parser.ReadFile(Path.Combine(openMod.modPath, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini"));
                         data["core"]["name"] = textBox2.Text.Replace(" ", "_");
                         data["core"]["displayText"] = textBox2.Text;
                         data["core"]["displayDescription"] = textBox3.Text.Replace(Environment.NewLine, "\\n");
                         data["graphics"]["image"] = new DirectoryInfo(picture_path).Name;
-                        parser.WriteFile(Path.Combine(openMod.s, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini"), data);
+                        parser.WriteFile(Path.Combine(openMod.modPath, textBox2.Text.Replace(" ", "_"), textBox2.Text.Replace(" ", "_") + ".ini"), data);
                         Close();
                     }
                 }

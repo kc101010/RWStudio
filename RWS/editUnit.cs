@@ -105,9 +105,9 @@ namespace RWS
 
         private void button33_Click(object sender, EventArgs e)
         {
-            string[] sss = Directory.GetFiles(path, "*.ini");
+            string[] iniFilesList = Directory.GetFiles(path, "*.ini");
             var parser = new FileIniDataParser();
-            IniData data = parser.ReadFile(sss[0]);
+            IniData data = parser.ReadFile(iniFilesList[0]);
            /*
             * core
             */
@@ -237,7 +237,7 @@ namespace RWS
             writeFromCheck(dustef, "graphics", "dustEffect", data);
             writeFromCheck(aiasb, "ai", "useAsBuilder", data);
 
-            parser.WriteFile(sss[0], data);
+            parser.WriteFile(iniFilesList[0], data);
             unitList ul = new unitList();
             Hide();
             ul.ShowDialog();
@@ -408,7 +408,7 @@ namespace RWS
             }
             catch(Exception e)
             {
-                MessageBox.Show("Ало, Гитлер? \n-Это п*зда" + e);
+                MessageBox.Show("Ало, Гитлер? \n-Это п*зда" + e,"П*зда", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
         }
         private void loadlist()
@@ -525,12 +525,12 @@ namespace RWS
         }
         private void loadimages()
         {
-            string[] sss = Directory.GetFiles(path, "*.png");
-            for (int i = 0; i < sss.Length; i++)
+            string[] imageFileList = Directory.GetFiles(path, "*.png");
+            for (int i = 0; i < imageFileList.Length; i++)
             {
-                deadimage.Items.Add(new DirectoryInfo(sss[i]).Name);
-                turretimage.Items.Add(new DirectoryInfo(sss[i]).Name);
-                shadowimage.Items.Add(new DirectoryInfo(sss[i]).Name);
+                deadimage.Items.Add(new DirectoryInfo(imageFileList[i]).Name);
+                turretimage.Items.Add(new DirectoryInfo(imageFileList[i]).Name);
+                shadowimage.Items.Add(new DirectoryInfo(imageFileList[i]).Name);
             }
         }
 

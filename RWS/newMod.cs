@@ -72,26 +72,26 @@ namespace RWS
             }
             else
             {
-                if (!File.Exists(Path.Combine(openMod.s, "mod-info.txt")))
-                    File.Create(Path.Combine(openMod.s, "mod-info.txt")).Close();
+                if (!File.Exists(Path.Combine(openMod.modPath, "mod-info.txt")))
+                    File.Create(Path.Combine(openMod.modPath, "mod-info.txt")).Close();
 
                 var parser = new FileIniDataParser();
-                IniData data = parser.ReadFile(Path.Combine(openMod.s, "mod-info.txt"));
+                IniData data = parser.ReadFile(Path.Combine(openMod.modPath, "mod-info.txt"));
                 data["mod"]["title"] = textBox1.Text;
                 data["mod"]["description"] = textBox2.Text.Replace(Environment.NewLine, "\\n");
                 data["mod"]["tags"] = textBox3.Text;
-                if (File.Exists(openMod.s + "\\thumbnail.png"))
+                if (File.Exists(openMod.modPath + "\\thumbnail.png"))
                     data["mod"]["thumbnail"] = "thumbnail.png";
                 if (checkBox1.Checked)
                 {
                     writeFromCheck(checkBox2, "music", "whenUsingUnitsFromThisMod_playExclusively", data);
                     writeFromCheck(checkBox3, "music", "addToNormalPlaylist", data);
                 }
-                parser.WriteFile(Path.Combine(openMod.s, "mod-info.txt"),data);
+                parser.WriteFile(Path.Combine(openMod.modPath, "mod-info.txt"),data);
                 openMod f2 = new openMod();
                 Hide();
                 f2.ShowDialog();
-                openMod.s = null;
+                openMod.modPath = null;
                 Close();
             }
         }
@@ -108,32 +108,32 @@ namespace RWS
         {
             foreach (string a in listBox1.SelectedItems)
             {
-                File.Delete(openMod.s + "\\music\\" + a);
+                File.Delete(openMod.modPath + "\\music\\" + a);
                 list();
             }
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (openMod.s != null)
+            if (openMod.modPath != null)
             {
                 checkBox2.Enabled = checkBox3.Enabled = checkBox1.Checked;
-                if (!File.Exists(Path.Combine(openMod.s, "mod-info.txt")))
-                    File.Create(Path.Combine(openMod.s, "mod-info.txt")).Close();
+                if (!File.Exists(Path.Combine(openMod.modPath, "mod-info.txt")))
+                    File.Create(Path.Combine(openMod.modPath, "mod-info.txt")).Close();
 
                 var parser = new FileIniDataParser();
-                IniData data = parser.ReadFile(Path.Combine(openMod.s, "mod-info.txt"));
+                IniData data = parser.ReadFile(Path.Combine(openMod.modPath, "mod-info.txt"));
                 if (checkBox1.Checked)
                 {
-                    Directory.CreateDirectory(openMod.s + "\\music\\");
-                    if (!File.Exists(Path.Combine(openMod.s, "mod-info.txt")))
-                        File.Create(Path.Combine(openMod.s, "mod-info.txt")).Close();
+                    Directory.CreateDirectory(openMod.modPath + "\\music\\");
+                    if (!File.Exists(Path.Combine(openMod.modPath, "mod-info.txt")))
+                        File.Create(Path.Combine(openMod.modPath, "mod-info.txt")).Close();
                     data["music"]["sourceFolder"] = "music\\";
                 }
                 else
                 {
                     data.Sections.RemoveSection("music");
                 }
-                parser.WriteFile(Path.Combine(openMod.s, "mod-info.txt"), data);
+                parser.WriteFile(Path.Combine(openMod.modPath, "mod-info.txt"), data);
             }
             else
             {
@@ -151,7 +151,7 @@ namespace RWS
         private void list()
         {
                 listBox1.Items.Clear();
-            List<string> dirs = new List<string>(Directory.EnumerateFiles(openMod.s + @"\music"));
+            List<string> dirs = new List<string>(Directory.EnumerateFiles(openMod.modPath + @"\music"));
                     foreach (string dir in dirs)
                     {
                         listBox1.Items.Add(dir.Split('\\')[dir.Split('\\').Length-1]);
@@ -160,12 +160,12 @@ namespace RWS
         }
         private void newMod_Load(object sender, EventArgs e)
         {
-            if (openMod.s != null && openMod.s != "")
+            if (openMod.modPath != null && openMod.modPath != "")
             {
                 newM = false;
                 Text = "RWStudio: Edit mod";
                 var parser = new FileIniDataParser();
-                IniData data = parser.ReadFile(Path.Combine(openMod.s, "mod-info.txt"));
+                IniData data = parser.ReadFile(Path.Combine(openMod.modPath, "mod-info.txt"));
                 textBox1.Text = data["mod"]["title"];
                 try
                 {
@@ -180,8 +180,8 @@ namespace RWS
                     checkBox2.Checked = Convert.ToBoolean(data["music"]["whenUsingUnitsFromThisMod_playExclusively"]);
                     checkBox3.Checked = Convert.ToBoolean(data["music"]["addToNormalPlaylist"]);
                 }
-                if (File.Exists(openMod.s +"\\"+ data["mod"]["thumbnail"]))
-                    pictureBox2.BackgroundImage = new Bitmap(openMod.s +"\\"+ data["mod"]["thumbnail"]);
+                if (File.Exists(openMod.modPath +"\\"+ data["mod"]["thumbnail"]))
+                    pictureBox2.BackgroundImage = new Bitmap(openMod.modPath +"\\"+ data["mod"]["thumbnail"]);
 
             }
         }
@@ -217,11 +217,11 @@ namespace RWS
                         Directory.CreateDirectory(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'));
                         newM = false;
                         checkBox1.Enabled = true;
-                        openMod.s = @"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_');
+                        openMod.modPath = @"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_');
                         File.Copy(openFileDialog1.FileName, Path.Combine(@"C:\RWStudio\" + textBox1.Text.Replace('\\', '_').Replace('/', '_').Replace('.', '_').Replace(',', '_').Replace('%', '_'), "thumbnail.png"), true);
                     }
                     else
-                        File.Copy(openFileDialog1.FileName, Path.Combine(openMod.s, "thumbnail.png"), true);
+                        File.Copy(openFileDialog1.FileName, Path.Combine(openMod.modPath, "thumbnail.png"), true);
                 }
             }
            
@@ -248,11 +248,11 @@ namespace RWS
             };
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                Directory.CreateDirectory(openMod.s + "\\music\\");
+                Directory.CreateDirectory(openMod.modPath + "\\music\\");
                 foreach (string pp in openFileDialog1.FileNames)
                 {
                     picture_path = pp;
-                    File.Copy(picture_path, Path.Combine(openMod.s, "music", new DirectoryInfo(picture_path).Name.Replace(" ", "_")), true);
+                    File.Copy(picture_path, Path.Combine(openMod.modPath, "music", new DirectoryInfo(picture_path).Name.Replace(" ", "_")), true);
 
                 }
                 list();

@@ -217,7 +217,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(304, 169);
+            this.groupBox1.Size = new System.Drawing.Size(309, 169);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Custom music list";
@@ -232,7 +232,7 @@
             this.button4.Location = new System.Drawing.Point(7, 124);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(143, 31);
+            this.button4.Size = new System.Drawing.Size(143, 27);
             this.button4.TabIndex = 2;
             this.button4.Text = "Delete music(s)";
             this.button4.UseVisualStyleBackColor = false;
@@ -248,7 +248,7 @@
             this.button3.Location = new System.Drawing.Point(157, 124);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 31);
+            this.button3.Size = new System.Drawing.Size(143, 27);
             this.button3.TabIndex = 1;
             this.button3.Text = "Add music(s)";
             this.button3.UseVisualStyleBackColor = false;
@@ -265,7 +265,7 @@
             this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox1.Size = new System.Drawing.Size(284, 92);
+            this.listBox1.Size = new System.Drawing.Size(293, 92);
             this.listBox1.TabIndex = 0;
             // 
             // checkBox2
@@ -274,7 +274,7 @@
             this.checkBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.checkBox2.Enabled = false;
             this.checkBox2.ForeColor = System.Drawing.Color.Silver;
-            this.checkBox2.Location = new System.Drawing.Point(325, 225);
+            this.checkBox2.Location = new System.Drawing.Point(343, 227);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(148, 19);
@@ -289,7 +289,7 @@
             this.checkBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.checkBox3.Enabled = false;
             this.checkBox3.ForeColor = System.Drawing.Color.Silver;
-            this.checkBox3.Location = new System.Drawing.Point(325, 251);
+            this.checkBox3.Location = new System.Drawing.Point(343, 253);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(164, 34);
