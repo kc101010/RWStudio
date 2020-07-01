@@ -189,7 +189,7 @@ namespace RWS
         {
             if (textBox1.Text == "")
             {
-                MessageBox.Show("Please, set mod name", "Sorry...");
+                MessageBox.Show("Please, set mod name", "Sorry...", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
             else
             {
