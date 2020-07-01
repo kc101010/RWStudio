@@ -15,50 +15,19 @@ using System.Windows.Forms;
 /*
             NEW EDIT UNIT PAGE - Rusted Warfare Studio
             - Designed by kc101010
-            - code aspects copied from editUnit.cs and are written by тestName
-            
- 
- 
- 
- 
- */
+            - code are written by тestName 
+*/
 
 namespace RWS
 {
     public partial class New_edit : Form
     {
         public static string path;  //Var path used to store .ini path of selected unit
-        
-
         public New_edit()
         {
             path = unitList.inipath;
             InitializeComponent();
         }
-        private void writeFromNumeric(NumericUpDown txt, string section, string param, IniData data)
-        {
-            if (txt.Value != 0 && txt.Enabled)
-            {
-                data[section][param] = txt.Value.ToString();
-            }
-            else if (data[section][param] != null)
-            {
-                data[section].RemoveKey(param);
-            }
-        }
-
-        private void writeFromTextbox(TextBox txt, string section, string param, IniData data)
-        {
-            if (txt.Text != null && txt.Text != "" && txt.Text != " " && txt.Enabled)
-            {
-                data[section][param] = txt.Text;
-            }
-            else if (data[section][param] != null)
-            {
-                data[section].RemoveKey(param);
-            }
-        }
-
         private void unit_picture_Click(object sender, EventArgs e)
         {
             string picture_path;
@@ -92,8 +61,6 @@ namespace RWS
 
                 data["graphics"]["image"] = new DirectoryInfo(picture_path).Name.Replace(" ", string.Empty);
                 parser.WriteFile(sss[0], data);
-
-                
             }
         }
 
@@ -137,24 +104,44 @@ namespace RWS
 
         private void button_save_Click(object sender, EventArgs e)
         {
-            //Declare components for ini data processing
-            string[] iniFilesList = Directory.GetFiles(path, "*.ini");
-            var parser = new FileIniDataParser();
-            IniData data = parser.ReadFile(iniFilesList[0]);
+            List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();  //get all texboxes from form
+            List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();  //all comboboxes
+            List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();//all checkboxes
+            string[] sss = Directory.GetFiles(path, "*.ini");
+            var parser = new IniParser.FileIniDataParser();
+            IniData data = parser.ReadFile(sss[0]);
+            //tag formatt
+            //section`parameter
+            //example:
+            //core`mass
+            for (int i = 0; i < txt.Count; i++)
+            {
+                if (!String.IsNullOrWhiteSpace(txt[i].Text) && txt[i].Enabled && !String.IsNullOrWhiteSpace(txt[i].Tag.ToString().Split('`')[1])) //if textbox enabled and not empty
+                        data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]] = txt[i].Text;                             //write data to ini file
 
-            //write all data from this UI 
-            writeFromNumeric(hp, "core", "maxHp", data);
-            writeFromNumeric(price, "core", "price", data);
-            writeFromNumeric(mass, "core", "mass", data);
-            data["core"]["class"] = "CustomUnitMetadata";
-            writeFromTextbox(buildspeed, "core", "buildSpeed", data);
-            writeFromNumeric(level, "core", "techLevel", data);
-            writeFromNumeric(radius, "core", "radius", data);
-            writeFromNumeric(dradius, "core", "displayRadius", data);
-            data["core"]["displayDescription"] = descript.Text.Replace(Environment.NewLine, "\\n");
-            writeFromTextbox(name, "core", "displayText", data);
+                else if (!String.IsNullOrWhiteSpace(data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]]))
+                    data[txt[i].Tag.ToString().Split('`')[0]].RemoveKey(txt[i].Tag.ToString().Split('`')[1]);                                    //delete data from ini
+            }
+            //same s*t
+            for (int i = 0; i < cb.Count; i++)
+            {
+                if (!String.IsNullOrWhiteSpace(cb[i].Text) && cb[i].Enabled && !String.IsNullOrWhiteSpace(cb[i].Tag.ToString()))
+                        data[cb[i].Tag.ToString().Split('`')[0]][cb[i].Tag.ToString().Split('`')[1]] = cb[i].Text;
 
+                else if (!String.IsNullOrWhiteSpace(data[cb[i].Tag.ToString().Split('`')[0]][cb[i].Tag.ToString().Split('`')[1]]))
+                    data[cb[i].Tag.ToString().Split('`')[0]].RemoveKey(cb[i].Tag.ToString().Split('`')[1]);
+            }
+            //same s*t
+            for (int i = 0; i < ch.Count; i++)
+            {
+                if (!String.IsNullOrWhiteSpace(ch[i].Tag.ToString()) && ch[i].Enabled)
+                    data[ch[i].Tag.ToString().Split('`')[0]][ch[i].Tag.ToString().Split('`')[1]] = ch[i].Checked.ToString();
 
+                else if (!String.IsNullOrWhiteSpace(data[ch[i].Tag.ToString().Split('`')[0]][ch[i].Tag.ToString().Split('`')[1]]))
+                    data[ch[i].Tag.ToString().Split('`')[0]].RemoveKey(ch[i].Tag.ToString().Split('`')[1]);
+            }
+            parser.WriteFile(sss[0], data); //save data
+            Close();
         }
 
         private void button_cancel_Click(object sender, EventArgs e)

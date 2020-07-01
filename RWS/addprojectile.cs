@@ -31,10 +31,10 @@ namespace RWS
         }
         private void loadlist()
         {
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
-            string[] sss1 = Directory.GetFiles(editUnit.path, "*.png");
+            string[] sss1 = Directory.GetFiles(New_edit.path, "*.png");
             for (int i = 0; i < sss1.Length; i++)
             {
                 image.Items.Add(new DirectoryInfo(sss1[i]).Name);
@@ -66,31 +66,31 @@ namespace RWS
         }
         private void addprojectile_Load(object sender, EventArgs e)
         {
-                if (editUnit.lastprj != null)
+                if (New_edit.lastprj != null)
                 {
                     namee.Enabled = false;
                     List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
                     List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
                     List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-                    string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+                    string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
                     var parser = new FileIniDataParser();
                     IniData data = parser.ReadFile(sss[0]);
                     for (int i = 0; i < txt.Count; i++)
                     {
-                        if (txt[i].Tag != null && data["projectile_" + editUnit.lastprj][txt[i].Tag.ToString()] != null)
-                            txt[i].Text = data["projectile_" + editUnit.lastprj][txt[i].Tag.ToString()];
+                        if (txt[i].Tag != null && data["projectile_" + New_edit.lastprj][txt[i].Tag.ToString()] != null)
+                            txt[i].Text = data["projectile_" + New_edit.lastprj][txt[i].Tag.ToString()];
                     }
                     for (int i = 0; i < cb.Count; i++)
                     {
                         if (cb[i].Tag != null)
-                            cb[i].Text = data["projectile_" + editUnit.lastprj][cb[i].Tag.ToString()];
+                            cb[i].Text = data["projectile_" + New_edit.lastprj][cb[i].Tag.ToString()];
                     }
                     for (int i = 0; i < ch.Count; i++)
                     {
                         if (ch[i].Tag != null)
-                            ch[i].Checked = Convert.ToBoolean(data["projectile_" + editUnit.lastprj][ch[i].Tag.ToString()]);
+                            ch[i].Checked = Convert.ToBoolean(data["projectile_" + New_edit.lastprj][ch[i].Tag.ToString()]);
                     }
-                    namee.Text = editUnit.lastprj;
+                    namee.Text = New_edit.lastprj;
                 button1.BackColor = ColorTranslator.FromHtml(color.Text);
 
                 button2.BackColor = ColorTranslator.FromHtml(lighColor.Text);
@@ -108,7 +108,7 @@ namespace RWS
             List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
             List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
             List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             for (int i = 0; i < txt.Count; i++)
@@ -153,7 +153,7 @@ namespace RWS
                 }
             }
             parser.WriteFile(sss[0], data);
-            editUnit.lastprj = null;
+            New_edit.lastprj = null;
             Close();
         }
 
@@ -235,7 +235,7 @@ namespace RWS
         {
             if (bflist.SelectedItem != null)
             {
-                string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+                string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
                 var parser = new FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
                 data.Sections.GetSectionData("projectile_" + namee.Text).Keys.RemoveKey("mutator" + bflist.SelectedItem.ToString() + "_ifUnitWithTags");

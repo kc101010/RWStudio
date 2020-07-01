@@ -144,3 +144,4 @@ C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.TrustInfo.xml
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.exe.manifest
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.application
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.New_edit.resources

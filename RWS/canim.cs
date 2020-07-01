@@ -21,31 +21,31 @@ namespace RWS
 
         private void castomanim_Load(object sender, EventArgs e)
         {
-            if (editUnit.lastanim != null)
+            if (New_edit.lastanim != null)
             {
                 namee.Enabled = false;
                 List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
                 List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
                 List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-                string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+                string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
                 var parser = new IniParser.FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
                 for (int i = 0; i < txt.Count; i++)
                 {
                     if (txt[i].Tag != null)
-                        txt[i].Text = data["animation_" + editUnit.lastanim][txt[i].Tag.ToString()];
+                        txt[i].Text = data["animation_" + New_edit.lastanim][txt[i].Tag.ToString()];
                 }
                 for (int i = 0; i < cb.Count; i++)
                 {
                     if (cb[i].Tag != null)
-                        cb[i].Text = data["animation_" + editUnit.lastanim][cb[i].Tag.ToString()];
+                        cb[i].Text = data["animation_" + New_edit.lastanim][cb[i].Tag.ToString()];
                 }
                 for (int i = 0; i < ch.Count; i++)
                 {
                     if (ch[i].Tag != null)
-                        ch[i].Checked = Convert.ToBoolean(data["animation_" + editUnit.lastanim][ch[i].Tag.ToString()]);
+                        ch[i].Checked = Convert.ToBoolean(data["animation_" + New_edit.lastanim][ch[i].Tag.ToString()]);
                 }
-                namee.Text = editUnit.lastanim;
+                namee.Text = New_edit.lastanim;
                 string[] strings = data.ToString().Split(new[] { '\r', '\n' });
                 foreach (string s in strings)
                 {
@@ -74,7 +74,7 @@ namespace RWS
             List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
             List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
             List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new IniParser.FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             data["animation_" + namee.Text].RemoveAllKeys();

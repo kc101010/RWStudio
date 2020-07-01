@@ -43,36 +43,36 @@ namespace RWS
 
         private void effects_Load(object sender, EventArgs e)
         {
-            string[] s1ss = Directory.GetFiles(editUnit.path, "*.png");
+            string[] s1ss = Directory.GetFiles(New_edit.path, "*.png");
             for (int i = 0; i < s1ss.Length; i++)
             {
                 icon.Items.Add(new DirectoryInfo(s1ss[i]).Name);
             }
-            if (editUnit.lastact != null)
+            if (New_edit.lastact != null)
             {
                 namee.Enabled = false;
                 List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
                 List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
                 List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-                string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+                string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
                 var parser = new IniParser.FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
                 for (int i = 0; i < txt.Count; i++)
                 {
-                    if (txt[i].Tag != null && data["effect_" + editUnit.lastact][txt[i].Tag.ToString()] != null)
-                        txt[i].Text = data["effect_" + editUnit.lastact][txt[i].Tag.ToString()];
+                    if (txt[i].Tag != null && data["effect_" + New_edit.lastact][txt[i].Tag.ToString()] != null)
+                        txt[i].Text = data["effect_" + New_edit.lastact][txt[i].Tag.ToString()];
                 }
                 for (int i = 0; i < cb.Count; i++)
                 {
                     if (cb[i].Tag != null)
-                        cb[i].Text = data["effect_" + editUnit.lastact][cb[i].Tag.ToString()];
+                        cb[i].Text = data["effect_" + New_edit.lastact][cb[i].Tag.ToString()];
                 }
                 for (int i = 0; i < ch.Count; i++)
                 {
-                    if (ch[i].Tag != null && data["effect_" + editUnit.lastact][ch[i].Tag.ToString()] != null)
-                        ch[i].Checked = Convert.ToBoolean(data["effect_" + editUnit.lastact][ch[i].Tag.ToString()]);
+                    if (ch[i].Tag != null && data["effect_" + New_edit.lastact][ch[i].Tag.ToString()] != null)
+                        ch[i].Checked = Convert.ToBoolean(data["effect_" + New_edit.lastact][ch[i].Tag.ToString()]);
                 }
-                namee.Text = editUnit.lastact;
+                namee.Text = New_edit.lastact;
             }
             button1.BackColor = ColorTranslator.FromHtml(color.Text);
         }
@@ -82,7 +82,7 @@ namespace RWS
             List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
             List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
             List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new IniParser.FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             for (int i = 0; i < txt.Count; i++)

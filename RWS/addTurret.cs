@@ -17,68 +17,68 @@ namespace RWS
         }
         private void load()
         {
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
-            if (editUnit.lastt != null)
+            if (New_edit.lastt != null)
             {              
-                name.Text = editUnit.lastt;
+                name.Text = New_edit.lastt;
                 name.Enabled = false;
-                x.Text = data["turret_" + editUnit.lastt]["x"];
-                y.Text = data["turret_" + editUnit.lastt]["y"];
-                bx.Text = data["turret_" + editUnit.lastt]["barrelX"];
-                size.Text = data["turret_" + editUnit.lastt]["size"];
-                    by.Text = data["turret_" + editUnit.lastt]["barrelY"];
-                bh.Text = data["turret_" + editUnit.lastt]["barrelHeight"];
-                image.Text = data["turret_" + editUnit.lastt]["image"];
-                turnSpeed.Text = data["turret_" + editUnit.lastt]["turnSpeed"];
-                tas.Text = data["turret_" + editUnit.lastt]["turnSpeedAcceleration"];
-                tds.Text = data["turret_" + editUnit.lastt]["turnSpeedDeceleration"];
-                idledir.Text = data["turret_" + editUnit.lastt]["idleDir"];
-                idr.Text = data["turret_" + editUnit.lastt]["idleDirReversing"];
-                tlist.Text = data["turret_" + editUnit.lastt]["attachedTo"];
-                proj.Text = data["turret_" + editUnit.lastt]["projectile"];
-                animonshoot.Text = data["turret_" + editUnit.lastt]["onShoot_playAnimation"];
-                eusage.Text = data["turret_" + editUnit.lastt]["energyUsage"];
-                shootdelay.Text = data["turret_" + editUnit.lastt]["delay"];
-                delay2.Text = data["turret_" + editUnit.lastt]["warmup"];
-                cac.Text = data["turret_" + editUnit.lastt]["canAttackCondition"];
-                image1.Text = data["turret_" + editUnit.lastt]["chargeEffectImage"];
-                maxrange.Text = data["turret_" + editUnit.lastt]["limitingRange"];
-                maxangle.Text = data["turret_" + editUnit.lastt]["limitingAngle"];
-                mirange.Text = data["turret_" + editUnit.lastt]["limitingMinRange"];
-                shootlight.Text = data["turret_" + editUnit.lastt]["shoot_light"];
-                shootflame.Text = data["turret_" + editUnit.lastt]["shoot_flame"];
-                shootsound.Text = data["turret_" + editUnit.lastt]["shoot_sound"];
-                if (data["turret_" + editUnit.lastt]["shouldResetTurret"] !=null)
+                x.Text = data["turret_" + New_edit.lastt]["x"];
+                y.Text = data["turret_" + New_edit.lastt]["y"];
+                bx.Text = data["turret_" + New_edit.lastt]["barrelX"];
+                size.Text = data["turret_" + New_edit.lastt]["size"];
+                    by.Text = data["turret_" + New_edit.lastt]["barrelY"];
+                bh.Text = data["turret_" + New_edit.lastt]["barrelHeight"];
+                image.Text = data["turret_" + New_edit.lastt]["image"];
+                turnSpeed.Text = data["turret_" + New_edit.lastt]["turnSpeed"];
+                tas.Text = data["turret_" + New_edit.lastt]["turnSpeedAcceleration"];
+                tds.Text = data["turret_" + New_edit.lastt]["turnSpeedDeceleration"];
+                idledir.Text = data["turret_" + New_edit.lastt]["idleDir"];
+                idr.Text = data["turret_" + New_edit.lastt]["idleDirReversing"];
+                tlist.Text = data["turret_" + New_edit.lastt]["attachedTo"];
+                proj.Text = data["turret_" + New_edit.lastt]["projectile"];
+                animonshoot.Text = data["turret_" + New_edit.lastt]["onShoot_playAnimation"];
+                eusage.Text = data["turret_" + New_edit.lastt]["energyUsage"];
+                shootdelay.Text = data["turret_" + New_edit.lastt]["delay"];
+                delay2.Text = data["turret_" + New_edit.lastt]["warmup"];
+                cac.Text = data["turret_" + New_edit.lastt]["canAttackCondition"];
+                image1.Text = data["turret_" + New_edit.lastt]["chargeEffectImage"];
+                maxrange.Text = data["turret_" + New_edit.lastt]["limitingRange"];
+                maxangle.Text = data["turret_" + New_edit.lastt]["limitingAngle"];
+                mirange.Text = data["turret_" + New_edit.lastt]["limitingMinRange"];
+                shootlight.Text = data["turret_" + New_edit.lastt]["shoot_light"];
+                shootflame.Text = data["turret_" + New_edit.lastt]["shoot_flame"];
+                shootsound.Text = data["turret_" + New_edit.lastt]["shoot_sound"];
+                if (data["turret_" + New_edit.lastt]["shouldResetTurret"] !=null)
                 {
-                    resetturret.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["shouldResetTurret"]);
+                    resetturret.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["shouldResetTurret"]);
                 }
                 else
                 {
                     resetturret.Checked = true;
                 }
-                if (data["turret_" + editUnit.lastt]["isMainNanoTurret"] != null)
+                if (data["turret_" + New_edit.lastt]["isMainNanoTurret"] != null)
                 {
-                    nano.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["isMainNanoTurret"]);
+                    nano.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["isMainNanoTurret"]);
                 }
-                if (data["turret_" + editUnit.lastt]["slave"] != null)
+                if (data["turret_" + New_edit.lastt]["slave"] != null)
                 {
-                    slave.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["slave"]);
+                    slave.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["slave"]);
                 }
-                freeze.Text = data["turret_" + editUnit.lastt]["onShoot_freezeBodyMovementFor"];
-                invisible.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["invisible"]);
-                if (data["turret_" + editUnit.lastt]["canShoot"] != null)
-                    canattack.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["canShoot"]);
+                freeze.Text = data["turret_" + New_edit.lastt]["onShoot_freezeBodyMovementFor"];
+                invisible.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["invisible"]);
+                if (data["turret_" + New_edit.lastt]["canShoot"] != null)
+                    canattack.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["canShoot"]);
                 else
                     canattack.Checked = true;
-                air.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["canAttackFlyingUnits"]); 
-                land.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["canAttackLandUnits"]);
-                uwater.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["canAttackUnderwaterUnits"]);
-                showcircle.Checked = Convert.ToBoolean(data["turret_" + editUnit.lastt]["showRangeUIGuide"]);
-                if (data["turret_" + editUnit.lastt]["canAttackNotTouchingWaterUnits"] != null)
+                air.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["canAttackFlyingUnits"]); 
+                land.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["canAttackLandUnits"]);
+                uwater.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["canAttackUnderwaterUnits"]);
+                showcircle.Checked = Convert.ToBoolean(data["turret_" + New_edit.lastt]["showRangeUIGuide"]);
+                if (data["turret_" + New_edit.lastt]["canAttackNotTouchingWaterUnits"] != null)
                 {
-                    resetturret.Checked = !Convert.ToBoolean(data["turret_" + editUnit.lastt]["canAttackNotTouchingWaterUnits"]);
+                    resetturret.Checked = !Convert.ToBoolean(data["turret_" + New_edit.lastt]["canAttackNotTouchingWaterUnits"]);
                 }
                 else
                 {
@@ -90,23 +90,23 @@ namespace RWS
                 name.Enabled = true;
             }
             button1.BackColor = ColorTranslator.FromHtml(shootlight.Text);
-            if(data["turret_" + editUnit.lastt]["laserDefenceEnergyUse"] != null)
+            if(data["turret_" + New_edit.lastt]["laserDefenceEnergyUse"] != null)
             {
                 laserdefenece.Checked = true;
-                laserdefen.Text = data["turret_" + editUnit.lastt]["laserDefenceEnergyUse"];
+                laserdefen.Text = data["turret_" + New_edit.lastt]["laserDefenceEnergyUse"];
             }
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
-            if (editUnit.lastt != null) ;
+            if (New_edit.lastt != null) ;
             else
             {
-                editUnit.lastt = name.Text;
+                New_edit.lastt = name.Text;
             }
-            data["turret_" + editUnit.lastt]["canAttackNotTouchingWaterUnits"] = Convert.ToString(!resetturret.Checked);
+            data["turret_" + New_edit.lastt]["canAttackNotTouchingWaterUnits"] = Convert.ToString(!resetturret.Checked);
             writeFromTextbox(x, "x", data);
             writeFromTextbox(y, "y", data);
             writeFromTextbox(bx, "barrelX", data);
@@ -131,27 +131,27 @@ namespace RWS
             writeFromCombotbox(shootsound, "shoot_sound", data);
             writeFromTextbox(freeze, "onShoot_freezeBodyMovementFor", data);
             writeFromTextbox(laserdefen, "laserDefenceEnergyUse", data);
-            data["turret_" + editUnit.lastt]["shouldResetTurret"] = resetturret.Checked.ToString();
+            data["turret_" + New_edit.lastt]["shouldResetTurret"] = resetturret.Checked.ToString();
             writeFromCombotbox(image, "image", data);
             writeFromCombotbox(image1, "chargeEffectImage", data);
             writeFromCombotbox(proj, "projectile", data);
             writeFromCombotbox(tlist, "attachedTo", data);
             writeFromCombotbox(animonshoot, "onShoot_playAnimation", data);
-             data["turret_" + editUnit.lastt]["invisible"]=invisible.Checked.ToString();
-             data["turret_" + editUnit.lastt]["canShoot"] = canattack.Checked.ToString();
-             data["turret_" + editUnit.lastt]["canAttackFlyingUnits"] = air.Checked.ToString();
-             data["turret_" + editUnit.lastt]["canAttackLandUnits"] = land.Checked.ToString();
-             data["turret_" + editUnit.lastt]["canAttackUnderwaterUnits"] = uwater.Checked.ToString();
-             data["turret_" + editUnit.lastt]["showRangeUIGuide"] = showcircle.Checked.ToString();
-             data["turret_" + editUnit.lastt]["slave"] = slave.Checked.ToString();
-             data["turret_" + editUnit.lastt]["isMainNanoTurret"] = nano.Checked.ToString();
+             data["turret_" + New_edit.lastt]["invisible"]=invisible.Checked.ToString();
+             data["turret_" + New_edit.lastt]["canShoot"] = canattack.Checked.ToString();
+             data["turret_" + New_edit.lastt]["canAttackFlyingUnits"] = air.Checked.ToString();
+             data["turret_" + New_edit.lastt]["canAttackLandUnits"] = land.Checked.ToString();
+             data["turret_" + New_edit.lastt]["canAttackUnderwaterUnits"] = uwater.Checked.ToString();
+             data["turret_" + New_edit.lastt]["showRangeUIGuide"] = showcircle.Checked.ToString();
+             data["turret_" + New_edit.lastt]["slave"] = slave.Checked.ToString();
+             data["turret_" + New_edit.lastt]["isMainNanoTurret"] = nano.Checked.ToString();
             parser.WriteFile(sss[0], data);
-            editUnit.lastt = null;
+            New_edit.lastt = null;
             Close();
         }
         private void loadList()
         {
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             string[] strings = data.ToString().Split(new[] { '\r', '\n' });
@@ -170,7 +170,7 @@ namespace RWS
                     {
                         string[] str;
                         str = s.Split(new char[] { '_', ']' });
-                        if (str[1] != editUnit.lastt)
+                        if (str[1] != New_edit.lastt)
                         tlist.Items.Add(str[1]);
                     }
                     if (s.Contains("[animation_") && s.Contains("]"))
@@ -181,19 +181,19 @@ namespace RWS
                     }
                 }
             }
-            string[] sss2 = Directory.GetFiles(editUnit.path, "*.png");
+            string[] sss2 = Directory.GetFiles(New_edit.path, "*.png");
             for (int i = 0; i < sss2.Length; i++)
             {
                 image.Items.Add(new DirectoryInfo(sss2[i]).Name);
                 image1.Items.Add(new DirectoryInfo(sss2[i]).Name);
             }
-          string[] sss3 = Directory.GetFiles(editUnit.path, "*.wav");
+          string[] sss3 = Directory.GetFiles(New_edit.path, "*.wav");
             for (int i = 0; i < sss3.Length; i++)
             {
                 shootsound.Items.Add(new DirectoryInfo(sss3[i]).Name);
             }
             sss3 = null;
-            sss3 = Directory.GetFiles(editUnit.path, "*.ogg");
+            sss3 = Directory.GetFiles(New_edit.path, "*.ogg");
             for (int i = 0; i < sss3.Length; i++)
             {
                 shootsound.Items.Add(new DirectoryInfo(sss3[i]).Name);
@@ -208,7 +208,7 @@ namespace RWS
         }
         private void button5_Click(object sender, EventArgs e)
         {
-            editUnit.lastt = null;
+            New_edit.lastt = null;
             Close();
         }
         private static String HexConverter(Color c)
@@ -219,22 +219,22 @@ namespace RWS
         {
             if (txt.Text != null && txt.Text != "" && txt.Text != " " && txt.Enabled)
             {
-                data["turret_" + editUnit.lastt][param] = txt.Text;
+                data["turret_" + New_edit.lastt][param] = txt.Text;
             }
-            else if (data["turret_" + editUnit.lastt][param] != null)
+            else if (data["turret_" + New_edit.lastt][param] != null)
             {
-                data["turret_" + editUnit.lastt].RemoveKey(param);
+                data["turret_" + New_edit.lastt].RemoveKey(param);
             }
         }
         private void writeFromCombotbox(ComboBox txt, string param, IniData data)
         {
             if (txt.Text != null && txt.Text != "" && txt.Text != " " && txt.Enabled)
             {
-                data["turret_" + editUnit.lastt][param] = txt.Text;
+                data["turret_" + New_edit.lastt][param] = txt.Text;
             }
-            else if (data["turret_" + editUnit.lastt][param] != null)
+            else if (data["turret_" + New_edit.lastt][param] != null)
             {
-                data["turret_" + editUnit.lastt].RemoveKey(param);
+                data["turret_" + New_edit.lastt].RemoveKey(param);
             }
         }
         private void size_TextChanged(object sender, EventArgs e)

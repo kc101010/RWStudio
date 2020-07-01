@@ -21,7 +21,7 @@ namespace RWS
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new IniParser.FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             writeFromTextbox(uwt, "projectile_" + addprojectile.projectile, "mutator" + nam.Value + "_ifUnitWithTags", data);

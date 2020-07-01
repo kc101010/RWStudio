@@ -15,13 +15,13 @@ namespace RWS
 
         private void builtFrom_Load(object sender, EventArgs e)
         {
-            if (editUnit.lastbf != null)
+            if (New_edit.lastbf != null)
             {
                 bfnum.Enabled = false;
-                string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+                string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
                 var parser = new FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
-                bfnum.Value = Convert.ToInt32(editUnit.lastbf.Split(':')[0]);
+                bfnum.Value = Convert.ToInt32(New_edit.lastbf.Split(':')[0]);
                 name.Text = data["core"]["builtFrom_" + bfnum.Value.ToString() + "_name"];
                 pos.Text = data["core"]["builtFrom_" + bfnum.Value.ToString() + "_pos"];
                 forceNano.Checked = Convert.ToBoolean(data["core"]["builtFrom_" + bfnum.Value.ToString() + "_forceNano"]);
@@ -39,7 +39,7 @@ namespace RWS
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             writeFromTextbox(name, "builtFrom_" + bfnum.Value.ToString() + "_name", data);

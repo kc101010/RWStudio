@@ -16,48 +16,48 @@ namespace RWS
 
         private void action_Load(object sender, EventArgs e)
         {
-            string[] s1ss = Directory.GetFiles(editUnit.path, "*.png");
+            string[] s1ss = Directory.GetFiles(New_edit.path, "*.png");
             for (int i = 0; i < s1ss.Length; i++)
             {
                 icon.Items.Add(new DirectoryInfo(s1ss[i]).Name);
             }
-            string[] s1s1s = Directory.GetFiles(editUnit.path, "*.wav");
+            string[] s1s1s = Directory.GetFiles(New_edit.path, "*.wav");
             for (int i = 0; i < s1s1s.Length; i++)
             {
                 sound.Items.Add(new DirectoryInfo(s1s1s[i]).Name);
                 gsound.Items.Add(new DirectoryInfo(s1s1s[i]).Name);
             }
-            string[] s1s1s1 = Directory.GetFiles(editUnit.path, "*.ogg");
+            string[] s1s1s1 = Directory.GetFiles(New_edit.path, "*.ogg");
             for (int i = 0; i < s1s1s1.Length; i++)
             {
                 sound.Items.Add(new DirectoryInfo(s1s1s1[i]).Name);
                 gsound.Items.Add(new DirectoryInfo(s1s1s1[i]).Name);
             }
-            if (editUnit.lastact != null)
+            if (New_edit.lastact != null)
             {
                 namee.Enabled = false;
                 List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
                 List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
                 List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-                string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+                string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
                 var parser = new IniParser.FileIniDataParser();
                 IniData data = parser.ReadFile(sss[0]);
                 for (int i = 0; i < txt.Count; i++)
                 {
-                    if (txt[i].Tag != null && data["action_" + editUnit.lastact][txt[i].Tag.ToString()] != null)
-                        txt[i].Text = data["action_" + editUnit.lastact][txt[i].Tag.ToString()].Replace("\\n", Environment.NewLine);
+                    if (txt[i].Tag != null && data["action_" + New_edit.lastact][txt[i].Tag.ToString()] != null)
+                        txt[i].Text = data["action_" + New_edit.lastact][txt[i].Tag.ToString()].Replace("\\n", Environment.NewLine);
                 }
                 for (int i = 0; i < cb.Count; i++)
                 {
                     if (cb[i].Tag != null)
-                        cb[i].Text = data["action_" + editUnit.lastact][cb[i].Tag.ToString()];
+                        cb[i].Text = data["action_" + New_edit.lastact][cb[i].Tag.ToString()];
                 }
                 for (int i = 0; i < ch.Count; i++)
                 {
                     if (ch[i].Tag != null)
-                        ch[i].Checked = Convert.ToBoolean(data["action_" + editUnit.lastact][ch[i].Tag.ToString()]);
+                        ch[i].Checked = Convert.ToBoolean(data["action_" + New_edit.lastact][ch[i].Tag.ToString()]);
                 }
-                namee.Text = editUnit.lastact;
+                namee.Text = New_edit.lastact;
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace RWS
             List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();
             List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();
             List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();
-            string[] sss = Directory.GetFiles(editUnit.path, "*.ini");
+            string[] sss = Directory.GetFiles(New_edit.path, "*.ini");
             var parser = new IniParser.FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             for (int i = 0; i < txt.Count; i++)
