@@ -164,14 +164,14 @@ namespace RWS
             try
             {
                 inipath = listView1.SelectedItems[0].Tag.ToString();
-                editUnit ed = new editUnit();
+                New_edit ed = new New_edit();
                 Hide();
                 ed.ShowDialog();
                 Close();
-            } catch (Exception) 
+            } catch (Exception why) 
             {
                 MessageBox.Show("A unit has not been selected, please select a unit to edit", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                MessageBox.Show(why.ToString());
             }
         }
 
