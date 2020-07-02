@@ -164,9 +164,25 @@ namespace RWS
             Close();
         }
 
+        private Form active = null;
+        private void childForm(Form child) 
+        {
+            if (active != null)
+                active.Close();
+            active = child;
+            child.TopLevel = false;
+            child.FormBorderStyle = FormBorderStyle.None;
+            child.Dock = DockStyle.Fill;
+            dynamicArea.Controls.Add(child);
+            dynamicArea.Tag = child;
+            child.BringToFront();
+            child.Show();
+        }
+
         private void button_Core_Click(object sender, EventArgs e)
         {
-            new editCore().ShowDialog();
+            // new editCore().ShowDialog();
+            childForm(new editCore()    );
         }
     }
 }

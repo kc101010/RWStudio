@@ -40,5 +40,10 @@ namespace RWS
         {
             group_construction.Enabled = check_isBuilder.Checked;
         }
+
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
     }
 }

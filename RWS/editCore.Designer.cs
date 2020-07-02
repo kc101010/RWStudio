@@ -33,68 +33,67 @@
             this.check_isBug = new System.Windows.Forms.CheckBox();
             this.check_isBuilder = new System.Windows.Forms.CheckBox();
             this.group_UnitType = new System.Windows.Forms.GroupBox();
+            this.check_Building = new System.Windows.Forms.CheckBox();
             this.check_Experimental = new System.Windows.Forms.CheckBox();
             this.group_ShieldArmour = new System.Windows.Forms.GroupBox();
+            this.label_armourMinDamageToKeep = new System.Windows.Forms.Label();
+            this.num_ArmourMinDamageToKeep = new System.Windows.Forms.NumericUpDown();
+            this.label_Armour = new System.Windows.Forms.Label();
+            this.num_Armour = new System.Windows.Forms.NumericUpDown();
             this.label_shieldRegen = new System.Windows.Forms.Label();
             this.num_shieldRegen = new System.Windows.Forms.NumericUpDown();
             this.label_maxShield = new System.Windows.Forms.Label();
             this.num_maxShield = new System.Windows.Forms.NumericUpDown();
             this.check_startShieldAtZero = new System.Windows.Forms.CheckBox();
             this.group_energy = new System.Windows.Forms.GroupBox();
-            this.check_Building = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label_maxEnergy = new System.Windows.Forms.Label();
-            this.num_maxEnergy = new System.Windows.Forms.NumericUpDown();
-            this.label_energyRegen = new System.Windows.Forms.Label();
-            this.num_energyRegen = new System.Windows.Forms.NumericUpDown();
             this.label_energyStartPercent = new System.Windows.Forms.Label();
             this.num_energyStartPercent = new System.Windows.Forms.NumericUpDown();
-            this.label_armourMinDamageToKeep = new System.Windows.Forms.Label();
-            this.num_ArmourMinDamageToKeep = new System.Windows.Forms.NumericUpDown();
-            this.label_Armour = new System.Windows.Forms.Label();
-            this.num_Armour = new System.Windows.Forms.NumericUpDown();
+            this.label_energyRegen = new System.Windows.Forms.Label();
+            this.num_energyRegen = new System.Windows.Forms.NumericUpDown();
+            this.label_maxEnergy = new System.Windows.Forms.Label();
+            this.num_maxEnergy = new System.Windows.Forms.NumericUpDown();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.group_resources = new System.Windows.Forms.GroupBox();
             this.group_Sound = new System.Windows.Forms.GroupBox();
-            this.sel_SoundDeath = new System.Windows.Forms.Button();
-            this.sel_SoundNewSelect = new System.Windows.Forms.Button();
-            this.sel_SoundMove = new System.Windows.Forms.Button();
             this.sel_SoundAttack = new System.Windows.Forms.Button();
+            this.sel_SoundMove = new System.Windows.Forms.Button();
+            this.sel_SoundNewSelect = new System.Windows.Forms.Button();
+            this.sel_SoundDeath = new System.Windows.Forms.Button();
             this.group_transport = new System.Windows.Forms.GroupBox();
-            this.label_tport_slotsNeeded = new System.Windows.Forms.Label();
-            this.num_tport_slotsNeeded = new System.Windows.Forms.NumericUpDown();
-            this.label_tport_maxUnits = new System.Windows.Forms.Label();
-            this.num_tport_maxUnits = new System.Windows.Forms.NumericUpDown();
-            this.check_blockAirandWaterUnits = new System.Windows.Forms.CheckBox();
-            this.check_KeepBuiltUnits = new System.Windows.Forms.CheckBox();
-            this.check_addUnloadOption = new System.Windows.Forms.CheckBox();
-            this.label_unloadDelay = new System.Windows.Forms.Label();
-            this.num_tport_unloadDelay = new System.Windows.Forms.NumericUpDown();
+            this.check_tport_BlockOtherTport = new System.Windows.Forms.CheckBox();
             this.label_healBy = new System.Windows.Forms.Label();
             this.num_tport_UnitHealBy = new System.Windows.Forms.NumericUpDown();
-            this.check_tport_BlockOtherTport = new System.Windows.Forms.CheckBox();
+            this.label_unloadDelay = new System.Windows.Forms.Label();
+            this.num_tport_unloadDelay = new System.Windows.Forms.NumericUpDown();
+            this.check_addUnloadOption = new System.Windows.Forms.CheckBox();
+            this.check_KeepBuiltUnits = new System.Windows.Forms.CheckBox();
+            this.check_blockAirandWaterUnits = new System.Windows.Forms.CheckBox();
+            this.label_tport_maxUnits = new System.Windows.Forms.Label();
+            this.num_tport_maxUnits = new System.Windows.Forms.NumericUpDown();
+            this.label_tport_slotsNeeded = new System.Windows.Forms.Label();
+            this.num_tport_slotsNeeded = new System.Windows.Forms.NumericUpDown();
             this.group_deathOptions = new System.Windows.Forms.GroupBox();
             this.group_BuildingOptions = new System.Windows.Forms.GroupBox();
             this.group_construction = new System.Windows.Forms.GroupBox();
             this.group_UiGraphics = new System.Windows.Forms.GroupBox();
             this.group_misc = new System.Windows.Forms.GroupBox();
-            this.button_save = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.group_UnitType.SuspendLayout();
             this.group_ShieldArmour.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_ArmourMinDamageToKeep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Armour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_shieldRegen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_maxShield)).BeginInit();
             this.group_energy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_maxEnergy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_energyRegen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_energyStartPercent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_ArmourMinDamageToKeep)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Armour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_energyRegen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_maxEnergy)).BeginInit();
             this.group_Sound.SuspendLayout();
             this.group_transport.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_tport_slotsNeeded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_tport_maxUnits)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_tport_unloadDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_UnitHealBy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_tport_unloadDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_tport_maxUnits)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_tport_slotsNeeded)).BeginInit();
             this.SuspendLayout();
             // 
             // title_core
@@ -152,6 +151,17 @@
             this.group_UnitType.TabStop = false;
             this.group_UnitType.Text = "Select unit type";
             // 
+            // check_Building
+            // 
+            this.check_Building.AutoSize = true;
+            this.check_Building.Location = new System.Drawing.Point(5, 88);
+            this.check_Building.Name = "check_Building";
+            this.check_Building.Size = new System.Drawing.Size(63, 17);
+            this.check_Building.TabIndex = 5;
+            this.check_Building.Text = "Building";
+            this.check_Building.UseVisualStyleBackColor = true;
+            this.check_Building.CheckedChanged += new System.EventHandler(this.check_Building_CheckedChanged);
+            // 
             // check_Experimental
             // 
             this.check_Experimental.AutoSize = true;
@@ -180,6 +190,38 @@
             this.group_ShieldArmour.TabIndex = 5;
             this.group_ShieldArmour.TabStop = false;
             this.group_ShieldArmour.Text = "Shield/Armour";
+            // 
+            // label_armourMinDamageToKeep
+            // 
+            this.label_armourMinDamageToKeep.AutoSize = true;
+            this.label_armourMinDamageToKeep.Location = new System.Drawing.Point(54, 113);
+            this.label_armourMinDamageToKeep.Name = "label_armourMinDamageToKeep";
+            this.label_armourMinDamageToKeep.Size = new System.Drawing.Size(134, 13);
+            this.label_armourMinDamageToKeep.TabIndex = 12;
+            this.label_armourMinDamageToKeep.Text = "armourMinDamageToKeep";
+            // 
+            // num_ArmourMinDamageToKeep
+            // 
+            this.num_ArmourMinDamageToKeep.Location = new System.Drawing.Point(6, 113);
+            this.num_ArmourMinDamageToKeep.Name = "num_ArmourMinDamageToKeep";
+            this.num_ArmourMinDamageToKeep.Size = new System.Drawing.Size(42, 20);
+            this.num_ArmourMinDamageToKeep.TabIndex = 11;
+            // 
+            // label_Armour
+            // 
+            this.label_Armour.AutoSize = true;
+            this.label_Armour.Location = new System.Drawing.Point(54, 88);
+            this.label_Armour.Name = "label_Armour";
+            this.label_Armour.Size = new System.Drawing.Size(40, 13);
+            this.label_Armour.TabIndex = 10;
+            this.label_Armour.Text = "Armour";
+            // 
+            // num_Armour
+            // 
+            this.num_Armour.Location = new System.Drawing.Point(6, 88);
+            this.num_Armour.Name = "num_Armour";
+            this.num_Armour.Size = new System.Drawing.Size(42, 20);
+            this.num_Armour.TabIndex = 9;
             // 
             // label_shieldRegen
             // 
@@ -239,42 +281,21 @@
             this.group_energy.TabStop = false;
             this.group_energy.Text = "Energy";
             // 
-            // check_Building
+            // label_energyStartPercent
             // 
-            this.check_Building.AutoSize = true;
-            this.check_Building.Location = new System.Drawing.Point(5, 88);
-            this.check_Building.Name = "check_Building";
-            this.check_Building.Size = new System.Drawing.Size(63, 17);
-            this.check_Building.TabIndex = 5;
-            this.check_Building.Text = "Building";
-            this.check_Building.UseVisualStyleBackColor = true;
-            this.check_Building.CheckedChanged += new System.EventHandler(this.check_Building_CheckedChanged);
+            this.label_energyStartPercent.AutoSize = true;
+            this.label_energyStartPercent.Location = new System.Drawing.Point(54, 88);
+            this.label_energyStartPercent.Name = "label_energyStartPercent";
+            this.label_energyStartPercent.Size = new System.Drawing.Size(83, 13);
+            this.label_energyStartPercent.TabIndex = 10;
+            this.label_energyStartPercent.Text = "energyStarting%";
             // 
-            // checkBox1
+            // num_energyStartPercent
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(179, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "EnergyNeedsToRechargeToFull";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label_maxEnergy
-            // 
-            this.label_maxEnergy.AutoSize = true;
-            this.label_maxEnergy.Location = new System.Drawing.Point(54, 41);
-            this.label_maxEnergy.Name = "label_maxEnergy";
-            this.label_maxEnergy.Size = new System.Drawing.Size(59, 13);
-            this.label_maxEnergy.TabIndex = 6;
-            this.label_maxEnergy.Text = "maxEnergy";
-            // 
-            // num_maxEnergy
-            // 
-            this.num_maxEnergy.Location = new System.Drawing.Point(6, 41);
-            this.num_maxEnergy.Name = "num_maxEnergy";
-            this.num_maxEnergy.Size = new System.Drawing.Size(42, 20);
-            this.num_maxEnergy.TabIndex = 5;
+            this.num_energyStartPercent.Location = new System.Drawing.Point(6, 88);
+            this.num_energyStartPercent.Name = "num_energyStartPercent";
+            this.num_energyStartPercent.Size = new System.Drawing.Size(42, 20);
+            this.num_energyStartPercent.TabIndex = 9;
             // 
             // label_energyRegen
             // 
@@ -292,53 +313,31 @@
             this.num_energyRegen.Size = new System.Drawing.Size(42, 20);
             this.num_energyRegen.TabIndex = 7;
             // 
-            // label_energyStartPercent
+            // label_maxEnergy
             // 
-            this.label_energyStartPercent.AutoSize = true;
-            this.label_energyStartPercent.Location = new System.Drawing.Point(54, 88);
-            this.label_energyStartPercent.Name = "label_energyStartPercent";
-            this.label_energyStartPercent.Size = new System.Drawing.Size(83, 13);
-            this.label_energyStartPercent.TabIndex = 10;
-            this.label_energyStartPercent.Text = "energyStarting%";
+            this.label_maxEnergy.AutoSize = true;
+            this.label_maxEnergy.Location = new System.Drawing.Point(54, 41);
+            this.label_maxEnergy.Name = "label_maxEnergy";
+            this.label_maxEnergy.Size = new System.Drawing.Size(59, 13);
+            this.label_maxEnergy.TabIndex = 6;
+            this.label_maxEnergy.Text = "maxEnergy";
             // 
-            // num_energyStartPercent
+            // num_maxEnergy
             // 
-            this.num_energyStartPercent.Location = new System.Drawing.Point(6, 88);
-            this.num_energyStartPercent.Name = "num_energyStartPercent";
-            this.num_energyStartPercent.Size = new System.Drawing.Size(42, 20);
-            this.num_energyStartPercent.TabIndex = 9;
+            this.num_maxEnergy.Location = new System.Drawing.Point(6, 41);
+            this.num_maxEnergy.Name = "num_maxEnergy";
+            this.num_maxEnergy.Size = new System.Drawing.Size(42, 20);
+            this.num_maxEnergy.TabIndex = 5;
             // 
-            // label_armourMinDamageToKeep
+            // checkBox1
             // 
-            this.label_armourMinDamageToKeep.AutoSize = true;
-            this.label_armourMinDamageToKeep.Location = new System.Drawing.Point(54, 113);
-            this.label_armourMinDamageToKeep.Name = "label_armourMinDamageToKeep";
-            this.label_armourMinDamageToKeep.Size = new System.Drawing.Size(134, 13);
-            this.label_armourMinDamageToKeep.TabIndex = 12;
-            this.label_armourMinDamageToKeep.Text = "armourMinDamageToKeep";
-            // 
-            // num_ArmourMinDamageToKeep
-            // 
-            this.num_ArmourMinDamageToKeep.Location = new System.Drawing.Point(6, 113);
-            this.num_ArmourMinDamageToKeep.Name = "num_ArmourMinDamageToKeep";
-            this.num_ArmourMinDamageToKeep.Size = new System.Drawing.Size(42, 20);
-            this.num_ArmourMinDamageToKeep.TabIndex = 11;
-            // 
-            // label_Armour
-            // 
-            this.label_Armour.AutoSize = true;
-            this.label_Armour.Location = new System.Drawing.Point(54, 88);
-            this.label_Armour.Name = "label_Armour";
-            this.label_Armour.Size = new System.Drawing.Size(40, 13);
-            this.label_Armour.TabIndex = 10;
-            this.label_Armour.Text = "Armour";
-            // 
-            // num_Armour
-            // 
-            this.num_Armour.Location = new System.Drawing.Point(6, 88);
-            this.num_Armour.Name = "num_Armour";
-            this.num_Armour.Size = new System.Drawing.Size(42, 20);
-            this.num_Armour.TabIndex = 9;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(179, 17);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "EnergyNeedsToRechargeToFull";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // group_resources
             // 
@@ -362,23 +361,14 @@
             this.group_Sound.TabStop = false;
             this.group_Sound.Text = "Sound";
             // 
-            // sel_SoundDeath
+            // sel_SoundAttack
             // 
-            this.sel_SoundDeath.Location = new System.Drawing.Point(6, 103);
-            this.sel_SoundDeath.Name = "sel_SoundDeath";
-            this.sel_SoundDeath.Size = new System.Drawing.Size(97, 23);
-            this.sel_SoundDeath.TabIndex = 0;
-            this.sel_SoundDeath.Text = "Death";
-            this.sel_SoundDeath.UseVisualStyleBackColor = true;
-            // 
-            // sel_SoundNewSelect
-            // 
-            this.sel_SoundNewSelect.Location = new System.Drawing.Point(7, 74);
-            this.sel_SoundNewSelect.Name = "sel_SoundNewSelect";
-            this.sel_SoundNewSelect.Size = new System.Drawing.Size(97, 23);
-            this.sel_SoundNewSelect.TabIndex = 1;
-            this.sel_SoundNewSelect.Text = "New Selection";
-            this.sel_SoundNewSelect.UseVisualStyleBackColor = true;
+            this.sel_SoundAttack.Location = new System.Drawing.Point(6, 16);
+            this.sel_SoundAttack.Name = "sel_SoundAttack";
+            this.sel_SoundAttack.Size = new System.Drawing.Size(97, 23);
+            this.sel_SoundAttack.TabIndex = 3;
+            this.sel_SoundAttack.Text = "Attack";
+            this.sel_SoundAttack.UseVisualStyleBackColor = true;
             // 
             // sel_SoundMove
             // 
@@ -390,14 +380,23 @@
             this.sel_SoundMove.UseVisualStyleBackColor = true;
             this.sel_SoundMove.Click += new System.EventHandler(this.button2_Click);
             // 
-            // sel_SoundAttack
+            // sel_SoundNewSelect
             // 
-            this.sel_SoundAttack.Location = new System.Drawing.Point(6, 16);
-            this.sel_SoundAttack.Name = "sel_SoundAttack";
-            this.sel_SoundAttack.Size = new System.Drawing.Size(97, 23);
-            this.sel_SoundAttack.TabIndex = 3;
-            this.sel_SoundAttack.Text = "Attack";
-            this.sel_SoundAttack.UseVisualStyleBackColor = true;
+            this.sel_SoundNewSelect.Location = new System.Drawing.Point(7, 74);
+            this.sel_SoundNewSelect.Name = "sel_SoundNewSelect";
+            this.sel_SoundNewSelect.Size = new System.Drawing.Size(97, 23);
+            this.sel_SoundNewSelect.TabIndex = 1;
+            this.sel_SoundNewSelect.Text = "New Selection";
+            this.sel_SoundNewSelect.UseVisualStyleBackColor = true;
+            // 
+            // sel_SoundDeath
+            // 
+            this.sel_SoundDeath.Location = new System.Drawing.Point(6, 103);
+            this.sel_SoundDeath.Name = "sel_SoundDeath";
+            this.sel_SoundDeath.Size = new System.Drawing.Size(97, 23);
+            this.sel_SoundDeath.TabIndex = 0;
+            this.sel_SoundDeath.Text = "Death";
+            this.sel_SoundDeath.UseVisualStyleBackColor = true;
             // 
             // group_transport
             // 
@@ -421,83 +420,15 @@
             this.group_transport.TabStop = false;
             this.group_transport.Text = "Transport";
             // 
-            // label_tport_slotsNeeded
+            // check_tport_BlockOtherTport
             // 
-            this.label_tport_slotsNeeded.AutoSize = true;
-            this.label_tport_slotsNeeded.Location = new System.Drawing.Point(54, 19);
-            this.label_tport_slotsNeeded.Name = "label_tport_slotsNeeded";
-            this.label_tport_slotsNeeded.Size = new System.Drawing.Size(66, 13);
-            this.label_tport_slotsNeeded.TabIndex = 14;
-            this.label_tport_slotsNeeded.Text = "slotsNeeded";
-            // 
-            // num_tport_slotsNeeded
-            // 
-            this.num_tport_slotsNeeded.Location = new System.Drawing.Point(6, 19);
-            this.num_tport_slotsNeeded.Name = "num_tport_slotsNeeded";
-            this.num_tport_slotsNeeded.Size = new System.Drawing.Size(42, 20);
-            this.num_tport_slotsNeeded.TabIndex = 13;
-            // 
-            // label_tport_maxUnits
-            // 
-            this.label_tport_maxUnits.AutoSize = true;
-            this.label_tport_maxUnits.Location = new System.Drawing.Point(54, 41);
-            this.label_tport_maxUnits.Name = "label_tport_maxUnits";
-            this.label_tport_maxUnits.Size = new System.Drawing.Size(50, 13);
-            this.label_tport_maxUnits.TabIndex = 16;
-            this.label_tport_maxUnits.Text = "maxUnits";
-            // 
-            // num_tport_maxUnits
-            // 
-            this.num_tport_maxUnits.Location = new System.Drawing.Point(6, 41);
-            this.num_tport_maxUnits.Name = "num_tport_maxUnits";
-            this.num_tport_maxUnits.Size = new System.Drawing.Size(42, 20);
-            this.num_tport_maxUnits.TabIndex = 15;
-            // 
-            // check_blockAirandWaterUnits
-            // 
-            this.check_blockAirandWaterUnits.AutoSize = true;
-            this.check_blockAirandWaterUnits.Location = new System.Drawing.Point(149, 18);
-            this.check_blockAirandWaterUnits.Name = "check_blockAirandWaterUnits";
-            this.check_blockAirandWaterUnits.Size = new System.Drawing.Size(148, 17);
-            this.check_blockAirandWaterUnits.TabIndex = 13;
-            this.check_blockAirandWaterUnits.Text = "Block Air and Water Units";
-            this.check_blockAirandWaterUnits.UseVisualStyleBackColor = true;
-            // 
-            // check_KeepBuiltUnits
-            // 
-            this.check_KeepBuiltUnits.AutoSize = true;
-            this.check_KeepBuiltUnits.Location = new System.Drawing.Point(149, 41);
-            this.check_KeepBuiltUnits.Name = "check_KeepBuiltUnits";
-            this.check_KeepBuiltUnits.Size = new System.Drawing.Size(99, 17);
-            this.check_KeepBuiltUnits.TabIndex = 17;
-            this.check_KeepBuiltUnits.Text = "Keep Built units";
-            this.check_KeepBuiltUnits.UseVisualStyleBackColor = true;
-            // 
-            // check_addUnloadOption
-            // 
-            this.check_addUnloadOption.AutoSize = true;
-            this.check_addUnloadOption.Location = new System.Drawing.Point(149, 65);
-            this.check_addUnloadOption.Name = "check_addUnloadOption";
-            this.check_addUnloadOption.Size = new System.Drawing.Size(112, 17);
-            this.check_addUnloadOption.TabIndex = 18;
-            this.check_addUnloadOption.Text = "Add unload option";
-            this.check_addUnloadOption.UseVisualStyleBackColor = true;
-            // 
-            // label_unloadDelay
-            // 
-            this.label_unloadDelay.AutoSize = true;
-            this.label_unloadDelay.Location = new System.Drawing.Point(54, 64);
-            this.label_unloadDelay.Name = "label_unloadDelay";
-            this.label_unloadDelay.Size = new System.Drawing.Size(71, 13);
-            this.label_unloadDelay.TabIndex = 20;
-            this.label_unloadDelay.Text = "Unload Delay";
-            // 
-            // num_tport_unloadDelay
-            // 
-            this.num_tport_unloadDelay.Location = new System.Drawing.Point(6, 64);
-            this.num_tport_unloadDelay.Name = "num_tport_unloadDelay";
-            this.num_tport_unloadDelay.Size = new System.Drawing.Size(42, 20);
-            this.num_tport_unloadDelay.TabIndex = 19;
+            this.check_tport_BlockOtherTport.AutoSize = true;
+            this.check_tport_BlockOtherTport.Location = new System.Drawing.Point(149, 89);
+            this.check_tport_BlockOtherTport.Name = "check_tport_BlockOtherTport";
+            this.check_tport_BlockOtherTport.Size = new System.Drawing.Size(135, 17);
+            this.check_tport_BlockOtherTport.TabIndex = 23;
+            this.check_tport_BlockOtherTport.Text = "Block Other Transports";
+            this.check_tport_BlockOtherTport.UseVisualStyleBackColor = true;
             // 
             // label_healBy
             // 
@@ -515,15 +446,83 @@
             this.num_tport_UnitHealBy.Size = new System.Drawing.Size(42, 20);
             this.num_tport_UnitHealBy.TabIndex = 21;
             // 
-            // check_tport_BlockOtherTport
+            // label_unloadDelay
             // 
-            this.check_tport_BlockOtherTport.AutoSize = true;
-            this.check_tport_BlockOtherTport.Location = new System.Drawing.Point(149, 89);
-            this.check_tport_BlockOtherTport.Name = "check_tport_BlockOtherTport";
-            this.check_tport_BlockOtherTport.Size = new System.Drawing.Size(135, 17);
-            this.check_tport_BlockOtherTport.TabIndex = 23;
-            this.check_tport_BlockOtherTport.Text = "Block Other Transports";
-            this.check_tport_BlockOtherTport.UseVisualStyleBackColor = true;
+            this.label_unloadDelay.AutoSize = true;
+            this.label_unloadDelay.Location = new System.Drawing.Point(54, 64);
+            this.label_unloadDelay.Name = "label_unloadDelay";
+            this.label_unloadDelay.Size = new System.Drawing.Size(71, 13);
+            this.label_unloadDelay.TabIndex = 20;
+            this.label_unloadDelay.Text = "Unload Delay";
+            // 
+            // num_tport_unloadDelay
+            // 
+            this.num_tport_unloadDelay.Location = new System.Drawing.Point(6, 64);
+            this.num_tport_unloadDelay.Name = "num_tport_unloadDelay";
+            this.num_tport_unloadDelay.Size = new System.Drawing.Size(42, 20);
+            this.num_tport_unloadDelay.TabIndex = 19;
+            // 
+            // check_addUnloadOption
+            // 
+            this.check_addUnloadOption.AutoSize = true;
+            this.check_addUnloadOption.Location = new System.Drawing.Point(149, 65);
+            this.check_addUnloadOption.Name = "check_addUnloadOption";
+            this.check_addUnloadOption.Size = new System.Drawing.Size(112, 17);
+            this.check_addUnloadOption.TabIndex = 18;
+            this.check_addUnloadOption.Text = "Add unload option";
+            this.check_addUnloadOption.UseVisualStyleBackColor = true;
+            // 
+            // check_KeepBuiltUnits
+            // 
+            this.check_KeepBuiltUnits.AutoSize = true;
+            this.check_KeepBuiltUnits.Location = new System.Drawing.Point(149, 41);
+            this.check_KeepBuiltUnits.Name = "check_KeepBuiltUnits";
+            this.check_KeepBuiltUnits.Size = new System.Drawing.Size(99, 17);
+            this.check_KeepBuiltUnits.TabIndex = 17;
+            this.check_KeepBuiltUnits.Text = "Keep Built units";
+            this.check_KeepBuiltUnits.UseVisualStyleBackColor = true;
+            // 
+            // check_blockAirandWaterUnits
+            // 
+            this.check_blockAirandWaterUnits.AutoSize = true;
+            this.check_blockAirandWaterUnits.Location = new System.Drawing.Point(149, 18);
+            this.check_blockAirandWaterUnits.Name = "check_blockAirandWaterUnits";
+            this.check_blockAirandWaterUnits.Size = new System.Drawing.Size(148, 17);
+            this.check_blockAirandWaterUnits.TabIndex = 13;
+            this.check_blockAirandWaterUnits.Text = "Block Air and Water Units";
+            this.check_blockAirandWaterUnits.UseVisualStyleBackColor = true;
+            // 
+            // label_tport_maxUnits
+            // 
+            this.label_tport_maxUnits.AutoSize = true;
+            this.label_tport_maxUnits.Location = new System.Drawing.Point(54, 41);
+            this.label_tport_maxUnits.Name = "label_tport_maxUnits";
+            this.label_tport_maxUnits.Size = new System.Drawing.Size(50, 13);
+            this.label_tport_maxUnits.TabIndex = 16;
+            this.label_tport_maxUnits.Text = "maxUnits";
+            // 
+            // num_tport_maxUnits
+            // 
+            this.num_tport_maxUnits.Location = new System.Drawing.Point(6, 41);
+            this.num_tport_maxUnits.Name = "num_tport_maxUnits";
+            this.num_tport_maxUnits.Size = new System.Drawing.Size(42, 20);
+            this.num_tport_maxUnits.TabIndex = 15;
+            // 
+            // label_tport_slotsNeeded
+            // 
+            this.label_tport_slotsNeeded.AutoSize = true;
+            this.label_tport_slotsNeeded.Location = new System.Drawing.Point(54, 19);
+            this.label_tport_slotsNeeded.Name = "label_tport_slotsNeeded";
+            this.label_tport_slotsNeeded.Size = new System.Drawing.Size(66, 13);
+            this.label_tport_slotsNeeded.TabIndex = 14;
+            this.label_tport_slotsNeeded.Text = "slotsNeeded";
+            // 
+            // num_tport_slotsNeeded
+            // 
+            this.num_tport_slotsNeeded.Location = new System.Drawing.Point(6, 19);
+            this.num_tport_slotsNeeded.Name = "num_tport_slotsNeeded";
+            this.num_tport_slotsNeeded.Size = new System.Drawing.Size(42, 20);
+            this.num_tport_slotsNeeded.TabIndex = 13;
             // 
             // group_deathOptions
             // 
@@ -570,23 +569,15 @@
             this.group_misc.TabStop = false;
             this.group_misc.Text = "Misc";
             // 
-            // button_save
-            // 
-            this.button_save.Location = new System.Drawing.Point(851, 490);
-            this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(75, 29);
-            this.button_save.TabIndex = 11;
-            this.button_save.Text = "Save";
-            this.button_save.UseVisualStyleBackColor = true;
-            // 
             // button_cancel
             // 
-            this.button_cancel.Location = new System.Drawing.Point(770, 490);
+            this.button_cancel.Location = new System.Drawing.Point(851, 490);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(75, 29);
             this.button_cancel.TabIndex = 12;
-            this.button_cancel.Text = "Cancel";
+            this.button_cancel.Text = "Close";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // editCore
             // 
@@ -594,7 +585,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 531);
             this.Controls.Add(this.button_cancel);
-            this.Controls.Add(this.button_save);
             this.Controls.Add(this.group_misc);
             this.Controls.Add(this.group_UiGraphics);
             this.Controls.Add(this.group_construction);
@@ -613,22 +603,22 @@
             this.group_UnitType.PerformLayout();
             this.group_ShieldArmour.ResumeLayout(false);
             this.group_ShieldArmour.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_ArmourMinDamageToKeep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Armour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_shieldRegen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_maxShield)).EndInit();
             this.group_energy.ResumeLayout(false);
             this.group_energy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_maxEnergy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_energyRegen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_energyStartPercent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_ArmourMinDamageToKeep)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Armour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_energyRegen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_maxEnergy)).EndInit();
             this.group_Sound.ResumeLayout(false);
             this.group_transport.ResumeLayout(false);
             this.group_transport.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_tport_slotsNeeded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_tport_maxUnits)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_tport_unloadDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_UnitHealBy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_tport_unloadDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_tport_maxUnits)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_tport_slotsNeeded)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -685,7 +675,6 @@
         private System.Windows.Forms.GroupBox group_construction;
         private System.Windows.Forms.GroupBox group_UiGraphics;
         private System.Windows.Forms.GroupBox group_misc;
-        private System.Windows.Forms.Button button_save;
         private System.Windows.Forms.Button button_cancel;
     }
 }
