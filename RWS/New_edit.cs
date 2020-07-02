@@ -163,5 +163,10 @@ namespace RWS
             ul.ShowDialog();
             Close();
         }
+
+        private void button_Core_Click(object sender, EventArgs e)
+        {
+            new editCore().ShowDialog();
+        }
     }
 }
