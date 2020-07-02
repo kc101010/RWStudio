@@ -70,7 +70,7 @@
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.scrolabkeArea = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -87,7 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.level)).BeginInit();
             this.dynamicArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.scrolabkeArea.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -647,27 +647,27 @@
             // 
             this.ContentPanel.Size = new System.Drawing.Size(142, 331);
             // 
-            // panel1
+            // scrolabkeArea
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.scrolabkeArea.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.button_Graphics);
-            this.panel1.Controls.Add(this.button_projectiles);
-            this.panel1.Controls.Add(this.button_Movement);
-            this.panel1.Controls.Add(this.button_Turrets);
-            this.panel1.Controls.Add(this.button_legs);
-            this.panel1.Controls.Add(this.button_ai);
-            this.panel1.Controls.Add(this.button_Attack);
-            this.panel1.Controls.Add(this.button_Core);
-            this.panel1.Location = new System.Drawing.Point(6, 19);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 351);
-            this.panel1.TabIndex = 0;
+            this.scrolabkeArea.AutoScroll = true;
+            this.scrolabkeArea.Controls.Add(this.button1);
+            this.scrolabkeArea.Controls.Add(this.button2);
+            this.scrolabkeArea.Controls.Add(this.label8);
+            this.scrolabkeArea.Controls.Add(this.button_Graphics);
+            this.scrolabkeArea.Controls.Add(this.button_projectiles);
+            this.scrolabkeArea.Controls.Add(this.button_Movement);
+            this.scrolabkeArea.Controls.Add(this.button_Turrets);
+            this.scrolabkeArea.Controls.Add(this.button_legs);
+            this.scrolabkeArea.Controls.Add(this.button_ai);
+            this.scrolabkeArea.Controls.Add(this.button_Attack);
+            this.scrolabkeArea.Controls.Add(this.button_Core);
+            this.scrolabkeArea.Location = new System.Drawing.Point(6, 19);
+            this.scrolabkeArea.Name = "scrolabkeArea";
+            this.scrolabkeArea.Size = new System.Drawing.Size(226, 351);
+            this.scrolabkeArea.TabIndex = 0;
             // 
             // button1
             // 
@@ -723,7 +723,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.scrolabkeArea);
             this.groupBox1.Location = new System.Drawing.Point(12, 159);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(235, 376);
@@ -769,8 +769,8 @@
             this.dynamicArea.ResumeLayout(false);
             this.dynamicArea.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.scrolabkeArea.ResumeLayout(false);
+            this.scrolabkeArea.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -821,7 +821,7 @@
         private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
         private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
         private System.Windows.Forms.ToolStripContentPanel ContentPanel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel scrolabkeArea;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;

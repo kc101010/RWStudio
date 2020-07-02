@@ -113,9 +113,9 @@ namespace RWS
 
         private void button_save_Click(object sender, EventArgs e)
         {
-            List<Control> txt = Controls.OfType<TextBox>().Cast<Control>().ToList();  //get all texboxes from form
-            List<Control> cb = Controls.OfType<ComboBox>().Cast<Control>().ToList();  //all comboboxes
-            List<CheckBox> ch = Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();//all checkboxes
+            List<Control> txt = dynamicArea.Controls.OfType<TextBox>().Cast<Control>().ToList();  //get all texboxes from form
+            List<Control> cb = dynamicArea.Controls.OfType<ComboBox>().Cast<Control>().ToList();  //all comboboxes
+            List<CheckBox> ch = dynamicArea.Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();//all checkboxes
             string[] sss = Directory.GetFiles(path, "*.ini");
             var parser = new IniParser.FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
