@@ -453,7 +453,7 @@
             this.dynamicArea.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dynamicArea.AutoScroll = true;
+            this.dynamicArea.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.dynamicArea.Controls.Add(this.mass);
             this.dynamicArea.Controls.Add(this.label1);
             this.dynamicArea.Controls.Add(this.descript);
@@ -711,6 +711,7 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.Controls.Add(this.dynamicArea);
             this.groupBox2.Location = new System.Drawing.Point(253, 12);
             this.groupBox2.Name = "groupBox2";
