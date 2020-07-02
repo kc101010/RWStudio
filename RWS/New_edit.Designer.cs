@@ -483,7 +483,6 @@
             this.dynamicArea.Name = "dynamicArea";
             this.dynamicArea.Size = new System.Drawing.Size(795, 510);
             this.dynamicArea.TabIndex = 58;
-            this.dynamicArea.Paint += new System.Windows.Forms.PaintEventHandler(this.dynamicArea_Paint);
             // 
             // label1
             // 
