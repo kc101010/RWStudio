@@ -26,7 +26,7 @@ namespace RWS
         public static string lastcb;  //holds selected canbuit
         public static string lastt;   //holds selected turret
         public static string lastprj; //holds selected projectile
-        public static string namE;    //holds something
+        public static string namE;    //holds something also i dont remember why last latter big
         public static string lastbf;  //holds selected buildFrom
         public static string lastact; //holds selected action
         public static string lastleg; //holds selected leg

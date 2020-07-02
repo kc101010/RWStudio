@@ -73,16 +73,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.unit_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unit_dead)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.price)).BeginInit();
@@ -101,23 +95,33 @@
             // button_cancel
             // 
             this.button_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_cancel.Location = new System.Drawing.Point(645, 504);
+            this.button_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button_cancel.FlatAppearance.BorderSize = 0;
+            this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_cancel.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_cancel.ForeColor = System.Drawing.Color.White;
+            this.button_cancel.Location = new System.Drawing.Point(648, 504);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(95, 31);
             this.button_cancel.TabIndex = 9;
             this.button_cancel.Text = "Cancel";
-            this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.UseVisualStyleBackColor = false;
             this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button_save
             // 
             this.button_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_save.Location = new System.Drawing.Point(753, 504);
+            this.button_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button_save.FlatAppearance.BorderSize = 0;
+            this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_save.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_save.ForeColor = System.Drawing.Color.White;
+            this.button_save.Location = new System.Drawing.Point(756, 504);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(95, 31);
             this.button_save.TabIndex = 8;
             this.button_save.Text = "Save";
-            this.button_save.UseVisualStyleBackColor = true;
+            this.button_save.UseVisualStyleBackColor = false;
             this.button_save.Click += new System.EventHandler(this.button_save_Click);
             // 
             // unit_picture
@@ -426,6 +430,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(176, 20);
             this.name.TabIndex = 55;
+            this.name.Tag = "core`name";
             // 
             // label3
             // 
@@ -486,83 +491,115 @@
             // 
             // button_ai
             // 
+            this.button_ai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button_ai.FlatAppearance.BorderSize = 0;
             this.button_ai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ai.Location = new System.Drawing.Point(9, 238);
+            this.button_ai.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_ai.ForeColor = System.Drawing.Color.White;
+            this.button_ai.Location = new System.Drawing.Point(7, 236);
             this.button_ai.Name = "button_ai";
             this.button_ai.Size = new System.Drawing.Size(194, 38);
             this.button_ai.TabIndex = 4;
             this.button_ai.Text = "AI";
-            this.button_ai.UseVisualStyleBackColor = true;
+            this.button_ai.UseVisualStyleBackColor = false;
             // 
             // button_legs
             // 
+            this.button_legs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button_legs.FlatAppearance.BorderSize = 0;
             this.button_legs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_legs.Location = new System.Drawing.Point(9, 200);
+            this.button_legs.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_legs.ForeColor = System.Drawing.Color.White;
+            this.button_legs.Location = new System.Drawing.Point(7, 198);
             this.button_legs.Name = "button_legs";
             this.button_legs.Size = new System.Drawing.Size(194, 38);
             this.button_legs.TabIndex = 7;
             this.button_legs.Text = "Legs";
-            this.button_legs.UseVisualStyleBackColor = true;
+            this.button_legs.UseVisualStyleBackColor = false;
             // 
             // button_Movement
             // 
+            this.button_Movement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button_Movement.FlatAppearance.BorderSize = 0;
             this.button_Movement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Movement.Location = new System.Drawing.Point(9, 124);
+            this.button_Movement.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Movement.ForeColor = System.Drawing.Color.White;
+            this.button_Movement.Location = new System.Drawing.Point(7, 122);
             this.button_Movement.Name = "button_Movement";
             this.button_Movement.Size = new System.Drawing.Size(194, 38);
             this.button_Movement.TabIndex = 3;
             this.button_Movement.Text = "Movement";
-            this.button_Movement.UseVisualStyleBackColor = true;
+            this.button_Movement.UseVisualStyleBackColor = false;
             // 
             // button_projectiles
             // 
+            this.button_projectiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button_projectiles.FlatAppearance.BorderSize = 0;
             this.button_projectiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_projectiles.Location = new System.Drawing.Point(9, 86);
+            this.button_projectiles.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_projectiles.ForeColor = System.Drawing.Color.White;
+            this.button_projectiles.Location = new System.Drawing.Point(7, 84);
             this.button_projectiles.Name = "button_projectiles";
             this.button_projectiles.Size = new System.Drawing.Size(194, 38);
             this.button_projectiles.TabIndex = 6;
             this.button_projectiles.Text = "Projectiles";
-            this.button_projectiles.UseVisualStyleBackColor = true;
+            this.button_projectiles.UseVisualStyleBackColor = false;
             // 
             // button_Turrets
             // 
+            this.button_Turrets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button_Turrets.FlatAppearance.BorderSize = 0;
             this.button_Turrets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Turrets.Location = new System.Drawing.Point(9, 162);
+            this.button_Turrets.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Turrets.ForeColor = System.Drawing.Color.White;
+            this.button_Turrets.Location = new System.Drawing.Point(7, 160);
             this.button_Turrets.Name = "button_Turrets";
             this.button_Turrets.Size = new System.Drawing.Size(194, 38);
             this.button_Turrets.TabIndex = 5;
             this.button_Turrets.Text = "Turrets";
-            this.button_Turrets.UseVisualStyleBackColor = true;
+            this.button_Turrets.UseVisualStyleBackColor = false;
             // 
             // button_Graphics
             // 
+            this.button_Graphics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button_Graphics.FlatAppearance.BorderSize = 0;
             this.button_Graphics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Graphics.Location = new System.Drawing.Point(9, 48);
+            this.button_Graphics.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Graphics.ForeColor = System.Drawing.Color.White;
+            this.button_Graphics.Location = new System.Drawing.Point(7, 46);
             this.button_Graphics.Name = "button_Graphics";
             this.button_Graphics.Size = new System.Drawing.Size(194, 38);
             this.button_Graphics.TabIndex = 1;
             this.button_Graphics.Text = "Graphics";
-            this.button_Graphics.UseVisualStyleBackColor = true;
+            this.button_Graphics.UseVisualStyleBackColor = false;
             // 
             // button_Attack
             // 
+            this.button_Attack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button_Attack.FlatAppearance.BorderSize = 0;
             this.button_Attack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Attack.Location = new System.Drawing.Point(9, 276);
+            this.button_Attack.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Attack.ForeColor = System.Drawing.Color.White;
+            this.button_Attack.Location = new System.Drawing.Point(7, 274);
             this.button_Attack.Name = "button_Attack";
             this.button_Attack.Size = new System.Drawing.Size(194, 38);
             this.button_Attack.TabIndex = 2;
             this.button_Attack.Text = "Attack";
-            this.button_Attack.UseVisualStyleBackColor = true;
+            this.button_Attack.UseVisualStyleBackColor = false;
             // 
             // button_Core
             // 
+            this.button_Core.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button_Core.FlatAppearance.BorderSize = 0;
             this.button_Core.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Core.Location = new System.Drawing.Point(9, 10);
+            this.button_Core.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Core.ForeColor = System.Drawing.Color.White;
+            this.button_Core.Location = new System.Drawing.Point(7, 8);
             this.button_Core.Name = "button_Core";
             this.button_Core.Size = new System.Drawing.Size(194, 38);
             this.button_Core.TabIndex = 0;
             this.button_Core.Text = "Core";
-            this.button_Core.UseVisualStyleBackColor = true;
+            this.button_Core.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -618,12 +655,6 @@
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.button_Graphics);
             this.panel1.Controls.Add(this.button_projectiles);
@@ -642,7 +673,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(57, 171);
+            this.label8.Location = new System.Drawing.Point(51, 160);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 13);
             this.label8.TabIndex = 59;
@@ -659,86 +690,6 @@
             this.label2.Size = new System.Drawing.Size(192, 23);
             this.label2.TabIndex = 60;
             this.label2.Text = "Rusted Warfare Studio";
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 38);
-            this.button1.TabIndex = 61;
-            this.button1.Text = "Graphics";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(9, 396);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 38);
-            this.button2.TabIndex = 66;
-            this.button2.Text = "Projectiles";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(9, 434);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 38);
-            this.button3.TabIndex = 63;
-            this.button3.Text = "Movement";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(9, 472);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 38);
-            this.button4.TabIndex = 65;
-            this.button4.Text = "Turrets";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(9, 510);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(194, 38);
-            this.button5.TabIndex = 67;
-            this.button5.Text = "Legs";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(9, 548);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(194, 38);
-            this.button6.TabIndex = 64;
-            this.button6.Text = "AI";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(9, 586);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(194, 38);
-            this.button7.TabIndex = 62;
-            this.button7.Text = "Attack";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(9, 320);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(194, 38);
-            this.button8.TabIndex = 60;
-            this.button8.Text = "Core";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -764,6 +715,34 @@
             this.groupBox2.TabIndex = 62;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Work Area";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(7, 310);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 38);
+            this.button1.TabIndex = 61;
+            this.button1.Text = "AI";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(7, 348);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(194, 38);
+            this.button2.TabIndex = 60;
+            this.button2.Text = "Attack";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // New_edit
             // 
@@ -845,15 +824,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
