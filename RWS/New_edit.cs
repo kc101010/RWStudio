@@ -117,39 +117,42 @@ namespace RWS
             List<Control> cb = dynamicArea.Controls.OfType<ComboBox>().Cast<Control>().ToList();  //all comboboxes
             List<CheckBox> ch = dynamicArea.Controls.OfType<CheckBox>().Cast<CheckBox>().ToList();//all checkboxes
             string[] sss = Directory.GetFiles(path, "*.ini");
-            var parser = new IniParser.FileIniDataParser();
+            var parser = new FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
             //tag format
             //section`parameter
             //example:
             //core`mass
-            for (int i = 0; i < txt.Count; i++)
+            for (int i = 0; i < txt.Count-1; i++)
             {
-                if (!String.IsNullOrWhiteSpace(txt[i].Text) && txt[i].Enabled && !String.IsNullOrWhiteSpace(txt[i].Tag.ToString().Split('`')[1])) //if textbox enabled and not empty
-                        data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]] = txt[i].Text.Replace(System.Environment.NewLine, "\\n"); //write data to ini file
+                if (!string.IsNullOrWhiteSpace(txt[i].Text) && txt[i].Enabled && !string.IsNullOrWhiteSpace(txt[i].Tag.ToString())) //if textbox enabled and not empty
+                        data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]] = txt[i].Text.Replace(Environment.NewLine, "\\n"); //write data to ini file
 
-                else if (!String.IsNullOrWhiteSpace(data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]]))
+                else if (!string.IsNullOrWhiteSpace(data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]]))
                     data[txt[i].Tag.ToString().Split('`')[0]].RemoveKey(txt[i].Tag.ToString().Split('`')[1]); //delete data from ini
             }
             //same s*t
-            for (int i = 0; i < cb.Count; i++)
+            for (int i = 0; i < cb.Count-1; i++)
             {
-                if (!String.IsNullOrWhiteSpace(cb[i].Text) && cb[i].Enabled && !String.IsNullOrWhiteSpace(cb[i].Tag.ToString()))
+                if (!string.IsNullOrWhiteSpace(cb[i].Text) && cb[i].Enabled && !string.IsNullOrWhiteSpace(cb[i].Tag.ToString()))
                         data[cb[i].Tag.ToString().Split('`')[0]][cb[i].Tag.ToString().Split('`')[1]] = cb[i].Text;
 
-                else if (!String.IsNullOrWhiteSpace(data[cb[i].Tag.ToString().Split('`')[0]][cb[i].Tag.ToString().Split('`')[1]]))
+                else if (!string.IsNullOrWhiteSpace(data[cb[i].Tag.ToString().Split('`')[0]][cb[i].Tag.ToString().Split('`')[1]]))
                     data[cb[i].Tag.ToString().Split('`')[0]].RemoveKey(cb[i].Tag.ToString().Split('`')[1]);
             }
             //same s*t
-            for (int i = 0; i < ch.Count; i++)
+            for (int i = 0; i < ch.Count-1; i++)
             {
-                if (!String.IsNullOrWhiteSpace(ch[i].Tag.ToString()) && ch[i].Enabled)
+                if (!string.IsNullOrWhiteSpace(ch[i].Tag.ToString()) && ch[i].Enabled)
                     data[ch[i].Tag.ToString().Split('`')[0]][ch[i].Tag.ToString().Split('`')[1]] = ch[i].Checked.ToString();
 
-                else if (!String.IsNullOrWhiteSpace(data[ch[i].Tag.ToString().Split('`')[0]][ch[i].Tag.ToString().Split('`')[1]]))
+                else if (!string.IsNullOrWhiteSpace(data[ch[i].Tag.ToString().Split('`')[0]][ch[i].Tag.ToString().Split('`')[1]]))
                     data[ch[i].Tag.ToString().Split('`')[0]].RemoveKey(ch[i].Tag.ToString().Split('`')[1]);
             }
             parser.WriteFile(sss[0], data); //save data
+            unitList ul = new unitList();
+            Hide();
+            ul.ShowDialog();
             Close();
         }
 

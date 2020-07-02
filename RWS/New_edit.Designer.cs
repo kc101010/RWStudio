@@ -409,6 +409,7 @@
             this.descript.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.descript.Size = new System.Drawing.Size(176, 141);
             this.descript.TabIndex = 57;
+            this.descript.Tag = "core`displayDescription";
             // 
             // label5
             // 
@@ -430,7 +431,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(176, 20);
             this.name.TabIndex = 55;
-            this.name.Tag = "core`name";
+            this.name.Tag = "core`displayText";
             // 
             // label3
             // 
