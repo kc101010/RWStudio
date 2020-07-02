@@ -100,7 +100,7 @@
             this.button_cancel.ForeColor = System.Drawing.Color.White;
             this.button_cancel.Location = new System.Drawing.Point(648, 504);
             this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(62, 29);
+            this.button_cancel.Size = new System.Drawing.Size(97, 29);
             this.button_cancel.TabIndex = 9;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = false;
@@ -116,7 +116,7 @@
             this.button_save.ForeColor = System.Drawing.Color.White;
             this.button_save.Location = new System.Drawing.Point(756, 504);
             this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(52, 29);
+            this.button_save.Size = new System.Drawing.Size(97, 29);
             this.button_save.TabIndex = 8;
             this.button_save.Text = "Save";
             this.button_save.UseVisualStyleBackColor = false;
@@ -150,15 +150,12 @@
             // 
             // unit_dead
             // 
-            this.unit_dead.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.unit_dead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.unit_dead.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.unit_dead.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.unit_dead.Location = new System.Drawing.Point(139, 35);
             this.unit_dead.Name = "unit_dead";
-            this.unit_dead.Size = new System.Drawing.Size(109, 101);
+            this.unit_dead.Size = new System.Drawing.Size(110, 101);
             this.unit_dead.TabIndex = 11;
             this.unit_dead.TabStop = false;
             this.unit_dead.Click += new System.EventHandler(this.unit_dead_Click);
@@ -453,9 +450,10 @@
             // 
             // dynamicArea
             // 
+            this.dynamicArea.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dynamicArea.AutoScroll = true;
-            this.dynamicArea.AutoSize = true;
-            this.dynamicArea.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.dynamicArea.Controls.Add(this.mass);
             this.dynamicArea.Controls.Add(this.label1);
             this.dynamicArea.Controls.Add(this.descript);
@@ -483,7 +481,7 @@
             this.dynamicArea.Controls.Add(this.unit_picture);
             this.dynamicArea.Location = new System.Drawing.Point(6, 19);
             this.dynamicArea.Name = "dynamicArea";
-            this.dynamicArea.Size = new System.Drawing.Size(568, 431);
+            this.dynamicArea.Size = new System.Drawing.Size(586, 460);
             this.dynamicArea.TabIndex = 58;
             // 
             // label1
@@ -503,7 +501,7 @@
             this.button_ai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ai.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_ai.ForeColor = System.Drawing.Color.White;
-            this.button_ai.Location = new System.Drawing.Point(9, 257);
+            this.button_ai.Location = new System.Drawing.Point(9, 237);
             this.button_ai.Name = "button_ai";
             this.button_ai.Size = new System.Drawing.Size(194, 38);
             this.button_ai.TabIndex = 4;
@@ -517,7 +515,7 @@
             this.button_legs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_legs.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_legs.ForeColor = System.Drawing.Color.White;
-            this.button_legs.Location = new System.Drawing.Point(9, 219);
+            this.button_legs.Location = new System.Drawing.Point(9, 199);
             this.button_legs.Name = "button_legs";
             this.button_legs.Size = new System.Drawing.Size(194, 38);
             this.button_legs.TabIndex = 7;
@@ -531,7 +529,7 @@
             this.button_Movement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Movement.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_Movement.ForeColor = System.Drawing.Color.White;
-            this.button_Movement.Location = new System.Drawing.Point(9, 143);
+            this.button_Movement.Location = new System.Drawing.Point(9, 123);
             this.button_Movement.Name = "button_Movement";
             this.button_Movement.Size = new System.Drawing.Size(194, 38);
             this.button_Movement.TabIndex = 3;
@@ -545,7 +543,7 @@
             this.button_projectiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_projectiles.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_projectiles.ForeColor = System.Drawing.Color.White;
-            this.button_projectiles.Location = new System.Drawing.Point(9, 105);
+            this.button_projectiles.Location = new System.Drawing.Point(9, 85);
             this.button_projectiles.Name = "button_projectiles";
             this.button_projectiles.Size = new System.Drawing.Size(194, 38);
             this.button_projectiles.TabIndex = 6;
@@ -559,7 +557,7 @@
             this.button_Turrets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Turrets.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_Turrets.ForeColor = System.Drawing.Color.White;
-            this.button_Turrets.Location = new System.Drawing.Point(9, 181);
+            this.button_Turrets.Location = new System.Drawing.Point(9, 161);
             this.button_Turrets.Name = "button_Turrets";
             this.button_Turrets.Size = new System.Drawing.Size(194, 38);
             this.button_Turrets.TabIndex = 5;
@@ -573,7 +571,7 @@
             this.button_Graphics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Graphics.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_Graphics.ForeColor = System.Drawing.Color.White;
-            this.button_Graphics.Location = new System.Drawing.Point(9, 67);
+            this.button_Graphics.Location = new System.Drawing.Point(9, 47);
             this.button_Graphics.Name = "button_Graphics";
             this.button_Graphics.Size = new System.Drawing.Size(194, 38);
             this.button_Graphics.TabIndex = 1;
@@ -587,7 +585,7 @@
             this.button_Attack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Attack.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_Attack.ForeColor = System.Drawing.Color.White;
-            this.button_Attack.Location = new System.Drawing.Point(9, 295);
+            this.button_Attack.Location = new System.Drawing.Point(9, 275);
             this.button_Attack.Name = "button_Attack";
             this.button_Attack.Size = new System.Drawing.Size(194, 38);
             this.button_Attack.TabIndex = 2;
@@ -601,7 +599,7 @@
             this.button_Core.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Core.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_Core.ForeColor = System.Drawing.Color.White;
-            this.button_Core.Location = new System.Drawing.Point(9, 29);
+            this.button_Core.Location = new System.Drawing.Point(9, 9);
             this.button_Core.Name = "button_Core";
             this.button_Core.Size = new System.Drawing.Size(194, 38);
             this.button_Core.TabIndex = 0;
@@ -657,9 +655,8 @@
             // 
             // scrolabkeArea
             // 
-            this.scrolabkeArea.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.scrolabkeArea.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.scrolabkeArea.AutoScroll = true;
             this.scrolabkeArea.Controls.Add(this.label8);
             this.scrolabkeArea.Controls.Add(this.button_Graphics);
@@ -679,7 +676,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(51, 160);
+            this.label8.Location = new System.Drawing.Point(51, 140);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 13);
             this.label8.TabIndex = 59;
@@ -751,7 +748,6 @@
             this.scrolabkeArea.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -194,3 +194,4 @@ C:\Users\Home PC\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.csproj.CopyComplete
 C:\Users\Home PC\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.exe
 C:\Users\Home PC\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.pdb
 C:\Users\Home PC\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.editCore.resources
+C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.editCore.resources
