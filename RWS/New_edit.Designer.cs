@@ -98,7 +98,7 @@
             this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_cancel.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_cancel.ForeColor = System.Drawing.Color.White;
-            this.button_cancel.Location = new System.Drawing.Point(648, 504);
+            this.button_cancel.Location = new System.Drawing.Point(857, 554);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(97, 29);
             this.button_cancel.TabIndex = 9;
@@ -114,7 +114,7 @@
             this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_save.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_save.ForeColor = System.Drawing.Color.White;
-            this.button_save.Location = new System.Drawing.Point(756, 504);
+            this.button_save.Location = new System.Drawing.Point(965, 554);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(97, 29);
             this.button_save.TabIndex = 8;
@@ -481,7 +481,7 @@
             this.dynamicArea.Controls.Add(this.unit_picture);
             this.dynamicArea.Location = new System.Drawing.Point(6, 19);
             this.dynamicArea.Name = "dynamicArea";
-            this.dynamicArea.Size = new System.Drawing.Size(586, 460);
+            this.dynamicArea.Size = new System.Drawing.Size(795, 510);
             this.dynamicArea.TabIndex = 58;
             // 
             // label1
@@ -669,7 +669,7 @@
             this.scrolabkeArea.Controls.Add(this.button_Core);
             this.scrolabkeArea.Location = new System.Drawing.Point(6, 19);
             this.scrolabkeArea.Name = "scrolabkeArea";
-            this.scrolabkeArea.Size = new System.Drawing.Size(226, 351);
+            this.scrolabkeArea.Size = new System.Drawing.Size(226, 401);
             this.scrolabkeArea.TabIndex = 0;
             // 
             // label8
@@ -701,7 +701,7 @@
             this.groupBox1.Controls.Add(this.scrolabkeArea);
             this.groupBox1.Location = new System.Drawing.Point(12, 159);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 376);
+            this.groupBox1.Size = new System.Drawing.Size(235, 426);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu";
@@ -714,7 +714,7 @@
             this.groupBox2.Controls.Add(this.dynamicArea);
             this.groupBox2.Location = new System.Drawing.Point(253, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(598, 486);
+            this.groupBox2.Size = new System.Drawing.Size(807, 536);
             this.groupBox2.TabIndex = 62;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Work Area";
@@ -724,7 +724,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(863, 547);
+            this.ClientSize = new System.Drawing.Size(1072, 597);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
