@@ -114,7 +114,6 @@ C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.preview.resources
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.RWS.resources
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.unitList.resources
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.openMod.resources
-C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.editUnit.resources
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.newMod.resources
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.Properties.Resources.resources
 C:\Users\Admin\Documents\GitHub\RWStudio\RWS\obj\Debug\RWS.csproj.GenerateResource.cache

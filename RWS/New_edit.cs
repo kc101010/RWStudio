@@ -22,7 +22,16 @@ namespace RWS
 {
     public partial class New_edit : Form
     {
-        public static string path;  //Var path used to store .ini path of selected unit
+        public static string path;    //Var path used to store .ini path of selected unit
+        public static string lastcb;  //holds selected canbuit
+        public static string lastt;   //holds selected turret
+        public static string lastprj; //holds selected projectile
+        public static string namE;    //holds something
+        public static string lastbf;  //holds selected buildFrom
+        public static string lastact; //holds selected action
+        public static string lastleg; //holds selected leg
+        public static string lastanim;//holds selected animation
+
         public New_edit()
         {
             path = unitList.inipath;
@@ -110,17 +119,17 @@ namespace RWS
             string[] sss = Directory.GetFiles(path, "*.ini");
             var parser = new IniParser.FileIniDataParser();
             IniData data = parser.ReadFile(sss[0]);
-            //tag formatt
+            //tag format
             //section`parameter
             //example:
             //core`mass
             for (int i = 0; i < txt.Count; i++)
             {
                 if (!String.IsNullOrWhiteSpace(txt[i].Text) && txt[i].Enabled && !String.IsNullOrWhiteSpace(txt[i].Tag.ToString().Split('`')[1])) //if textbox enabled and not empty
-                        data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]] = txt[i].Text;                             //write data to ini file
+                        data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]] = txt[i].Text.Replace(System.Environment.NewLine, "\\n"); //write data to ini file
 
                 else if (!String.IsNullOrWhiteSpace(data[txt[i].Tag.ToString().Split('`')[0]][txt[i].Tag.ToString().Split('`')[1]]))
-                    data[txt[i].Tag.ToString().Split('`')[0]].RemoveKey(txt[i].Tag.ToString().Split('`')[1]);                                    //delete data from ini
+                    data[txt[i].Tag.ToString().Split('`')[0]].RemoveKey(txt[i].Tag.ToString().Split('`')[1]); //delete data from ini
             }
             //same s*t
             for (int i = 0; i < cb.Count; i++)
