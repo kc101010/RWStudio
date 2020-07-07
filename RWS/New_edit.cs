@@ -164,6 +164,7 @@ namespace RWS
             Close();
         }
 
+        //Code below written by kc101010 - Seamless form management
         private Form active = null;
         private void childForm(Form child) 
         {

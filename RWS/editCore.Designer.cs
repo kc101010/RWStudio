@@ -78,6 +78,24 @@
             this.group_UiGraphics = new System.Windows.Forms.GroupBox();
             this.group_misc = new System.Windows.Forms.GroupBox();
             this.button_cancel = new System.Windows.Forms.Button();
+            this.check_UI_showInEditor = new System.Windows.Forms.CheckBox();
+            this.check_UI_shieldDisplayOnlyDeflection = new System.Windows.Forms.CheckBox();
+            this.label_UI_shieldRenderRadius = new System.Windows.Forms.Label();
+            this.num_UI_shieldRenderRadius = new System.Windows.Forms.NumericUpDown();
+            this.label_UI_shieldDeflectionDisplayRate = new System.Windows.Forms.Label();
+            this.num_UI_shieldDeflectionDisplayRate = new System.Windows.Forms.NumericUpDown();
+            this.check_UI_showOnMinimap = new System.Windows.Forms.CheckBox();
+            this.check_death_dieOnConstruct = new System.Windows.Forms.CheckBox();
+            this.check_death_dieOnZeroEnergy = new System.Windows.Forms.CheckBox();
+            this.check_death_hideScorchMark = new System.Windows.Forms.CheckBox();
+            this.label_death_numBits = new System.Windows.Forms.Label();
+            this.num_death_numBits = new System.Windows.Forms.NumericUpDown();
+            this.check_death_nukeOnDeath = new System.Windows.Forms.CheckBox();
+            this.check_death_nukeOnDeath_DisableWhenNoNuke = new System.Windows.Forms.CheckBox();
+            this.label_death_nukeOnDeath_range = new System.Windows.Forms.Label();
+            this.num_death_nukeOnDeath_Range = new System.Windows.Forms.NumericUpDown();
+            this.label_death_nukeOnDeath_Damage = new System.Windows.Forms.Label();
+            this.num_death_nukeOnDeath_Damage = new System.Windows.Forms.NumericUpDown();
             this.group_UnitType.SuspendLayout();
             this.group_ShieldArmour.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_ArmourMinDamageToKeep)).BeginInit();
@@ -94,6 +112,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_unloadDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_maxUnits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_slotsNeeded)).BeginInit();
+            this.group_deathOptions.SuspendLayout();
+            this.group_UiGraphics.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_UI_shieldRenderRadius)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_UI_shieldDeflectionDisplayRate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_death_numBits)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_death_nukeOnDeath_Range)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_death_nukeOnDeath_Damage)).BeginInit();
             this.SuspendLayout();
             // 
             // title_core
@@ -526,6 +551,17 @@
             // 
             // group_deathOptions
             // 
+            this.group_deathOptions.Controls.Add(this.label_death_nukeOnDeath_Damage);
+            this.group_deathOptions.Controls.Add(this.num_death_nukeOnDeath_Damage);
+            this.group_deathOptions.Controls.Add(this.label_death_nukeOnDeath_range);
+            this.group_deathOptions.Controls.Add(this.num_death_nukeOnDeath_Range);
+            this.group_deathOptions.Controls.Add(this.check_death_nukeOnDeath_DisableWhenNoNuke);
+            this.group_deathOptions.Controls.Add(this.check_death_nukeOnDeath);
+            this.group_deathOptions.Controls.Add(this.label_death_numBits);
+            this.group_deathOptions.Controls.Add(this.num_death_numBits);
+            this.group_deathOptions.Controls.Add(this.check_death_hideScorchMark);
+            this.group_deathOptions.Controls.Add(this.check_death_dieOnZeroEnergy);
+            this.group_deathOptions.Controls.Add(this.check_death_dieOnConstruct);
             this.group_deathOptions.Location = new System.Drawing.Point(319, 193);
             this.group_deathOptions.Name = "group_deathOptions";
             this.group_deathOptions.Size = new System.Drawing.Size(307, 136);
@@ -553,6 +589,13 @@
             // 
             // group_UiGraphics
             // 
+            this.group_UiGraphics.Controls.Add(this.check_UI_showOnMinimap);
+            this.group_UiGraphics.Controls.Add(this.label_UI_shieldDeflectionDisplayRate);
+            this.group_UiGraphics.Controls.Add(this.num_UI_shieldDeflectionDisplayRate);
+            this.group_UiGraphics.Controls.Add(this.label_UI_shieldRenderRadius);
+            this.group_UiGraphics.Controls.Add(this.num_UI_shieldRenderRadius);
+            this.group_UiGraphics.Controls.Add(this.check_UI_shieldDisplayOnlyDeflection);
+            this.group_UiGraphics.Controls.Add(this.check_UI_showInEditor);
             this.group_UiGraphics.Location = new System.Drawing.Point(632, 193);
             this.group_UiGraphics.Name = "group_UiGraphics";
             this.group_UiGraphics.Size = new System.Drawing.Size(294, 136);
@@ -578,6 +621,168 @@
             this.button_cancel.Text = "Close";
             this.button_cancel.UseVisualStyleBackColor = true;
             this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
+            // 
+            // check_UI_showInEditor
+            // 
+            this.check_UI_showInEditor.AutoSize = true;
+            this.check_UI_showInEditor.Location = new System.Drawing.Point(6, 19);
+            this.check_UI_showInEditor.Name = "check_UI_showInEditor";
+            this.check_UI_showInEditor.Size = new System.Drawing.Size(94, 17);
+            this.check_UI_showInEditor.TabIndex = 13;
+            this.check_UI_showInEditor.Text = "Show in Editor";
+            this.check_UI_showInEditor.UseVisualStyleBackColor = true;
+            // 
+            // check_UI_shieldDisplayOnlyDeflection
+            // 
+            this.check_UI_shieldDisplayOnlyDeflection.AutoSize = true;
+            this.check_UI_shieldDisplayOnlyDeflection.Location = new System.Drawing.Point(6, 42);
+            this.check_UI_shieldDisplayOnlyDeflection.Name = "check_UI_shieldDisplayOnlyDeflection";
+            this.check_UI_shieldDisplayOnlyDeflection.Size = new System.Drawing.Size(158, 17);
+            this.check_UI_shieldDisplayOnlyDeflection.TabIndex = 14;
+            this.check_UI_shieldDisplayOnlyDeflection.Text = "ShieldDisplayOnlyDeflection";
+            this.check_UI_shieldDisplayOnlyDeflection.UseVisualStyleBackColor = true;
+            // 
+            // label_UI_shieldRenderRadius
+            // 
+            this.label_UI_shieldRenderRadius.AutoSize = true;
+            this.label_UI_shieldRenderRadius.Location = new System.Drawing.Point(54, 85);
+            this.label_UI_shieldRenderRadius.Name = "label_UI_shieldRenderRadius";
+            this.label_UI_shieldRenderRadius.Size = new System.Drawing.Size(102, 13);
+            this.label_UI_shieldRenderRadius.TabIndex = 25;
+            this.label_UI_shieldRenderRadius.Text = "shieldRenderRadius";
+            // 
+            // num_UI_shieldRenderRadius
+            // 
+            this.num_UI_shieldRenderRadius.Location = new System.Drawing.Point(6, 85);
+            this.num_UI_shieldRenderRadius.Name = "num_UI_shieldRenderRadius";
+            this.num_UI_shieldRenderRadius.Size = new System.Drawing.Size(42, 20);
+            this.num_UI_shieldRenderRadius.TabIndex = 24;
+            // 
+            // label_UI_shieldDeflectionDisplayRate
+            // 
+            this.label_UI_shieldDeflectionDisplayRate.AutoSize = true;
+            this.label_UI_shieldDeflectionDisplayRate.Location = new System.Drawing.Point(54, 111);
+            this.label_UI_shieldDeflectionDisplayRate.Name = "label_UI_shieldDeflectionDisplayRate";
+            this.label_UI_shieldDeflectionDisplayRate.Size = new System.Drawing.Size(139, 13);
+            this.label_UI_shieldDeflectionDisplayRate.TabIndex = 27;
+            this.label_UI_shieldDeflectionDisplayRate.Text = "shieldDeflectionDisplayRate";
+            // 
+            // num_UI_shieldDeflectionDisplayRate
+            // 
+            this.num_UI_shieldDeflectionDisplayRate.Location = new System.Drawing.Point(6, 111);
+            this.num_UI_shieldDeflectionDisplayRate.Name = "num_UI_shieldDeflectionDisplayRate";
+            this.num_UI_shieldDeflectionDisplayRate.Size = new System.Drawing.Size(42, 20);
+            this.num_UI_shieldDeflectionDisplayRate.TabIndex = 26;
+            // 
+            // check_UI_showOnMinimap
+            // 
+            this.check_UI_showOnMinimap.AutoSize = true;
+            this.check_UI_showOnMinimap.Location = new System.Drawing.Point(6, 65);
+            this.check_UI_showOnMinimap.Name = "check_UI_showOnMinimap";
+            this.check_UI_showOnMinimap.Size = new System.Drawing.Size(110, 17);
+            this.check_UI_showOnMinimap.TabIndex = 28;
+            this.check_UI_showOnMinimap.Text = "Show on Minimap";
+            this.check_UI_showOnMinimap.UseVisualStyleBackColor = true;
+            // 
+            // check_death_dieOnConstruct
+            // 
+            this.check_death_dieOnConstruct.AutoSize = true;
+            this.check_death_dieOnConstruct.Location = new System.Drawing.Point(6, 19);
+            this.check_death_dieOnConstruct.Name = "check_death_dieOnConstruct";
+            this.check_death_dieOnConstruct.Size = new System.Drawing.Size(99, 17);
+            this.check_death_dieOnConstruct.TabIndex = 29;
+            this.check_death_dieOnConstruct.Text = "dieOnConstruct";
+            this.check_death_dieOnConstruct.UseVisualStyleBackColor = true;
+            // 
+            // check_death_dieOnZeroEnergy
+            // 
+            this.check_death_dieOnZeroEnergy.AutoSize = true;
+            this.check_death_dieOnZeroEnergy.Location = new System.Drawing.Point(6, 42);
+            this.check_death_dieOnZeroEnergy.Name = "check_death_dieOnZeroEnergy";
+            this.check_death_dieOnZeroEnergy.Size = new System.Drawing.Size(109, 17);
+            this.check_death_dieOnZeroEnergy.TabIndex = 30;
+            this.check_death_dieOnZeroEnergy.Text = "dieOnZeroEnergy";
+            this.check_death_dieOnZeroEnergy.UseVisualStyleBackColor = true;
+            // 
+            // check_death_hideScorchMark
+            // 
+            this.check_death_hideScorchMark.AutoSize = true;
+            this.check_death_hideScorchMark.Location = new System.Drawing.Point(5, 65);
+            this.check_death_hideScorchMark.Name = "check_death_hideScorchMark";
+            this.check_death_hideScorchMark.Size = new System.Drawing.Size(104, 17);
+            this.check_death_hideScorchMark.TabIndex = 31;
+            this.check_death_hideScorchMark.Text = "hideScorchMark";
+            this.check_death_hideScorchMark.UseVisualStyleBackColor = true;
+            // 
+            // label_death_numBits
+            // 
+            this.label_death_numBits.AutoSize = true;
+            this.label_death_numBits.Location = new System.Drawing.Point(53, 85);
+            this.label_death_numBits.Name = "label_death_numBits";
+            this.label_death_numBits.Size = new System.Drawing.Size(87, 13);
+            this.label_death_numBits.TabIndex = 14;
+            this.label_death_numBits.Text = "numBitsOnDeath";
+            this.label_death_numBits.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // num_death_numBits
+            // 
+            this.num_death_numBits.Location = new System.Drawing.Point(5, 85);
+            this.num_death_numBits.Name = "num_death_numBits";
+            this.num_death_numBits.Size = new System.Drawing.Size(42, 20);
+            this.num_death_numBits.TabIndex = 13;
+            // 
+            // check_death_nukeOnDeath
+            // 
+            this.check_death_nukeOnDeath.AutoSize = true;
+            this.check_death_nukeOnDeath.Location = new System.Drawing.Point(165, 19);
+            this.check_death_nukeOnDeath.Name = "check_death_nukeOnDeath";
+            this.check_death_nukeOnDeath.Size = new System.Drawing.Size(93, 17);
+            this.check_death_nukeOnDeath.TabIndex = 32;
+            this.check_death_nukeOnDeath.Text = "nukeOnDeath";
+            this.check_death_nukeOnDeath.UseVisualStyleBackColor = true;
+            this.check_death_nukeOnDeath.CheckedChanged += new System.EventHandler(this.check_death_nukeOnDeath_CheckedChanged);
+            // 
+            // check_death_nukeOnDeath_DisableWhenNoNuke
+            // 
+            this.check_death_nukeOnDeath_DisableWhenNoNuke.AutoSize = true;
+            this.check_death_nukeOnDeath_DisableWhenNoNuke.Location = new System.Drawing.Point(165, 42);
+            this.check_death_nukeOnDeath_DisableWhenNoNuke.Name = "check_death_nukeOnDeath_DisableWhenNoNuke";
+            this.check_death_nukeOnDeath_DisableWhenNoNuke.Size = new System.Drawing.Size(130, 17);
+            this.check_death_nukeOnDeath_DisableWhenNoNuke.TabIndex = 33;
+            this.check_death_nukeOnDeath_DisableWhenNoNuke.Text = "DisableWhenNoNuke";
+            this.check_death_nukeOnDeath_DisableWhenNoNuke.UseVisualStyleBackColor = true;
+            // 
+            // label_death_nukeOnDeath_range
+            // 
+            this.label_death_nukeOnDeath_range.AutoSize = true;
+            this.label_death_nukeOnDeath_range.Location = new System.Drawing.Point(213, 64);
+            this.label_death_nukeOnDeath_range.Name = "label_death_nukeOnDeath_range";
+            this.label_death_nukeOnDeath_range.Size = new System.Drawing.Size(63, 13);
+            this.label_death_nukeOnDeath_range.TabIndex = 35;
+            this.label_death_nukeOnDeath_range.Text = "nukeRange";
+            // 
+            // num_death_nukeOnDeath_Range
+            // 
+            this.num_death_nukeOnDeath_Range.Location = new System.Drawing.Point(165, 64);
+            this.num_death_nukeOnDeath_Range.Name = "num_death_nukeOnDeath_Range";
+            this.num_death_nukeOnDeath_Range.Size = new System.Drawing.Size(42, 20);
+            this.num_death_nukeOnDeath_Range.TabIndex = 34;
+            // 
+            // label_death_nukeOnDeath_Damage
+            // 
+            this.label_death_nukeOnDeath_Damage.AutoSize = true;
+            this.label_death_nukeOnDeath_Damage.Location = new System.Drawing.Point(213, 90);
+            this.label_death_nukeOnDeath_Damage.Name = "label_death_nukeOnDeath_Damage";
+            this.label_death_nukeOnDeath_Damage.Size = new System.Drawing.Size(71, 13);
+            this.label_death_nukeOnDeath_Damage.TabIndex = 37;
+            this.label_death_nukeOnDeath_Damage.Text = "nukeDamage";
+            // 
+            // num_death_nukeOnDeath_Damage
+            // 
+            this.num_death_nukeOnDeath_Damage.Location = new System.Drawing.Point(165, 90);
+            this.num_death_nukeOnDeath_Damage.Name = "num_death_nukeOnDeath_Damage";
+            this.num_death_nukeOnDeath_Damage.Size = new System.Drawing.Size(42, 20);
+            this.num_death_nukeOnDeath_Damage.TabIndex = 36;
             // 
             // editCore
             // 
@@ -620,6 +825,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_unloadDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_maxUnits)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_tport_slotsNeeded)).EndInit();
+            this.group_deathOptions.ResumeLayout(false);
+            this.group_deathOptions.PerformLayout();
+            this.group_UiGraphics.ResumeLayout(false);
+            this.group_UiGraphics.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_UI_shieldRenderRadius)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_UI_shieldDeflectionDisplayRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_death_numBits)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_death_nukeOnDeath_Range)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_death_nukeOnDeath_Damage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -677,5 +891,23 @@
         private System.Windows.Forms.GroupBox group_UiGraphics;
         private System.Windows.Forms.GroupBox group_misc;
         private System.Windows.Forms.Button button_cancel;
+        private System.Windows.Forms.Label label_death_numBits;
+        private System.Windows.Forms.NumericUpDown num_death_numBits;
+        private System.Windows.Forms.CheckBox check_death_hideScorchMark;
+        private System.Windows.Forms.CheckBox check_death_dieOnZeroEnergy;
+        private System.Windows.Forms.CheckBox check_death_dieOnConstruct;
+        private System.Windows.Forms.CheckBox check_UI_showOnMinimap;
+        private System.Windows.Forms.Label label_UI_shieldDeflectionDisplayRate;
+        private System.Windows.Forms.NumericUpDown num_UI_shieldDeflectionDisplayRate;
+        private System.Windows.Forms.Label label_UI_shieldRenderRadius;
+        private System.Windows.Forms.NumericUpDown num_UI_shieldRenderRadius;
+        private System.Windows.Forms.CheckBox check_UI_shieldDisplayOnlyDeflection;
+        private System.Windows.Forms.CheckBox check_UI_showInEditor;
+        private System.Windows.Forms.CheckBox check_death_nukeOnDeath_DisableWhenNoNuke;
+        private System.Windows.Forms.CheckBox check_death_nukeOnDeath;
+        private System.Windows.Forms.Label label_death_nukeOnDeath_Damage;
+        private System.Windows.Forms.NumericUpDown num_death_nukeOnDeath_Damage;
+        private System.Windows.Forms.Label label_death_nukeOnDeath_range;
+        private System.Windows.Forms.NumericUpDown num_death_nukeOnDeath_Range;
     }
 }
