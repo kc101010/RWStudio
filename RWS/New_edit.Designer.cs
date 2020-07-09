@@ -75,6 +75,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.unit_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unit_dead)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.price)).BeginInit();
@@ -98,7 +101,7 @@
             this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_cancel.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_cancel.ForeColor = System.Drawing.Color.White;
-            this.button_cancel.Location = new System.Drawing.Point(857, 554);
+            this.button_cancel.Location = new System.Drawing.Point(857, 524);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(97, 29);
             this.button_cancel.TabIndex = 9;
@@ -114,7 +117,7 @@
             this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_save.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_save.ForeColor = System.Drawing.Color.White;
-            this.button_save.Location = new System.Drawing.Point(965, 554);
+            this.button_save.Location = new System.Drawing.Point(965, 524);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(97, 29);
             this.button_save.TabIndex = 8;
@@ -481,7 +484,7 @@
             this.dynamicArea.Controls.Add(this.unit_picture);
             this.dynamicArea.Location = new System.Drawing.Point(6, 19);
             this.dynamicArea.Name = "dynamicArea";
-            this.dynamicArea.Size = new System.Drawing.Size(795, 510);
+            this.dynamicArea.Size = new System.Drawing.Size(795, 480);
             this.dynamicArea.TabIndex = 58;
             // 
             // label1
@@ -501,7 +504,7 @@
             this.button_ai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ai.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_ai.ForeColor = System.Drawing.Color.White;
-            this.button_ai.Location = new System.Drawing.Point(9, 237);
+            this.button_ai.Location = new System.Drawing.Point(9, 313);
             this.button_ai.Name = "button_ai";
             this.button_ai.Size = new System.Drawing.Size(194, 38);
             this.button_ai.TabIndex = 4;
@@ -585,7 +588,7 @@
             this.button_Attack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Attack.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_Attack.ForeColor = System.Drawing.Color.White;
-            this.button_Attack.Location = new System.Drawing.Point(9, 275);
+            this.button_Attack.Location = new System.Drawing.Point(9, 351);
             this.button_Attack.Name = "button_Attack";
             this.button_Attack.Size = new System.Drawing.Size(194, 38);
             this.button_Attack.TabIndex = 2;
@@ -658,6 +661,9 @@
             this.scrolabkeArea.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.scrolabkeArea.AutoScroll = true;
+            this.scrolabkeArea.Controls.Add(this.button3);
+            this.scrolabkeArea.Controls.Add(this.button2);
+            this.scrolabkeArea.Controls.Add(this.button1);
             this.scrolabkeArea.Controls.Add(this.label8);
             this.scrolabkeArea.Controls.Add(this.button_Graphics);
             this.scrolabkeArea.Controls.Add(this.button_projectiles);
@@ -669,7 +675,7 @@
             this.scrolabkeArea.Controls.Add(this.button_Core);
             this.scrolabkeArea.Location = new System.Drawing.Point(6, 19);
             this.scrolabkeArea.Name = "scrolabkeArea";
-            this.scrolabkeArea.Size = new System.Drawing.Size(226, 401);
+            this.scrolabkeArea.Size = new System.Drawing.Size(226, 371);
             this.scrolabkeArea.TabIndex = 0;
             // 
             // label8
@@ -701,7 +707,7 @@
             this.groupBox1.Controls.Add(this.scrolabkeArea);
             this.groupBox1.Location = new System.Drawing.Point(12, 159);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 426);
+            this.groupBox1.Size = new System.Drawing.Size(235, 396);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu";
@@ -715,17 +721,59 @@
             this.groupBox2.Controls.Add(this.dynamicArea);
             this.groupBox2.Location = new System.Drawing.Point(253, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(807, 536);
+            this.groupBox2.Size = new System.Drawing.Size(807, 506);
             this.groupBox2.TabIndex = 62;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Work Area";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(9, 389);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 38);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Custom parameters";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(9, 237);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(194, 38);
+            this.button2.TabIndex = 61;
+            this.button2.Text = "Arms";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(9, 275);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(194, 38);
+            this.button3.TabIndex = 62;
+            this.button3.Text = "Effects";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // New_edit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(1072, 597);
+            this.ClientSize = new System.Drawing.Size(1072, 567);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -802,5 +850,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
