@@ -36,6 +36,7 @@ namespace RWS
         {
             path = unitList.inipath;
             InitializeComponent();
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
         private void unit_picture_Click(object sender, EventArgs e)
         {
@@ -183,7 +184,30 @@ namespace RWS
         private void button_Core_Click(object sender, EventArgs e)
         {
             // new editCore().ShowDialog();
-            childForm(new editCore()    );
+            childForm(new editCore());
+        }
+
+        private bool dragging = false;
+        private Point startPoint = new Point(0, 0);
+        private void F_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            startPoint = new Point(e.X, e.Y);
+        }
+
+        private void F_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
+        private void F_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this.startPoint.X, p.Y - this.startPoint.Y);
+            }
+
         }
     }
 }

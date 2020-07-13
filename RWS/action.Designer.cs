@@ -105,7 +105,7 @@
             this.namee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.namee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.namee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.namee.Location = new System.Drawing.Point(263, 11);
+            this.namee.Location = new System.Drawing.Point(258, 8);
             this.namee.Name = "namee";
             this.namee.Size = new System.Drawing.Size(67, 26);
             this.namee.TabIndex = 15;
@@ -152,12 +152,13 @@
             // 
             // text
             // 
-            this.text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.text.ForeColor = System.Drawing.Color.Silver;
-            this.text.Location = new System.Drawing.Point(92, 56);
+            this.text.Location = new System.Drawing.Point(92, 59);
             this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(115, 20);
+            this.text.Size = new System.Drawing.Size(115, 21);
             this.text.TabIndex = 18;
             this.text.Tag = "text";
             this.toolTip1.SetToolTip(this.text, "Text shown in UI to player");
@@ -176,7 +177,7 @@
             // 
             // description
             // 
-            this.description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.description.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.description.ForeColor = System.Drawing.Color.Silver;
             this.description.Location = new System.Drawing.Point(92, 85);
@@ -187,6 +188,7 @@
             this.description.TabIndex = 20;
             this.description.Tag = "description";
             this.toolTip1.SetToolTip(this.description, "Description shown in UI to player");
+            this.description.TextChanged += new System.EventHandler(this.description_TextChanged);
             // 
             // label2
             // 

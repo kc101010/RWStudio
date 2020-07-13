@@ -118,5 +118,10 @@ namespace RWS
         {
             Close();
         }
+
+        private void description_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

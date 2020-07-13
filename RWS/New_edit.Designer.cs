@@ -71,13 +71,18 @@
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.scrolabkeArea = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.maxMinButton = new System.Windows.Forms.Button();
+            this.hideButton = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.unit_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unit_dead)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.price)).BeginInit();
@@ -91,6 +96,7 @@
             this.scrolabkeArea.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_cancel
@@ -101,7 +107,7 @@
             this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_cancel.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_cancel.ForeColor = System.Drawing.Color.White;
-            this.button_cancel.Location = new System.Drawing.Point(857, 524);
+            this.button_cancel.Location = new System.Drawing.Point(857, 557);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(97, 29);
             this.button_cancel.TabIndex = 9;
@@ -117,7 +123,7 @@
             this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_save.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
             this.button_save.ForeColor = System.Drawing.Color.White;
-            this.button_save.Location = new System.Drawing.Point(965, 524);
+            this.button_save.Location = new System.Drawing.Point(965, 557);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(97, 29);
             this.button_save.TabIndex = 8;
@@ -197,9 +203,10 @@
             // 
             // price
             // 
-            this.price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.price.ForeColor = System.Drawing.Color.Silver;
-            this.price.Location = new System.Drawing.Point(315, 87);
+            this.price.Location = new System.Drawing.Point(315, 90);
             this.price.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -228,9 +235,10 @@
             // 
             // mass
             // 
-            this.mass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.mass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.mass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mass.ForeColor = System.Drawing.Color.Silver;
-            this.mass.Location = new System.Drawing.Point(315, 61);
+            this.mass.Location = new System.Drawing.Point(315, 64);
             this.mass.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -259,9 +267,10 @@
             // 
             // hp
             // 
-            this.hp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.hp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.hp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.hp.ForeColor = System.Drawing.Color.Silver;
-            this.hp.Location = new System.Drawing.Point(315, 35);
+            this.hp.Location = new System.Drawing.Point(315, 38);
             this.hp.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -290,7 +299,7 @@
             // 
             // dradius
             // 
-            this.dradius.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.dradius.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.dradius.ForeColor = System.Drawing.Color.Silver;
             this.dradius.Location = new System.Drawing.Point(498, 116);
             this.dradius.Maximum = new decimal(new int[] {
@@ -320,7 +329,7 @@
             // 
             // radius
             // 
-            this.radius.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.radius.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.radius.ForeColor = System.Drawing.Color.Silver;
             this.radius.Location = new System.Drawing.Point(498, 87);
             this.radius.Maximum = new decimal(new int[] {
@@ -361,7 +370,7 @@
             // 
             // buildspeed
             // 
-            this.buildspeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.buildspeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.buildspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.buildspeed.ForeColor = System.Drawing.Color.Silver;
             this.buildspeed.Location = new System.Drawing.Point(498, 61);
@@ -372,7 +381,7 @@
             // 
             // level
             // 
-            this.level.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.level.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.level.ForeColor = System.Drawing.Color.Silver;
             this.level.Location = new System.Drawing.Point(498, 35);
             this.level.Maximum = new decimal(new int[] {
@@ -407,9 +416,10 @@
             // 
             // descript
             // 
-            this.descript.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.descript.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.descript.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.descript.ForeColor = System.Drawing.Color.White;
+            this.descript.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.descript.ForeColor = System.Drawing.Color.Silver;
             this.descript.Location = new System.Drawing.Point(123, 287);
             this.descript.Multiline = true;
             this.descript.Name = "descript";
@@ -431,9 +441,9 @@
             // 
             // name
             // 
-            this.name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
             this.name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.name.ForeColor = System.Drawing.Color.White;
+            this.name.ForeColor = System.Drawing.Color.Silver;
             this.name.Location = new System.Drawing.Point(123, 256);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(176, 20);
@@ -484,7 +494,7 @@
             this.dynamicArea.Controls.Add(this.unit_picture);
             this.dynamicArea.Location = new System.Drawing.Point(6, 19);
             this.dynamicArea.Name = "dynamicArea";
-            this.dynamicArea.Size = new System.Drawing.Size(795, 480);
+            this.dynamicArea.Size = new System.Drawing.Size(795, 488);
             this.dynamicArea.TabIndex = 58;
             // 
             // label1
@@ -502,13 +512,13 @@
             this.button_ai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
             this.button_ai.FlatAppearance.BorderSize = 0;
             this.button_ai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ai.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_ai.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ai.ForeColor = System.Drawing.Color.White;
             this.button_ai.Location = new System.Drawing.Point(9, 313);
             this.button_ai.Name = "button_ai";
             this.button_ai.Size = new System.Drawing.Size(194, 38);
             this.button_ai.TabIndex = 4;
-            this.button_ai.Text = "AI";
+            this.button_ai.Text = "Artificial intelligence";
             this.button_ai.UseVisualStyleBackColor = false;
             // 
             // button_legs
@@ -516,7 +526,7 @@
             this.button_legs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
             this.button_legs.FlatAppearance.BorderSize = 0;
             this.button_legs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_legs.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_legs.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_legs.ForeColor = System.Drawing.Color.White;
             this.button_legs.Location = new System.Drawing.Point(9, 199);
             this.button_legs.Name = "button_legs";
@@ -530,7 +540,7 @@
             this.button_Movement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
             this.button_Movement.FlatAppearance.BorderSize = 0;
             this.button_Movement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Movement.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Movement.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Movement.ForeColor = System.Drawing.Color.White;
             this.button_Movement.Location = new System.Drawing.Point(9, 123);
             this.button_Movement.Name = "button_Movement";
@@ -544,7 +554,7 @@
             this.button_projectiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
             this.button_projectiles.FlatAppearance.BorderSize = 0;
             this.button_projectiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_projectiles.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_projectiles.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_projectiles.ForeColor = System.Drawing.Color.White;
             this.button_projectiles.Location = new System.Drawing.Point(9, 85);
             this.button_projectiles.Name = "button_projectiles";
@@ -558,7 +568,7 @@
             this.button_Turrets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
             this.button_Turrets.FlatAppearance.BorderSize = 0;
             this.button_Turrets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Turrets.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Turrets.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Turrets.ForeColor = System.Drawing.Color.White;
             this.button_Turrets.Location = new System.Drawing.Point(9, 161);
             this.button_Turrets.Name = "button_Turrets";
@@ -572,7 +582,7 @@
             this.button_Graphics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
             this.button_Graphics.FlatAppearance.BorderSize = 0;
             this.button_Graphics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Graphics.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Graphics.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Graphics.ForeColor = System.Drawing.Color.White;
             this.button_Graphics.Location = new System.Drawing.Point(9, 47);
             this.button_Graphics.Name = "button_Graphics";
@@ -586,7 +596,7 @@
             this.button_Attack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
             this.button_Attack.FlatAppearance.BorderSize = 0;
             this.button_Attack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Attack.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Attack.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Attack.ForeColor = System.Drawing.Color.White;
             this.button_Attack.Location = new System.Drawing.Point(9, 351);
             this.button_Attack.Name = "button_Attack";
@@ -600,7 +610,7 @@
             this.button_Core.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
             this.button_Core.FlatAppearance.BorderSize = 0;
             this.button_Core.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Core.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            this.button_Core.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Core.ForeColor = System.Drawing.Color.White;
             this.button_Core.Location = new System.Drawing.Point(9, 9);
             this.button_Core.Name = "button_Core";
@@ -614,7 +624,7 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::RWS.Properties.Resources.experimental_unit_factory_base;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(78, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(98, 115);
             this.pictureBox1.TabIndex = 59;
@@ -675,8 +685,50 @@
             this.scrolabkeArea.Controls.Add(this.button_Core);
             this.scrolabkeArea.Location = new System.Drawing.Point(6, 19);
             this.scrolabkeArea.Name = "scrolabkeArea";
-            this.scrolabkeArea.Size = new System.Drawing.Size(226, 371);
+            this.scrolabkeArea.Size = new System.Drawing.Size(226, 369);
             this.scrolabkeArea.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(9, 275);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(194, 38);
+            this.button3.TabIndex = 62;
+            this.button3.Text = "Effects";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(9, 237);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(194, 38);
+            this.button2.TabIndex = 61;
+            this.button2.Text = "Arms";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(9, 389);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 38);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Custom parameters";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
@@ -691,12 +743,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(23, 12);
+            this.label2.Location = new System.Drawing.Point(7, 49);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 23);
+            this.label2.Size = new System.Drawing.Size(241, 22);
             this.label2.TabIndex = 60;
             this.label2.Text = "Rusted Warfare Studio";
             // 
@@ -705,9 +757,9 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.scrolabkeArea);
-            this.groupBox1.Location = new System.Drawing.Point(12, 159);
+            this.groupBox1.Location = new System.Drawing.Point(12, 194);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 396);
+            this.groupBox1.Size = new System.Drawing.Size(235, 394);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu";
@@ -719,67 +771,112 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.Controls.Add(this.dynamicArea);
-            this.groupBox2.Location = new System.Drawing.Point(253, 12);
+            this.groupBox2.Location = new System.Drawing.Point(253, 38);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(807, 506);
+            this.groupBox2.Size = new System.Drawing.Size(807, 513);
             this.groupBox2.TabIndex = 62;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Work Area";
             // 
-            // button1
+            // closeButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(9, 389);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 38);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "Custom parameters";
-            this.button1.UseVisualStyleBackColor = false;
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.closeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.closeButton.ForeColor = System.Drawing.Color.Silver;
+            this.closeButton.Location = new System.Drawing.Point(1044, 8);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(36, 34);
+            this.closeButton.TabIndex = 59;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // maxMinButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(9, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 38);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Arms";
-            this.button2.UseVisualStyleBackColor = false;
+            this.maxMinButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maxMinButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.maxMinButton.FlatAppearance.BorderSize = 0;
+            this.maxMinButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.maxMinButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.maxMinButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maxMinButton.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.maxMinButton.ForeColor = System.Drawing.Color.Silver;
+            this.maxMinButton.Location = new System.Drawing.Point(1008, 8);
+            this.maxMinButton.Name = "maxMinButton";
+            this.maxMinButton.Size = new System.Drawing.Size(36, 34);
+            this.maxMinButton.TabIndex = 64;
+            this.maxMinButton.Text = "🗖";
+            this.maxMinButton.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // hideButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(9, 275);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 38);
-            this.button3.TabIndex = 62;
-            this.button3.Text = "Effects";
-            this.button3.UseVisualStyleBackColor = false;
+            this.hideButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.hideButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.hideButton.FlatAppearance.BorderSize = 0;
+            this.hideButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(218)))));
+            this.hideButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(192)))), ((int)(((byte)(98)))));
+            this.hideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hideButton.Font = new System.Drawing.Font("Segoe Script", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.hideButton.ForeColor = System.Drawing.Color.Silver;
+            this.hideButton.Location = new System.Drawing.Point(972, 8);
+            this.hideButton.Name = "hideButton";
+            this.hideButton.Size = new System.Drawing.Size(36, 34);
+            this.hideButton.TabIndex = 65;
+            this.hideButton.Text = "🗕";
+            this.hideButton.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.label15.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label15.Location = new System.Drawing.Point(416, 16);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(257, 23);
+            this.label15.TabIndex = 68;
+            this.label15.Text = "RWStudio: Edit unit";
+            this.label15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.F_MouseDown);
+            this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.F_MouseMove);
+            this.label15.MouseUp += new System.Windows.Forms.MouseEventHandler(this.F_MouseUp);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(53)))));
+            this.panel1.Controls.Add(this.hideButton);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.maxMinButton);
+            this.panel1.Controls.Add(this.closeButton);
+            this.panel1.Location = new System.Drawing.Point(-8, -8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1088, 45);
+            this.panel1.TabIndex = 69;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.F_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.F_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.F_MouseUp);
             // 
             // New_edit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(1072, 567);
+            this.ClientSize = new System.Drawing.Size(1072, 600);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_save);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "New_edit";
             this.Text = "New_edit";
             ((System.ComponentModel.ISupportInitialize)(this.unit_picture)).EndInit();
@@ -797,6 +894,8 @@
             this.scrolabkeArea.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -853,5 +952,10 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Button maxMinButton;
+        private System.Windows.Forms.Button hideButton;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel1;
     }
 }
