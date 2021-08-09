@@ -2,4 +2,5 @@
 RustedWarfareStudio
 
 Project suspended
-Fell free to ask for ownership
+
+Modding tool for the game [Rusted Warfare](https://store.steampowered.com/app/647960/Rusted_Warfare__RTS/)
