@@ -1,4 +1,5 @@
 # RWStudio
 RustedWarfareStudio
 
-Work in progress
+Project suspended
+Fell free to ask for ownership
